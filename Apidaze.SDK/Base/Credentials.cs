@@ -21,20 +21,20 @@ namespace Apidaze.SDK.Base
             {
                 throw new ApidazeCredentialsException("Authentication credentials not supplied");
             }
-            AuthId = apiKey;
-            AuthToken = apiSecret;
+            ApiKey = apiKey;
+            ApiSecret = apiSecret;
         }
 
         /// <summary>
         /// Gets or sets the authentication identifier.
         /// </summary>
         /// <value>The authentication identifier.</value>
-        public string AuthId { get; set; }
+        public string ApiKey { get; set; }
 
         /// <summary>
         /// Gets or sets the authentication token.
         /// </summary>
         /// <value>The authentication token.</value>
-        public string AuthToken { get; set; }
+        public string ApiSecret { get; set; }
     }
 }

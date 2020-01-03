@@ -13,8 +13,16 @@ namespace Apidaze.SDK.Tests.Unit
     [TestClass]
     public class MessageTest
     {
+        private Mock<IRestClient> _mockIRestClient;
+
+        [TestInitialize]
+        public void Startup()
+        {
+            _mockIRestClient = new Mock<IRestClient>();
+
+        }
         [TestMethod]
-        public void Given_that_execute_method_is_called_Then_correct_response_is_returned()
+        public void CreateMessage_ParametersSent_Result()
         {
             //Given
             string appKey = "341098ad80e99271cb551ff2af05ffa4339ffdbf";
@@ -25,7 +33,7 @@ namespace Apidaze.SDK.Tests.Unit
             restClientMock.Setup(rc => rc.Execute(It.IsAny<RestRequest>())).Returns(
                 (RestResponse<string>)new RestResponse { StatusCode = HttpStatusCode.OK });
 
-            var target = Message.Create(credentials);
+            var target = Message.Create(_mockIRestClient.Object, credentials);
 
             //When
             var result = target.SendTextMessage(new PhoneNumber("123456789"), new PhoneNumber("123456789"), "Hello");

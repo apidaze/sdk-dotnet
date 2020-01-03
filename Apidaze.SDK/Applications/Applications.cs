@@ -2,29 +2,23 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using RestSharp;
 
 namespace Apidaze.SDK.Applications
 {
     internal class Applications : BaseApiClient, IApplications
     {
         private Credentials credentials;
-        private string url;
 
-        public Applications(Credentials credentials, string url)
+        public Applications(IRestClient client, Credentials credentials) : base(client, credentials)
         {
             this.credentials = credentials;
-            this.url = url;
         }
-
-        public static Applications Create(Credentials credentials)
-        {
-            return Create(credentials, _url);
-        }
-
-        private static Applications Create(Credentials credentials, string url)
+       
+        private static Applications Create(IRestClient client, Credentials credentials)
         {
             //add sanity check
-            return new Applications(credentials, url);
+            return new Applications(client, credentials);
         }
 
         public List<Application> GetApplications()

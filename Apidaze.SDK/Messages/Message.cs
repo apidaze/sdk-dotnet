@@ -10,33 +10,34 @@ namespace Apidaze.SDK.Messages
 {
     public class Message : BaseApiClient, IMessage
     {
-        private Credentials credentials;
+        private Base.Credentials credentials;
         private string url;
 
-        internal static readonly string basePath = "sms";
+        internal static readonly string basePath = "sms/send";
 
-        public Message(Credentials credentials, string url)
+        public Message(IRestClient client, Credentials credentials, string url) : base(client, credentials)
         {
             this.credentials = credentials;
             this.url = url;
         }
 
-        public static Message Create(Credentials credentials)
+        public static Message Create(IRestClient client, Credentials credentials)
         {
-            return Create(credentials, _url);
+            //add sanity check
+            return new Message(client, credentials, _url);
         }
 
-        public string SendTextMessage(PhoneNumber from, PhoneNumber to, string request)
+        public string SendTextMessage(PhoneNumber from, PhoneNumber to, string bodyMessage)
         {
-            if (string.IsNullOrEmpty(request)) throw new ArgumentException("body must not be null or empty");
+            if (string.IsNullOrEmpty(bodyMessage)) throw new ArgumentException("body must not be null or empty");
 
-            var body = JsonConvert.SerializeObject(new { from, to, request });
-            
+            RestRequest restRequest = new RestRequest(basePath, Method.POST) {RequestFormat = DataFormat.Json};
+            restRequest.AddHeader("Content-Type", "application/x-www-form-urlencoded");
+            restRequest.AddParameter("api_secret", credentials.ApiSecret);
+            restRequest.AddUrlSegment("api_key", credentials.ApiKey);
+            restRequest.AddJsonBody(new {from = from.ToString(), to = to.ToString(), body = bodyMessage});
 
-            RestRequest restRequest = new RestRequest(Method.PUT);
-            restRequest.AddParameter("text/json", body, ParameterType.RequestBody);
-
-            IRestResponse response = _client.Execute(restRequest);
+            IRestResponse response = Client.Execute(restRequest);
             EnsureSuccessResponse(response);
 
             var deserializedResponse = JsonConvert.DeserializeObject<JObject>(response.Content).ToString(Formatting.None);
@@ -44,10 +45,6 @@ namespace Apidaze.SDK.Messages
 
         }
 
-        private static Message Create(Credentials credentials, string url)
-        {
-            //add sanity check
-            return new Message(credentials, url);
-        }
+      
     }
 }
