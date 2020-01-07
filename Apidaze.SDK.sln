@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.705
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apidaze.SDK", "Apidaze.SDK\Apidaze.SDK.csproj", "{6DED594D-D408-447E-A0DA-69B7F98634A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIdaze.SDK", "Apidaze.SDK\APIdaze.SDK.csproj", "{6DED594D-D408-447E-A0DA-69B7F98634A1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apidaze.SDK.Tests.Unit", "Apidaze.SDK.Tests.Unit\Apidaze.SDK.Tests.Unit.csproj", "{29205EBA-D45F-4D8B-89E9-1FF75C891DD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIdaze.SDK.Tests.Unit", "Apidaze.SDK.Tests.Unit\APIdaze.SDK.Tests.Unit.csproj", "{29205EBA-D45F-4D8B-89E9-1FF75C891DD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apidaze.SDK.Tests.Integration", "Apidaze.SDK.Tests.Integration\Apidaze.SDK.Tests.Integration.csproj", "{5C8021FB-208A-428D-A3ED-BCEB394E6677}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIdaze.SDK.Tests.Integration", "Apidaze.SDK.Tests.Integration\APIdaze.SDK.Tests.Integration.csproj", "{5C8021FB-208A-428D-A3ED-BCEB394E6677}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Apidaze.SDK.Tests.Integration
+namespace APIdaze.SDK.Tests.Integration
 {
     [TestClass]
     public class UnitTest1

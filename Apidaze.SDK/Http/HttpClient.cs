@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using RestSharp;
-
-namespace Apidaze.SDK.Http
+﻿namespace APIdaze.SDK.Http
 {
     /// <summary>
-    /// Base http client used to make Apidaze requests
+    ///     Base http client used to make Apidaze requests
     /// </summary>
-    public  class HttpClient 
+    public class HttpClient
     {
-       
     }
 }

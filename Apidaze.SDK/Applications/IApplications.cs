@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace Apidaze.SDK.Applications
+namespace APIdaze.SDK.Applications
 {
     public interface IApplications
     {
@@ -24,7 +22,7 @@ namespace Apidaze.SDK.Applications
          * @throws IOException
          * @throws HttpResponseException
          */
-        List<Application> GetApplicationsByApiKey(String apiKey);
+        List<Application> GetApplicationsByApiKey(string apiKey);
 
         /**
          * Returns an application details retrieved by api key.
@@ -33,6 +31,6 @@ namespace Apidaze.SDK.Applications
          * @throws IOException
          * @throws HttpResponseException
          */
-        List<Application> GetApplicationsByName(String name);
+        List<Application> GetApplicationsByName(string name);
     }
 }

@@ -1,14 +1,13 @@
-﻿using Newtonsoft.Json;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
+using Newtonsoft.Json;
 
-namespace Apidaze.SDK.Messages
+namespace APIdaze.SDK.Messages
 {
     public class PhoneNumber
     {
         private static readonly string NumberPattern = "@^([1-9][0-9]+)$";
 
-        [JsonProperty]
-        string number;
+        [JsonProperty] private string number;
 
         public PhoneNumber(string number)
         {
@@ -17,15 +16,10 @@ namespace Apidaze.SDK.Messages
 
         public static PhoneNumber IsNumber(string number)
         {
-            Regex regNumber = new Regex(NumberPattern);
+            var regNumber = new Regex(NumberPattern);
             if (regNumber.IsMatch(number))
-            {
                 return new PhoneNumber(number);
-            } else
-            {
-                //todo
-                return null;
-            }
+            return null;
         }
     }
 }

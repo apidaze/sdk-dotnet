@@ -1,12 +1,12 @@
-﻿namespace Apidaze.SDK.Exception
+﻿namespace APIdaze.SDK.Exception
 {
     public class ApidazeRestException : System.Exception
     {
-        public uint StatusCode { get; set; }
-
         public ApidazeRestException(string message, uint statusCode) : base(message)
         {
-            this.StatusCode = statusCode;
+            StatusCode = statusCode;
         }
+
+        public uint StatusCode { get; set; }
     }
 }
