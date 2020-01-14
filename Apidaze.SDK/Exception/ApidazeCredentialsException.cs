@@ -2,7 +2,7 @@
 {
     public class ApidazeCredentialsException : ApidazeRestException
     {
-        public ApidazeCredentialsException(string message, uint statuCode = 400) : base(message, statuCode)
+        public ApidazeCredentialsException(string message, uint statusCode = 400) : base(message, statusCode)
         {
         }
     }

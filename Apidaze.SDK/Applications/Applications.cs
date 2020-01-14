@@ -1,17 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using APIdaze.SDK.Base;
+﻿using APIdaze.SDK.Base;
 using RestSharp;
+using System;
+using System.Collections.Generic;
 
 namespace APIdaze.SDK.Applications
 {
     internal class Applications : BaseApiClient, IApplications
     {
-        private Credentials _credentials;
+        protected override string Resource => "/applications";
 
         public Applications(IRestClient client, Credentials credentials) : base(client, credentials)
         {
-            this._credentials = credentials;
         }
 
         public List<Application> GetApplications()

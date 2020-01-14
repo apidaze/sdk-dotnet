@@ -1,21 +1,19 @@
-﻿namespace APIdaze.SDK.Base
+﻿using System.Collections.Generic;
+
+namespace APIdaze.SDK.Base
 {
     internal interface IBaseApiClient
     {
-        TResponse FindAll<TRequest, TResponse>(TRequest request)
-            where TRequest : class
-            where TResponse : class, new();
+        T Create<T>(Dictionary<string, string> requestParams) where T : new();
 
-        TResponse FindById<TRequest, TResponse>(TRequest request)
-            where TRequest : class
-            where TResponse : class, new();
+        List<T> FindAll<T>() where T : new();
 
-        TResponse Update<TRequest, TResponse>(TRequest request)
-            where TRequest : class
-            where TResponse : class, new();
+        List<T> FindByParameter<T>(string name, string value) where T : new();
 
-        TResponse Delete<TRequest, TResponse>(TRequest request)
-            where TRequest : class
-            where TResponse : class, new();
+        T FindById<T>(string id) where T : new();
+
+        T Update<T>(string id, Dictionary<string, string> requestParams) where T : new();
+
+        void Delete<T>(string id) where T : new();
     }
 }

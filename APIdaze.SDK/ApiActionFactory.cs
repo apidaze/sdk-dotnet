@@ -1,7 +1,10 @@
 ﻿using APIdaze.SDK.Applications;
 using APIdaze.SDK.Base;
-using APIdaze.SDK.CredentialsValidator;
+using APIdaze.SDK.Calls;
+using APIdaze.SDK.CdrHttpHandlers;
+using APIdaze.SDK.Validates;
 using APIdaze.SDK.Messages;
+using RestSharp;
 
 namespace APIdaze.SDK
 {
@@ -16,19 +19,29 @@ namespace APIdaze.SDK
             _url = url;
         }
 
-        public IMessageAction CreateMessage()
+        public IMessage CreateMessageApi()
         {
-            return new MessageAction(_credentials, _url);
+            return new Message(new RestClient(_url), _credentials);
         }
 
         public ICredentialsValidator CreateCredentialsValidatorApi()
         {
-            return new CredentialsValidatorApi(_credentials, _url);
+            return new CredentialsValidator(new RestClient(_url), _credentials);
+        }
+
+        public ICalls CreateCallsApi()
+        {
+            return new Calls.Calls(new RestClient(_url), _credentials);
         }
 
         public IApplications CreateApplicationsApi()
         {
-            return new ApplicationClient(_credentials, _url);
+            return new Applications.Applications(new RestClient(_url), _credentials);
+        }
+
+        public ICdrHttpHandlers CreateCdrHttpHandlersApi()
+        {
+            return new CdrHttpHandlers.CdrHttpHandlers(new RestClient(_url), _credentials);
         }
     }
 }

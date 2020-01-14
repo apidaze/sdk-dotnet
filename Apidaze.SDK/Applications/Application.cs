@@ -1,6 +1,6 @@
-﻿using System;
-using APIdaze.SDK.Base;
+﻿using APIdaze.SDK.Base;
 using Newtonsoft.Json;
+using System;
 
 namespace APIdaze.SDK.Applications
 {

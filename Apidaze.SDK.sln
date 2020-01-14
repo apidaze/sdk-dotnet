@@ -7,7 +7,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIdaze.SDK", "Apidaze.SDK\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIdaze.SDK.Tests.Unit", "Apidaze.SDK.Tests.Unit\APIdaze.SDK.Tests.Unit.csproj", "{29205EBA-D45F-4D8B-89E9-1FF75C891DD2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIdaze.SDK.Tests.Integration", "Apidaze.SDK.Tests.Integration\APIdaze.SDK.Tests.Integration.csproj", "{5C8021FB-208A-428D-A3ED-BCEB394E6677}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIdaze.SDK.Tests.Integration", "APIdaze.SDK.Tests.Integration", "{1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CredentialsValidationExample", "APIdaze.SDK.Tests.Integration\CredentialsValidationExample\CredentialsValidationExample.csproj", "{CB1C00BE-6CA2-4191-8865-236932DD25C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageExample", "APIdaze.SDK.Tests.Integration\MessageExample\MessageExample.csproj", "{ED9129C4-9758-467D-A2CF-321C0737E983}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlaceCallExample", "APIdaze.SDK.Tests.Integration\PlaceCallExample\PlaceCallExample.csproj", "{B6CF4747-F308-4114-8BE1-15606F1DD09B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListCallsExample", "APIdaze.SDK.Tests.Integration\ListCallsExample\ListCallsExample.csproj", "{62CD74AE-0543-4757-8776-39ABE9789FEC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CallsAllInOneExample", "APIdaze.SDK.Tests.Integration\CallsAllInOneExample\CallsAllInOneExample.csproj", "{4F642881-DBE1-40E7-844F-6FAA31DA7285}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateCdrHttpHandlerExample", "APIdaze.SDK.Tests.Integration\CreateCdrHttpHandlerExample\CreateCdrHttpHandlerExample.csproj", "{BA3F5CAF-CAEB-49A9-97CE-F615CA3BA8E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteCdrHttpHandlerExample", "APIdaze.SDK.Tests.Integration\DeleteCdrHttpHandlerExample\DeleteCdrHttpHandlerExample.csproj", "{BAA6656F-3238-4371-A6CF-9EB582B99C34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListCdrHttpHandlersExample", "APIdaze.SDK.Tests.Integration\ListCdrHttpHandlersExample\ListCdrHttpHandlersExample.csproj", "{C487EEC2-82F2-442E-87B3-36D87CC90A77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,13 +39,51 @@ Global
 		{29205EBA-D45F-4D8B-89E9-1FF75C891DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29205EBA-D45F-4D8B-89E9-1FF75C891DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29205EBA-D45F-4D8B-89E9-1FF75C891DD2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C8021FB-208A-428D-A3ED-BCEB394E6677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C8021FB-208A-428D-A3ED-BCEB394E6677}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C8021FB-208A-428D-A3ED-BCEB394E6677}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C8021FB-208A-428D-A3ED-BCEB394E6677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB1C00BE-6CA2-4191-8865-236932DD25C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB1C00BE-6CA2-4191-8865-236932DD25C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB1C00BE-6CA2-4191-8865-236932DD25C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB1C00BE-6CA2-4191-8865-236932DD25C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED9129C4-9758-467D-A2CF-321C0737E983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED9129C4-9758-467D-A2CF-321C0737E983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED9129C4-9758-467D-A2CF-321C0737E983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED9129C4-9758-467D-A2CF-321C0737E983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6CF4747-F308-4114-8BE1-15606F1DD09B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6CF4747-F308-4114-8BE1-15606F1DD09B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6CF4747-F308-4114-8BE1-15606F1DD09B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6CF4747-F308-4114-8BE1-15606F1DD09B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62CD74AE-0543-4757-8776-39ABE9789FEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62CD74AE-0543-4757-8776-39ABE9789FEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62CD74AE-0543-4757-8776-39ABE9789FEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62CD74AE-0543-4757-8776-39ABE9789FEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F642881-DBE1-40E7-844F-6FAA31DA7285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F642881-DBE1-40E7-844F-6FAA31DA7285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F642881-DBE1-40E7-844F-6FAA31DA7285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F642881-DBE1-40E7-844F-6FAA31DA7285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA3F5CAF-CAEB-49A9-97CE-F615CA3BA8E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA3F5CAF-CAEB-49A9-97CE-F615CA3BA8E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA3F5CAF-CAEB-49A9-97CE-F615CA3BA8E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA3F5CAF-CAEB-49A9-97CE-F615CA3BA8E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAA6656F-3238-4371-A6CF-9EB582B99C34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAA6656F-3238-4371-A6CF-9EB582B99C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAA6656F-3238-4371-A6CF-9EB582B99C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAA6656F-3238-4371-A6CF-9EB582B99C34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C487EEC2-82F2-442E-87B3-36D87CC90A77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C487EEC2-82F2-442E-87B3-36D87CC90A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C487EEC2-82F2-442E-87B3-36D87CC90A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C487EEC2-82F2-442E-87B3-36D87CC90A77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CB1C00BE-6CA2-4191-8865-236932DD25C5} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
+		{ED9129C4-9758-467D-A2CF-321C0737E983} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
+		{B6CF4747-F308-4114-8BE1-15606F1DD09B} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
+		{62CD74AE-0543-4757-8776-39ABE9789FEC} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
+		{4F642881-DBE1-40E7-844F-6FAA31DA7285} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
+		{BA3F5CAF-CAEB-49A9-97CE-F615CA3BA8E2} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
+		{BAA6656F-3238-4371-A6CF-9EB582B99C34} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
+		{C487EEC2-82F2-442E-87B3-36D87CC90A77} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F57FD98-5A15-49F3-923C-967E49E1A665}
