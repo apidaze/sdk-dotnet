@@ -6,9 +6,9 @@ namespace APIdaze.SDK.Base
     {
         T Create<T>(Dictionary<string, string> requestParams) where T : new();
 
-        List<T> FindAll<T>() where T : new();
+        IEnumerable<T> FindAll<T>() where T : new();
 
-        List<T> FindByParameter<T>(string name, string value) where T : new();
+        IEnumerable<T> FindByParameter<T>(string name, string value) where T : new();
 
         T FindById<T>(string id) where T : new();
 

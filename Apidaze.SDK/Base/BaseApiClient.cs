@@ -46,18 +46,18 @@ namespace APIdaze.SDK.Base
             return deserializedResponse;
         }
 
-        public List<T> FindAll<T>()
+        public IEnumerable<T> FindAll<T>()
             where T : new()
         {
             var restRequest = AuthenticateRequest();
             var response = Client.Execute<List<T>>(restRequest);
             EnsureSuccessResponse(response);
 
-            var deserializedResponse = JsonConvert.DeserializeObject<List<T>>(response.Content);
+            var deserializedResponse = JsonConvert.DeserializeObject<IEnumerable<T>>(response.Content);
             return deserializedResponse;
         }
 
-        public List<T> FindByParameter<T>(string name, string value) where T : new()
+        public IEnumerable<T> FindByParameter<T>(string name, string value) where T : new()
         {
             throw new NotImplementedException();
         }
@@ -81,13 +81,14 @@ namespace APIdaze.SDK.Base
         public T Update<T>(string id, Dictionary<string, string> requestParams) where T : new()
         {
             var restRequest = AuthenticateRequest();
+            restRequest.Resource += "/{id}";
             restRequest.Method = Method.PUT;
+            restRequest.AddUrlSegment("id", id);
 
             foreach (var nameValueParameter in requestParams)
             {
                 restRequest.AddParameter(nameValueParameter.Key, nameValueParameter.Value);
             }
-            restRequest.AddParameter("uuid", id);
 
             var response = Client.Execute<T>(restRequest);
             EnsureSuccessResponse(response);
@@ -98,11 +99,11 @@ namespace APIdaze.SDK.Base
         public void Delete<T>(string id) where T : new()
         {
             var restRequest = AuthenticateRequest();
-            restRequest.Resource = Resource + "/{uuid}";
+            restRequest.Resource += "/{id}";
             restRequest.Method = Method.DELETE;
-            restRequest.AddUrlSegment("uuid", id);
+            restRequest.AddUrlSegment("id", id);
 
-            var response = Client.Execute(restRequest);
+            var response = Client.Execute<T>(restRequest);
             EnsureSuccessResponse(response);
         }
 

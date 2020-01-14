@@ -3,6 +3,7 @@ using System.IO;
 using APIdaze.SDK;
 using APIdaze.SDK.Base;
 using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 
 namespace CreateCdrHttpHandlerExample
 {
@@ -33,7 +34,7 @@ namespace CreateCdrHttpHandlerExample
 
                 // create CdrHttpHandler
                 var response = cdrHttpHandlersApi.CreateCdrHttpHandler(handlerName, new Uri(handlerUrl));
-                Console.WriteLine(response);
+                Console.WriteLine(JsonConvert.SerializeObject(response));
             }
              
             catch (InvalidOperationException e)

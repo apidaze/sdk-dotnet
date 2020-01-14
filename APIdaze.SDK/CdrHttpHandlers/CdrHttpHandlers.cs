@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using APIdaze.SDK.Base;
-using APIdaze.SDK.Calls;
-using Newtonsoft.Json;
+﻿using APIdaze.SDK.Base;
 using RestSharp;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace APIdaze.SDK.CdrHttpHandlers
 {
@@ -18,7 +16,7 @@ namespace APIdaze.SDK.CdrHttpHandlers
 
         public List<CdrHttpHandler> GetCdrHttpHandlers()
         {
-            return FindAll<CdrHttpHandler>();
+            return FindAll<CdrHttpHandler>().ToList();
         }
 
         public CdrHttpHandler CreateCdrHttpHandler(string name, Uri url)

@@ -4,7 +4,7 @@ using APIdaze.SDK;
 using APIdaze.SDK.Base;
 using Microsoft.Extensions.Configuration;
 
-namespace ListCdrHttpHandlersExample
+namespace UpdateCdrHttpHandlerExample
 {
     class Program
     {
@@ -23,19 +23,26 @@ namespace ListCdrHttpHandlersExample
             // initialize API factory
             var apiFactory = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret));
 
+            var handlerId = 111L;
+            var handlerName = "Some cool handler2";
+            var handlerUrl = "https://www.wp.com";
+
             try
             {
                 // initialize a CdrHttpHandler API
                 var cdrHttpHandlersApi = apiFactory.CreateCdrHttpHandlersApi();
 
-                // get CdrHttpHandler list
-                var responseList = cdrHttpHandlersApi.GetCdrHttpHandlers();
-                responseList.ForEach(x => Console.WriteLine("CdrHttpHandlers list: {0}", x));
-                
+                // create CdrHttpHandler
+                var result = cdrHttpHandlersApi.UpdateCdrHttpHandler(handlerId, handlerName, new Uri(handlerUrl));
+                Console.WriteLine("Updated CdrHttpHandler: {0}", result);
             }
             catch (InvalidOperationException e)
             {
                 Console.WriteLine("An error occurred during communicating with API", e);
+            }
+            catch (UriFormatException e)
+            {
+                Console.WriteLine("handlerUrl is invalid {0}", e.Message);
             }
         }
 

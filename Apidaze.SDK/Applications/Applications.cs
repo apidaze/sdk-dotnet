@@ -2,6 +2,8 @@
 using RestSharp;
 using System;
 using System.Collections.Generic;
+using System.Net;
+using RestSharp.Extensions;
 
 namespace APIdaze.SDK.Applications
 {

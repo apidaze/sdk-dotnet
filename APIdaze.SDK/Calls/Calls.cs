@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using APIdaze.SDK.Base;
 using APIdaze.SDK.Messages;
@@ -46,7 +47,7 @@ namespace APIdaze.SDK.Calls
         public List<Call> GetCalls()
         {
             // TODO sanity check
-            return FindAll<Call>();
+            return FindAll<Call>().ToList();
         }
 
         public Call GetCall(Guid id)

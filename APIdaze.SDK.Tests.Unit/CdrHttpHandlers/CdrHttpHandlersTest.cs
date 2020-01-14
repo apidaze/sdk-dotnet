@@ -119,22 +119,22 @@ namespace APIdaze.SDK.Tests.Unit.CdrHttpHandlers
         {
             // Arrange
             const int id = 123;
-            MockIRestClient.Setup(rc => rc.Execute(It.IsAny<RestRequest>())).Returns(
-                new RestResponse { StatusCode = HttpStatusCode.NoContent });
+            MockIRestClient.Setup(rc => rc.Execute<CdrHttpHandler>(It.IsAny<RestRequest>())).Returns(
+                new RestResponse<CdrHttpHandler> { StatusCode = HttpStatusCode.NoContent });
 
             // Act
             _cdrHttpHandler.DeleteCdrHttpHandler(id);
 
             // Assert
-            MockIRestClient.Verify(x => x.Execute(It.IsAny<RestRequest>()), Times.Once);
+            MockIRestClient.Verify(x => x.Execute<CdrHttpHandler>(It.IsAny<RestRequest>()), Times.Once);
         }
 
         private static List<CdrHttpHandler> BuildCdrHttpHandlers()
         {
             return new List<CdrHttpHandler>
             {
-                new CdrHttpHandler { Name = "CdrHttpHandler - 0", Uri = new Uri("http://url-" + 0 + ".com") },
-                new CdrHttpHandler { Name = "CdrHttpHandler - 1", Uri = new Uri("http://url-" + 1 + ".com") }
+                new CdrHttpHandler { Name = "CdrHttpHandler - 0", Uri = new Uri("http://url-" + 0 + ".com"), Format = Format.Xml},
+                new CdrHttpHandler { Name = "CdrHttpHandler - 1", Uri = new Uri("http://url-" + 1 + ".com"), Format = Format.Json}
             };
         }
     }

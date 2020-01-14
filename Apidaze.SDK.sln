@@ -19,11 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListCallsExample", "APIdaze
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CallsAllInOneExample", "APIdaze.SDK.Tests.Integration\CallsAllInOneExample\CallsAllInOneExample.csproj", "{4F642881-DBE1-40E7-844F-6FAA31DA7285}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateCdrHttpHandlerExample", "APIdaze.SDK.Tests.Integration\CreateCdrHttpHandlerExample\CreateCdrHttpHandlerExample.csproj", "{BA3F5CAF-CAEB-49A9-97CE-F615CA3BA8E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreateCdrHttpHandlerExample", "APIdaze.SDK.Tests.Integration\CreateCdrHttpHandlerExample\CreateCdrHttpHandlerExample.csproj", "{BA3F5CAF-CAEB-49A9-97CE-F615CA3BA8E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteCdrHttpHandlerExample", "APIdaze.SDK.Tests.Integration\DeleteCdrHttpHandlerExample\DeleteCdrHttpHandlerExample.csproj", "{BAA6656F-3238-4371-A6CF-9EB582B99C34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListCdrHttpHandlersExample", "APIdaze.SDK.Tests.Integration\ListCdrHttpHandlersExample\ListCdrHttpHandlersExample.csproj", "{C487EEC2-82F2-442E-87B3-36D87CC90A77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListCdrHttpHandlersExample", "APIdaze.SDK.Tests.Integration\ListCdrHttpHandlersExample\ListCdrHttpHandlersExample.csproj", "{C487EEC2-82F2-442E-87B3-36D87CC90A77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateCdrHttpHandlerExample", "Apidaze.SDK.Tests.Integration\UpdateCdrHttpHandlerExample\UpdateCdrHttpHandlerExample.csproj", "{6E63B458-D2F5-40A6-B9E0-32EE1E81F6A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,14 +63,14 @@ Global
 		{BA3F5CAF-CAEB-49A9-97CE-F615CA3BA8E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA3F5CAF-CAEB-49A9-97CE-F615CA3BA8E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA3F5CAF-CAEB-49A9-97CE-F615CA3BA8E2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BAA6656F-3238-4371-A6CF-9EB582B99C34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BAA6656F-3238-4371-A6CF-9EB582B99C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BAA6656F-3238-4371-A6CF-9EB582B99C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BAA6656F-3238-4371-A6CF-9EB582B99C34}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C487EEC2-82F2-442E-87B3-36D87CC90A77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C487EEC2-82F2-442E-87B3-36D87CC90A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C487EEC2-82F2-442E-87B3-36D87CC90A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C487EEC2-82F2-442E-87B3-36D87CC90A77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E63B458-D2F5-40A6-B9E0-32EE1E81F6A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E63B458-D2F5-40A6-B9E0-32EE1E81F6A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E63B458-D2F5-40A6-B9E0-32EE1E81F6A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E63B458-D2F5-40A6-B9E0-32EE1E81F6A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,8 +82,8 @@ Global
 		{62CD74AE-0543-4757-8776-39ABE9789FEC} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
 		{4F642881-DBE1-40E7-844F-6FAA31DA7285} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
 		{BA3F5CAF-CAEB-49A9-97CE-F615CA3BA8E2} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
-		{BAA6656F-3238-4371-A6CF-9EB582B99C34} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
 		{C487EEC2-82F2-442E-87B3-36D87CC90A77} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
+		{6E63B458-D2F5-40A6-B9E0-32EE1E81F6A2} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F57FD98-5A15-49F3-923C-967E49E1A665}
