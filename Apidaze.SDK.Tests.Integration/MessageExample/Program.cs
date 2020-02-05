@@ -25,7 +25,7 @@ namespace MessageExample
             // initialize API factory
             var apiFactory = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret));
 
-            var from = "14129274924";
+            var from = "14125423968";
             var to = "4850916910";
             var messageBody = "Have a nice day!";
 

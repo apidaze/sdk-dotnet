@@ -25,10 +25,10 @@ namespace UpdateExternalScriptUrl
             var apiFactory = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret));
 
             // id of script to be fetched
-            var id = 1589L;
+            var id = 1801L;
 
             // new url
-            var newScriptUrl = "http://8a66b0b1.eu.ngrok.io/";
+            var newScriptUrl = "http://c89e3bf5.ngrok.io";
 
             try
             {
