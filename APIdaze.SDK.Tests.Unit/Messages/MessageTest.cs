@@ -1,12 +1,12 @@
-﻿using APIdaze.SDK.Messages;
+﻿using Apidaze.SDK.Messages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using RestSharp;
 using System;
 using System.Net;
-using static APIdaze.SDK.Tests.Unit.TestUtil;
+using static Apidaze.SDK.Tests.Unit.TestUtil;
 
-namespace APIdaze.SDK.Tests.Unit.Messages
+namespace Apidaze.SDK.Tests.Unit.Messages
 {
     [TestClass]
     public class MessageTest : BaseTest

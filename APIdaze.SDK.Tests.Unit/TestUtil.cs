@@ -1,7 +1,7 @@
-﻿using APIdaze.SDK.Base;
+﻿using Apidaze.SDK.Base;
 
 
-namespace APIdaze.SDK.Tests.Unit
+namespace Apidaze.SDK.Tests.Unit
 {
     public class TestUtil
     {

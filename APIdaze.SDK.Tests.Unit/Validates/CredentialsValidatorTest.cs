@@ -3,12 +3,12 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using RestSharp;
 using System.Net;
-using APIdaze.SDK.Messages;
-using APIdaze.SDK.Validates;
-using static APIdaze.SDK.Tests.Unit.TestUtil;
+using Apidaze.SDK.Messages;
+using Apidaze.SDK.Validates;
+using static Apidaze.SDK.Tests.Unit.TestUtil;
 
 
-namespace APIdaze.SDK.Tests.Unit.Validates
+namespace Apidaze.SDK.Tests.Unit.Validates
 {
     [TestClass]
     public class CredentialsValidatorTest : BaseTest

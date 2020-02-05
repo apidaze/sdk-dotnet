@@ -1,5 +1,5 @@
-﻿using APIdaze.SDK.Calls;
-using APIdaze.SDK.Messages;
+﻿using Apidaze.SDK.Calls;
+using Apidaze.SDK.Messages;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
@@ -9,9 +9,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using static APIdaze.SDK.Tests.Unit.TestUtil;
+using static Apidaze.SDK.Tests.Unit.TestUtil;
 
-namespace APIdaze.SDK.Tests.Unit.Calls
+namespace Apidaze.SDK.Tests.Unit.Calls
 {
     [TestClass]
     public class CallsTests : BaseTest

@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using APIdaze.SDK.CdrHttpHandlers;
+using Apidaze.SDK.CdrHttpHandlers;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Newtonsoft.Json;
 using RestSharp;
-using static APIdaze.SDK.Tests.Unit.TestUtil;
-using CdrHttpHandlersAlias = APIdaze.SDK.CdrHttpHandlers.CdrHttpHandlers;
+using static Apidaze.SDK.Tests.Unit.TestUtil;
+using CdrHttpHandlersAlias = Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers;
 
 
-namespace APIdaze.SDK.Tests.Unit.CdrHttpHandlers
+namespace Apidaze.SDK.Tests.Unit.CdrHttpHandlers
 {
     [TestClass]
     public class CdrHttpHandlersTest : BaseTest

@@ -1,4 +1,4 @@
-﻿using APIdaze.SDK.Applications;
+﻿using Apidaze.SDK.Applications;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
@@ -8,10 +8,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using static APIdaze.SDK.Tests.Unit.TestUtil;
-using ApplicationClient = APIdaze.SDK.Applications.Applications;
+using static Apidaze.SDK.Tests.Unit.TestUtil;
+using ApplicationClient = Apidaze.SDK.Applications.Applications;
 
-namespace APIdaze.SDK.Tests.Unit.Applications
+namespace Apidaze.SDK.Tests.Unit.Applications
 {
     [TestClass]
 

@@ -4,16 +4,16 @@ using System.IO;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using APIdaze.SDK.Messages;
+using Apidaze.SDK.Messages;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Newtonsoft.Json;
 using RestSharp;
 using RestSharp.Extensions;
-using static APIdaze.SDK.Tests.Unit.TestUtil;
+using static Apidaze.SDK.Tests.Unit.TestUtil;
 
-namespace APIdaze.SDK.Tests.Unit.Recordings
+namespace Apidaze.SDK.Tests.Unit.Recordings
 {
     [TestClass]
     public class RecordingsTests : BaseTest

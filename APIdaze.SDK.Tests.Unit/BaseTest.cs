@@ -2,7 +2,7 @@
 using Moq;
 using RestSharp;
 
-namespace APIdaze.SDK.Tests.Unit
+namespace Apidaze.SDK.Tests.Unit
 {
     // MethodName_StateUnderTest_ExpectedBehavior
     [TestClass]

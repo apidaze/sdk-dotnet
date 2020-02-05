@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using APIdaze.SDK.Calls;
+using Apidaze.SDK.Calls;
 
-namespace APIdaze.SDK.Tests.Unit.Calls
+namespace Apidaze.SDK.Tests.Unit.Calls
 {
     public class CallBuilder
     {

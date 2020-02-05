@@ -1,4 +1,4 @@
-﻿using APIdaze.SDK.ExternalScripts;
+﻿using Apidaze.SDK.ExternalScripts;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
@@ -8,9 +8,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using static APIdaze.SDK.Tests.Unit.TestUtil;
+using static Apidaze.SDK.Tests.Unit.TestUtil;
 
-namespace APIdaze.SDK.Tests.Unit.ExternalScripts
+namespace Apidaze.SDK.Tests.Unit.ExternalScripts
 {
     [TestClass]
     public class ExternalScriptsTest : BaseTest
