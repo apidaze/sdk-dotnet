@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <AssemblyName>APIdaze.SDK</AssemblyName>
-    <RootNamespace>APIdaze.SDK</RootNamespace>
+    <AssemblyName>Apidaze.SDK</AssemblyName>
+    <RootNamespace>Apidaze.SDK</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

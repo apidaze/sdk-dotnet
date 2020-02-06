@@ -1,4 +1,4 @@
-﻿namespace APIdaze.SDK.Exception
+﻿namespace Apidaze.SDK.Exception
 {
     public class ApidazeRestException : System.Exception
     {

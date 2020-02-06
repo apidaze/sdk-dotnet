@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace APIdaze.SDK.Base
+namespace Apidaze.SDK.Base
 {
     internal interface IBaseApiClient
     {

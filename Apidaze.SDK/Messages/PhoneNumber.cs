@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace APIdaze.SDK.Messages
+namespace Apidaze.SDK.Messages
 {
     public class PhoneNumber
     {
