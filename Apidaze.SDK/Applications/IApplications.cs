@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace APIdaze.SDK.Applications
+namespace Apidaze.SDK.Applications
 {
     public interface IApplications
     {

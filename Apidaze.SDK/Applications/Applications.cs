@@ -1,10 +1,10 @@
-﻿using APIdaze.SDK.Base;
+﻿using Apidaze.SDK.Base;
 using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace APIdaze.SDK.Applications
+namespace Apidaze.SDK.Applications
 {
     public class Applications : BaseApiClient, IApplications
     {

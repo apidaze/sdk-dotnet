@@ -1,13 +1,13 @@
 ﻿using Microsoft.Extensions.Configuration;
 using System;
 using System.IO;
-using APIdaze.SDK;
-using APIdaze.SDK.Base;
-using APIdaze.SDK.Calls;
-using APIdaze.SDK.Exception;
-using APIdaze.SDK.Messages;
+using Apidaze.SDK;
+using Apidaze.SDK.Base;
+using Apidaze.SDK.Calls;
+using Apidaze.SDK.Messages;
+using Apidaze.SDK.Exception;
 using Microsoft.VisualBasic;
-using CallType = APIdaze.SDK.Calls.CallType;
+using CallType = Apidaze.SDK.Calls.CallType;
 
 namespace PlaceCallExample
 {
