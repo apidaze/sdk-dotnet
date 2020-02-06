@@ -33,9 +33,6 @@ namespace Apidaze.SDK.Recordings
         {
             var restRequest = DownloadRequest(sourceFileName);
             var response = await Client.ExecuteTaskAsync(restRequest);
-
-            if (response.StatusCode != HttpStatusCode.OK) throw new InvalidOperationException(response.ErrorMessage);
-
             return SaveFileToFolder(sourceFileName, target, response);
         }
 
@@ -43,9 +40,12 @@ namespace Apidaze.SDK.Recordings
         {
             var restRequest = DownloadRequest(sourceFileName);
             var response = Client.Execute(restRequest);
-            if (response.StatusCode != HttpStatusCode.OK) throw new InvalidOperationException(response.ErrorMessage);
-
             return SaveFileToFolder(sourceFileName, target, response);
+        }
+
+        private static void CheckStatusCode(IRestResponse response)
+        {
+            if (response.StatusCode != HttpStatusCode.OK) throw new InvalidOperationException(response.ErrorMessage);
         }
 
         public void DeleteRecording(string fileName)
@@ -64,6 +64,7 @@ namespace Apidaze.SDK.Recordings
 
         private static FileInfo SaveFileToFolder(string sourceFileName, string target, IRestResponse response)
         {
+            CheckStatusCode(response);
             var targetDir = Path.GetDirectoryName(target);
             var fileName = Path.GetFileName(target);
             if (string.IsNullOrEmpty(fileName)) fileName = sourceFileName;
