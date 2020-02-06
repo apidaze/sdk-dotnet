@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Threading.Tasks;
-using APIdaze.SDK;
-using APIdaze.SDK.Base;
+using Apidaze.SDK;
+using Apidaze.SDK.Base;
 using Microsoft.Extensions.Configuration;
 
 namespace DownloadRecordingToFileAsyncExample
