@@ -1,4 +1,4 @@
-﻿namespace APIdaze.SDK.CdrHttpHandlers
+﻿namespace Apidaze.SDK.CdrHttpHandlers
 {
     public enum Format
     {

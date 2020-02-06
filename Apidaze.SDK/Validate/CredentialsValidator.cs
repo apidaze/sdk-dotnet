@@ -1,8 +1,8 @@
 ﻿using System.Net;
-using APIdaze.SDK.Base;
+using Apidaze.SDK.Base;
 using RestSharp;
 
-namespace APIdaze.SDK.Validate
+namespace Apidaze.SDK.Validate
 {
     public class CredentialsValidator : BaseApiClient, ICredentialsValidator
     {

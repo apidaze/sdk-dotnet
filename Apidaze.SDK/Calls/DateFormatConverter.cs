@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Converters;
 
-namespace APIdaze.SDK.Calls
+namespace Apidaze.SDK.Calls
 {
     public class DateFormatConverter : IsoDateTimeConverter
     {

@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace APIdaze.SDK.ScriptBuilder
+namespace Apidaze.SDK.ScriptBuilder
 {
     public class Bind
     {

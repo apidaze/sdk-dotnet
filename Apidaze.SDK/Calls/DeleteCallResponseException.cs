@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace APIdaze.SDK.Calls
+namespace Apidaze.SDK.Calls
 {
     public class DeleteCallResponseException : SystemException
     {

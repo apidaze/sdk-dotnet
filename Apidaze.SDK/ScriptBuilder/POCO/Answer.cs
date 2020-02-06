@@ -1,4 +1,4 @@
-﻿namespace APIdaze.SDK.ScriptBuilder
+﻿namespace Apidaze.SDK.ScriptBuilder
 {
     public class Answer
     {

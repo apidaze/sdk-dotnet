@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
-using APIdaze.SDK.ScriptBuilder;
+using Apidaze.SDK.ScriptBuilder;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace APIdaze.SDK.Tests.Unit.ScriptBuilder
+namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
 {
     [TestClass]
     public class ApidazeScriptTests
