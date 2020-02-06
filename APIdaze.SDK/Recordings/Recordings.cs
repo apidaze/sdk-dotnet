@@ -29,14 +29,14 @@ namespace APIdaze.SDK.Recordings
             return new MemoryStream(response);
         }
 
-        public async Task DownloadRecodingToFileAsync(string sourceFileName, string target)
+        public async Task<FileInfo> DownloadRecodingToFileAsync(string sourceFileName, string target)
         {
             var restRequest = DownloadRequest(sourceFileName);
             var response = await Client.ExecuteTaskAsync(restRequest);
 
             if (response.StatusCode != HttpStatusCode.OK) throw new InvalidOperationException(response.ErrorMessage);
 
-            SaveFileToFolder(sourceFileName, target, response);
+            return SaveFileToFolder(sourceFileName, target, response);
         }
 
         public FileInfo DownloadRecordingToFile(string sourceFileName, string target)
