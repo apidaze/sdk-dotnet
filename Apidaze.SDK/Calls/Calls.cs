@@ -11,11 +11,9 @@ namespace Apidaze.SDK.Calls
 {
     public class Calls : BaseApiClient, ICalls
     {
-        public Calls(IRestClient client, Credentials credentials) : base(client, credentials)
-        {
-        }
-
         protected override string Resource => "/calls";
+
+        public Calls(IRestClient client, Credentials credentials) : base(client, credentials) { }
 
         public Guid CreateCall(PhoneNumber callerId, string origin, string destination, string callType)
         {
@@ -38,9 +36,7 @@ namespace Apidaze.SDK.Calls
             if (guidValue != null) return new Guid(guidValue);
 
             var messageFailure = deserializedResponse.Failure;
-            throw new CreateCallResponseException(string.IsNullOrEmpty(messageFailure)
-                ? "missing call id in the response body"
-                : messageFailure);
+            throw new CreateCallResponseException(string.IsNullOrEmpty(messageFailure) ? "missing call id in the response body" : messageFailure);
         }
 
         public List<Call> GetCalls()
@@ -51,14 +47,20 @@ namespace Apidaze.SDK.Calls
 
         public Call GetCall(Guid id)
         {
-            if (id == Guid.Empty) throw new ArgumentException("id must not be null");
+            if (id == Guid.Empty)
+            {
+                throw new ArgumentException("id must not be null");
+            }
 
             return FindById<Call>(id.ToString());
         }
 
         public void DeleteCall(Guid id)
         {
-            if (id == Guid.Empty) throw new ArgumentException("id must not be null");
+            if (id == Guid.Empty)
+            {
+                throw new ArgumentException("id must not be null");
+            }
 
             var restRequest = AuthenticateRequest();
             restRequest.Resource = Resource + "/{uuid}";
@@ -71,14 +73,18 @@ namespace Apidaze.SDK.Calls
             var deserializedResponse =
                 JsonConvert.DeserializeObject<ResponseCall>(response.Content);
             if (deserializedResponse.Failure != null)
+            {
                 throw new DeleteCallResponseException(deserializedResponse.Failure);
+            }
         }
 
         public class ResponseCall
         {
-            [JsonProperty("ok")] public string Ok { get; set; }
+            [JsonProperty("ok")]
+            public string Ok { get; set; }
 
-            [JsonProperty("failure")] public string Failure { get; set; }
+            [JsonProperty("failure")]
+            public string Failure { get; set; }
         }
     }
 }

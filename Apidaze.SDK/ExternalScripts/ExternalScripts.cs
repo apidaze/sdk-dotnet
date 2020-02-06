@@ -9,13 +9,12 @@ namespace Apidaze.SDK.ExternalScripts
 {
     public class ExternalScripts : BaseApiClient, IExternalScripts
     {
-        private readonly int MaxNameLength = 40;
+        protected override string Resource => "/externalscripts";
 
+        private readonly int MaxNameLength = 40;
         public ExternalScripts(IRestClient client, Credentials credentials) : base(client, credentials)
         {
         }
-
-        protected override string Resource => "/externalscripts";
 
         public List<ExternalScript> GetExternalScripts()
         {
@@ -32,9 +31,11 @@ namespace Apidaze.SDK.ExternalScripts
             if (string.IsNullOrEmpty(name)) throw new ArgumentException("origin must not be null or empty");
             if (url == null) throw new ArgumentException("destination must not be null or empty");
             if (name.Length > MaxNameLength)
+            {
                 throw new ArgumentException("name: maximum " + MaxNameLength + " characters long");
+            }
 
-            var requestBody = new Dictionary<string, string> {{"name", name}, {"url", url.ToString()}};
+            var requestBody = new Dictionary<string, string> { { "name", name }, { "url", url.ToString() } };
             return Update<ExternalScript>(id.ToString(), requestBody);
         }
 
@@ -42,7 +43,7 @@ namespace Apidaze.SDK.ExternalScripts
         {
             if (url == null) throw new ArgumentException("destination must not be null or empty");
 
-            var requestBody = new Dictionary<string, string> {{"url", url.ToString()}};
+            var requestBody = new Dictionary<string, string> { { "url", url.ToString() } };
 
             return Update<ExternalScript>(id.ToString(), requestBody);
         }

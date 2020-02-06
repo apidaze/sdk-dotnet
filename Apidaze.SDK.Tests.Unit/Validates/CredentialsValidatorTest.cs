@@ -4,7 +4,7 @@ using Moq;
 using RestSharp;
 using System.Net;
 using Apidaze.SDK.Messages;
-using Apidaze.SDK.Validate;
+using Apidaze.SDK.Validates;
 using static Apidaze.SDK.Tests.Unit.TestUtil;
 
 
