@@ -1,9 +1,8 @@
-﻿using System;
-using System.IO;
-using APIdaze.SDK;
-using APIdaze.SDK.Base;
+﻿using Apidaze.SDK;
+using Apidaze.SDK.Base;
 using Microsoft.Extensions.Configuration;
-using Newtonsoft.Json;
+using System;
+using System.IO;
 
 namespace GetApplicationActionExample
 {

@@ -3,7 +3,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <IsPackable>false</IsPackable>
     <FileUpgradeFlags>40</FileUpgradeFlags>
-    <UpgradeBackupLocation>C:\Users\bednarz\Desktop\apidaze\sdk-dotnet\Backup\Apidaze.SDK.Tests.Unit\</UpgradeBackupLocation>
+    <UpgradeBackupLocation>C:\Users\bednarz\Desktop\Apidaze\sdk-dotnet\Backup\Apidaze.SDK.Tests.Unit\</UpgradeBackupLocation>
     <OldToolsVersion>2.0</OldToolsVersion>
   </PropertyGroup>
   <ItemGroup>
@@ -61,7 +61,7 @@
     <PackageReference Include="Moq" Version="4.13.1" />
     <PackageReference Include="MSTest.TestAdapter" Version="1.3.2" />
     <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
-    <PackageReference Include="RestSharp" Version="106.6.10" />
+    <PackageReference Include="RestSharp" Version="106.10.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Apidaze.SDK\Apidaze.SDK.csproj" />

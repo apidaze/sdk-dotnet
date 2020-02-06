@@ -3,7 +3,7 @@ using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using APIdaze.SDK.Base;
+using Apidaze.SDK.Base;
 using RestSharp;
 
 namespace Apidaze.SDK.CdrHttpHandlers

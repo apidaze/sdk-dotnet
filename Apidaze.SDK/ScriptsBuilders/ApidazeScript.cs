@@ -1,4 +1,4 @@
-﻿using APIdaze.SDK.ScriptsBuilders.POCO;
+﻿using Apidaze.SDK.ScriptsBuilders.POCO;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace APIdaze.SDK.ScriptsBuilders
+namespace Apidaze.SDK.ScriptsBuilders
 {
     [XmlRoot(ElementName = "document")]
     public class ApidazeScript

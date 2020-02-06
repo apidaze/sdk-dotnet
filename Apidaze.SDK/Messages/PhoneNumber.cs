@@ -1,5 +1,5 @@
 ﻿using System.Text.RegularExpressions;
-using APIdaze.SDK.Exception;
+using Apidaze.SDK.Exception;
 
 namespace Apidaze.SDK.Messages
 {

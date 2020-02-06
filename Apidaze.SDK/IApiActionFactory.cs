@@ -9,7 +9,7 @@ using Apidaze.SDK.Recordings;
 /// <summary>
 ///  ApiActionFactory object that will create Apidaze API request objects on a per-application.
 /// </summary>
-namespace APIdaze.SDK
+namespace Apidaze.SDK
 {
     public interface IApiActionFactory
     {

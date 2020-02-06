@@ -1,4 +1,4 @@
-﻿namespace APIdaze.SDK.ScriptsBuilders
+﻿namespace Apidaze.SDK.ScriptsBuilders
 {
     public class Hangup
     {

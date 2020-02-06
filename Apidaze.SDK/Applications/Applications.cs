@@ -1,8 +1,8 @@
 ﻿using Apidaze.SDK.Base;
-using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using RestSharp;
 
 namespace Apidaze.SDK.Applications
 {

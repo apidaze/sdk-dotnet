@@ -1,5 +1,5 @@
-﻿using APIdaze.SDK.ScriptsBuilders;
-using APIdaze.SDK.ScriptsBuilders.POCO;
+﻿using Apidaze.SDK.ScriptsBuilders;
+using Apidaze.SDK.ScriptsBuilders.POCO;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -41,7 +41,7 @@ namespace IvrExample
         static readonly string STEP_1_PATH = "/step1.xml/";
         static readonly string STEP_2_PATH = "/step2.xml/";
         static readonly string STEP_3_PATH = "/step3.xml/";
-        static readonly string PLAYBACK_PATH = "/apidazeintro.wav/";
+        static readonly string PLAYBACK_PATH = "/Apidazeintro.wav/";
 
         /// <summary>
         /// This is the heart of the web server
@@ -149,7 +149,7 @@ namespace IvrExample
                     case "/step3.xml":
                         handled = GetStep3(context, response, handled);
                         break;
-                    case "/apidazeintro.wav":
+                    case "/Apidazeintro.wav":
                         handled = GetIntroWav(context, response, handled);
                         break;
                 }
@@ -302,7 +302,7 @@ namespace IvrExample
                     break;
                 case "GET":
                     response.ContentType = "audio/wav";
-                    var fileContent = ExampleUtil.GetFileContents("apidazeintro.wav");
+                    var fileContent = ExampleUtil.GetFileContents("Apidazeintro.wav");
                     response.ContentLength64 = fileContent.Length;
                     response.OutputStream.Write(fileContent, 0, fileContent.Length);
                     handled = true;

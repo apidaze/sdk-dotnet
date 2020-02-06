@@ -3,7 +3,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <FileUpgradeFlags>40</FileUpgradeFlags>
-    <UpgradeBackupLocation>C:\Users\bednarz\Desktop\apidaze\sdk-dotnet\Backup\APIdaze.SDK.Tests.Integration\ListCallsExample\</UpgradeBackupLocation>
+    <UpgradeBackupLocation>C:\Users\bednarz\Desktop\Apidaze\sdk-dotnet\Backup\Apidaze.SDK.Tests.Integration\ListCallsExample\</UpgradeBackupLocation>
     <OldToolsVersion>2.0</OldToolsVersion>
   </PropertyGroup>
   <ItemGroup>

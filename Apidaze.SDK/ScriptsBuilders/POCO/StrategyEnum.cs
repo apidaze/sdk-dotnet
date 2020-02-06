@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace APIdaze.SDK.ScriptsBuilders.POCO
+namespace Apidaze.SDK.ScriptsBuilders.POCO
 {
     public enum StrategyEnum
     {

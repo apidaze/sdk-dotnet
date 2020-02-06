@@ -4,7 +4,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apidaze.SDK", "Apidaze.SDK\Apidaze.SDK.csproj", "{6DED594D-D408-447E-A0DA-69B7F98634A1}"
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIdaze.SDK.Tests.Integration", "APIdaze.SDK.Tests.Integration", "{1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apidaze.SDK.Tests.Integration", "Apidaze.SDK.Tests.Integration", "{1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Calls", "Calls", "{4754B8F2-9B53-4464-ABC9-131EEEE8DA9E}"
 EndProject
@@ -22,11 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScriptsBuilders", "ScriptsB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{E6ADCF2A-1F28-4FCE-8C0C-7E59688E4CD5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIdaze.SDK", "Apidaze.SDK\APIdaze.SDK.csproj", "{6DED594D-D408-447E-A0DA-69B7F98634A1}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apidaze.SDK.Tests.Unit", "Apidaze.SDK.Tests.Unit\Apidaze.SDK.Tests.Unit.csproj", "{29205EBA-D45F-4D8B-89E9-1FF75C891DD2}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apidaze.SDK.Tests.Integration", "Apidaze.SDK.Tests.Integration", "{1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CredentialsValidationExample", "Apidaze.SDK.Tests.Integration\CredentialsValidationExample\CredentialsValidationExample.csproj", "{CB1C00BE-6CA2-4191-8865-236932DD25C5}"
 EndProject
@@ -66,14 +63,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IvrExample", "Apidaze.SDK.T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListApplications", "Apidaze.SDK.Tests.Integration\ListApplications\ListApplications.csproj", "{B25FAF67-E49B-4936-9BFF-F5B3DFC6391C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetExternalScript", "Apidaze.SDK.Tests.Integration\GetExternalScript\GetExternalScript.csproj", "{C8E35D43-5678-4B9E-9C9A-A60BDBAEA84A}"
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetApplicationActionExample", "Apidaze.SDK.Tests.Integration\GetApplicationActionExample\GetApplicationActionExample.csproj", "{467A8C7C-E8BF-4697-8817-2BAF430C617D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListExternalScripts", "Apidaze.SDK.Tests.Integration\ListExternalScripts\ListExternalScripts.csproj", "{A1B9E81F-E377-4184-BA5D-C7EE2939878D}"
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubApplicationExternalScriptsExample", "Apidaze.SDK.Tests.Integration\SubApplicationExternalScriptsExample\SubApplicationExternalScriptsExample.csproj", "{22B88E16-74BF-460E-B6CB-665F23520DA2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpdateExternalScriptUrl", "Apidaze.SDK.Tests.Integration\UpdateExternalScriptUrl\UpdateExternalScriptUrl.csproj", "{437E21DC-D5E6-4EBF-BA10-D935AF44A48D}"
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleScriptsExamle", "Apidaze.SDK.Tests.Integration\SimpleScriptsExamle\SimpleScriptsExamle.csproj", "{A7014A09-7599-4B06-948F-B47B7CEC6DB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleScriptsExamle", "Apidaze.SDK.Tests.Integration\SimpleScriptsExamle\SimpleScriptsExamle.csproj", "{A7014A09-7599-4B06-948F-B47B7CEC6DB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

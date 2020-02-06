@@ -1,24 +1,24 @@
-﻿using APIdaze.SDK.ScriptsBuilders;
-using APIdaze.SDK.ScriptsBuilders.POCO;
+﻿using Apidaze.SDK.ScriptsBuilders;
+using Apidaze.SDK.ScriptsBuilders.POCO;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
-using static APIdaze.SDK.Tests.Unit.TestUtil;
+using static Apidaze.SDK.Tests.Unit.TestUtil;
 
 
-namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
+namespace Apidaze.SDK.Tests.Unit.ScriptsBuilders
 {
 
     [TestClass]
     public class ApidazeScriptTest
     {
-        private ApidazeScript _apidazeScript;
+        private ApidazeScript _ApidazeScript;
 
         [TestInitialize]
         public void Startup()
         {
-            _apidazeScript = new ApidazeScript();
+            _ApidazeScript = new ApidazeScript();
         }
 
         [TestMethod]
@@ -26,11 +26,11 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
         {
             // Arrange
             var expectedOutput = GetFileContents("answer.xml");
-            _apidazeScript.AddNode(new Answer()).AddNode(Playback.FromFile("http://www.mydomain.com/welcome.wav")).AddNode(new Hangup());
+            _ApidazeScript.AddNode(new Answer()).AddNode(Playback.FromFile("http://www.mydomain.com/welcome.wav")).AddNode(new Hangup());
             var noFormatting = true;
 
             // Act
-            var result = _apidazeScript.ToXml(noFormatting, true);
+            var result = _ApidazeScript.ToXml(noFormatting, true);
 
             // Assert
             result.Should().BeEquivalentTo(expectedOutput);
@@ -41,11 +41,11 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
         {
             // Arrange
             var expectedOutput = GetFileContents("playback.xml");
-            _apidazeScript.AddNode(new Answer()).AddNode(Playback.FromFile("http://www.mydomain.com/welcome.wav")).AddNode(new Hangup());
+            _ApidazeScript.AddNode(new Answer()).AddNode(Playback.FromFile("http://www.mydomain.com/welcome.wav")).AddNode(new Hangup());
             var noFormatting = true;
 
             // Act
-            var result = _apidazeScript.ToXml(noFormatting, true);
+            var result = _ApidazeScript.ToXml(noFormatting, true);
 
             // Assert
             result.Should().BeEquivalentTo(expectedOutput);
@@ -56,14 +56,14 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
         {
             // Arrange
             var expectedOutput = GetFileContents("ringback.xml");
-            _apidazeScript.AddNode(new Answer())
+            _ApidazeScript.AddNode(new Answer())
                           .AddNode(Ringback.FromFile("http://www.mydomain.com/welcome.wav"))
                           .AddNode(new Dial { Sipaccount = "bob" })
                           .AddNode(new Hangup());
             var noFormatting = true;
 
             // Act
-            var result = _apidazeScript.ToXml(noFormatting, true);
+            var result = _ApidazeScript.ToXml(noFormatting, true);
 
             // Assert
             result.Should().BeEquivalentTo(expectedOutput);
@@ -74,12 +74,12 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
         {
             // Arrange
             var expectedOutput = GetFileContents("echo.xml");
-            _apidazeScript.AddNode(new Answer())
+            _ApidazeScript.AddNode(new Answer())
                 .AddNode(new Echo { Delay = 500 });
             var noFormatting = true;
 
             // Act
-            var result = _apidazeScript.ToXml(noFormatting, true);
+            var result = _ApidazeScript.ToXml(noFormatting, true);
 
             // Assert
             result.Should().BeEquivalentTo(expectedOutput);
@@ -90,11 +90,11 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
         {
             // Arrange
             var expectedOutput = GetFileContents("hangup.xml");
-            _apidazeScript.AddNode(new Hangup());
+            _ApidazeScript.AddNode(new Hangup());
             var noFormatting = true;
 
             // Act
-            var result = _apidazeScript.ToXml(noFormatting, true);
+            var result = _ApidazeScript.ToXml(noFormatting, true);
 
             // Assert
             result.Should().BeEquivalentTo(expectedOutput);
@@ -105,13 +105,13 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
         {
             // Arrange
             var expectedOutput = GetFileContents("intercept.xml");
-            _apidazeScript.AddNode(new Answer())
+            _ApidazeScript.AddNode(new Answer())
                 .AddNode(new Intercept { Uuid = new Guid("f28a3e29-dac4-462c-bf94-b1d518ddbe2d") })
                 .AddNode(new Hangup());
             var noFormatting = true;
 
             // Act
-            var result = _apidazeScript.ToXml(noFormatting, true);
+            var result = _ApidazeScript.ToXml(noFormatting, true);
 
             // Assert
             result.Should().BeEquivalentTo(expectedOutput);
@@ -122,7 +122,7 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
         {
             // Arrange
             var expectedOutput = GetFileContents("speak.xml").RemoveWhiteSpaces();
-            _apidazeScript.AddNode(new Answer())
+            _ApidazeScript.AddNode(new Answer())
                 .AddNode(new Speak
                 {
                     LangEnum = LangEnum.FRENCH_FRANCE,
@@ -133,7 +133,7 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
             var noFormatting = true;
 
             // Act
-            var result = _apidazeScript.ToXml(noFormatting, true).RemoveWhiteSpaces();
+            var result = _ApidazeScript.ToXml(noFormatting, true).RemoveWhiteSpaces();
 
             // Assert
             result.Should().BeEquivalentTo(expectedOutput);
@@ -144,7 +144,7 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
         {
             // Arrange
             var expectedOutput = GetFileContents("bind-with-speak.xml").RemoveWhiteSpaces();
-            _apidazeScript.AddNode(new Answer())
+            _ApidazeScript.AddNode(new Answer())
                 .AddNode(new Speak
                 {
                     InputTimeoutMillis = TimeSpan.FromSeconds(5).TotalMilliseconds,
@@ -159,7 +159,7 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
             var noFormatting = true;
 
             // Act
-            var result = _apidazeScript.ToXml(noFormatting, true).RemoveWhiteSpaces();
+            var result = _ApidazeScript.ToXml(noFormatting, true).RemoveWhiteSpaces();
 
             // Assert
             result.Should().BeEquivalentTo(expectedOutput);
@@ -170,7 +170,7 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
         {
             // Arrange
             var expectedOutput = GetFileContents("bind-with-playback.xml");
-            _apidazeScript.AddNode(new Answer())
+            _ApidazeScript.AddNode(new Answer())
                 .AddNode(new Playback()
                 {
                     InputTimeoutMillis = TimeSpan.FromSeconds(5).TotalMilliseconds,
@@ -184,7 +184,7 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
             var noFormatting = true;
 
             // Act
-            var result = _apidazeScript.ToXml(noFormatting, true);
+            var result = _ApidazeScript.ToXml(noFormatting, true);
 
             // Assert
             result.Should().BeEquivalentTo(expectedOutput);
@@ -195,7 +195,7 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
         {
             // Arrange
             var expectedOutput = GetFileContents("wait.xml");
-            _apidazeScript.AddNode(new Answer())
+            _ApidazeScript.AddNode(new Answer())
                 .AddNode(new Speak
                 {
                     LangEnum = LangEnum.FRENCH_FRANCE,
@@ -204,7 +204,7 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
             var noFormatting = true;
 
             // Act
-            var result = _apidazeScript.ToXml(noFormatting, true);
+            var result = _ApidazeScript.ToXml(noFormatting, true);
 
             // Assert
             result.Should().BeEquivalentTo(expectedOutput);
@@ -215,14 +215,14 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
         {
             // Arrange
             var expectedOutput = GetFileContents("conference.xml");
-            _apidazeScript.AddNode(new Speak
+            _ApidazeScript.AddNode(new Speak
             {
                 Text = "You will now be placed into the conference"
             }).AddNode(new Conference { Name = "my_meeting_room" });
             var noFormatting = true;
 
             // Act
-            var result = _apidazeScript.ToXml(noFormatting, true);
+            var result = _ApidazeScript.ToXml(noFormatting, true);
 
             // Assert
             result.Should().BeEquivalentTo(expectedOutput);
@@ -233,13 +233,13 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
         {
             // Arrange
             var expectedOutput = GetFileContents("record.xml");
-            _apidazeScript.AddNode(new Answer()).AddNode(Wait.SetDuration(2)).AddNode(
+            _ApidazeScript.AddNode(new Answer()).AddNode(Wait.SetDuration(2)).AddNode(
                 new Speak { LangEnum = LangEnum.ENGLISH_US, Text = "Please leave a message." }).AddNode(
                 new Record { Name = "example1" }).AddNode(Wait.SetDuration(60)).AddNode(new Hangup());
             var noFormatting = true;
 
             // Act
-            var result = _apidazeScript.ToXml(noFormatting, true);
+            var result = _ApidazeScript.ToXml(noFormatting, true);
 
             // Assert
             result.Should().BeEquivalentTo(expectedOutput);
@@ -250,13 +250,13 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
         {
             // Arrange
             var expectedOutput = GetFileContents("record-all-attributes.xml");
-            _apidazeScript.AddNode(new Answer()).AddNode(Wait.SetDuration(2)).AddNode(
+            _ApidazeScript.AddNode(new Answer()).AddNode(Wait.SetDuration(2)).AddNode(
                 new Speak { LangEnum = LangEnum.ENGLISH_US, Text = "Please leave a message." }).AddNode(
                 new Record { Name = "example1", OnAnswered = true, ALeg = false, BLeg = false }).AddNode(Wait.SetDuration(60)).AddNode(new Hangup());
             var noFormatting = true;
 
             // Act
-            var result = _apidazeScript.ToXml(noFormatting, true);
+            var result = _ApidazeScript.ToXml(noFormatting, true);
 
             // Assert
             result.Should().BeEquivalentTo(expectedOutput);
@@ -268,11 +268,11 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
             // Arrange
             var expectedOutput = GetFileContents("dial-number.xml").RemoveWhiteSpaces();
             var dial = new Dial() { Number = "1234567890" };
-            _apidazeScript.AddNode(dial).AddNode(new Hangup());
+            _ApidazeScript.AddNode(dial).AddNode(new Hangup());
             var noFormatting = false;
 
             // Act
-            var result = _apidazeScript.ToXml(noFormatting, true);
+            var result = _ApidazeScript.ToXml(noFormatting, true);
 
             // Assert
             result.Should().BeEquivalentTo(expectedOutput);
@@ -284,11 +284,11 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
             // Arrange
             var expectedOutput = GetFileContents("dial-sipaccount.xml").RemoveWhiteSpaces();
             var dial = new Dial() { Sipaccount = "targetsipaccount" };
-            _apidazeScript.AddNode(dial).AddNode(new Hangup());
+            _ApidazeScript.AddNode(dial).AddNode(new Hangup());
             var noFormatting = false;
 
             // Act
-            var result = _apidazeScript.ToXml(noFormatting, true);
+            var result = _ApidazeScript.ToXml(noFormatting, true);
 
             // Assert
             result.Should().BeEquivalentTo(expectedOutput);
@@ -300,11 +300,11 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
             // Arrange
             var expectedOutput = GetFileContents("dial-sipuri.xml").RemoveWhiteSpaces();
             var dial = new Dial() { SipUri = "phone_number@anysipdomain.com" };
-            _apidazeScript.AddNode(dial).AddNode(new Hangup());
+            _ApidazeScript.AddNode(dial).AddNode(new Hangup());
             var noFormatting = false;
 
             // Act
-            var result = _apidazeScript.ToXml(noFormatting, true);
+            var result = _ApidazeScript.ToXml(noFormatting, true);
 
             // Assert
             result.Should().BeEquivalentTo(expectedOutput);
@@ -327,12 +327,12 @@ namespace APIdaze.SDK.Tests.Unit.ScriptsBuilders
                 Number = "1234567890",
                 Sipaccount = "targetsipaccount"
             };
-            _apidazeScript.AddNode(dial).AddNode(new Hangup());
+            _ApidazeScript.AddNode(dial).AddNode(new Hangup());
             var noFormatting = true;
 
 
             // Act
-            var result = _apidazeScript.ToXml(noFormatting, true).RemoveWhiteSpaces();
+            var result = _ApidazeScript.ToXml(noFormatting, true).RemoveWhiteSpaces();
 
             // Assert
             result.Should().BeEquivalentTo(expectedOutput);

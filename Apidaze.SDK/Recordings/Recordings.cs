@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
-using APIdaze.SDK.Base;
+using Apidaze.SDK.Base;
 using RestSharp;
 using RestSharp.Extensions;
 
