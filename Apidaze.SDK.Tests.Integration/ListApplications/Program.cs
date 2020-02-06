@@ -5,13 +5,14 @@ using APIdaze.SDK.Base;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 
-namespace UpdateExternalScriptUrl
+namespace ListApplications
 {
     class Program
     {
         static void Main(string[] args)
         {
             var config = BuildConfig();
+
             var apiKey = config["API_KEY"];
             var apiSecret = config["API_SECRET"];
 
@@ -21,31 +22,21 @@ namespace UpdateExternalScriptUrl
                 Environment.Exit(0);
             }
 
-            // initialize API factory
+            // initiate API factory
             var apiFactory = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret));
-
-            // id of script to be fetched
-            var id = 1801L;
-
-            // new url
-            var newScriptUrl = "http://c89e3bf5.ngrok.io";
 
             try
             {
-                // initialize external scripts api
-                var externalScriptsApi = apiFactory.CreateExternalScriptsApi();
+                // initialize applications API
+                var applicationsApi = apiFactory.CreateApplicationsApi();
 
-                // get an external script
-                var script = externalScriptsApi.UpdateExternalScriptUrl(id, new Uri(newScriptUrl));
-                Console.WriteLine("Updated {0}", JsonConvert.SerializeObject(script, Formatting.Indented));
+                // get applications
+                var response = applicationsApi.GetApplications();
+                response.ForEach(x => Console.WriteLine("Applications: {0}", JsonConvert.SerializeObject(x, Formatting.Indented)));
             }
             catch (InvalidOperationException e)
             {
                 Console.WriteLine("An error occurred during communicating with API, {0}", e.Message);
-            }
-            catch (UriFormatException e)
-            {
-                Console.WriteLine("newScriptUrl is invalid {0}", e.Message);
             }
         }
 
