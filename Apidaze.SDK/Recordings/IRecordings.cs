@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Apidaze.SDK.Recordings
@@ -12,7 +10,7 @@ namespace Apidaze.SDK.Recordings
 
         Stream DownloadRecording(string sourceFileName);
 
-        Task DownloadRecodingToFileAsync(string sourceFileName, string target);
+        Task<FileInfo> DownloadRecodingToFileAsync(string sourceFileName, string target);
 
         FileInfo DownloadRecordingToFile(string sourceFileName, string target);
 
