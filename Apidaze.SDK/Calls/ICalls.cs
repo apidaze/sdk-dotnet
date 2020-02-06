@@ -15,22 +15,5 @@ namespace Apidaze.SDK.Calls
         Call GetCall(Guid id);
 
         void DeleteCall(Guid id);
-
-    }
-
-    public class CallType
-    {
-        public static string NUMBER => "number";
-        public static string SIP_ACCOUNT => "sipaccount";
-    }
-
-    public class CreateCallResponseException : SystemException
-    {
-        public CreateCallResponseException(string message) : base(message) {}
-    }
-
-    public class DeleteCallResponseException : SystemException
-    {
-        public DeleteCallResponseException(string message) : base(message) {}
     }
 }
