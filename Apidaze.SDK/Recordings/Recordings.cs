@@ -29,7 +29,7 @@ namespace Apidaze.SDK.Recordings
             return new MemoryStream(response);
         }
 
-        public async Task<FileInfo> DownloadRecodingToFileAsync(string sourceFileName, string target)
+        public async Task<FileInfo> DownloadRecordingToFileAsync(string sourceFileName, string target)
         {
             var restRequest = DownloadRequest(sourceFileName);
             var response = await Client.ExecuteTaskAsync(restRequest);
