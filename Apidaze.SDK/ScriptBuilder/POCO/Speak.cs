@@ -29,12 +29,12 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
 
         public bool ShouldSerializeLangEnum()
         {
-            return LangEnum > 0;
+            return LangEnum != default;
         }
 
         public bool ShouldSerializeVoice()
         {
-            return Voice > 0;
+            return Voice != default;
         }
 
         public static Speak WithText(string text)

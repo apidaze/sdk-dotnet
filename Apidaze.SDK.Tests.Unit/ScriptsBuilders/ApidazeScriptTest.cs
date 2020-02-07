@@ -27,7 +27,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             // Arrange
             var expectedOutput = GetFileContents("answer.xml");
             _ApidazeScript.AddNode(new Answer()).AddNode(Playback.FromFile("http://www.mydomain.com/welcome.wav")).AddNode(new Hangup());
-            var noFormatting = true;
+            const bool noFormatting = true;
 
             // Act
             var result = _ApidazeScript.ToXml(noFormatting, true);
@@ -42,7 +42,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             // Arrange
             var expectedOutput = GetFileContents("playback.xml");
             _ApidazeScript.AddNode(new Answer()).AddNode(Playback.FromFile("http://www.mydomain.com/welcome.wav")).AddNode(new Hangup());
-            var noFormatting = true;
+            const bool noFormatting = true;
 
             // Act
             var result = _ApidazeScript.ToXml(noFormatting, true);
@@ -60,7 +60,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
                           .AddNode(Ringback.FromFile("http://www.mydomain.com/welcome.wav"))
                           .AddNode(new Dial { Sipaccount = "bob" })
                           .AddNode(new Hangup());
-            var noFormatting = true;
+            const bool noFormatting = true;
 
             // Act
             var result = _ApidazeScript.ToXml(noFormatting, true);
@@ -76,7 +76,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             var expectedOutput = GetFileContents("echo.xml");
             _ApidazeScript.AddNode(new Answer())
                 .AddNode(new Echo { Delay = 500 });
-            var noFormatting = true;
+            const bool noFormatting = true;
 
             // Act
             var result = _ApidazeScript.ToXml(noFormatting, true);
@@ -91,7 +91,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             // Arrange
             var expectedOutput = GetFileContents("hangup.xml");
             _ApidazeScript.AddNode(new Hangup());
-            var noFormatting = true;
+            const bool noFormatting = true;
 
             // Act
             var result = _ApidazeScript.ToXml(noFormatting, true);
@@ -108,7 +108,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             _ApidazeScript.AddNode(new Answer())
                 .AddNode(new Intercept { Uuid = new Guid("f28a3e29-dac4-462c-bf94-b1d518ddbe2d") })
                 .AddNode(new Hangup());
-            var noFormatting = true;
+            const bool noFormatting = true;
 
             // Act
             var result = _ApidazeScript.ToXml(noFormatting, true);
@@ -130,7 +130,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
                     Text = "Bonjour et bienvenue chez APIDAIZE. Vous pouvez patienter, mais n'oubliez pas de raccrocher."
                 })
                 .AddNode(Wait.SetDuration(5));
-            var noFormatting = true;
+            const bool noFormatting = true;
 
             // Act
             var result = _ApidazeScript.ToXml(noFormatting, true).RemoveWhiteSpaces();
@@ -156,7 +156,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
                             new Bind("http://www.mydomain.com/get_digits.php?bind=other", "~[3-9]")}
 
                 });
-            var noFormatting = true;
+            const bool noFormatting = true;
 
             // Act
             var result = _ApidazeScript.ToXml(noFormatting, true).RemoveWhiteSpaces();
@@ -181,7 +181,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
                         new Bind("http://www.mydomain.com/get_digits.php?bind=other", "~[3-9]") }
 
                 });
-            var noFormatting = true;
+            const bool noFormatting = true;
 
             // Act
             var result = _ApidazeScript.ToXml(noFormatting, true);
@@ -201,7 +201,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
                     LangEnum = LangEnum.FRENCH_FRANCE,
                     Text = "Bonjour et bienvenue chez APIDAIZE. Vous pouvez patienter, mais n'oubliez pas de raccrocher."
                 }).AddNode(Wait.SetDuration(5));
-            var noFormatting = true;
+            const bool noFormatting = true;
 
             // Act
             var result = _ApidazeScript.ToXml(noFormatting, true);
@@ -219,7 +219,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             {
                 Text = "You will now be placed into the conference"
             }).AddNode(new Conference { Name = "my_meeting_room" });
-            var noFormatting = true;
+            const bool noFormatting = true;
 
             // Act
             var result = _ApidazeScript.ToXml(noFormatting, true);
@@ -236,7 +236,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             _ApidazeScript.AddNode(new Answer()).AddNode(Wait.SetDuration(2)).AddNode(
                 new Speak { LangEnum = LangEnum.ENGLISH_US, Text = "Please leave a message." }).AddNode(
                 new Record { Name = "example1" }).AddNode(Wait.SetDuration(60)).AddNode(new Hangup());
-            var noFormatting = true;
+            const bool noFormatting = true;
 
             // Act
             var result = _ApidazeScript.ToXml(noFormatting, true);
@@ -253,7 +253,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             _ApidazeScript.AddNode(new Answer()).AddNode(Wait.SetDuration(2)).AddNode(
                 new Speak { LangEnum = LangEnum.ENGLISH_US, Text = "Please leave a message." }).AddNode(
                 new Record { Name = "example1", OnAnswered = true, ALeg = false, BLeg = false }).AddNode(Wait.SetDuration(60)).AddNode(new Hangup());
-            var noFormatting = true;
+            const bool noFormatting = true;
 
             // Act
             var result = _ApidazeScript.ToXml(noFormatting, true);
@@ -269,7 +269,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             var expectedOutput = GetFileContents("dial-number.xml").RemoveWhiteSpaces();
             var dial = new Dial() { Number = "1234567890" };
             _ApidazeScript.AddNode(dial).AddNode(new Hangup());
-            var noFormatting = false;
+            const bool noFormatting = false;
 
             // Act
             var result = _ApidazeScript.ToXml(noFormatting, true);
@@ -285,7 +285,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             var expectedOutput = GetFileContents("dial-sipaccount.xml").RemoveWhiteSpaces();
             var dial = new Dial() { Sipaccount = "targetsipaccount" };
             _ApidazeScript.AddNode(dial).AddNode(new Hangup());
-            var noFormatting = false;
+            const bool noFormatting = false;
 
             // Act
             var result = _ApidazeScript.ToXml(noFormatting, true);
@@ -301,7 +301,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             var expectedOutput = GetFileContents("dial-sipuri.xml").RemoveWhiteSpaces();
             var dial = new Dial() { SipUri = "phone_number@anysipdomain.com" };
             _ApidazeScript.AddNode(dial).AddNode(new Hangup());
-            var noFormatting = false;
+            const bool noFormatting = false;
 
             // Act
             var result = _ApidazeScript.ToXml(noFormatting, true);
@@ -328,7 +328,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
                 Sipaccount = "targetsipaccount"
             };
             _ApidazeScript.AddNode(dial).AddNode(new Hangup());
-            var noFormatting = true;
+            const bool noFormatting = true;
 
 
             // Act

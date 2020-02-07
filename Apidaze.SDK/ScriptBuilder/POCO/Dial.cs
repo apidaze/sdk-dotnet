@@ -35,7 +35,7 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
 
         public bool ShouldSerializeStrategy()
         {
-            return Strategy != default(StrategyEnum);
+            return Strategy != default;
         }
     }
 }

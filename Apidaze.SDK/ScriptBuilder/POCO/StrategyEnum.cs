@@ -4,7 +4,8 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
 {
     public enum StrategyEnum
     {
-        [XmlEnum(Name = "simultaneous")] SIMULTANEOUS = 1,
-        [XmlEnum(Name = "sequence")] SEQUENCE = 2
+        [XmlEnum] NONE = 0,
+        [XmlEnum(Name = "simultaneous")] SIMULTANEOUS,
+        [XmlEnum(Name = "sequence")] SEQUENCE
     }
 }

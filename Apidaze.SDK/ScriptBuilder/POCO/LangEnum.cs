@@ -4,8 +4,9 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
 {
     public enum LangEnum
     {
-        [XmlEnum(Name = "en-US")] ENGLISH_US = 1,
-        [XmlEnum(Name = "da-DK")] DANISH, 
+        [XmlEnum] NONE = 0,
+        [XmlEnum(Name = "en-US")] ENGLISH_US,
+        [XmlEnum(Name = "da-DK")] DANISH,
         [XmlEnum(Name = "nl-NL")] DUTCH,
         [XmlEnum(Name = "it-IT")] ITALIAN,
         [XmlEnum(Name = "ja-JP")] JAPANESE,
