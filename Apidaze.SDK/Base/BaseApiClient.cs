@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using HttpStatusCode = System.Net.HttpStatusCode;
 
-namespace APIdaze.SDK.Base
+namespace Apidaze.SDK.Base
 {
     public abstract class BaseApiClient : IBaseApiClient
     {

@@ -1,6 +1,6 @@
-﻿using APIdaze.SDK;
-using APIdaze.SDK.Base;
-using APIdaze.SDK.Messages;
+﻿using Apidaze.SDK;
+using Apidaze.SDK.Base;
+using Apidaze.SDK.Messages;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.IO;
@@ -43,7 +43,7 @@ namespace MessageExample
                 Console.WriteLine("An error occurred during communicating with API", e);
                 throw;
             }
-            catch (InvalidPhoneNumberException e)
+            catch (APIdaze.SDK.Exception.InvalidPhoneNumberException e)
             {
                 Console.WriteLine("Phone number {0} is invalid", e.Message);
             }
