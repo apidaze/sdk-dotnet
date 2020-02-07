@@ -1,17 +1,17 @@
-﻿using Apidaze.SDK.Base;
+﻿using System;
+using Apidaze.SDK.Base;
 using Newtonsoft.Json;
 using RestSharp;
-using System;
 
 namespace Apidaze.SDK.Messages
 {
     public class Message : BaseApiClient, IMessage
     {
-        protected override string Resource => "/sms/send";
-
         public Message(IRestClient client, Credentials credentials) : base(client, credentials)
         {
         }
+
+        protected override string Resource => "/sms/send";
 
         public string SendTextMessage(PhoneNumber from, PhoneNumber to, string bodyMessage)
         {

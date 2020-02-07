@@ -2,7 +2,7 @@
 using Apidaze.SDK.Calls;
 using Apidaze.SDK.CdrHttpHandlers;
 using Apidaze.SDK.ExternalScripts;
-using Apidaze.SDK.Validates;
+using Apidaze.SDK.Validate;
 using Apidaze.SDK.Messages;
 using Apidaze.SDK.Recordings;
 

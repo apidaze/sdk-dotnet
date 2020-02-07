@@ -103,7 +103,7 @@ namespace Apidaze.SDK.Tests.Unit.Recordings
                   new RestResponse() { StatusCode = HttpStatusCode.OK, RawBytes = expectedStream.ReadAsBytes() });
 
             // Act
-            await _recordingsApi.DownloadRecodingToFileAsync(SOURCE_FILE_NAME, TARGET_DIR);
+            await _recordingsApi.DownloadRecordingToFileAsync(SOURCE_FILE_NAME, TARGET_DIR);
 
             // Assert
             MockIRestClient.Verify(x => x.ExecuteTaskAsync(It.IsAny<RestRequest>()), Times.Once);
@@ -121,7 +121,7 @@ namespace Apidaze.SDK.Tests.Unit.Recordings
                 new RestResponse() { StatusCode = HttpStatusCode.InternalServerError });
 
             // Act + Assert
-            await Assert.ThrowsExceptionAsync<InvalidOperationException>(() => _recordingsApi.DownloadRecodingToFileAsync(SOURCE_FILE_NAME, TARGET_DIR));
+            await Assert.ThrowsExceptionAsync<InvalidOperationException>(() => _recordingsApi.DownloadRecordingToFileAsync(SOURCE_FILE_NAME, TARGET_DIR));
         }
 
         [TestMethod]

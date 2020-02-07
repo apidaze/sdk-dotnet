@@ -1,16 +1,16 @@
-﻿using Apidaze.SDK.Base;
+﻿using System.Net;
+using Apidaze.SDK.Base;
 using RestSharp;
-using System.Net;
 
-namespace Apidaze.SDK.Validates
+namespace Apidaze.SDK.Validate
 {
     public class CredentialsValidator : BaseApiClient, ICredentialsValidator
     {
-        protected override string Resource => "/validates";
-
         public CredentialsValidator(IRestClient client, Credentials credentials) : base(client, credentials)
         {
         }
+
+        protected override string Resource => "/validates";
 
         public bool ValidateCredentials()
         {
