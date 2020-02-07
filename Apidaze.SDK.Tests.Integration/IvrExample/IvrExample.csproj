@@ -6,15 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="apidazeintro.wav" />
+    <None Remove="Apidazeintro.wav" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Apidaze.SDK\APIdaze.SDK.csproj" />
+    <EmbeddedResource Include="Apidazeintro.wav" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="apidazeintro.wav" />
+    <ProjectReference Include="..\..\Apidaze.SDK\Apidaze.SDK.csproj" />
   </ItemGroup>
 
 </Project>

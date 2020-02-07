@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace APIdaze.SDK.Applications
+namespace Apidaze.SDK.Applications
 {
     public class Application
     {
