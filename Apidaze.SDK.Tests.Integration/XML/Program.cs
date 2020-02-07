@@ -1,5 +1,5 @@
-﻿using Apidaze.SDK.ScriptsBuilders;
-using Apidaze.SDK.ScriptsBuilders.POCO;
+﻿using Apidaze.SDK.ScriptBuilder;
+using Apidaze.SDK.ScriptBuilder.POCO;
 using HttpMock;
 using System;
 using System.Net;

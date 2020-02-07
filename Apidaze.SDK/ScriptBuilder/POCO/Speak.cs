@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace Apidaze.SDK.ScriptsBuilders.POCO
+namespace Apidaze.SDK.ScriptBuilder.POCO
 {
     public class Speak
     {

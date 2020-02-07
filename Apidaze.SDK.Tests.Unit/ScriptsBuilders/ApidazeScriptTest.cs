@@ -1,5 +1,5 @@
-﻿using Apidaze.SDK.ScriptsBuilders;
-using Apidaze.SDK.ScriptsBuilders.POCO;
+﻿using Apidaze.SDK.ScriptBuilder;
+using Apidaze.SDK.ScriptBuilder.POCO;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using static Apidaze.SDK.Tests.Unit.TestUtil;
 
 
-namespace Apidaze.SDK.Tests.Unit.ScriptsBuilders
+namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
 {
 
     [TestClass]
