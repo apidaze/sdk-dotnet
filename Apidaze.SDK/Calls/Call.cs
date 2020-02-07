@@ -20,7 +20,7 @@ namespace Apidaze.SDK.Calls
 
         [JsonProperty("dest")] public string Destination { get; set; }
 
-        [JsonProperty("callstate")] public CallState CallState { get; set; }
+        [JsonProperty("callstate")] public string CallState { get; set; }
 
         [JsonProperty("call_uuid")] public string CallUuid { get; set; }
 
