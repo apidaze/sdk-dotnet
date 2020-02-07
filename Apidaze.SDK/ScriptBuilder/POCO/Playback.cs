@@ -18,7 +18,7 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
 
         public bool ShouldSerializeInputTimeoutMillis()
         {
-            return Math.Abs(InputTimeoutMillis) > 0; //Bool EXP
+            return Math.Abs(InputTimeoutMillis) > 0;
         }
     }
 }

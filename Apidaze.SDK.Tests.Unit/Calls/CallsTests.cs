@@ -191,7 +191,7 @@ namespace Apidaze.SDK.Tests.Unit.Calls
                     .WithCallerIdName("Outbound Call")
                     .WithCallerIdNumber("123456789")
                     .WithDestination("123456789")
-                    .WithCallState(CallState.ACTIVE)
+                    .WithCallState("ACTIVE")
                     .WithCallUuid("cd79587d-c71e-4bb0-9fdc-244bf9a95538")
                     .Build(),
                 new CallBuilder().CreateBuilder()
@@ -200,7 +200,7 @@ namespace Apidaze.SDK.Tests.Unit.Calls
                     .WithCallerIdName("Outbound Call")
                     .WithCallerIdNumber("987654321")
                     .WithDestination("987654321")
-                    .WithCallState(CallState.EARLY)
+                    .WithCallState("EARLY")
                     .WithCallUuid("fa67a5f3-bac4-48bb-ade7-efa19cd99938")
                     .Build()
             };

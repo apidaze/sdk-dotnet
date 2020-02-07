@@ -10,7 +10,6 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
 
         public Bind()
         {
-
         }
         public Bind(string action, string value)
         {

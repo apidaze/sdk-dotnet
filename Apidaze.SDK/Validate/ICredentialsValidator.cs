@@ -1,4 +1,4 @@
-﻿namespace Apidaze.SDK.Validates
+﻿namespace Apidaze.SDK.Validate
 {
     public interface ICredentialsValidator
     {

@@ -1,6 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using System;
 
 namespace Apidaze.SDK.CdrHttpHandlers
 {
@@ -17,25 +17,11 @@ namespace Apidaze.SDK.CdrHttpHandlers
         [JsonProperty("uri")] public Uri Url { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
-        [JsonProperty("call_leg")] public CallLeg CallLeg { get; set; }
+        [JsonProperty("call_leg")]
+        public CallLeg CallLeg { get; set; }
 
         [JsonProperty("created_at")] public DateTime CreatedAt { get; set; }
 
         [JsonProperty("updated_at")] public DateTime UpdatedAt { get; set; }
-    }
- 
-
-    public enum CallLeg
-    {
-        Inbound,
-        Outbound,
-        Xml
-    }
-
-    public enum Format
-    {
-        Regular,
-        Json,
-        Xml
     }
 }
