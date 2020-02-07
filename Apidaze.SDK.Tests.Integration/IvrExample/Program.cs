@@ -34,7 +34,7 @@ namespace IvrExample
         /// <summary>
         /// The port the HttpListener should listen on
         /// </summary>
-        private static readonly string SERVERL_URL = "http://c89e3bf5.ngrok.io";
+        private static readonly string SERVERL_URL = "http://01393488.ngrok.io";
         private static readonly string LOCALHOST = "http://localhost:8080";
 
         static readonly string INTRO = "/";
@@ -170,7 +170,6 @@ namespace IvrExample
             switch (context.Request.HttpMethod)
             {
                 case "GET":
-                    response.ContentType = "text/xml";
 
                     var script = ApidazeScript.Build();
 
@@ -191,30 +190,21 @@ namespace IvrExample
                           }
                       })
                   .ToXml();
-                    handled = WriteResponseStream(response, intro);
+                    var buffer = Encoding.UTF8.GetBytes(intro);
+                    handled = WriteResponse(response, "text/xml", buffer);
                     break;
             }
 
             return handled;
         }
 
-        private static bool WriteResponseStream(HttpListenerResponse response, string intro)
-        {
-            bool handled;
-            var buffer = Encoding.UTF8.GetBytes(intro);
-            response.ContentLength64 = buffer.Length;
-            response.OutputStream.Write(buffer, 0, buffer.Length);
-            handled = true;
-            return handled;
-        }
+
 
         private static bool GetStep1(HttpListenerContext context, HttpListenerResponse response, bool handled)
         {
             switch (context.Request.HttpMethod)
             {
                 case "GET":
-                    response.ContentType = "text/xml";
-
                     var step1 = ApidazeScript.Build()
                         .AddNode(Speak.WithText(
                             "Our text to speech leverages Google's cloud APIs to offer the best possible solution"))
@@ -238,7 +228,8 @@ namespace IvrExample
                         }).AddNode(Wait.SetDuration(2))
                         .ToXml();
 
-                    handled = WriteResponseStream(response, step1);
+                    var buffer = Encoding.UTF8.GetBytes(step1);
+                    handled = WriteResponse(response, "text/xml", buffer);
                     break;
             }
 
@@ -250,15 +241,30 @@ namespace IvrExample
             switch (context.Request.HttpMethod)
             {
                 case "GET":
-                    //Get the current settings
-                    response.ContentType = "text/xml";
-
                     var step2 = ApidazeScript.Build()
                         .AddNode(Speak.WithText("You will now be joined to an echo line."))
                         .AddNode(Echo.SetDuration(500))
                         .ToXml();
 
-                    handled = WriteResponseStream(response, step2);
+                    var buffer = Encoding.UTF8.GetBytes(step2);
+                    handled = WriteResponse(response, "text/xml", buffer);
+                    break;
+            }
+
+            return handled;
+        }
+        private static bool GetStep3(HttpListenerContext context, HttpListenerResponse response, bool handled)
+        {
+            switch (context.Request.HttpMethod)
+            {
+                case "GET":
+                    var step3 = ApidazeScript.Build()
+                        .AddNode(Speak.WithText("You will be entered into a conference call now.  You can initiate more calls to join participants or hangup to leave"))
+                        .AddNode(new Conference() { Name = "SDKTestConference" })
+                        .ToXml();
+
+                    var buffer = Encoding.UTF8.GetBytes(step3);
+                    handled = WriteResponse(response, "text/xml", buffer);
                     break;
             }
 
@@ -267,31 +273,11 @@ namespace IvrExample
 
         private static void ReturnExceptionResponse(HttpListenerResponse response, Exception e)
         {
-            response.StatusCode = 500;
-            response.ContentType = "text/plain";
-            var buffer = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(e));
-            response.ContentLength64 = buffer.Length;
-            response.OutputStream.Write(buffer, 0, buffer.Length);
+            var buffer = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(e)); 
+            WriteResponse(response, "text/plain", buffer, HttpStatusCode.InternalServerError);
+
         }
-        private static bool GetStep3(HttpListenerContext context, HttpListenerResponse response, bool handled)
-        {
-            switch (context.Request.HttpMethod)
-            {
-                case "GET":
-                    //Get the current settings
-                    response.ContentType = "text/xml";
-
-                    var step3 = ApidazeScript.Build()
-                        .AddNode(Speak.WithText("You will be entered into a conference call now.  You can initiate more calls to join participants or hangup to leave"))
-                        .AddNode(new Conference() { Name = "SDKTestConference" })
-                        .ToXml();
-
-                    handled = WriteResponseStream(response, step3);
-                    break;
-            }
-
-            return handled;
-        }
+     
         private static bool GetIntroWav(HttpListenerContext context, HttpListenerResponse response, bool handled)
         {
             switch (context.Request.HttpMethod)
@@ -301,15 +287,20 @@ namespace IvrExample
                     response.ContentLength64 = 0;
                     break;
                 case "GET":
-                    response.ContentType = "audio/wav";
                     var fileContent = ExampleUtil.GetFileContents("Apidazeintro.wav");
-                    response.ContentLength64 = fileContent.Length;
-                    response.OutputStream.Write(fileContent, 0, fileContent.Length);
-                    handled = true;
+                    handled = WriteResponse(response, "audio/wav", fileContent);
                     break;
             }
-
             return handled;
+        }
+
+        private static bool WriteResponse(HttpListenerResponse response, string contentType, byte[] buffer, HttpStatusCode statusCode = HttpStatusCode.OK)
+        {
+            response.ContentType = contentType;
+            response.StatusCode = (int)statusCode;
+            response.ContentLength64 = buffer.Length;
+            response.OutputStream.Write(buffer, 0, buffer.Length);
+            return true;
         }
     }
 
