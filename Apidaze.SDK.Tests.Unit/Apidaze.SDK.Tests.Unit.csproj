@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -9,6 +9,23 @@
   <ItemGroup>
     <None Remove="Recordings\TestData\empty.wav" />
     <None Remove="Recordings\TestData\mediafile.wav" />
+    <None Remove="ScriptBuilder\TestScripts\answer.xml" />
+    <None Remove="ScriptBuilder\TestScripts\bind-with-playback.xml" />
+    <None Remove="ScriptBuilder\TestScripts\bind-with-speak.xml" />
+    <None Remove="ScriptBuilder\TestScripts\conference.xml" />
+    <None Remove="ScriptBuilder\TestScripts\dial-all-in-one.xml" />
+    <None Remove="ScriptBuilder\TestScripts\dial-number.xml" />
+    <None Remove="ScriptBuilder\TestScripts\dial-sipaccount.xml" />
+    <None Remove="ScriptBuilder\TestScripts\dial-sipuri.xml" />
+    <None Remove="ScriptBuilder\TestScripts\echo.xml" />
+    <None Remove="ScriptBuilder\TestScripts\hangup.xml" />
+    <None Remove="ScriptBuilder\TestScripts\intercept.xml" />
+    <None Remove="ScriptBuilder\TestScripts\playback.xml" />
+    <None Remove="ScriptBuilder\TestScripts\record-all-attributes.xml" />
+    <None Remove="ScriptBuilder\TestScripts\record.xml" />
+    <None Remove="ScriptBuilder\TestScripts\ringback.xml" />
+    <None Remove="ScriptBuilder\TestScripts\speak.xml" />
+    <None Remove="ScriptBuilder\TestScripts\wait.xml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,6 +35,26 @@
     <Content Include="Recordings\TestData\mediafile.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="ScriptBuilder\TestScripts\answer.xml" />
+    <EmbeddedResource Include="ScriptBuilder\TestScripts\bind-with-playback.xml" />
+    <EmbeddedResource Include="ScriptBuilder\TestScripts\bind-with-speak.xml" />
+    <EmbeddedResource Include="ScriptBuilder\TestScripts\conference.xml" />
+    <EmbeddedResource Include="ScriptBuilder\TestScripts\dial-all-in-one.xml" />
+    <EmbeddedResource Include="ScriptBuilder\TestScripts\dial-number.xml" />
+    <EmbeddedResource Include="ScriptBuilder\TestScripts\dial-sipaccount.xml" />
+    <EmbeddedResource Include="ScriptBuilder\TestScripts\dial-sipuri.xml" />
+    <EmbeddedResource Include="ScriptBuilder\TestScripts\echo.xml" />
+    <EmbeddedResource Include="ScriptBuilder\TestScripts\hangup.xml" />
+    <EmbeddedResource Include="ScriptBuilder\TestScripts\intercept.xml" />
+    <EmbeddedResource Include="ScriptBuilder\TestScripts\playback.xml" />
+    <EmbeddedResource Include="ScriptBuilder\TestScripts\record-all-attributes.xml" />
+    <EmbeddedResource Include="ScriptBuilder\TestScripts\record.xml" />
+    <EmbeddedResource Include="ScriptBuilder\TestScripts\ringback.xml" />
+    <EmbeddedResource Include="ScriptBuilder\TestScripts\speak.xml" />
+    <EmbeddedResource Include="ScriptBuilder\TestScripts\wait.xml" />
   </ItemGroup>
 
   <ItemGroup>

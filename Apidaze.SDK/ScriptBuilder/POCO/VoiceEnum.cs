@@ -1,0 +1,15 @@
+﻿using System.Xml.Serialization;
+
+namespace Apidaze.SDK.ScriptBuilder.POCO
+{
+    public enum VoiceEnum
+    {
+        [XmlEnum] NONE = 0,
+        [XmlEnum(Name = "female-a")] FEMALE_A,
+        [XmlEnum(Name = "female-b")] FEMALE_B,
+        [XmlEnum(Name = "female-c")] FEMALE_C,
+        [XmlEnum(Name = "male-a")] MALE_A,
+        [XmlEnum(Name = "male-b")] MALE_B,
+        [XmlEnum(Name = "male-c")] MALE_C
+    }
+}

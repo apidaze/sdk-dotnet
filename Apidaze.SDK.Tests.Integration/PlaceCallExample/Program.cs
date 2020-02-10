@@ -3,10 +3,10 @@ using System;
 using System.IO;
 using Apidaze.SDK;
 using Apidaze.SDK.Base;
-using Apidaze.SDK.Calls;
+using Apidaze.SDK.Exception;
 using Apidaze.SDK.Messages;
-using Microsoft.VisualBasic;
 using CallType = Apidaze.SDK.Calls.CallType;
+using CreateCallResponseException = Apidaze.SDK.Calls.CreateCallResponseException;
 
 namespace PlaceCallExample
 {

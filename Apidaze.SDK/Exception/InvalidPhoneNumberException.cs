@@ -1,4 +1,4 @@
-﻿namespace Apidaze.SDK.Messages
+﻿namespace Apidaze.SDK.Exception
 {
     public class InvalidPhoneNumberException : System.Exception
     {
