@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Recordings", "Recordings", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalScripts", "ExternalScripts", "{34F5E3D1-3815-4750-A59F-991376AE1387}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScriptsBuilders", "ScriptsBuilders", "{97647B1F-10D8-498D-B7CD-B4E7AC3B7674}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScriptBuilder", "ScriptBuilder", "{97647B1F-10D8-498D-B7CD-B4E7AC3B7674}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apidaze.SDK", "Apidaze.SDK\Apidaze.SDK.csproj", "{6DED594D-D408-447E-A0DA-69B7F98634A1}"
 EndProject
