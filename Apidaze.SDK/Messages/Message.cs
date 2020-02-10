@@ -1,5 +1,5 @@
-﻿using Apidaze.SDK.Base;
-using System;
+﻿using System;
+using Apidaze.SDK.Base;
 using Newtonsoft.Json;
 using RestSharp;
 

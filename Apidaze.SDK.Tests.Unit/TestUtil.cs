@@ -1,7 +1,7 @@
-﻿using Apidaze.SDK.Base;
-using System.IO;
+﻿using System.IO;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using Apidaze.SDK.Base;
 
 namespace Apidaze.SDK.Tests.Unit
 {
@@ -20,7 +20,7 @@ namespace Apidaze.SDK.Tests.Unit
         public static string GetFileContents(string sampleFile)
         {
             var asm = Assembly.GetExecutingAssembly();
-            var resource = $"Apidaze.SDK.Tests.Unit.ScriptsBuilders.TestScripts.{sampleFile}";
+            var resource = $"Apidaze.SDK.Tests.Unit.ScriptBuilder.TestScripts.{sampleFile}";
             using (var stream = asm.GetManifestResourceStream(resource))
             {
                 if (stream != null)

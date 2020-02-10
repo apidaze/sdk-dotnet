@@ -20,10 +20,10 @@ namespace Apidaze.SDK.Tests.Unit.Recordings
     {
         private SDK.Recordings.Recordings _recordingsApi;
 
-        private static readonly string SOURCE_FILES_DIR = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, @"Recordings\TestData"));
+        private static readonly string SOURCE_FILES_DIR = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase, @"Recordings/TestData"));
         private static readonly string SOURCE_FILE_NAME = "mediafile.wav";
         private static readonly FileInfo SOURCE_FILE = new FileInfo(Path.Combine(SOURCE_FILES_DIR, SOURCE_FILE_NAME));
-        private static readonly string TARGET_DIR = Path.GetFullPath(@"target\");
+        private static readonly string TARGET_DIR = Path.GetFullPath(@"target/");
         private static readonly FileInfo TARGET_FILE = new FileInfo(Path.Combine(TARGET_DIR, SOURCE_FILE_NAME));
         private static readonly FileInfo TARGET_FILE_WITH_CHANGED_NAME = new FileInfo(Path.Combine(TARGET_DIR, "new-file.wav"));
 
@@ -103,7 +103,7 @@ namespace Apidaze.SDK.Tests.Unit.Recordings
                   new RestResponse() { StatusCode = HttpStatusCode.OK, RawBytes = expectedStream.ReadAsBytes() });
 
             // Act
-            await _recordingsApi.DownloadRecodingToFileAsync(SOURCE_FILE_NAME, TARGET_DIR);
+            await _recordingsApi.DownloadRecordingToFileAsync(SOURCE_FILE_NAME, TARGET_DIR);
 
             // Assert
             MockIRestClient.Verify(x => x.ExecuteTaskAsync(It.IsAny<RestRequest>()), Times.Once);
@@ -121,7 +121,7 @@ namespace Apidaze.SDK.Tests.Unit.Recordings
                 new RestResponse() { StatusCode = HttpStatusCode.InternalServerError });
 
             // Act + Assert
-            await Assert.ThrowsExceptionAsync<InvalidOperationException>(() => _recordingsApi.DownloadRecodingToFileAsync(SOURCE_FILE_NAME, TARGET_DIR));
+            await Assert.ThrowsExceptionAsync<InvalidOperationException>(() => _recordingsApi.DownloadRecordingToFileAsync(SOURCE_FILE_NAME, TARGET_DIR));
         }
 
         [TestMethod]

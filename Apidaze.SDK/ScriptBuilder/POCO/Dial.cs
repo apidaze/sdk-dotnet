@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace Apidaze.SDK.ScriptsBuilders.POCO
+namespace Apidaze.SDK.ScriptBuilder.POCO
 {
     public  class Dial
     {
@@ -35,7 +35,7 @@ namespace Apidaze.SDK.ScriptsBuilders.POCO
 
         public bool ShouldSerializeStrategy()
         {
-            return Strategy != default(StrategyEnum);
+            return Strategy != default;
         }
     }
 }

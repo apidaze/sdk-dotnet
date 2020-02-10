@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace Apidaze.SDK.ScriptsBuilders
+namespace Apidaze.SDK.ScriptBuilder.POCO
 {
     public class Playback
     {
@@ -18,7 +18,7 @@ namespace Apidaze.SDK.ScriptsBuilders
 
         public bool ShouldSerializeInputTimeoutMillis()
         {
-            return Math.Abs(InputTimeoutMillis) > 0; //Bool EXP
+            return Math.Abs(InputTimeoutMillis) > 0;
         }
     }
 }

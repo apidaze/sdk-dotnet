@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace Apidaze.SDK.ScriptsBuilders.POCO
+namespace Apidaze.SDK.ScriptBuilder.POCO
 {
     public class Speak
     {
@@ -29,12 +29,12 @@ namespace Apidaze.SDK.ScriptsBuilders.POCO
 
         public bool ShouldSerializeLangEnum()
         {
-            return LangEnum > 0;
+            return LangEnum != default;
         }
 
         public bool ShouldSerializeVoice()
         {
-            return Voice > 0;
+            return Voice != default;
         }
 
         public static Speak WithText(string text)

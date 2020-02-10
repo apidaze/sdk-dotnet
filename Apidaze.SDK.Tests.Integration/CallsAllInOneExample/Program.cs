@@ -1,14 +1,14 @@
 ﻿using System;
 using System.IO;
- 
-using Apidaze.SDK.Exception;
- 
 using Apidaze.SDK;
 using Apidaze.SDK.Base;
 using Apidaze.SDK.Calls;
+using Apidaze.SDK.Exception;
 using Apidaze.SDK.Messages;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
+using CreateCallResponseException = Apidaze.SDK.Calls.CreateCallResponseException;
+using DeleteCallResponseException = Apidaze.SDK.Calls.DeleteCallResponseException;
 
 namespace CallsAllInOneExample
 {

@@ -33,11 +33,11 @@ namespace DownloadRecordingToFileAsyncExample
                 var targetFilePath = Path.GetFullPath(@"foo\");
 
                 Console.WriteLine("Starting downloading the file 1");
-                await recordingsApi.DownloadRecodingToFileAsync(sourceFileName, Path.Combine(targetFilePath, "file1.wav"));
+                await recordingsApi.DownloadRecordingToFileAsync(sourceFileName, Path.Combine(targetFilePath, "file1.wav"));
                 Console.WriteLine("The file 1 has been downloaded.");
 
                 Console.WriteLine("Starting downloading the file 2");
-                await recordingsApi.DownloadRecodingToFileAsync(sourceFileName, Path.Combine(targetFilePath, "file2.wav"));
+                await recordingsApi.DownloadRecordingToFileAsync(sourceFileName, Path.Combine(targetFilePath, "file2.wav"));
                 Console.WriteLine("The file 2 has been downloaded.");
 
             }

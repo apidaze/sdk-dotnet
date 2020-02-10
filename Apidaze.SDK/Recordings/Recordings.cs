@@ -6,9 +6,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
-using Apidaze.SDK.Base;
-using RestSharp;
-using RestSharp.Extensions;
 
 namespace Apidaze.SDK.Recordings
 {
@@ -32,24 +29,23 @@ namespace Apidaze.SDK.Recordings
             return new MemoryStream(response);
         }
 
-        public async Task DownloadRecodingToFileAsync(string sourceFileName, string target)
+        public async Task<FileInfo> DownloadRecordingToFileAsync(string sourceFileName, string target)
         {
             var restRequest = DownloadRequest(sourceFileName);
             var response = await Client.ExecuteTaskAsync(restRequest);
-
-            if (response.StatusCode != HttpStatusCode.OK) throw new InvalidOperationException(response.ErrorMessage);
-
-            SaveFileToFolder(sourceFileName, target, response);
+            return SaveFileToFolder(sourceFileName, target, response);
         }
 
         public FileInfo DownloadRecordingToFile(string sourceFileName, string target)
         {
             var restRequest = DownloadRequest(sourceFileName);
             var response = Client.Execute(restRequest);
-            if (response.StatusCode != HttpStatusCode.OK) throw new InvalidOperationException(response.ErrorMessage);
+            return SaveFileToFolder(sourceFileName, target, response);
+        }
 
-            var fileName = SaveFileToFolder(sourceFileName, target, response);
-            return new FileInfo(fileName);
+        private static void CheckStatusCode(IRestResponse response)
+        {
+            if (response.StatusCode != HttpStatusCode.OK) throw new InvalidOperationException(response.ErrorMessage);
         }
 
         public void DeleteRecording(string fileName)
@@ -66,8 +62,9 @@ namespace Apidaze.SDK.Recordings
             return restRequest;
         }
 
-        private static string SaveFileToFolder(string sourceFileName, string target, IRestResponse response)
+        private static FileInfo SaveFileToFolder(string sourceFileName, string target, IRestResponse response)
         {
+            CheckStatusCode(response);
             var targetDir = Path.GetDirectoryName(target);
             var fileName = Path.GetFileName(target);
             if (string.IsNullOrEmpty(fileName)) fileName = sourceFileName;
@@ -78,7 +75,7 @@ namespace Apidaze.SDK.Recordings
 
             var fullPathName = Path.Combine(targetDir, fileName);
             response.RawBytes.SaveAs(fullPathName);
-            return fullPathName;
+            return new FileInfo(fullPathName);
         }
     }
 }

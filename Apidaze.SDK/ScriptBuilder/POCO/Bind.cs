@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace Apidaze.SDK.ScriptsBuilders
+namespace Apidaze.SDK.ScriptBuilder.POCO
 {
     public class Bind
     {
@@ -10,7 +10,6 @@ namespace Apidaze.SDK.ScriptsBuilders
 
         public Bind()
         {
-
         }
         public Bind(string action, string value)
         {

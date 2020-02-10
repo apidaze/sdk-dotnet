@@ -14,7 +14,7 @@ namespace Apidaze.SDK.CdrHttpHandlers
         [JsonConverter(typeof(StringEnumConverter))]
         public Format Format { get; set; }
 
-        [JsonProperty("url")] public Uri Url { get; set; }
+        [JsonProperty("uri")] public Uri Url { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
         [JsonProperty("call_leg")]

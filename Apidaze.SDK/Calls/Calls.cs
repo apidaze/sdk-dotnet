@@ -4,9 +4,6 @@ using System.Linq;
 using System.Text;
 using Apidaze.SDK.Base;
 using Apidaze.SDK.Messages;
-using Apidaze.SDK.Base;
-using Apidaze.SDK.Exception;
-using Apidaze.SDK.Messages;
 using Newtonsoft.Json;
 using RestSharp;
 

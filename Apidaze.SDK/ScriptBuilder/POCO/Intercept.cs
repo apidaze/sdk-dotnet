@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Xml.Serialization;
 
-namespace Apidaze.SDK.ScriptsBuilders.POCO
+namespace Apidaze.SDK.ScriptBuilder.POCO
 {
     public class Intercept
     {

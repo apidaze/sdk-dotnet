@@ -49,7 +49,7 @@ namespace Apidaze.SDK.Tests.Unit.Calls
             return this;
         }
         
-        public CallBuilder WithCallState(CallState callState)
+        public CallBuilder WithCallState(string callState)
         {
             _call.CallState = callState;
             return this;

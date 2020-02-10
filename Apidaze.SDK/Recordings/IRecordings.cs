@@ -10,7 +10,7 @@ namespace Apidaze.SDK.Recordings
 
         Stream DownloadRecording(string sourceFileName);
 
-        Task DownloadRecodingToFileAsync(string sourceFileName, string target);
+        Task<FileInfo> DownloadRecordingToFileAsync(string sourceFileName, string target);
 
         FileInfo DownloadRecordingToFile(string sourceFileName, string target);
 
