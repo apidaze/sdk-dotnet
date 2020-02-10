@@ -17,6 +17,8 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
 
         [XmlAttribute("input-timeout")] public double InputTimeoutMillis { get; set; }
 
+        [XmlAttribute("digit-timeout")] public double DigitTimeoutMillis { get; set; }
+
         public Speak()
         {
             Binds = new List<object>();

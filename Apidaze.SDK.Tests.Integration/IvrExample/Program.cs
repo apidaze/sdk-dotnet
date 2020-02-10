@@ -34,14 +34,14 @@ namespace IvrExample
         /// <summary>
         /// The port the HttpListener should listen on
         /// </summary>
-        private static readonly string SERVERL_URL = "http://01393488.ngrok.io";
+        private static readonly string SERVER_URL = "http://01393488.ngrok.io";
         private static readonly string LOCALHOST = "http://localhost:8080";
 
-        static readonly string INTRO = "/";
+        static readonly string INTRO_PATH = "/";
         static readonly string STEP_1_PATH = "/step1.xml/";
         static readonly string STEP_2_PATH = "/step2.xml/";
         static readonly string STEP_3_PATH = "/step3.xml/";
-        static readonly string PLAYBACK_PATH = "/Apidazeintro.wav/";
+        static readonly string PLAYBACK_PATH = "/apidazeintro.wav/";
 
         /// <summary>
         /// This is the heart of the web server
@@ -49,7 +49,7 @@ namespace IvrExample
         private static readonly HttpListener Listener = new HttpListener()
         {
             Prefixes = {
-                LOCALHOST + INTRO,
+                LOCALHOST + INTRO_PATH,
                 LOCALHOST + STEP_1_PATH,
                 LOCALHOST + STEP_2_PATH,
                 LOCALHOST + STEP_3_PATH,
@@ -100,7 +100,7 @@ namespace IvrExample
         private static async Task MainLoop()
         {
 
-            Listener.Prefixes.Add(LOCALHOST + INTRO);
+            Listener.Prefixes.Add(LOCALHOST + INTRO_PATH);
             Listener.Prefixes.Add(LOCALHOST + STEP_1_PATH);
             Listener.Prefixes.Add(LOCALHOST + STEP_2_PATH);
             Listener.Prefixes.Add(LOCALHOST + STEP_3_PATH);
@@ -138,19 +138,19 @@ namespace IvrExample
                 switch (context.Request.Url.AbsolutePath)
                 {
                     case "/":
-                        handled = GetIntro(context, response, handled);
+                        handled = GetIntro(context, response);
                         break;
                     case "/step1.xml":
-                        handled = GetStep1(context, response, handled);
+                        handled = GetStep1(context, response);
                         break;
                     case "/step2.xml":
-                        handled = GetStep2(context, response, handled);
+                        handled = GetStep2(context, response);
                         break;
                     case "/step3.xml":
-                        handled = GetStep3(context, response, handled);
+                        handled = GetStep3(context, response);
                         break;
-                    case "/Apidazeintro.wav":
-                        handled = GetIntroWav(context, response, handled);
+                    case "/apidazeintro.wav":
+                        handled = GetIntroWav(context, response);
                         break;
                 }
                 if (!handled)
@@ -165,31 +165,34 @@ namespace IvrExample
             }
         }
 
-        private static bool GetIntro(HttpListenerContext context, HttpListenerResponse response, bool handled)
+        private static bool GetIntro(HttpListenerContext context, HttpListenerResponse response)
         {
+            var handled = false;
+
             switch (context.Request.HttpMethod)
             {
                 case "GET":
 
                     var script = ApidazeScript.Build();
 
-                    var intro = script.AddNode(Ringback.FromFile(SERVERL_URL + PLAYBACK_PATH.Remove(PLAYBACK_PATH.Length - 1))).AddNode(Wait.SetDuration(2))
+                    var intro = script.AddNode(Ringback.FromFile(SERVER_URL + PLAYBACK_PATH.Remove(PLAYBACK_PATH.Length - 1))).AddNode(Wait.SetDuration(2))
                   .AddNode(new Answer()).AddNode(new Record { Name = "example_recording" }).AddNode(Wait.SetDuration(2))
-                  .AddNode(Playback.FromFile(SERVERL_URL + PLAYBACK_PATH.Remove(PLAYBACK_PATH.Length - 1)))
+                  .AddNode(Playback.FromFile(SERVER_URL + PLAYBACK_PATH.Remove(PLAYBACK_PATH.Length - 1)))
                   .AddNode(Speak.WithText("This example script will show you some things you can do with our API"))
                   .AddNode(Wait.SetDuration(2)).AddNode(
                       new Speak
                       {
-                          InputTimeoutMillis = TimeSpan.FromSeconds(10).TotalMilliseconds,
+                          InputTimeoutMillis = TimeSpan.FromSeconds(5).TotalMilliseconds,
+                          DigitTimeoutMillis = TimeSpan.FromSeconds(5).TotalMilliseconds,
                           Text = "Press 1 for an example of text to speech, press 2 to enter an echo line to check voice latency or press 3 to enter a conference.",
                           Binds = new List<object>
                           {
-                                                    new Bind {Action = SERVERL_URL + STEP_1_PATH.Remove(STEP_1_PATH.Length - 1), Value = "1"},
-                                                    new Bind {Action = SERVERL_URL + STEP_2_PATH.Remove(STEP_2_PATH.Length - 1), Value = "2"},
-                                                    new Bind {Action = SERVERL_URL + STEP_3_PATH.Remove(STEP_3_PATH.Length - 1), Value = "3"}
+                                                    new Bind {Action = SERVER_URL + STEP_1_PATH.Remove(STEP_1_PATH.Length - 1), Value = "1"},
+                                                    new Bind {Action = SERVER_URL + STEP_2_PATH.Remove(STEP_2_PATH.Length - 1), Value = "2"},
+                                                    new Bind {Action = SERVER_URL + STEP_3_PATH.Remove(STEP_3_PATH.Length - 1), Value = "3"}
                           }
-                      })
-                  .ToXml();
+                      }).ToXml();
+
                     var buffer = Encoding.UTF8.GetBytes(intro);
                     handled = WriteResponse(response, "text/xml", buffer);
                     break;
@@ -200,8 +203,9 @@ namespace IvrExample
 
 
 
-        private static bool GetStep1(HttpListenerContext context, HttpListenerResponse response, bool handled)
+        private static bool GetStep1(HttpListenerContext context, HttpListenerResponse response)
         {
+            var handled = false;
             switch (context.Request.HttpMethod)
             {
                 case "GET":
@@ -236,8 +240,9 @@ namespace IvrExample
             return handled;
         }
 
-        private static bool GetStep2(HttpListenerContext context, HttpListenerResponse response, bool handled)
+        private static bool GetStep2(HttpListenerContext context, HttpListenerResponse response)
         {
+            var handled = false;
             switch (context.Request.HttpMethod)
             {
                 case "GET":
@@ -253,8 +258,9 @@ namespace IvrExample
 
             return handled;
         }
-        private static bool GetStep3(HttpListenerContext context, HttpListenerResponse response, bool handled)
+        private static bool GetStep3(HttpListenerContext context, HttpListenerResponse response)
         {
+            var handled = false;
             switch (context.Request.HttpMethod)
             {
                 case "GET":
@@ -273,13 +279,14 @@ namespace IvrExample
 
         private static void ReturnExceptionResponse(HttpListenerResponse response, Exception e)
         {
-            var buffer = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(e)); 
+            var buffer = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(e));
             WriteResponse(response, "text/plain", buffer, HttpStatusCode.InternalServerError);
 
         }
      
-        private static bool GetIntroWav(HttpListenerContext context, HttpListenerResponse response, bool handled)
+        private static bool GetIntroWav(HttpListenerContext context, HttpListenerResponse response)
         {
+            var handled = false;
             switch (context.Request.HttpMethod)
             {
                 case "HEAD":
