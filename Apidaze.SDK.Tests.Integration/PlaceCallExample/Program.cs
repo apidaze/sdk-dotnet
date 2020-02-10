@@ -29,9 +29,9 @@ namespace PlaceCallExample
             var applicationClient = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret));
 
             // call details
-            var callerId = "14123456789";
-            var origin = "48123456789";
-            var destination = "48123456789";
+            var callerId = "14129274908";
+            var origin = "48504916910";
+            var destination = "48504916910";
 
             try
             {

@@ -2,9 +2,6 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <FileUpgradeFlags>40</FileUpgradeFlags>
-    <UpgradeBackupLocation>C:\Users\bednarz\Desktop\Apidaze\sdk-dotnet\Backup\Apidaze.SDK.Tests.Integration\ListCdrHttpHandlersExample\</UpgradeBackupLocation>
-    <OldToolsVersion>2.0</OldToolsVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="client-secrets.json" />
