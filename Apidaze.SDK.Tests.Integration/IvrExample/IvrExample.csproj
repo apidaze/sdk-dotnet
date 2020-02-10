@@ -6,11 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Apidazeintro.wav" />
+    <None Remove="apidazeintro.wav" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Apidazeintro.wav" />
+    <EmbeddedResource Include="apidazeintro.wav" />
   </ItemGroup>
 
   <ItemGroup>
