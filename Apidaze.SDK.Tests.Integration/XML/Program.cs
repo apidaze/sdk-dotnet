@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
@@ -54,6 +55,10 @@ namespace XML
             /// </summary>
             private static readonly HttpListener Listener = new HttpListener();
 
+            /// <summary>The context HTTP dictionary</summary>
+            private static Dictionary<string, Func<byte[]>> httpContextDictionary;
+
+
             /// <summary>
             /// A flag to specify when we need to stop
             /// </summary>
@@ -98,7 +103,7 @@ namespace XML
             /// </summary>
             private static async Task MainLoop()
             {
-                Listener.Prefixes.Add(LOCALHOST + INTRO_PATH);
+                GetReadyHttpContext();
                 Listener.Start();
                 while (_keepGoing)
                 {
@@ -118,6 +123,25 @@ namespace XML
                 }
             }
 
+            private static void GetReadyHttpContext()
+            {
+                var prefixes = new List<string>()
+                {
+                    LOCALHOST + INTRO_PATH
+                };
+                prefixes.ForEach(p =>
+                {
+                    Listener.Prefixes.Add(p);
+                });
+
+                httpContextDictionary = new Dictionary<string, Func<byte[]>>
+                {
+                    {
+                        INTRO_PATH, GetResponse
+                    },
+                };
+            }
+
             /// <summary>
             /// Handle an incoming request
             /// </summary>
@@ -128,17 +152,24 @@ namespace XML
                 try
                 {
                     Console.WriteLine(context.Request.RawUrl + "\n" + DateTime.Now);
-                    var handled = context.Request.Url.AbsolutePath switch
+                    var handled = false;
+
+                    switch (context.Request.HttpMethod)
                     {
-                        "/" => GetResponse(context, response),
-                        _ => false
-                    };
+                        case "GET":
+                            if (httpContextDictionary.ContainsKey("/"))
+                            {
+                                var result = httpContextDictionary["/"].DynamicInvoke();
+                                handled = WriteResponse(response, "text/xml", (byte[])result);
+                            }
+
+                            break;
+                    }
+
                     if (!handled)
                     {
                         response.StatusCode = 404;
                     }
-
-                    Console.WriteLine(response.ContentType + response.StatusDescription);
                 }
                 catch (Exception e)
                 {
@@ -149,24 +180,11 @@ namespace XML
             /// <summary>
             /// Gets the response.
             /// </summary>
-            /// <param name="context">The context.</param>
-            /// <param name="response">The response.</param>
-            /// <returns><c>true</c> if handled, <c>false</c> otherwise.</returns>
-            private static bool GetResponse(HttpListenerContext context, HttpListenerResponse response)
+            private static byte[] GetResponse()
             {
-                var handled = false;
-                switch (context.Request.HttpMethod)
-                {
-                    case "GET":
-                        var script = ApidazeScript.Build();
-                        var intro = script.AddNode(new Dial { Timeout = 12, Number = "48504916910" }).AddNode(new Dial { Number = "48504916910" }).ToXml();
-
-                        var buffer = Encoding.UTF8.GetBytes(intro);
-                        handled = WriteResponse(response, "text/xml", buffer);
-                        break;
-                }
-
-                return handled;
+                var script = ApidazeScript.Build();
+                var intro = script.AddNode(new Dial { Timeout = 12, Number = "4812345678" }).AddNode(new Dial { Number = "4812345678" }).ToXml();
+                return Encoding.UTF8.GetBytes(intro);
             }
 
             /// <summary>

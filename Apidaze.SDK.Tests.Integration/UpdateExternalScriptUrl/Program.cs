@@ -28,7 +28,7 @@ namespace UpdateExternalScriptUrl
             var id = 1801L;
 
             // new url
-            var newScriptUrl = "http://c89e3bf5.ngrok.io";
+            var newScriptUrl = "http://";
 
             try
             {

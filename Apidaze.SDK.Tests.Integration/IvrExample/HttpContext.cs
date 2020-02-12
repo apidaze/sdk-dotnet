@@ -1,20 +1,20 @@
 ﻿namespace IvrExample
 {
-    public class ContextHttp
+    public class HttpContext
     {
         public string AbsolutePath { get; set; }
 
         public string ContentType { get; set; } = "text/xml";
 
-        public ContextHttp()
+        public HttpContext()
         {
         }
 
-        public ContextHttp(string path) => AbsolutePath = path;
+        public HttpContext(string path) => AbsolutePath = path;
 
         public override bool Equals(object? obj)
         {
-            return obj is ContextHttp other && other.AbsolutePath == this.AbsolutePath;
+            return obj is HttpContext other && other.AbsolutePath == this.AbsolutePath;
         }
 
         public override int GetHashCode()

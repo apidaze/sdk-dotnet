@@ -18,7 +18,7 @@ namespace IvrExample
         /// <summary>
         /// The port the HttpListener should listen on.
         /// </summary>
-        private static readonly string SERVER_URL = "http://780f6967.ngrok.io";
+        private static readonly string SERVER_URL = "http://";
 
         /// <summary>
         /// The localhost.
@@ -26,7 +26,7 @@ namespace IvrExample
         private static readonly string LOCALHOST = "http://localhost:8080";
 
         /// <summary>The context HTTP dictionary</summary>
-        private static Dictionary<ContextHttp, Func<byte[]>> contextHttpDictionary;
+        private static Dictionary<HttpContext, Func<byte[]>> contextHttpDictionary;
 
         /// <summary>
         /// The intro path.
@@ -107,41 +107,9 @@ namespace IvrExample
         /// </summary>
         private static async Task MainLoop()
         {
-            var prefixes = new List<string>()
-            {
-                LOCALHOST,
-                LOCALHOST + STEP_1_PATH,
-                LOCALHOST + STEP_2_PATH,
-                LOCALHOST + STEP_3_PATH,
-                LOCALHOST + PLAYBACK_PATH,
-            };
-            prefixes.ForEach(p =>
-            {
-                var pd = p.AddForwardSlash();
-                Listener.Prefixes.Add(pd);
-            });
+            GetReadyHttpContext();
 
             Listener.Start();
-            contextHttpDictionary = new Dictionary<ContextHttp, Func<byte[]>> {
-                {
-                    new ContextHttp(INTRO_PATH), GetIntro
-                },
-                {
-                    new ContextHttp(STEP_1_PATH), GetStep1
-                },
-                {
-                    new ContextHttp(STEP_2_PATH), GetStep2
-                },
-                {
-                    new ContextHttp(STEP_3_PATH), GetStep3
-                },
-                {
-                    new ContextHttp(PLAYBACK_PATH)
-                    {
-                        ContentType = "audio/wav",
-                    }, () => ExampleUtil.GetFileContents("apidazeintro.wav")
-                },
-            };
             while (_keepGoing)
             {
                 try
@@ -166,6 +134,46 @@ namespace IvrExample
             }
         }
 
+        private static void GetReadyHttpContext()
+        {
+            var prefixes = new List<string>()
+            {
+                LOCALHOST,
+                LOCALHOST + STEP_1_PATH,
+                LOCALHOST + STEP_2_PATH,
+                LOCALHOST + STEP_3_PATH,
+                LOCALHOST + PLAYBACK_PATH,
+            };
+            prefixes.ForEach(p =>
+            {
+                var prefix = p.AddForwardSlash();
+                Listener.Prefixes.Add(prefix);
+            });
+
+            contextHttpDictionary = new Dictionary<HttpContext, Func<byte[]>>
+            {
+                {
+                    new HttpContext(INTRO_PATH), GetIntro
+                },
+                {
+                    new HttpContext(STEP_1_PATH), GetStep1
+                },
+                {
+                    new HttpContext(STEP_2_PATH), GetStep2
+                },
+                {
+                    new HttpContext(STEP_3_PATH), GetStep3
+                },
+                {
+                    new HttpContext(PLAYBACK_PATH)
+                    {
+                        ContentType = "audio/wav",
+                    },
+                    () => ExampleUtil.GetFileContents("apidazeintro.wav")
+                },
+            };
+        }
+
         /// <summary>
         /// Handle an incoming request
         /// </summary>
@@ -177,7 +185,7 @@ namespace IvrExample
             {
                 Console.WriteLine(context.Request.RawUrl + "\n" + DateTime.Now);
                 var handled = false;
-                var contextHttp = new ContextHttp(context.Request.Url.AbsolutePath);
+                var contextHttp = new HttpContext(context.Request.Url.AbsolutePath);
                 switch (context.Request.HttpMethod)
                 {
                     case "GET":
