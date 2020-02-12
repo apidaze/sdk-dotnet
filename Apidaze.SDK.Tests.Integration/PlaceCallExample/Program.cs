@@ -1,10 +1,10 @@
-﻿using Microsoft.Extensions.Configuration;
-using System;
+﻿using System;
 using System.IO;
 using Apidaze.SDK;
 using Apidaze.SDK.Base;
 using Apidaze.SDK.Exception;
 using Apidaze.SDK.Messages;
+using Microsoft.Extensions.Configuration;
 using CallType = Apidaze.SDK.Calls.CallType;
 using CreateCallResponseException = Apidaze.SDK.Calls.CreateCallResponseException;
 
@@ -30,16 +30,16 @@ namespace PlaceCallExample
 
             // call details
             var callerId = "14129274908";
-            var origin = "48504916910";
-            var destination = "48504916910";
+            var origin = "4812345678";
+            var destination = "4812345678";
 
             try
             {
-                //initialize callsApi
+                // initialize callsApi
                 var callsApi = applicationClient.CreateCallsApi();
 
-                //make a call
-                var guid =  callsApi.CreateCall(new PhoneNumber(callerId), origin, destination, CallType.NUMBER);
+                // make a call
+                var guid = callsApi.CreateCall(new PhoneNumber(callerId), origin, destination, CallType.NUMBER);
 
                 Console.WriteLine("Call with id = {0} has been initiated.", guid);
             }

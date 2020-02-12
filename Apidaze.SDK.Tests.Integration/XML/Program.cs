@@ -183,7 +183,13 @@ namespace XML
             private static byte[] GetResponse()
             {
                 var script = ApidazeScript.Build();
-                var intro = script.AddNode(new Dial { Timeout = 12, Number = "4812345678" }).AddNode(new Dial { Number = "4812345678" }).ToXml();
+                var intro = script.AddNode(new Dial
+                {
+                    Timeout = 24,
+                    Strategy = StrategyEnum.SEQUENCE,
+                    Number =
+                        new List<Number> { new Number("12", "48123456789"), new Number("12", "48123456789") }
+                }).ToXml();
                 return Encoding.UTF8.GetBytes(intro);
             }
 
