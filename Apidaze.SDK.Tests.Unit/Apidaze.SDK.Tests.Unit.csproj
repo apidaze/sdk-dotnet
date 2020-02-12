@@ -1,11 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="Current">
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-
     <IsPackable>false</IsPackable>
   </PropertyGroup>
-
   <ItemGroup>
     <None Remove="Recordings\TestData\empty.wav" />
     <None Remove="Recordings\TestData\mediafile.wav" />
@@ -27,7 +24,6 @@
     <None Remove="ScriptBuilder\TestScripts\speak.xml" />
     <None Remove="ScriptBuilder\TestScripts\wait.xml" />
   </ItemGroup>
-
   <ItemGroup>
     <Content Include="Recordings\TestData\empty.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -36,7 +32,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="ScriptBuilder\TestScripts\answer.xml" />
     <EmbeddedResource Include="ScriptBuilder\TestScripts\bind-with-playback.xml" />
@@ -56,7 +51,6 @@
     <EmbeddedResource Include="ScriptBuilder\TestScripts\speak.xml" />
     <EmbeddedResource Include="ScriptBuilder\TestScripts\wait.xml" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="5.10.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
@@ -64,11 +58,13 @@
     <PackageReference Include="Moq" Version="4.13.1" />
     <PackageReference Include="MSTest.TestAdapter" Version="1.3.2" />
     <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
-    <PackageReference Include="RestSharp" Version="106.6.10" />
+    <PackageReference Include="RestSharp" Version="106.10.1" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\Apidaze.SDK\Apidaze.SDK.csproj" />
   </ItemGroup>
-
 </Project>

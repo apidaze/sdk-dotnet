@@ -5,13 +5,14 @@ using Apidaze.SDK.Base;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 
-namespace UpdateExternalScriptUrl
+namespace GetApplicationActionExample
 {
     class Program
     {
         static void Main(string[] args)
         {
             var config = BuildConfig();
+
             var apiKey = config["API_KEY"];
             var apiSecret = config["API_SECRET"];
 
@@ -21,31 +22,33 @@ namespace UpdateExternalScriptUrl
                 Environment.Exit(0);
             }
 
-            // initialize API factory
+            // initiate API factory
             var apiFactory = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret));
-
-            // id of script to be fetched
-            var id = 1801L;
-
-            // new url
-            var newScriptUrl = "http://";
 
             try
             {
-                // initialize external scripts api
-                var externalScriptsApi = apiFactory.CreateExternalScriptsApi();
+                // get application by id
+                var id = 3164L;
+                var applicationsApi = apiFactory.CreateApplicationsApi();
+                var appActionById = applicationsApi.GetApplicationActionById(id);
 
-                // get an external script
-                var script = externalScriptsApi.UpdateExternalScriptUrl(id, new Uri(newScriptUrl));
-                Console.WriteLine("Updated {0}", JsonConvert.SerializeObject(script, Formatting.Indented));
+                if (appActionById != null)
+                {
+                    try
+                    {
+                        var scripts = appActionById.CreateExternalScriptsApi().GetExternalScripts();
+                        Console.WriteLine("ExternalScripts list: {0}", JsonConvert.SerializeObject(scripts, Formatting.Indented));
+                    }
+                    catch (InvalidOperationException e)
+                    {
+                        Console.WriteLine("An error occurred during communicating with API, {0}", e.Message);
+                    }
+                }
+
             }
             catch (InvalidOperationException e)
             {
                 Console.WriteLine("An error occurred during communicating with API, {0}", e.Message);
-            }
-            catch (UriFormatException e)
-            {
-                Console.WriteLine("newScriptUrl is invalid {0}", e.Message);
             }
         }
 

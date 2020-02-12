@@ -1,9 +1,9 @@
-﻿using Apidaze.SDK.ScriptBuilder;
-using Apidaze.SDK.ScriptBuilder.POCO;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using Apidaze.SDK.ScriptBuilder;
+using Apidaze.SDK.ScriptBuilder.POCO;
 using static Apidaze.SDK.Tests.Unit.TestUtil;
 
 

@@ -17,6 +17,8 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
 
         [XmlAttribute("input-timeout")] public double InputTimeoutMillis { get; set; }
 
+        [XmlAttribute("digit-timeout")] public double DigitTimeoutMillis { get; set; }
+
         public Speak()
         {
             Binds = new List<object>();
@@ -25,6 +27,11 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
         public bool ShouldSerializeInputTimeoutMillis()
         {
             return Math.Abs(InputTimeoutMillis) > 0;
+        }
+
+        public bool ShouldSerializeDigitTimeoutMillis()
+        {
+            return Math.Abs(DigitTimeoutMillis) > 0;
         }
 
         public bool ShouldSerializeLangEnum()

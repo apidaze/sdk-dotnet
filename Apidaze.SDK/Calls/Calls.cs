@@ -45,7 +45,6 @@ namespace Apidaze.SDK.Calls
 
         public List<Call> GetCalls()
         {
-            // TODO sanity check
             return FindAll<Call>().ToList();
         }
 
