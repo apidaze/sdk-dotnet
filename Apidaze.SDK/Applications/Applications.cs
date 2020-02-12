@@ -1,10 +1,10 @@
-﻿using APIdaze.SDK.Base;
-using RestSharp;
+﻿using Apidaze.SDK.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using RestSharp;
 
-namespace APIdaze.SDK.Applications
+namespace Apidaze.SDK.Applications
 {
     /// <summary>
     /// Class Applications.
@@ -94,7 +94,27 @@ namespace APIdaze.SDK.Applications
             {
                 throw new ArgumentException("apiKey must not be null");
             }
+
             return FindByParameter<Application>("api_name", name).ToList();
+        }
+        public IApiActionFactory GetApplicationActionById(long id)
+        {
+            var apiAction = this.GetApplicationsById(id).FirstOrDefault();
+            return apiAction == null
+                ? null
+                : new ApiActionFactory(new Credentials(apiAction.ApiKey, apiAction.ApiSecret));
+        }
+
+        public IApiActionFactory GetApplicationActionByApiKey(string apiKey)
+        {
+            var apiAction = this.GetApplicationsByApiKey(apiKey).First();
+            return new ApiActionFactory(new Credentials(apiAction.ApiKey, apiAction.ApiSecret));
+        }
+
+        public IApiActionFactory GetApplicationActionByName(string name)
+        {
+            var apiAction = this.GetApplicationsByName(name).First();
+            return new ApiActionFactory(new Credentials(apiAction.ApiKey, apiAction.ApiSecret));
         }
     }
 }

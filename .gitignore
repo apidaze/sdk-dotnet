@@ -275,6 +275,6 @@ Apidaze.SDK.Tests.Integration/PlaceCallExample/client-secrets.json
 Apidaze.SDK.Tests.Integration/RecordingsExample/client-secrets.json
 Apidaze.SDK.Tests.Integration/UpdateCdrHttpHandlerExample/client-secrets.json
 Apidaze.SDK.Tests.Integration/UpdateExternalScriptUrl/client-secrets.json
-Apidaze.SDK.Tests.Integration/GetApplicationActionExample/client-secrets.json
-Apidaze.SDK.Tests.Integration/ListApplications/client-secrets.json
-Apidaze.SDK.Tests.Integration/SubApplicationExternalScriptsExample/client-secrets.json
+/Apidaze.SDK.Tests.Integration/SubApplicationExternalScriptsExample/client-secrets.json
+/Apidaze.SDK.Tests.Integration/ListApplications/client-secrets.json
+/Apidaze.SDK.Tests.Integration/GetApplicationActionExample/client-secrets.json

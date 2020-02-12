@@ -1,12 +1,15 @@
-﻿using APIdaze.SDK.Applications;
-using APIdaze.SDK.Calls;
-using APIdaze.SDK.CdrHttpHandlers;
-using APIdaze.SDK.ExternalScripts;
-using APIdaze.SDK.Messages;
-using APIdaze.SDK.Recordings;
-using APIdaze.SDK.Validates;
+﻿using Apidaze.SDK.Applications;
+using Apidaze.SDK.Calls;
+using Apidaze.SDK.CdrHttpHandlers;
+using Apidaze.SDK.ExternalScripts;
+using Apidaze.SDK.Messages;
+using Apidaze.SDK.Recordings;
+using Apidaze.SDK.Validate;
 
-namespace APIdaze.SDK
+/// <summary>
+///  ApiActionFactory object that will create Apidaze API request objects on a per-application.
+/// </summary>
+namespace Apidaze.SDK
 {
     /// <summary>
     /// Interface IApiActionFactory

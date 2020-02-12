@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIdaze.SDK.Tests.Integration", "APIdaze.SDK.Tests.Integration", "{1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apidaze.SDK.Tests.Integration", "Apidaze.SDK.Tests.Integration", "{1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Calls", "Calls", "{4754B8F2-9B53-4464-ABC9-131EEEE8DA9E}"
 EndProject
@@ -11,33 +11,33 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messages", "Messages", "{AC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CdrHttpHandlers", "CdrHttpHandlers", "{BE84E22D-75AD-4E07-A396-516F4D703E93}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Validates", "Validates", "{BC92DA17-2BC5-455C-BB44-6ADF9420188C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Validate", "Validate", "{BC92DA17-2BC5-455C-BB44-6ADF9420188C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Recordings", "Recordings", "{1E187871-0ADE-4ED2-8463-FC3643BD8F97}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalScripts", "ExternalScripts", "{34F5E3D1-3815-4750-A59F-991376AE1387}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScriptsBuilders", "ScriptsBuilders", "{97647B1F-10D8-498D-B7CD-B4E7AC3B7674}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindMeOrFollowMeExample", "Apidaze.SDK.Tests.Integration\XML\FindMeOrFollowMeExample.csproj", "{3988CFA7-3651-4EB9-8FF0-7FBF1ABCF787}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{E6ADCF2A-1F28-4FCE-8C0C-7E59688E4CD5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScriptBuilder", "ScriptBuilder", "{97647B1F-10D8-498D-B7CD-B4E7AC3B7674}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIdaze.SDK", "Apidaze.SDK\APIdaze.SDK.csproj", "{6DED594D-D408-447E-A0DA-69B7F98634A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apidaze.SDK", "Apidaze.SDK\Apidaze.SDK.csproj", "{6DED594D-D408-447E-A0DA-69B7F98634A1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIdaze.SDK.Tests.Unit", "Apidaze.SDK.Tests.Unit\APIdaze.SDK.Tests.Unit.csproj", "{29205EBA-D45F-4D8B-89E9-1FF75C891DD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apidaze.SDK.Tests.Unit", "Apidaze.SDK.Tests.Unit\Apidaze.SDK.Tests.Unit.csproj", "{29205EBA-D45F-4D8B-89E9-1FF75C891DD2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CredentialsValidationExample", "APIdaze.SDK.Tests.Integration\CredentialsValidationExample\CredentialsValidationExample.csproj", "{CB1C00BE-6CA2-4191-8865-236932DD25C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CredentialsValidationExample", "Apidaze.SDK.Tests.Integration\CredentialsValidationExample\CredentialsValidationExample.csproj", "{CB1C00BE-6CA2-4191-8865-236932DD25C5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageExample", "APIdaze.SDK.Tests.Integration\MessageExample\MessageExample.csproj", "{ED9129C4-9758-467D-A2CF-321C0737E983}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageExample", "Apidaze.SDK.Tests.Integration\MessageExample\MessageExample.csproj", "{ED9129C4-9758-467D-A2CF-321C0737E983}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlaceCallExample", "APIdaze.SDK.Tests.Integration\PlaceCallExample\PlaceCallExample.csproj", "{B6CF4747-F308-4114-8BE1-15606F1DD09B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlaceCallExample", "Apidaze.SDK.Tests.Integration\PlaceCallExample\PlaceCallExample.csproj", "{B6CF4747-F308-4114-8BE1-15606F1DD09B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListCallsExample", "APIdaze.SDK.Tests.Integration\ListCallsExample\ListCallsExample.csproj", "{62CD74AE-0543-4757-8776-39ABE9789FEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListCallsExample", "Apidaze.SDK.Tests.Integration\ListCallsExample\ListCallsExample.csproj", "{62CD74AE-0543-4757-8776-39ABE9789FEC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CallsAllInOneExample", "APIdaze.SDK.Tests.Integration\CallsAllInOneExample\CallsAllInOneExample.csproj", "{4F642881-DBE1-40E7-844F-6FAA31DA7285}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CallsAllInOneExample", "Apidaze.SDK.Tests.Integration\CallsAllInOneExample\CallsAllInOneExample.csproj", "{4F642881-DBE1-40E7-844F-6FAA31DA7285}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreateCdrHttpHandlerExample", "APIdaze.SDK.Tests.Integration\CreateCdrHttpHandlerExample\CreateCdrHttpHandlerExample.csproj", "{BA3F5CAF-CAEB-49A9-97CE-F615CA3BA8E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreateCdrHttpHandlerExample", "Apidaze.SDK.Tests.Integration\CreateCdrHttpHandlerExample\CreateCdrHttpHandlerExample.csproj", "{BA3F5CAF-CAEB-49A9-97CE-F615CA3BA8E2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListCdrHttpHandlersExample", "APIdaze.SDK.Tests.Integration\ListCdrHttpHandlersExample\ListCdrHttpHandlersExample.csproj", "{C487EEC2-82F2-442E-87B3-36D87CC90A77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListCdrHttpHandlersExample", "Apidaze.SDK.Tests.Integration\ListCdrHttpHandlersExample\ListCdrHttpHandlersExample.csproj", "{C487EEC2-82F2-442E-87B3-36D87CC90A77}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpdateCdrHttpHandlerExample", "Apidaze.SDK.Tests.Integration\UpdateCdrHttpHandlerExample\UpdateCdrHttpHandlerExample.csproj", "{6E63B458-D2F5-40A6-B9E0-32EE1E81F6A2}"
 EndProject
@@ -57,8 +57,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListExternalScripts", "Apid
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpdateExternalScriptUrl", "Apidaze.SDK.Tests.Integration\UpdateExternalScriptUrl\UpdateExternalScriptUrl.csproj", "{437E21DC-D5E6-4EBF-BA10-D935AF44A48D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindMeOrFollowMeExample", "Apidaze.SDK.Tests.Integration\XML\FindMeOrFollowMeExample.csproj", "{3988CFA7-3651-4EB9-8FF0-7FBF1ABCF787}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IvrExample", "Apidaze.SDK.Tests.Integration\IvrExample\IvrExample.csproj", "{3AC844A1-FA6C-4918-A460-94CA5FAA9165}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListApplications", "Apidaze.SDK.Tests.Integration\ListApplications\ListApplications.csproj", "{B25FAF67-E49B-4936-9BFF-F5B3DFC6391C}"
@@ -67,7 +65,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetApplicationActionExample
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubApplicationExternalScriptsExample", "Apidaze.SDK.Tests.Integration\SubApplicationExternalScriptsExample\SubApplicationExternalScriptsExample.csproj", "{22B88E16-74BF-460E-B6CB-665F23520DA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleScriptsExamle", "Apidaze.SDK.Tests.Integration\SimpleScriptsExamle\SimpleScriptsExamle.csproj", "{A7014A09-7599-4B06-948F-B47B7CEC6DB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleScriptsExamle", "Apidaze.SDK.Tests.Integration\SimpleScriptsExamle\SimpleScriptsExamle.csproj", "{A7014A09-7599-4B06-948F-B47B7CEC6DB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{F0A71A30-8F67-44F7-ACD3-B5EA8B01F55C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1444D20E-082C-4A2D-907E-0B592F95BD77}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +80,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3988CFA7-3651-4EB9-8FF0-7FBF1ABCF787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3988CFA7-3651-4EB9-8FF0-7FBF1ABCF787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3988CFA7-3651-4EB9-8FF0-7FBF1ABCF787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3988CFA7-3651-4EB9-8FF0-7FBF1ABCF787}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6DED594D-D408-447E-A0DA-69B7F98634A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6DED594D-D408-447E-A0DA-69B7F98634A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DED594D-D408-447E-A0DA-69B7F98634A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -147,10 +156,6 @@ Global
 		{437E21DC-D5E6-4EBF-BA10-D935AF44A48D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{437E21DC-D5E6-4EBF-BA10-D935AF44A48D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{437E21DC-D5E6-4EBF-BA10-D935AF44A48D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3988CFA7-3651-4EB9-8FF0-7FBF1ABCF787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3988CFA7-3651-4EB9-8FF0-7FBF1ABCF787}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3988CFA7-3651-4EB9-8FF0-7FBF1ABCF787}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3988CFA7-3651-4EB9-8FF0-7FBF1ABCF787}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3AC844A1-FA6C-4918-A460-94CA5FAA9165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3AC844A1-FA6C-4918-A460-94CA5FAA9165}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AC844A1-FA6C-4918-A460-94CA5FAA9165}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -182,8 +187,8 @@ Global
 		{BC92DA17-2BC5-455C-BB44-6ADF9420188C} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
 		{1E187871-0ADE-4ED2-8463-FC3643BD8F97} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
 		{34F5E3D1-3815-4750-A59F-991376AE1387} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
+		{3988CFA7-3651-4EB9-8FF0-7FBF1ABCF787} = {97647B1F-10D8-498D-B7CD-B4E7AC3B7674}
 		{97647B1F-10D8-498D-B7CD-B4E7AC3B7674} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
-		{E6ADCF2A-1F28-4FCE-8C0C-7E59688E4CD5} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
 		{CB1C00BE-6CA2-4191-8865-236932DD25C5} = {BC92DA17-2BC5-455C-BB44-6ADF9420188C}
 		{ED9129C4-9758-467D-A2CF-321C0737E983} = {AC4FC029-6B11-47E3-8668-A66D96E04266}
 		{B6CF4747-F308-4114-8BE1-15606F1DD09B} = {4754B8F2-9B53-4464-ABC9-131EEEE8DA9E}
@@ -200,12 +205,12 @@ Global
 		{C8E35D43-5678-4B9E-9C9A-A60BDBAEA84A} = {34F5E3D1-3815-4750-A59F-991376AE1387}
 		{A1B9E81F-E377-4184-BA5D-C7EE2939878D} = {34F5E3D1-3815-4750-A59F-991376AE1387}
 		{437E21DC-D5E6-4EBF-BA10-D935AF44A48D} = {34F5E3D1-3815-4750-A59F-991376AE1387}
-		{3988CFA7-3651-4EB9-8FF0-7FBF1ABCF787} = {97647B1F-10D8-498D-B7CD-B4E7AC3B7674}
 		{3AC844A1-FA6C-4918-A460-94CA5FAA9165} = {97647B1F-10D8-498D-B7CD-B4E7AC3B7674}
-		{B25FAF67-E49B-4936-9BFF-F5B3DFC6391C} = {E6ADCF2A-1F28-4FCE-8C0C-7E59688E4CD5}
-		{467A8C7C-E8BF-4697-8817-2BAF430C617D} = {E6ADCF2A-1F28-4FCE-8C0C-7E59688E4CD5}
-		{22B88E16-74BF-460E-B6CB-665F23520DA2} = {E6ADCF2A-1F28-4FCE-8C0C-7E59688E4CD5}
+		{B25FAF67-E49B-4936-9BFF-F5B3DFC6391C} = {F0A71A30-8F67-44F7-ACD3-B5EA8B01F55C}
+		{467A8C7C-E8BF-4697-8817-2BAF430C617D} = {F0A71A30-8F67-44F7-ACD3-B5EA8B01F55C}
+		{22B88E16-74BF-460E-B6CB-665F23520DA2} = {F0A71A30-8F67-44F7-ACD3-B5EA8B01F55C}
 		{A7014A09-7599-4B06-948F-B47B7CEC6DB8} = {97647B1F-10D8-498D-B7CD-B4E7AC3B7674}
+		{F0A71A30-8F67-44F7-ACD3-B5EA8B01F55C} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F57FD98-5A15-49F3-923C-967E49E1A665}

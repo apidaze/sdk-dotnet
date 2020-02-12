@@ -1,10 +1,10 @@
-﻿using APIdaze.SDK;
-using APIdaze.SDK.Base;
-using APIdaze.SDK.Messages;
+﻿using Apidaze.SDK;
+using Apidaze.SDK.Base;
+using Apidaze.SDK.Messages;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.IO;
-using APIdaze.SDK.Exception;
+using Apidaze.SDK.Exception;
 
 namespace MessageExample
 {
@@ -32,8 +32,8 @@ namespace MessageExample
             // initialize API factory
             var apiFactory = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret));
 
-            var from = "14129274924";
-            var to = "4850916910";
+            var from = "14123456789";
+            var to = "4812345678";
             var messageBody = "Have a nice day!";
 
             try

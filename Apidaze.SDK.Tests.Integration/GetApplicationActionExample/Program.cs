@@ -1,9 +1,8 @@
-﻿using System;
-using System.IO;
-using APIdaze.SDK;
-using APIdaze.SDK.Base;
+﻿using Apidaze.SDK;
+using Apidaze.SDK.Base;
 using Microsoft.Extensions.Configuration;
-using Newtonsoft.Json;
+using System;
+using System.IO;
 
 namespace GetApplicationActionExample
 {
@@ -38,7 +37,7 @@ namespace GetApplicationActionExample
                         : "Application with id = {} not found.", id);
 
                 // get application by api_key
-                var subAppApiKey = "k2reiyjx";
+                var subAppApiKey = "";
 
                 var appActionByApiKey = applicationsApi.GetApplicationsByApiKey(subAppApiKey);
 

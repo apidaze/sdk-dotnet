@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
-using APIdaze.SDK.Exception;
+using Apidaze.SDK.Exception;
 
-namespace APIdaze.SDK.Messages
+namespace Apidaze.SDK.Messages
 {
     /// <summary>
     /// Class PhoneNumber.

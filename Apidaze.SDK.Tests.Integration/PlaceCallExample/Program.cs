@@ -1,23 +1,17 @@
-﻿using APIdaze.SDK;
-using APIdaze.SDK.Base;
-using APIdaze.SDK.Exception;
-using APIdaze.SDK.Messages;
-using Microsoft.Extensions.Configuration;
-using System;
+﻿using System;
 using System.IO;
-using CallType = APIdaze.SDK.Calls.CallType;
+using Apidaze.SDK;
+using Apidaze.SDK.Base;
+using Apidaze.SDK.Exception;
+using Apidaze.SDK.Messages;
+using Microsoft.Extensions.Configuration;
+using CallType = Apidaze.SDK.Calls.CallType;
+using CreateCallResponseException = Apidaze.SDK.Calls.CreateCallResponseException;
 
 namespace PlaceCallExample
 {
-    /// <summary>
-    /// Class Program.
-    /// </summary>
     class Program
     {
-        /// <summary>
-        /// Defines the entry point of the application.
-        /// </summary>
-        /// <param name="args">The arguments.</param>
         static void Main(string[] args)
         {
             var config = BuildConfig();
@@ -35,19 +29,19 @@ namespace PlaceCallExample
             var applicationClient = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret));
 
             // call details
-            var callerId = "14123456789";
-            var origin = "48123456789";
-            var destination = "48123456789";
+            var callerId = "14129274908";
+            var origin = "4812345678";
+            var destination = "4812345678";
 
             try
             {
-                //initialize callsApi
+                // initialize callsApi
                 var callsApi = applicationClient.CreateCallsApi();
 
-                //make a call
-                callsApi.CreateCall(new PhoneNumber(callerId), origin, destination, CallType.NUMBER);
+                // make a call
+                var guid = callsApi.CreateCall(new PhoneNumber(callerId), origin, destination, CallType.NUMBER);
 
-                Console.WriteLine("Call with id = {0} has been initiated.", callsApi);
+                Console.WriteLine("Call with id = {0} has been initiated.", guid);
             }
             catch (InvalidOperationException e)
             {
@@ -63,10 +57,6 @@ namespace PlaceCallExample
             }
         }
 
-        /// <summary>
-        /// Builds the configuration.
-        /// </summary>
-        /// <returns>IConfigurationRoot.</returns>
         private static IConfigurationRoot BuildConfig()
         {
             return new ConfigurationBuilder()

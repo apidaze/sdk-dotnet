@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace APIdaze.SDK.Applications
+namespace Apidaze.SDK.Applications
 {
     /// <summary>
     /// Interface IApplications
@@ -54,5 +54,11 @@ namespace APIdaze.SDK.Applications
         /// <param name="name">The name.</param>
         /// <returns>List&lt;Application&gt;.</returns>
         List<Application> GetApplicationsByName(string name);
+
+        IApiActionFactory GetApplicationActionById(long id);
+
+        IApiActionFactory GetApplicationActionByApiKey(string apiKey);
+
+        IApiActionFactory GetApplicationActionByName(string name);
     }
 }

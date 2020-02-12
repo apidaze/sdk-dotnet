@@ -1,6 +1,6 @@
-﻿using APIdaze.SDK.Exception;
+﻿using Apidaze.SDK.Exception;
 
-namespace APIdaze.SDK.Base
+namespace Apidaze.SDK.Base
 {
     /// <summary>
     /// The credentials to use in authenticate in Apidaze REST API
