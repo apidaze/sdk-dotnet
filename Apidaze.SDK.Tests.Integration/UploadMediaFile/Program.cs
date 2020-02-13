@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 using System;
 using System.IO;
 
-namespace UploadMediaFile
+namespace GetMediaFiles
 {
     /// <summary>
     /// Class Program.
