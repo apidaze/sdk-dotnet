@@ -7,6 +7,6 @@
     <OldToolsVersion>2.0</OldToolsVersion>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Apidaze.SDK\APIdaze.SDK.csproj" />
+    <ProjectReference Include="..\..\Apidaze.SDK\Apidaze.SDK.csproj" />
   </ItemGroup>
 </Project>

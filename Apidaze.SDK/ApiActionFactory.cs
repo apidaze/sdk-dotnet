@@ -10,17 +10,14 @@ using RestSharp;
 
 namespace Apidaze.SDK
 {
-    /// <summary>
-    /// Class ApiActionFactory.
-    /// Implements the <see cref="APIdaze.SDK.IApiActionFactory" />
-    /// </summary>
-    /// <seealso cref="APIdaze.SDK.IApiActionFactory" />
+   
     internal class ApiActionFactory : IApiActionFactory
     {
         /// <summary>
         /// The credentials
         /// </summary>
         private readonly Credentials _credentials;
+
         /// <summary>
         /// The URL
         /// </summary>

@@ -7,11 +7,11 @@ namespace Apidaze.SDK.Messages
 {
     /// <summary>
     /// Class Message.
-    /// Implements the <see cref="APIdaze.SDK.Base.BaseApiClient" />
-    /// Implements the <see cref="APIdaze.SDK.Messages.IMessage" />
+    /// Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
+    /// Implements the <see cref="Apidaze.SDK.Messages.IMessage" />
     /// </summary>
-    /// <seealso cref="APIdaze.SDK.Base.BaseApiClient" />
-    /// <seealso cref="APIdaze.SDK.Messages.IMessage" />
+    /// <seealso cref="Apidaze.SDK.Base.BaseApiClient" />
+    /// <seealso cref="Apidaze.SDK.Messages.IMessage" />
     public class Message : BaseApiClient, IMessage
     {
         /// <summary>

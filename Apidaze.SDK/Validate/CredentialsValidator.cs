@@ -6,11 +6,11 @@ namespace Apidaze.SDK.Validate
 {
     /// <summary>
     /// Class CredentialsValidator.
-    /// Implements the <see cref="APIdaze.SDK.Base.BaseApiClient" />
-    /// Implements the <see cref="APIdaze.SDK.Validates.ICredentialsValidator" />
+    /// Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
+    /// Implements the <see cref="Apidaze.SDK.Validates.ICredentialsValidator" />
     /// </summary>
-    /// <seealso cref="APIdaze.SDK.Base.BaseApiClient" />
-    /// <seealso cref="APIdaze.SDK.Validates.ICredentialsValidator" />
+    /// <seealso cref="Apidaze.SDK.Base.BaseApiClient" />
+    /// <seealso cref="Apidaze.SDK.Validates.ICredentialsValidator" />
     public class CredentialsValidator : BaseApiClient, ICredentialsValidator
     {
         /// <summary>

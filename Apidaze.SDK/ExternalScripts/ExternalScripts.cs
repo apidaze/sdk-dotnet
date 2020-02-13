@@ -9,11 +9,11 @@ namespace Apidaze.SDK.ExternalScripts
 {
     /// <summary>
     /// Class ExternalScripts.
-    /// Implements the <see cref="APIdaze.SDK.Base.BaseApiClient" />
-    /// Implements the <see cref="APIdaze.SDK.ExternalScripts.IExternalScripts" />
+    /// Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
+    /// Implements the <see cref="Apidaze.SDK.ExternalScripts.IExternalScripts" />
     /// </summary>
-    /// <seealso cref="APIdaze.SDK.Base.BaseApiClient" />
-    /// <seealso cref="APIdaze.SDK.ExternalScripts.IExternalScripts" />
+    /// <seealso cref="Apidaze.SDK.Base.BaseApiClient" />
+    /// <seealso cref="Apidaze.SDK.ExternalScripts.IExternalScripts" />
     public class ExternalScripts : BaseApiClient, IExternalScripts
     {
         /// <summary>
