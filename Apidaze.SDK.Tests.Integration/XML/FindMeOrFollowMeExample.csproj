@@ -1,16 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="Current">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <FileUpgradeFlags>40</FileUpgradeFlags>
+    <UpgradeBackupLocation>C:\Users\bednarz\Desktop\apidaze\sdk-dotnet\Backup\Apidaze.SDK.Tests.Integration\XML\</UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="HttpMock" Version="2.3.1" />
+    <ProjectReference Include="..\..\Apidaze.SDK\APIdaze.SDK.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\Apidaze.SDK\Apidaze.SDK.csproj" />
-  </ItemGroup>
-
 </Project>

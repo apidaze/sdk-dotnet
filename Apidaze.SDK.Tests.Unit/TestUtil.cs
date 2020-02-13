@@ -20,7 +20,7 @@ namespace Apidaze.SDK.Tests.Unit
         public static string GetFileContents(string sampleFile)
         {
             var asm = Assembly.GetExecutingAssembly();
-            var resource = $"Apidaze.SDK.Tests.Unit.ScriptsBuilders.TestScripts.{sampleFile}";
+            var resource = $"Apidaze.SDK.Tests.Unit.ScriptBuilder.TestScripts.{sampleFile}";
             using (var stream = asm.GetManifestResourceStream(resource))
             {
                 if (stream != null)

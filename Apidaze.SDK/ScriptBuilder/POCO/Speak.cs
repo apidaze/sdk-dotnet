@@ -29,6 +29,11 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
             return Math.Abs(InputTimeoutMillis) > 0;
         }
 
+        public bool ShouldSerializeDigitTimeoutMillis()
+        {
+            return Math.Abs(DigitTimeoutMillis) > 0;
+        }
+
         public bool ShouldSerializeLangEnum()
         {
             return LangEnum != default;

@@ -32,5 +32,11 @@ namespace Apidaze.SDK.Applications
          * @throws HttpResponseException
          */
         List<Application> GetApplicationsByName(string name);
+
+        IApiActionFactory GetApplicationActionById(long id);
+
+        IApiActionFactory GetApplicationActionByApiKey(string apiKey);
+
+        IApiActionFactory GetApplicationActionByName(string name);
     }
 }

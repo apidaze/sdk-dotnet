@@ -6,7 +6,7 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
 {
     public  class Dial
     {
-        [XmlElement("number")] public string Number { get; set; }
+        [XmlElement("number")] public List<Number> Number { get; set; }
 
         [XmlElement("sipaccount")] public string Sipaccount { get; set; }
 
@@ -36,6 +36,23 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
         public bool ShouldSerializeStrategy()
         {
             return Strategy != default;
+        }
+    }
+
+    public class Number
+    {
+        [XmlAttribute("timeout")] public string Timeout { get; set; }
+
+        [XmlText(typeof(string))] public string Value { get; set; }
+
+        public Number()
+        {
+        }
+
+        public Number(string timeout, string value)
+        {
+            Timeout = timeout;
+            Value = value;
         }
     }
 }
