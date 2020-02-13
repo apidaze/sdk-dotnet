@@ -2,8 +2,15 @@
 
 namespace Apidaze.SDK.Applications
 {
+    /// <summary>
+    /// Interface IApplications
+    /// </summary>
     public interface IApplications
     {
+        /// <summary>
+        /// Gets the applications.
+        /// </summary>
+        /// <returns>List&lt;Application&gt;.</returns>
         List<Application> GetApplications();
 
         /**
@@ -13,6 +20,11 @@ namespace Apidaze.SDK.Applications
          * @throws IOException
          * @throws HttpResponseException
          */
+        /// <summary>
+        /// Gets the applications by identifier.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>List&lt;Application&gt;.</returns>
         List<Application> GetApplicationsById(long id);
 
         /**
@@ -22,6 +34,11 @@ namespace Apidaze.SDK.Applications
          * @throws IOException
          * @throws HttpResponseException
          */
+        /// <summary>
+        /// Gets the applications by API key.
+        /// </summary>
+        /// <param name="apiKey">The API key.</param>
+        /// <returns>List&lt;Application&gt;.</returns>
         List<Application> GetApplicationsByApiKey(string apiKey);
 
         /**
@@ -31,6 +48,11 @@ namespace Apidaze.SDK.Applications
          * @throws IOException
          * @throws HttpResponseException
          */
+        /// <summary>
+        /// Gets the name of the applications by.
+        /// </summary>
+        /// <param name="name">The name.</param>
+        /// <returns>List&lt;Application&gt;.</returns>
         List<Application> GetApplicationsByName(string name);
 
         IApiActionFactory GetApplicationActionById(long id);

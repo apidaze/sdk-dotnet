@@ -7,18 +7,42 @@ using HttpStatusCode = System.Net.HttpStatusCode;
 
 namespace Apidaze.SDK.Base
 {
+    /// <summary>
+    /// Class BaseApiClient.
+    /// Implements the <see cref="APIdaze.SDK.Base.IBaseApiClient" />
+    /// </summary>
+    /// <seealso cref="APIdaze.SDK.Base.IBaseApiClient" />
     public abstract class BaseApiClient : IBaseApiClient
     {
+        /// <summary>
+        /// The credentials
+        /// </summary>
         private readonly Credentials _credentials;
+        /// <summary>
+        /// The client
+        /// </summary>
         protected readonly IRestClient Client;
+        /// <summary>
+        /// Gets the resource.
+        /// </summary>
+        /// <value>The resource.</value>
         protected abstract string Resource { get; }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BaseApiClient"/> class.
+        /// </summary>
+        /// <param name="client">The client.</param>
+        /// <param name="credentials">The credentials.</param>
         protected BaseApiClient(IRestClient client, Credentials credentials)
         {
             Client = client;
             _credentials = credentials;
         }
 
+        /// <summary>
+        /// Authenticates the request.
+        /// </summary>
+        /// <returns>RestRequest.</returns>
         protected RestRequest AuthenticateRequest()
         {
             var restRequest = new RestRequest("{api_key}" + Resource);
@@ -29,6 +53,12 @@ namespace Apidaze.SDK.Base
             return restRequest;
         }
 
+        /// <summary>
+        /// Creates the specified request parameters.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="requestParams">The request parameters.</param>
+        /// <returns>T.</returns>
         public T Create<T>(Dictionary<string, string> requestParams) where T : new()
         {
             var restRequest = AuthenticateRequest();
@@ -46,6 +76,11 @@ namespace Apidaze.SDK.Base
             return deserializedResponse;
         }
 
+        /// <summary>
+        /// Finds all.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns>IEnumerable&lt;T&gt;.</returns>
         public IEnumerable<T> FindAll<T>()
         {
             var restRequest = AuthenticateRequest();
@@ -56,6 +91,13 @@ namespace Apidaze.SDK.Base
             return deserializedResponse;
         }
 
+        /// <summary>
+        /// Finds the by parameter.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="name">The name.</param>
+        /// <param name="value">The value.</param>
+        /// <returns>IEnumerable&lt;T&gt;.</returns>
         public IEnumerable<T> FindByParameter<T>(string name, string value) where T : new()
         {
             var restRequest = AuthenticateRequest();
@@ -68,6 +110,12 @@ namespace Apidaze.SDK.Base
             return deserializedResponse;
         }
 
+        /// <summary>
+        /// Finds the by identifier.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="id">The identifier.</param>
+        /// <returns>T.</returns>
         public T FindById<T>(string id)
             where T : new()
         {
@@ -85,6 +133,13 @@ namespace Apidaze.SDK.Base
             return deserializedResponse;
         }
 
+        /// <summary>
+        /// Updates the specified identifier.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="id">The identifier.</param>
+        /// <param name="requestParams">The request parameters.</param>
+        /// <returns>T.</returns>
         public T Update<T>(string id, Dictionary<string, string> requestParams) where T : new()
         {
             var restRequest = AuthenticateRequest();
@@ -103,6 +158,10 @@ namespace Apidaze.SDK.Base
             return JsonConvert.DeserializeObject<T>(response.Content);
         }
 
+        /// <summary>
+        /// Deletes the specified identifier.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
         public void Delete(string id)
         {
             var restRequest = AuthenticateRequest();
@@ -114,6 +173,10 @@ namespace Apidaze.SDK.Base
             EnsureSuccessResponse(response);
         }
 
+        /// <summary>
+        /// Ensures the success response.
+        /// </summary>
+        /// <param name="response">The response.</param>
         internal static void EnsureSuccessResponse(IRestResponse response)
         {
             if (!new[] { HttpStatusCode.InternalServerError, HttpStatusCode.BadRequest }

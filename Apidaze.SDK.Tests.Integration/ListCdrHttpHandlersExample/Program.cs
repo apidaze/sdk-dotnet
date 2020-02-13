@@ -7,8 +7,15 @@ using Newtonsoft.Json;
 
 namespace ListCdrHttpHandlersExample
 {
+    /// <summary>
+    /// Class Program.
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Defines the entry point of the application.
+        /// </summary>
+        /// <param name="args">The arguments.</param>
         static void Main(string[] args)
         {
             var config = BuildConfig();
@@ -40,6 +47,10 @@ namespace ListCdrHttpHandlersExample
             }
         }
 
+        /// <summary>
+        /// Builds the configuration.
+        /// </summary>
+        /// <returns>IConfigurationRoot.</returns>
         private static IConfigurationRoot BuildConfig()
         {
             return new ConfigurationBuilder()

@@ -12,17 +12,31 @@ using static Apidaze.SDK.Tests.Unit.TestUtil;
 
 namespace Apidaze.SDK.Tests.Unit.ExternalScripts
 {
+    /// <summary>
+    /// Defines test class ExternalScriptsTest.
+    /// Implements the <see cref="APIdaze.SDK.Tests.Unit.BaseTest" />
+    /// </summary>
+    /// <seealso cref="APIdaze.SDK.Tests.Unit.BaseTest" />
     [TestClass]
     public class ExternalScriptsTest : BaseTest
     {
+        /// <summary>
+        /// The external scripts
+        /// </summary>
         private SDK.ExternalScripts.ExternalScripts _externalScripts;
 
+        /// <summary>
+        /// Startups this instance.
+        /// </summary>
         [TestInitialize]
         public void Startup()
         {
             _externalScripts = new SDK.ExternalScripts.ExternalScripts(MockIRestClient.Object, CredentialsForTest);
         }
 
+        /// <summary>
+        /// Defines the test method GetExternalScripts_ListOfExternalScripts_ReturnsScriptsList.
+        /// </summary>
         [TestMethod]
         public void GetExternalScripts_ListOfExternalScripts_ReturnsScriptsList()
         {
@@ -39,6 +53,9 @@ namespace Apidaze.SDK.Tests.Unit.ExternalScripts
             MockIRestClient.Verify(x => x.Execute<List<ExternalScript>>(It.IsAny<RestRequest>()), Times.Once);
         }
 
+        /// <summary>
+        /// Defines the test method GetExternalScriptById_ExternalScript_ReturnsOneScript.
+        /// </summary>
         [TestMethod]
         public void GetExternalScriptById_ExternalScript_ReturnsOneScript()
         {
@@ -56,6 +73,9 @@ namespace Apidaze.SDK.Tests.Unit.ExternalScripts
             MockIRestClient.Verify(x => x.Execute<ExternalScript>(It.IsAny<RestRequest>()), Times.Once);
         }
 
+        /// <summary>
+        /// Defines the test method GetExternalScriptById_NotFound_ReturnsEmpty.
+        /// </summary>
         [TestMethod]
         public void GetExternalScriptById_NotFound_ReturnsEmpty()
         {
@@ -72,6 +92,9 @@ namespace Apidaze.SDK.Tests.Unit.ExternalScripts
             MockIRestClient.Verify(x => x.Execute<ExternalScript>(It.IsAny<RestRequest>()), Times.Once);
         }
 
+        /// <summary>
+        /// Defines the test method UpdateExternalScriptUrl_IdAndUrl_ScriptUpdated.
+        /// </summary>
         [TestMethod]
         public void UpdateExternalScriptUrl_IdAndUrl_ScriptUpdated()
         {
@@ -91,6 +114,9 @@ namespace Apidaze.SDK.Tests.Unit.ExternalScripts
             MockIRestClient.Verify(x => x.Execute<ExternalScript>(It.IsAny<RestRequest>()), Times.Once);
         }
 
+        /// <summary>
+        /// Defines the test method UpdateExternalScriptUrl_IdAndUrlAndName_ScriptUpdated.
+        /// </summary>
         [TestMethod]
         public void UpdateExternalScriptUrl_IdAndUrlAndName_ScriptUpdated()
         {
@@ -111,6 +137,9 @@ namespace Apidaze.SDK.Tests.Unit.ExternalScripts
             MockIRestClient.Verify(x => x.Execute<ExternalScript>(It.IsAny<RestRequest>()), Times.Once);
         }
 
+        /// <summary>
+        /// Defines the test method UpdateExternalScriptUrl_NameIsTooLong_ApiNotInvokedArgumentException.
+        /// </summary>
         [TestMethod]
         public void UpdateExternalScriptUrl_NameIsTooLong_ApiNotInvokedArgumentException()
         {
@@ -128,6 +157,9 @@ namespace Apidaze.SDK.Tests.Unit.ExternalScripts
             MockIRestClient.Verify(x => x.Execute<ExternalScript>(It.IsAny<RestRequest>()), Times.Once);
         }
 
+        /// <summary>
+        /// Defines the test method UpdateExternalScriptUrl_ErrorApi_InvalidOperationException.
+        /// </summary>
         [TestMethod]
         public void UpdateExternalScriptUrl_ErrorApi_InvalidOperationException()
         {
@@ -145,6 +177,10 @@ namespace Apidaze.SDK.Tests.Unit.ExternalScripts
             MockIRestClient.Verify(x => x.Execute<ExternalScript>(It.IsAny<RestRequest>()), Times.Never);
         }
 
+        /// <summary>
+        /// Builds the external scripts lists.
+        /// </summary>
+        /// <returns>List&lt;ExternalScript&gt;.</returns>
         private List<ExternalScript> BuildExternalScriptsLists()
         {
             return new List<ExternalScript> {

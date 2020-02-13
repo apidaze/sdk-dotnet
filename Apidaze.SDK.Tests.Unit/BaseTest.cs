@@ -4,12 +4,20 @@ using RestSharp;
 
 namespace Apidaze.SDK.Tests.Unit
 {
-    // MethodName_StateUnderTest_ExpectedBehavior
+    /// <summary>
+    /// Defines test class BaseTest.
+    /// </summary>
     [TestClass]
     public class BaseTest
     {
+        /// <summary>
+        /// The mock i rest client
+        /// </summary>
         protected Mock<IRestClient> MockIRestClient;
 
+        /// <summary>
+        /// Bases the test initialize.
+        /// </summary>
         [TestInitialize]
         public void BaseTestInit()
         {

@@ -6,8 +6,14 @@ using Microsoft.Extensions.Configuration;
 
 namespace DownloadRecordingToFileExample
 {
+    /// <summary>
+    /// Class Program.
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Defines the entry point of the application.
+        /// </summary>
         static void Main()
         {
             var config = BuildConfig();
@@ -46,6 +52,10 @@ namespace DownloadRecordingToFileExample
             }
         }
 
+        /// <summary>
+        /// Builds the configuration.
+        /// </summary>
+        /// <returns>IConfigurationRoot.</returns>
         private static IConfigurationRoot BuildConfig()
         {
             return new ConfigurationBuilder()

@@ -13,18 +13,31 @@ using ApplicationClient = Apidaze.SDK.Applications.Applications;
 
 namespace Apidaze.SDK.Tests.Unit.Applications
 {
+    /// <summary>
+    /// Defines test class ApplicationsTests.
+    /// Implements the <see cref="APIdaze.SDK.Tests.Unit.BaseTest" />
+    /// </summary>
+    /// <seealso cref="APIdaze.SDK.Tests.Unit.BaseTest" />
     [TestClass]
-
     public class ApplicationsTests : BaseTest
     {
+        /// <summary>
+        /// The application client API
+        /// </summary>
         private ApplicationClient _applicationClientApi;
 
+        /// <summary>
+        /// Startups this instance.
+        /// </summary>
         [TestInitialize]
         public void Startup()
         {
             _applicationClientApi = new ApplicationClient(MockIRestClient.Object, CredentialsForTest);
         }
 
+        /// <summary>
+        /// Defines the test method GetApplications_ListOfApplications_ReturnsApplicationsList.
+        /// </summary>
         [TestMethod]
         public void GetApplications_ListOfApplications_ReturnsApplicationsList()
         {
@@ -41,6 +54,9 @@ namespace Apidaze.SDK.Tests.Unit.Applications
             MockIRestClient.Verify(x => x.Execute<List<Application>>(It.IsAny<RestRequest>()), Times.Once);
         }
 
+        /// <summary>
+        /// Defines the test method GetApplicationsById_OneApplication_ReturnsOneApplication.
+        /// </summary>
         [TestMethod]
         public void GetApplicationsById_OneApplication_ReturnsOneApplication()
         {
@@ -58,6 +74,9 @@ namespace Apidaze.SDK.Tests.Unit.Applications
             MockIRestClient.Verify(x => x.Execute<List<Application>>(It.IsAny<RestRequest>()), Times.Once);
         }
 
+        /// <summary>
+        /// Defines the test method GetApplicationsByApiKey_OneApplication_ReturnsOneApplication.
+        /// </summary>
         [TestMethod]
         public void GetApplicationsByApiKey_OneApplication_ReturnsOneApplication()
         {
@@ -75,6 +94,9 @@ namespace Apidaze.SDK.Tests.Unit.Applications
             MockIRestClient.Verify(x => x.Execute<List<Application>>(It.IsAny<RestRequest>()), Times.Once);
         }
 
+        /// <summary>
+        /// Defines the test method GetApplicationsByApiName_OneApplication_ReturnsOneApplication.
+        /// </summary>
         [TestMethod]
         public void GetApplicationsByApiName_OneApplication_ReturnsOneApplication()
         {
@@ -91,6 +113,10 @@ namespace Apidaze.SDK.Tests.Unit.Applications
             applications.Should().BeEquivalentTo(result);
             MockIRestClient.Verify(x => x.Execute<List<Application>>(It.IsAny<RestRequest>()), Times.Once);
         }
+        /// <summary>
+        /// Builds the applications list.
+        /// </summary>
+        /// <returns>List&lt;Application&gt;.</returns>
         private List<Application> BuildApplicationsList()
         {
             return new List<Application>
