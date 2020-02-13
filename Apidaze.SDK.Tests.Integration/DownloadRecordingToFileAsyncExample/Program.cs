@@ -7,8 +7,15 @@ using Microsoft.Extensions.Configuration;
 
 namespace DownloadRecordingToFileAsyncExample
 {
+    /// <summary>
+    /// Class Program.
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Defines the entry point of the application.
+        /// </summary>
+        /// <param name="args">The arguments.</param>
         static async Task Main(string[] args)
         {
             var config = BuildConfig();
@@ -47,6 +54,10 @@ namespace DownloadRecordingToFileAsyncExample
             }
         }
 
+        /// <summary>
+        /// Builds the configuration.
+        /// </summary>
+        /// <returns>IConfigurationRoot.</returns>
         private static IConfigurationRoot BuildConfig()
         {
             return new ConfigurationBuilder()

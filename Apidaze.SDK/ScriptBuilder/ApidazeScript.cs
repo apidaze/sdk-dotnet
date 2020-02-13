@@ -8,19 +8,33 @@ using System.Xml.Serialization;
 
 namespace Apidaze.SDK.ScriptBuilder
 {
+    /// <summary>
+    /// Class ApidazeScript.
+    /// </summary>
     [XmlRoot(ElementName = "document")]
     public class ApidazeScript
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ApidazeScript" /> class.
+        /// </summary>
         public ApidazeScript()
         {
             Nodes = new List<object>();
         }
 
+        /// <summary>
+        /// Builds this instance.
+        /// </summary>
+        /// <returns>ApidazeScript.</returns>
         public static ApidazeScript Build()
         {
             return new ApidazeScript();
         }
 
+        /// <summary>
+        /// Gets or sets the nodes.
+        /// </summary>
+        /// <value>The nodes.</value>
         [XmlArrayItem(typeof(Conference), ElementName = "conference")]
         [XmlArrayItem(typeof(Echo), ElementName = "echo")]
         [XmlArrayItem(typeof(Intercept), ElementName = "intercept")]
@@ -36,12 +50,23 @@ namespace Apidaze.SDK.ScriptBuilder
         [XmlArray("work")]
         public List<object> Nodes { get; set; }
 
+        /// <summary>
+        /// Adds the node.
+        /// </summary>
+        /// <param name="node">The node.</param>
+        /// <returns>ApidazeScript.</returns>
         public ApidazeScript AddNode(object node)
         {
             Nodes.Add(node);
             return this;
         }
 
+        /// <summary>
+        /// Converts to xml.
+        /// </summary>
+        /// <param name="withFormatting">if set to <c>true</c> [with formatting].</param>
+        /// <param name="omitXmlDeclaration">if set to <c>true</c> [omit XML declaration].</param>
+        /// <returns>System.String.</returns>
         public string ToXml(bool withFormatting = true, bool omitXmlDeclaration = false)
         {
             var listOfType = new List<Type>
@@ -72,8 +97,17 @@ namespace Apidaze.SDK.ScriptBuilder
             return stringWriter.ToString().Replace(" />", "/>");
         }
 
+        /// <summary>
+        /// Class UTF8StringWriter.
+        /// Implements the <see cref="System.IO.StringWriter" />
+        /// </summary>
+        /// <seealso cref="System.IO.StringWriter" />
         private class UTF8StringWriter : StringWriter
         {
+            /// <summary>
+            /// Gets the encoding.
+            /// </summary>
+            /// <value>The encoding.</value>
             public override Encoding Encoding => Encoding.UTF8;
         }
     }

@@ -10,17 +10,26 @@ using static Apidaze.SDK.Tests.Unit.TestUtil;
 namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
 {
 
+    /// <summary>
+    /// Defines test class ApidazeScriptTest.
+    /// </summary>
     [TestClass]
     public class ApidazeScriptTest
     {
         private ApidazeScript _ApidazeScript;
 
+        /// <summary>
+        /// Startups this instance.
+        /// </summary>
         [TestInitialize]
         public void Startup()
         {
             _ApidazeScript = new ApidazeScript();
         }
 
+        /// <summary>
+        /// Defines the test method ToXml_Answer_ReturnsEqualToFile.
+        /// </summary>
         [TestMethod]
         public void ToXml_Answer_ReturnsEqualToFile()
         {
@@ -36,6 +45,9 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             result.Should().BeEquivalentTo(expectedOutput);
         }
 
+        /// <summary>
+        /// Defines the test method ToXml_Playback_ReturnsEqualToFile.
+        /// </summary>
         [TestMethod]
         public void ToXml_Playback_ReturnsEqualToFile()
         {
@@ -51,6 +63,9 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             result.Should().BeEquivalentTo(expectedOutput);
         }
 
+        /// <summary>
+        /// Defines the test method ToXml_Ringback_ReturnsEqualToFile.
+        /// </summary>
         [TestMethod]
         public void ToXml_Ringback_ReturnsEqualToFile()
         {
@@ -69,6 +84,9 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             result.Should().BeEquivalentTo(expectedOutput);
         }
 
+        /// <summary>
+        /// Defines the test method ToXml_Echo_ReturnsEqualToFile.
+        /// </summary>
         [TestMethod]
         public void ToXml_Echo_ReturnsEqualToFile()
         {
@@ -85,6 +103,9 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             result.Should().BeEquivalentTo(expectedOutput);
         }
 
+        /// <summary>
+        /// Defines the test method ToXml_Hangup_ReturnsEqualToFile.
+        /// </summary>
         [TestMethod]
         public void ToXml_Hangup_ReturnsEqualToFile()
         {
@@ -100,6 +121,9 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             result.Should().BeEquivalentTo(expectedOutput);
         }
 
+        /// <summary>
+        /// Defines the test method ToXml_Intercept_ReturnsEqualToFile.
+        /// </summary>
         [TestMethod]
         public void ToXml_Intercept_ReturnsEqualToFile()
         {
@@ -117,6 +141,9 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             result.Should().BeEquivalentTo(expectedOutput);
         }
 
+        /// <summary>
+        /// Defines the test method ToXml_Speak_ReturnsEqualToFile.
+        /// </summary>
         [TestMethod]
         public void ToXml_Speak_ReturnsEqualToFile()
         {
@@ -139,6 +166,9 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             result.Should().BeEquivalentTo(expectedOutput);
         }
 
+        /// <summary>
+        /// Defines the test method ToXml_BindWithSpeak_ReturnsEqualToFile.
+        /// </summary>
         [TestMethod]
         public void ToXml_BindWithSpeak_ReturnsEqualToFile()
         {
@@ -165,6 +195,9 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             result.Should().BeEquivalentTo(expectedOutput);
         }
 
+        /// <summary>
+        /// Defines the test method ToXml_BindWithPlayback_ReturnsEqualToFile.
+        /// </summary>
         [TestMethod]
         public void ToXml_BindWithPlayback_ReturnsEqualToFile()
         {
@@ -190,6 +223,9 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             result.Should().BeEquivalentTo(expectedOutput);
         }
 
+        /// <summary>
+        /// Defines the test method ToXml_Wait_ReturnsEqualToFile.
+        /// </summary>
         [TestMethod]
         public void ToXml_Wait_ReturnsEqualToFile()
         {
@@ -210,6 +246,9 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             result.Should().BeEquivalentTo(expectedOutput);
         }
 
+        /// <summary>
+        /// Defines the test method ToXml_Conference_ReturnsEqualToFile.
+        /// </summary>
         [TestMethod]
         public void ToXml_Conference_ReturnsEqualToFile()
         {
@@ -228,6 +267,9 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             result.Should().BeEquivalentTo(expectedOutput);
         }
 
+        /// <summary>
+        /// Defines the test method ToXml_Record_ReturnsEqualToFile.
+        /// </summary>
         [TestMethod]
         public void ToXml_Record_ReturnsEqualToFile()
         {
@@ -245,6 +287,9 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             result.Should().BeEquivalentTo(expectedOutput);
         }
 
+        /// <summary>
+        /// Defines the test method ToXml_RecordWithAllAttributes_ReturnsEqualToFile.
+        /// </summary>
         [TestMethod]
         public void ToXml_RecordWithAllAttributes_ReturnsEqualToFile()
         {
@@ -262,12 +307,15 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             result.Should().BeEquivalentTo(expectedOutput);
         }
 
+        /// <summary>
+        /// Defines the test method ToXmlWithNoFormatting_DialNumber_ReturnsEqualToFile.
+        /// </summary>
         [TestMethod]
         public void ToXmlWithNoFormatting_DialNumber_ReturnsEqualToFile()
         {
             // Arrange
             var expectedOutput = GetFileContents("dial-number.xml").RemoveWhiteSpaces();
-            var dial = new Dial() { Number = "1234567890" };
+            var dial = new Dial() { Number = new List<Number>() };
             _ApidazeScript.AddNode(dial).AddNode(new Hangup());
             const bool noFormatting = false;
 
@@ -278,6 +326,9 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             result.Should().BeEquivalentTo(expectedOutput);
         }
 
+        /// <summary>
+        /// Defines the test method ToXmlWithNoFormatting_DialSipAccount_ReturnsEqualToFile.
+        /// </summary>
         [TestMethod]
         public void ToXmlWithNoFormatting_DialSipAccount_ReturnsEqualToFile()
         {
@@ -294,6 +345,9 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             result.Should().BeEquivalentTo(expectedOutput);
         }
 
+        /// <summary>
+        /// Defines the test method ToXmlWithNoFormatting_DialSipUri_ReturnsEqualToFile.
+        /// </summary>
         [TestMethod]
         public void ToXmlWithNoFormatting_DialSipUri_ReturnsEqualToFile()
         {
@@ -310,6 +364,9 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             result.Should().BeEquivalentTo(expectedOutput);
         }
 
+        /// <summary>
+        /// Defines the test method ToXmlWithNoFormatting_DialWithAllAttributesAndDestinationTypes_ReturnsEqualToFile.
+        /// </summary>
         [TestMethod]
         public void ToXmlWithNoFormatting_DialWithAllAttributesAndDestinationTypes_ReturnsEqualToFile()
         {
@@ -324,7 +381,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
                 Action = "http://action.url.com",
                 AnswerUrl = "http://answer-url.com",
                 CallerHangupUrl = "http://caller-hangup-url.com",
-                Number = "1234567890",
+                Number = new List<Number>(),
                 Sipaccount = "targetsipaccount"
             };
             _ApidazeScript.AddNode(dial).AddNode(new Hangup());

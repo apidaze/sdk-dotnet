@@ -13,17 +13,31 @@ using static Apidaze.SDK.Tests.Unit.TestUtil;
 
 namespace Apidaze.SDK.Tests.Unit.Calls
 {
+    /// <summary>
+    /// Defines test class CallsTests.
+    /// Implements the <see cref="APIdaze.SDK.Tests.Unit.BaseTest" />
+    /// </summary>
+    /// <seealso cref="APIdaze.SDK.Tests.Unit.BaseTest" />
     [TestClass]
     public class CallsTests : BaseTest
     {
+        /// <summary>
+        /// The calls API
+        /// </summary>
         private SDK.Calls.Calls _callsApi;
 
+        /// <summary>
+        /// Startups this instance.
+        /// </summary>
         [TestInitialize]
         public void Startup()
         {
             _callsApi = new SDK.Calls.Calls(MockIRestClient.Object, CredentialsForTest);
         }
 
+        /// <summary>
+        /// Defines the test method CreateCall_NumberCallType_CallId.
+        /// </summary>
         [TestMethod]
         public void CreateCall_NumberCallType_CallId()
         {
@@ -43,6 +57,9 @@ namespace Apidaze.SDK.Tests.Unit.Calls
             Assert.AreEqual(result, callId);
         }
 
+        /// <summary>
+        /// Defines the test method CreateCall_SipAccountCallType_CallId.
+        /// </summary>
         [TestMethod]
         public void CreateCall_SipAccountCallType_CallId()
         {
@@ -63,6 +80,9 @@ namespace Apidaze.SDK.Tests.Unit.Calls
             Assert.AreEqual(result, callId);
         }
 
+        /// <summary>
+        /// Defines the test method CreateCall_FailureMessage_CreateCallResponseExceptionThrowed.
+        /// </summary>
         [TestMethod]
         public void CreateCall_FailureMessage_CreateCallResponseExceptionThrowed()
         {
@@ -83,6 +103,9 @@ namespace Apidaze.SDK.Tests.Unit.Calls
             Assert.AreEqual(failureMessage, exception.Message);
         }
 
+        /// <summary>
+        /// Defines the test method CreateCall_EmptyJson_CreateCallResponseExceptionThrowed.
+        /// </summary>
         [TestMethod]
         public void CreateCall_EmptyJson_CreateCallResponseExceptionThrowed()
         {
@@ -102,6 +125,9 @@ namespace Apidaze.SDK.Tests.Unit.Calls
             Assert.AreEqual(failureMessage, exception.Message);
         }
 
+        /// <summary>
+        /// Defines the test method DeleteCall_Guid_DeleteExecutedOnce.
+        /// </summary>
         [TestMethod]
         public void DeleteCall_Guid_DeleteExecutedOnce()
         {
@@ -118,6 +144,9 @@ namespace Apidaze.SDK.Tests.Unit.Calls
             MockIRestClient.Verify(x => x.Execute(It.IsAny<RestRequest>()), Times.Once);
         }
 
+        /// <summary>
+        /// Defines the test method DeleteCall_FailureMessage_DeleteCallResponseException.
+        /// </summary>
         [TestMethod]
         public void DeleteCall_FailureMessage_DeleteCallResponseException()
         {
@@ -133,6 +162,9 @@ namespace Apidaze.SDK.Tests.Unit.Calls
             Assert.AreEqual(failureMessage, exception.Message);
         }
 
+        /// <summary>
+        /// Defines the test method GetCalls_ListOfCalls_ReturnsCalls.
+        /// </summary>
         [TestMethod]
         public void GetCalls_ListOfCalls_ReturnsCalls()
         {
@@ -148,6 +180,9 @@ namespace Apidaze.SDK.Tests.Unit.Calls
             calls.Should().BeEquivalentTo(result);
         }
 
+        /// <summary>
+        /// Defines the test method GetCallByGuid_OneCall_ReturnsProperCall.
+        /// </summary>
         [TestMethod]
         public void GetCallByGuid_OneCall_ReturnsProperCall()
         {
@@ -165,6 +200,9 @@ namespace Apidaze.SDK.Tests.Unit.Calls
             calls.First().Should().BeEquivalentTo(result);
         }
 
+        /// <summary>
+        /// Defines the test method GetCallByGuid_StatusCodeNotFound_ReturnsNull.
+        /// </summary>
         [TestMethod]
         public void GetCallByGuid_StatusCodeNotFound_ReturnsNull()
         {
@@ -181,6 +219,10 @@ namespace Apidaze.SDK.Tests.Unit.Calls
             MockIRestClient.Verify(x => x.Execute<Call>(It.IsAny<RestRequest>()), Times.Once);
         }
 
+        /// <summary>
+        /// Builds the calls list.
+        /// </summary>
+        /// <returns>List&lt;Call&gt;.</returns>
         private static List<Call> BuildCallsList()
         {
             var list = new List<Call>

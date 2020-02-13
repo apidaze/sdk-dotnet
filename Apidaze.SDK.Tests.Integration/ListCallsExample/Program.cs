@@ -5,11 +5,17 @@ using Newtonsoft.Json;
 using System;
 using System.IO;
 
-
 namespace ListCallsExample
 {
+    /// <summary>
+    /// Class Program.
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Defines the entry point of the application.
+        /// </summary>
+        /// <param name="args">The arguments.</param>
         static void Main(string[] args)
         {
             var config = BuildConfig();
@@ -41,6 +47,10 @@ namespace ListCallsExample
             }
         }
 
+        /// <summary>
+        /// Builds the configuration.
+        /// </summary>
+        /// <returns>IConfigurationRoot.</returns>
         private static IConfigurationRoot BuildConfig()
         {
             return new ConfigurationBuilder()
