@@ -99,7 +99,6 @@ Scripts builders are used to build XML instructions described in [XML Scripting 
 To build an instruction which echo back received audio to the caller with some delay use the following code.
 ```csharp
     ApidazeScript script = ApidazeScript.Build().AddNode(new Answer()).AddNode(new Echo { Delay = 500 });
-    var noFormatting = true;
 
     // Act
     string xml = script.ToXml();
