@@ -48,7 +48,7 @@ namespace Apidaze.SDK.MediaFiles
 
             var response = Client.Execute(restRequest);
             EnsureSuccessResponse(response);
-            return JsonConvert.DeserializeObject<IEnumerable<dynamic>>(response.Content);
+            return JsonConvert.DeserializeObject<dynamic>(response.Content);
         }
 
         public dynamic DeleteMediaFile(string fileName)
@@ -61,7 +61,7 @@ namespace Apidaze.SDK.MediaFiles
            
             var response = Client.Execute(restRequest);
             EnsureSuccessResponse(response);
-            return JsonConvert.DeserializeObject<IEnumerable<dynamic>>(response.Content);
+            return JsonConvert.DeserializeObject<dynamic>(response.Content);
         }
 
         public dynamic DownloadMediaFile(string fileName)
@@ -74,7 +74,7 @@ namespace Apidaze.SDK.MediaFiles
 
             var response = Client.Execute(restRequest);
             EnsureSuccessResponse(response);
-            return JsonConvert.DeserializeObject<IEnumerable<dynamic>>(response.Content);
+            return JsonConvert.DeserializeObject<dynamic>(response.Content);
         }
 
         public dynamic ShowMediaFileSummary(string fileName)
@@ -87,7 +87,7 @@ namespace Apidaze.SDK.MediaFiles
 
             var response = Client.Execute(restRequest);
             EnsureSuccessResponse(response);
-            return JsonConvert.DeserializeObject<IEnumerable<dynamic>>(response.Content);
+            return JsonConvert.DeserializeObject<dynamic>(response.Content);
         }
     }
 }

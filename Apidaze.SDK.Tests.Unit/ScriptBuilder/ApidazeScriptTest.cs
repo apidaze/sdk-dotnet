@@ -267,7 +267,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
         {
             // Arrange
             var expectedOutput = GetFileContents("dial-number.xml").RemoveWhiteSpaces();
-            var dial = new Dial() { Number = "1234567890" };
+            var dial = new Dial() { Number = new List<Number>() };
             _ApidazeScript.AddNode(dial).AddNode(new Hangup());
             const bool noFormatting = false;
 
@@ -324,7 +324,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
                 Action = "http://action.url.com",
                 AnswerUrl = "http://answer-url.com",
                 CallerHangupUrl = "http://caller-hangup-url.com",
-                Number = "1234567890",
+                Number = new List<Number>(),
                 Sipaccount = "targetsipaccount"
             };
             _ApidazeScript.AddNode(dial).AddNode(new Hangup());

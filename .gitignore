@@ -278,3 +278,4 @@ Apidaze.SDK.Tests.Integration/UpdateExternalScriptUrl/client-secrets.json
 /Apidaze.SDK.Tests.Integration/SubApplicationExternalScriptsExample/client-secrets.json
 /Apidaze.SDK.Tests.Integration/ListApplications/client-secrets.json
 /Apidaze.SDK.Tests.Integration/GetApplicationActionExample/client-secrets.json
+Apidaze.SDK.Tests.Integration/UploadMediaFile/client-secrets.json

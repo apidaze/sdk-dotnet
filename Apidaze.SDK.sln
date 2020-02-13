@@ -74,6 +74,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MediaFiles", "MediaFiles", "{AA223675-DEEE-445E-88BC-1639BEEAB0DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UploadMediaFile", "Apidaze.SDK.Tests.Integration\UploadMediaFile\UploadMediaFile.csproj", "{78370057-EB21-490C-8728-40D4E25AA563}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -176,6 +180,10 @@ Global
 		{A7014A09-7599-4B06-948F-B47B7CEC6DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7014A09-7599-4B06-948F-B47B7CEC6DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7014A09-7599-4B06-948F-B47B7CEC6DB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78370057-EB21-490C-8728-40D4E25AA563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78370057-EB21-490C-8728-40D4E25AA563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78370057-EB21-490C-8728-40D4E25AA563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78370057-EB21-490C-8728-40D4E25AA563}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -211,6 +219,8 @@ Global
 		{22B88E16-74BF-460E-B6CB-665F23520DA2} = {F0A71A30-8F67-44F7-ACD3-B5EA8B01F55C}
 		{A7014A09-7599-4B06-948F-B47B7CEC6DB8} = {97647B1F-10D8-498D-B7CD-B4E7AC3B7674}
 		{F0A71A30-8F67-44F7-ACD3-B5EA8B01F55C} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
+		{AA223675-DEEE-445E-88BC-1639BEEAB0DE} = {1ABFD7DB-10C6-497A-A5F4-AC32E0BAA4B2}
+		{78370057-EB21-490C-8728-40D4E25AA563} = {AA223675-DEEE-445E-88BC-1639BEEAB0DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F57FD98-5A15-49F3-923C-967E49E1A665}
