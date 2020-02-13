@@ -9,9 +9,9 @@ namespace Apidaze.SDK.Base
 {
     /// <summary>
     /// Class BaseApiClient.
-    /// Implements the <see cref="APIdaze.SDK.Base.IBaseApiClient" />
+    /// Implements the <see cref="Apidaze.SDK.Base.IBaseApiClient" />
     /// </summary>
-    /// <seealso cref="APIdaze.SDK.Base.IBaseApiClient" />
+    /// <seealso cref="Apidaze.SDK.Base.IBaseApiClient" />
     public abstract class BaseApiClient : IBaseApiClient
     {
         /// <summary>

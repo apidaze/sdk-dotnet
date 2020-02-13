@@ -15,9 +15,9 @@ namespace Apidaze.SDK.Tests.Unit.Calls
 {
     /// <summary>
     /// Defines test class CallsTests.
-    /// Implements the <see cref="APIdaze.SDK.Tests.Unit.BaseTest" />
+    /// Implements the <see cref="Apidaze.SDK.Tests.Unit.BaseTest" />
     /// </summary>
-    /// <seealso cref="APIdaze.SDK.Tests.Unit.BaseTest" />
+    /// <seealso cref="Apidaze.SDK.Tests.Unit.BaseTest" />
     [TestClass]
     public class CallsTests : BaseTest
     {

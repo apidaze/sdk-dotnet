@@ -10,9 +10,9 @@ namespace Apidaze.SDK.Tests.Unit.Messages
 {
     /// <summary>
     /// Defines test class MessageTest.
-    /// Implements the <see cref="APIdaze.SDK.Tests.Unit.BaseTest" />
+    /// Implements the <see cref="Apidaze.SDK.Tests.Unit.BaseTest" />
     /// </summary>
-    /// <seealso cref="APIdaze.SDK.Tests.Unit.BaseTest" />
+    /// <seealso cref="Apidaze.SDK.Tests.Unit.BaseTest" />
     [TestClass]
     public class MessageTest : BaseTest
     {
