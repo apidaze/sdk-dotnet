@@ -70,7 +70,7 @@ namespace Apidaze.SDK.Tests.Unit.Recordings
                 new RestResponse<List<string>> { StatusCode = HttpStatusCode.OK, Content = JsonConvert.SerializeObject(recordings) });
 
             // Act
-            var result = _recordingsApi.GetRecordingsList();
+            var result = _recordingsApi.GetRecordings();
 
             // Assert
             MockIRestClient.Verify(x => x.Execute<List<string>>(It.IsAny<RestRequest>()), Times.Once);

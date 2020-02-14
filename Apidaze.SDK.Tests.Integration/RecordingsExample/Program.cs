@@ -38,7 +38,7 @@ namespace RecordingsExample
                 var recordingsApi = apiFactory.CreateRecordingsApi();
 
                 // get recordings list
-                var list =  recordingsApi.GetRecordingsList();
+                var list =  recordingsApi.GetRecordings();
                 list.ToList().ForEach(x => Console.WriteLine("Recordings: {0}", JsonConvert.SerializeObject(x, Formatting.Indented)));
             }
             catch (InvalidOperationException e)

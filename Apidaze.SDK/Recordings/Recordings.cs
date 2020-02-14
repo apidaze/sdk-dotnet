@@ -37,7 +37,7 @@ namespace Apidaze.SDK.Recordings
         /// Gets the recordings list.
         /// </summary>
         /// <returns>IEnumerable&lt;System.String&gt;.</returns>
-        public IEnumerable<string> GetRecordingsList()
+        public IEnumerable<string> GetRecordings()
         {
             return FindAll<string>();
         }
@@ -68,7 +68,6 @@ namespace Apidaze.SDK.Recordings
         /// <param name="target">The target.</param>
         /// <returns>FileInfo.</returns>
         /// <exception cref="InvalidOperationException"></exception>
-        /// <exception cref="System.InvalidOperationException"></exception>
         public FileInfo DownloadRecordingToFile(string sourceFileName, string target)
         {
             var restRequest = DownloadRequest(sourceFileName);
@@ -86,7 +85,6 @@ namespace Apidaze.SDK.Recordings
         /// </summary>
         /// <param name="fileName">Name of the file.</param>
         /// <exception cref="ArgumentException">file name must not be null or empty</exception>
-        /// <exception cref="System.ArgumentException">file name must not be null or empty</exception>
         public void DeleteRecording(string fileName)
         {
             if (string.IsNullOrEmpty(fileName)) throw new ArgumentException("file name must not be null or empty");
