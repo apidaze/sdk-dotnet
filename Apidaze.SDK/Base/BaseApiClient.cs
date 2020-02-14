@@ -64,20 +64,23 @@ namespace Apidaze.SDK.Base
             var restRequest = AuthenticateRequest();
             restRequest.Method = Method.POST;
 
-            foreach (var nameValueParameter in requestParams)
-            {
-                restRequest.AddParameter(nameValueParameter.Key, nameValueParameter.Value);
-            }
-
-            var response = Client.Execute<T>(restRequest);
-            if (resource != null)
+            if (!string.IsNullOrEmpty(resource))
             {
                 restRequest.Resource += "/{id}" + resource;
                 foreach (var idParam in requestParams)
                 {
-                    restRequest.AddUrlSegment("id", idParam);
+                    restRequest.AddUrlSegment(idParam.Key, idParam.Value);
                 }
             }
+            else
+            {
+                foreach (var nameValueParameter in requestParams)
+                {
+                    restRequest.AddParameter(nameValueParameter.Key, nameValueParameter.Value);
+                }
+            }
+
+            var response = Client.Execute<T>(restRequest);
             EnsureSuccessResponse(response);
 
             var deserializedResponse = JsonConvert.DeserializeObject<T>(response.Content);

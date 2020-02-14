@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Apidaze.SDK.Base;
 using RestSharp;
@@ -16,7 +17,7 @@ namespace Apidaze.SDK.SipUsers
     public class SipUsers : BaseApiClient, ISipUsers
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="SipUsers"/> class.
+        /// Initializes a new instance of the <see cref="SipUsers" /> class.
         /// </summary>
         /// <param name="client">The client.</param>
         /// <param name="credentials">The credentials.</param>
@@ -35,9 +36,9 @@ namespace Apidaze.SDK.SipUsers
         /// Gets the sip users.
         /// </summary>
         /// <returns>IEnumerable&lt;System.String&gt;.</returns>
-        public IEnumerable<string> GetSipUsers()
+        public List<SipUser> GetSipUsers()
         {
-            return FindAll<string>();
+            return FindAll<SipUser>().ToList();
         }
 
         /// <summary>
@@ -49,6 +50,7 @@ namespace Apidaze.SDK.SipUsers
         /// <param name="internalCallerIdNumber">The internal caller identifier number.</param>
         /// <param name="externalCallerIdNumber">The external caller identifier number.</param>
         /// <returns>SipUser.</returns>
+        /// <exception cref="System.ArgumentException">userName must not be null or empty</exception>
         /// <exception cref="ArgumentException">userName must not be null or empty</exception>
         public SipUser CreateSipUser(string userName, string name = "", string emailAddress = "", string internalCallerIdNumber = "", string externalCallerIdNumber = "")
         {
@@ -59,7 +61,7 @@ namespace Apidaze.SDK.SipUsers
 
             var requestBody = new Dictionary<string, string>
             {
-                { "userName", userName },
+                { "username", userName },
                 { "name", name },
                 { "email_address", emailAddress },
                 { "internal_caller_id_number", internalCallerIdNumber },
@@ -82,6 +84,7 @@ namespace Apidaze.SDK.SipUsers
         /// </summary>
         /// <param name="id">The identifier.</param>
         /// <returns>SipUser.</returns>
+        /// <exception cref="System.ArgumentException">id must not be null</exception>
         /// <exception cref="ArgumentException">id must not be null</exception>
         public SipUser GetSingleSipUser(string id)
         {
@@ -120,7 +123,7 @@ namespace Apidaze.SDK.SipUsers
         /// </summary>
         /// <param name="id">The identifier.</param>
         /// <returns>SipUserStatus.</returns>
-        /// <exception cref="ArgumentException">id must not be null</exception>
+        /// <exception cref="System.ArgumentException">id must not be null</exception>
         public SipUserStatus ShowSipUserStatus(string id)
         {
             if (string.IsNullOrEmpty(id))
@@ -128,16 +131,16 @@ namespace Apidaze.SDK.SipUsers
                 throw new ArgumentException("id must not be null");
             }
 
-            return FindById<SipUserStatus>(id, "status");
+            return FindById<SipUserStatus>(id, "/status");
         }
 
         /// <summary>
-        /// Resets the ip user status.
+        /// Resets the user password.
         /// </summary>
         /// <param name="id">The identifier.</param>
         /// <returns>SipUser.</returns>
-        /// <exception cref="ArgumentException">id must not be null or empty</exception>
-        public SipUser ResetIpUserStatus(string id)
+        /// <exception cref="System.ArgumentException">id must not be null or empty</exception>
+        public SipUser ResetUserPassword(string id)
         {
             if (string.IsNullOrEmpty(id))
             {
@@ -148,7 +151,7 @@ namespace Apidaze.SDK.SipUsers
             {
                 { "id", id },
             };
-            return Create<SipUser>(requestBody, "password");
+            return Create<SipUser>(requestBody, "/password");
         }
     }
 }

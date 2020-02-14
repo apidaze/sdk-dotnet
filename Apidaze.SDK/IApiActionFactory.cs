@@ -4,6 +4,7 @@ using Apidaze.SDK.CdrHttpHandlers;
 using Apidaze.SDK.ExternalScripts;
 using Apidaze.SDK.Messages;
 using Apidaze.SDK.Recordings;
+using Apidaze.SDK.SipUsers;
 using Apidaze.SDK.Validate;
 
 /// <summary>
@@ -57,5 +58,7 @@ namespace Apidaze.SDK
         /// </summary>
         /// <returns>IExternalScripts.</returns>
         IExternalScripts CreateExternalScriptsApi();
+
+        ISipUsers CreateSipUsersApi();
     }
 }

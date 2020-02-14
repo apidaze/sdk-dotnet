@@ -4,6 +4,7 @@ using RestSharp.Extensions;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -37,9 +38,9 @@ namespace Apidaze.SDK.Recordings
         /// Gets the recordings list.
         /// </summary>
         /// <returns>IEnumerable&lt;System.String&gt;.</returns>
-        public IEnumerable<string> GetRecordings()
+        public List<string> GetRecordings()
         {
-            return FindAll<string>();
+            return FindAll<string>().ToList();
         }
 
         /// <summary>

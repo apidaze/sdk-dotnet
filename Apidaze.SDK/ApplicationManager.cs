@@ -14,7 +14,7 @@ namespace Apidaze.SDK
         /// <param name="url">The URL.</param>
         /// <returns>IApiActionFactory.</returns>
         public static IApiActionFactory CreateApiFactory(Credentials credentials,
-            string url = "https://api.Apidaze.io/")
+            string url = "https://cpaas-api.dev.voipinnovations.com/")
         {
             return new ApiActionFactory(credentials, url);
         }

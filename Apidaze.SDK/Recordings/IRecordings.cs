@@ -13,7 +13,7 @@ namespace Apidaze.SDK.Recordings
         /// Gets the recordings list.
         /// </summary>
         /// <returns>IEnumerable&lt;System.String&gt;.</returns>
-        IEnumerable<string> GetRecordings();
+        List<string> GetRecordings();
 
         /// <summary>
         /// Downloads the recording.

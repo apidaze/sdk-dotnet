@@ -9,7 +9,7 @@ namespace Apidaze.SDK.SipUsers
 
         [JsonProperty("name")] public string Name { get; set; }
 
-        [JsonProperty("callerid")] public CallerIdentity CalledId { get; set; }
+        [JsonProperty("callerid")] public CallerIdentity CallerId { get; set; }
 
         [JsonProperty("sip")] public Sip Sip { get; set; }
 

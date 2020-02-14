@@ -13,7 +13,7 @@ namespace Apidaze.SDK.Base
         /// <typeparam name="T"></typeparam>
         /// <param name="requestParams">The request parameters.</param>
         /// <returns>T.</returns>
-        T Create<T>(Dictionary<string, string> requestParams) where T : new();
+        T Create<T>(Dictionary<string, string> requestParams, string resource = "") where T : new();
 
         /// <summary>
         /// Finds all.
@@ -37,7 +37,7 @@ namespace Apidaze.SDK.Base
         /// <typeparam name="T"></typeparam>
         /// <param name="id">The identifier.</param>
         /// <returns>T.</returns>
-        T FindById<T>(string id) where T : new();
+        T FindById<T>(string id, string resource = "") where T : new();
 
         /// <summary>
         /// Updates the specified identifier.

@@ -6,11 +6,12 @@ using Apidaze.SDK.ExternalScripts;
 using Apidaze.SDK.Validate;
 using Apidaze.SDK.Messages;
 using Apidaze.SDK.Recordings;
+using Apidaze.SDK.SipUsers;
 using RestSharp;
 
 namespace Apidaze.SDK
 {
-   
+
     internal class ApiActionFactory : IApiActionFactory
     {
         /// <summary>
@@ -28,7 +29,7 @@ namespace Apidaze.SDK
         /// </summary>
         /// <param name="credentials">The credentials.</param>
         /// <param name="url">The URL.</param>
-        internal ApiActionFactory(Credentials credentials, string url = "https://api4.apidaze.io/")
+        internal ApiActionFactory(Credentials credentials, string url = "https://cpaas-api.dev.voipinnovations.com/")
         {
             _credentials = credentials;
             _url = url;
@@ -95,6 +96,11 @@ namespace Apidaze.SDK
         public IExternalScripts CreateExternalScriptsApi()
         {
             return new ExternalScripts.ExternalScripts(new RestClient(_url), _credentials);
+        }
+
+        public ISipUsers CreateSipUsersApi()
+        {
+            return new SipUsers.SipUsers(new RestClient(_url), _credentials);
         }
     }
 }

@@ -1,16 +1,11 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-using Apidaze.SDK;
+﻿using Apidaze.SDK;
 using Apidaze.SDK.Base;
 using Microsoft.Extensions.Configuration;
-using Newtonsoft.Json;
+using System;
+using System.IO;
 
-namespace RecordingsExample
+namespace DeleteSipUserExample
 {
-    /// <summary>
-    /// Class Program.
-    /// </summary>
     class Program
     {
         /// <summary>
@@ -34,12 +29,15 @@ namespace RecordingsExample
 
             try
             {
-                // initialize a Recordings API
-                var recordingsApi = apiFactory.CreateRecordingsApi();
+                // initialize a SIP Users API
+                var cdrHttpHandlersApi = apiFactory.CreateSipUsersApi();
 
-                // get recordings list
-                var list =  recordingsApi.GetRecordings();
-                list.ForEach(x => Console.WriteLine("Recordings: {0}", JsonConvert.SerializeObject(x, Formatting.Indented)));
+                // delete SIP user
+                cdrHttpHandlersApi.GetSipUsers();
+                cdrHttpHandlersApi.DeleteSipUser("2514");
+
+                Console.WriteLine("User was deleted.");
+
             }
             catch (InvalidOperationException e)
             {
