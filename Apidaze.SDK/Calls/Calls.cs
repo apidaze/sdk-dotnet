@@ -11,11 +11,11 @@ namespace Apidaze.SDK.Calls
 {
     /// <summary>
     /// Class Calls.
-    /// Implements the <see cref="APIdaze.SDK.Base.BaseApiClient" />
-    /// Implements the <see cref="APIdaze.SDK.Calls.ICalls" />
+    /// Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
+    /// Implements the <see cref="Apidaze.SDK.Calls.ICalls" />
     /// </summary>
-    /// <seealso cref="APIdaze.SDK.Base.BaseApiClient" />
-    /// <seealso cref="APIdaze.SDK.Calls.ICalls" />
+    /// <seealso cref="Apidaze.SDK.Base.BaseApiClient" />
+    /// <seealso cref="Apidaze.SDK.Calls.ICalls" />
     public class Calls : BaseApiClient, ICalls
     {
         /// <summary>

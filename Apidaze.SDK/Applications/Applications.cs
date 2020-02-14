@@ -8,11 +8,11 @@ namespace Apidaze.SDK.Applications
 {
     /// <summary>
     /// Class Applications.
-    /// Implements the <see cref="APIdaze.SDK.Base.BaseApiClient" />
-    /// Implements the <see cref="APIdaze.SDK.Applications.IApplications" />
+    /// Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
+    /// Implements the <see cref="Apidaze.SDK.Applications.IApplications" />
     /// </summary>
-    /// <seealso cref="APIdaze.SDK.Base.BaseApiClient" />
-    /// <seealso cref="APIdaze.SDK.Applications.IApplications" />
+    /// <seealso cref="Apidaze.SDK.Base.BaseApiClient" />
+    /// <seealso cref="Apidaze.SDK.Applications.IApplications" />
     public class Applications : BaseApiClient, IApplications
     {
         /// <summary>
