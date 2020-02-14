@@ -32,7 +32,7 @@ namespace Apidaze.SDK.Messages
         /// </summary>
         /// <param name="number">The number.</param>
         /// <returns>System.String.</returns>
-        /// <exception cref="APIdaze.SDK.Exception.InvalidPhoneNumberException"></exception>
+        /// <exception cref="Apidaze.SDK.Exception.InvalidPhoneNumberException"></exception>
         private static string IsNumber(string number)
         {
             var regNumber = new Regex(NumberPattern);

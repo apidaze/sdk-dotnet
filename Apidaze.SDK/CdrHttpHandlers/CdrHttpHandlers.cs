@@ -8,11 +8,11 @@ namespace Apidaze.SDK.CdrHttpHandlers
 {
     /// <summary>
     /// Class CdrHttpHandlers.
-    /// Implements the <see cref="APIdaze.SDK.Base.BaseApiClient" />
-    /// Implements the <see cref="APIdaze.SDK.CdrHttpHandlers.ICdrHttpHandlers" />
+    /// Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
+    /// Implements the <see cref="Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers" />
     /// </summary>
-    /// <seealso cref="APIdaze.SDK.Base.BaseApiClient" />
-    /// <seealso cref="APIdaze.SDK.CdrHttpHandlers.ICdrHttpHandlers" />
+    /// <seealso cref="Apidaze.SDK.Base.BaseApiClient" />
+    /// <seealso cref="Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers" />
     public class CdrHttpHandlers : BaseApiClient, ICdrHttpHandlers
     {
         /// <summary>

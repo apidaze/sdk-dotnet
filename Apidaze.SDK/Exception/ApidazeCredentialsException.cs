@@ -2,9 +2,9 @@
 {
     /// <summary>
     /// Class ApidazeCredentialsException.
-    /// Implements the <see cref="APIdaze.SDK.Exception.ApidazeRestException" />
+    /// Implements the <see cref="Apidaze.SDK.Exception.ApidazeRestException" />
     /// </summary>
-    /// <seealso cref="APIdaze.SDK.Exception.ApidazeRestException" />
+    /// <seealso cref="Apidaze.SDK.Exception.ApidazeRestException" />
     public class ApidazeCredentialsException : ApidazeRestException
     {
         /// <summary>

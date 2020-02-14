@@ -11,11 +11,11 @@ namespace Apidaze.SDK.Recordings
 {
     /// <summary>
     /// Class Recordings.
-    /// Implements the <see cref="APIdaze.SDK.Base.BaseApiClient" />
-    /// Implements the <see cref="APIdaze.SDK.Recordings.IRecordings" />
+    /// Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
+    /// Implements the <see cref="Apidaze.SDK.Recordings.IRecordings" />
     /// </summary>
-    /// <seealso cref="APIdaze.SDK.Base.BaseApiClient" />
-    /// <seealso cref="APIdaze.SDK.Recordings.IRecordings" />
+    /// <seealso cref="Apidaze.SDK.Base.BaseApiClient" />
+    /// <seealso cref="Apidaze.SDK.Recordings.IRecordings" />
     public class Recordings : BaseApiClient, IRecordings
     {
         /// <summary>
