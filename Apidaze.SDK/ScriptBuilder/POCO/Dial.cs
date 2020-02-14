@@ -41,6 +41,7 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
         /// </summary>
         /// <value>The maximum duration of the call.</value>
         [XmlAttribute("max-call-duration")] public double MaxCallDuration { get; set; }
+
         /// <summary>
         /// Gets or sets the strategy.
         /// </summary>
@@ -66,7 +67,9 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
         [XmlAttribute("caller-hangup-url")] public string CallerHangupUrl { get; set; }
 
         /// <summary>
-        /// Should the serialize timeout.
+        /// Serialize a Timeout conditionally.
+        /// The result of the method determines whether the property is serialized. If the method returns true then the property will be serialized,
+        /// if it returns false then the property will be skipped.
         /// </summary>
         /// <returns><c>true</c> if value greater than 0, <c>false</c> otherwise.</returns>
         public bool ShouldSerializeTimeout()
@@ -75,7 +78,9 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
         }
 
         /// <summary>
-        /// Should the duration of the serialize maximum call.
+        /// Serialize a MaxCallDuration conditionally.
+        /// The result of the method determines whether the property is serialized. If the method returns true then the property will be serialized,
+        /// if it returns false then the property will be skipped.
         /// </summary>
         /// <returns><c>true</c> if value greater than 0, <c>false</c> otherwise.</returns>
         public bool ShouldSerializeMaxCallDuration()
@@ -84,7 +89,9 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
         }
 
         /// <summary>
-        /// Should the serialize strategy.
+        /// Serialize a Strategy conditionally.
+        /// The result of the method determines whether the property is serialized. If the method returns true then the property will be serialized,
+        /// if it returns false then the property will be skipped.
         /// </summary>
         /// <returns><c>true</c> if value not equal default, <c>false</c> otherwise.</returns>
         public bool ShouldSerializeStrategy()

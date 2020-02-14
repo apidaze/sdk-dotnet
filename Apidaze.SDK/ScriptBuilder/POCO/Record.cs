@@ -33,27 +33,33 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
         [XmlAttribute("bleg")] public bool BLeg { get; set; } = true;
 
         /// <summary>
-        /// Shoulds the serialize on answered.
+        /// Serialize a OnAnswered conditionally.
+        /// The result of the method determines whether the property is serialized. If the method returns true then the property will be serialized,
+        /// if it returns false then the property will be skipped.
         /// </summary>
-        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        /// <returns><c>true</c> if value true <c>false</c> otherwise.</returns>
         public bool ShouldSerializeOnAnswered()
         {
             return OnAnswered;
         }
 
         /// <summary>
-        /// Shoulds the serialize a leg.
+        /// Serialize a ALeg conditionally.
+        /// The result of the method determines whether the property is serialized. If the method returns true then the property will be serialized,
+        /// if it returns false then the property will be skipped.
         /// </summary>
-        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        /// <returns><c>true</c> if value not true <c>false</c> otherwise.</returns>
         public bool ShouldSerializeALeg()
         {
             return !ALeg;
         }
 
         /// <summary>
-        /// Shoulds the serialize b leg.
+        /// Serialize a BLeg conditionally.
+        /// The result of the method determines whether the property is serialized. If the method returns true then the property will be serialized,
+        /// if it returns false then the property will be skipped.
         /// </summary>
-        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        /// <returns><c>true</c> if value not true <c>false</c> otherwise.</returns>
         public bool ShouldSerializeBLeg()
         {
             return !BLeg;

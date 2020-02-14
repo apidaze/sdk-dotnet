@@ -20,7 +20,9 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
         }
 
         /// <summary>
-        /// Should the serialize timeout.
+        /// Serialize a Timeout conditionally.
+        /// The result of the method determines whether the property is serialized. If the method returns true then the property will be serialized,
+        /// if it returns false then the property will be skipped.
         /// </summary>
         /// <returns><c>true</c> if value greater than 0, <c>false</c> otherwise.</returns>
         public bool ShouldSerializeTimeout()
