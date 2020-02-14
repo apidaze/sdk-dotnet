@@ -9,19 +9,26 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
     /// </summary>
     public class Dial
     {
+
+        /// <summary>
+        /// Gets or sets the number.
+        /// </summary>
+        /// <value>The number.</value>
         [XmlElement("number")] public List<Number> Number { get; set; }
+
 
         /// <summary>
         /// Gets or sets the sipaccount.
         /// </summary>
         /// <value>The sipaccount.</value>
-        [XmlElement("sipaccount")] public string Sipaccount { get; set; }
+        [XmlElement("sipaccount")] public List<SipAccount> Sipaccount { get; set; }
+
 
         /// <summary>
         /// Gets or sets the sip URI.
         /// </summary>
         /// <value>The sip URI.</value>
-        [XmlElement("sipuri")] public string SipUri { get; set; }
+        [XmlElement("sipuri")] public List<SipUri> SipUri { get; set; }
 
         /// <summary>
         /// Gets or sets the timeout.
@@ -59,47 +66,30 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
         [XmlAttribute("caller-hangup-url")] public string CallerHangupUrl { get; set; }
 
         /// <summary>
-        /// Shoulds the serialize timeout.
+        /// Should the serialize timeout.
         /// </summary>
-        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        /// <returns><c>true</c> if value greater than 0, <c>false</c> otherwise.</returns>
         public bool ShouldSerializeTimeout()
         {
             return Math.Abs(Timeout) > 0;
         }
 
         /// <summary>
-        /// Shoulds the duration of the serialize maximum call.
+        /// Should the duration of the serialize maximum call.
         /// </summary>
-        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        /// <returns><c>true</c> if value greater than 0, <c>false</c> otherwise.</returns>
         public bool ShouldSerializeMaxCallDuration()
         {
             return Math.Abs(MaxCallDuration) > 0;
         }
 
         /// <summary>
-        /// Shoulds the serialize strategy.
+        /// Should the serialize strategy.
         /// </summary>
-        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        /// <returns><c>true</c> if value not equal default, <c>false</c> otherwise.</returns>
         public bool ShouldSerializeStrategy()
         {
             return Strategy != default;
-        }
-    }
-
-    public class Number
-    {
-        [XmlAttribute("timeout")] public string Timeout { get; set; }
-
-        [XmlText(typeof(string))] public string Value { get; set; }
-
-        public Number()
-        {
-        }
-
-        public Number(string timeout, string value)
-        {
-            Timeout = timeout;
-            Value = value;
         }
     }
 }
