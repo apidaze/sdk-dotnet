@@ -4,7 +4,7 @@ using System.IO;
 namespace Apidaze.SDK.MediaFiles
 {
     /// <summary>
-    /// Interface IMediaFiles
+    /// Interface IMediaFiles.
     /// </summary>
     public interface IMediaFiles
     {
@@ -19,32 +19,10 @@ namespace Apidaze.SDK.MediaFiles
         List<dynamic> GetMediaFilesList(bool details = false, string filter = "", string lastToken = "", int maxItems = 500);
 
         /// <summary>
-        /// Uploads the media file.
-        /// </summary>
-        /// <param name="name">The name.</param>
-        /// <param name="mediafile">The mediafile.</param>
-        /// <returns>dynamic.</returns>
-        dynamic UploadMediaFile(string name, string mediafile);
-
-        /// <summary>
-        /// Deletes the media file.
-        /// </summary>
-        /// <param name="fileName">Name of the file.</param>
-        /// <returns>dynamic.</returns>
-        dynamic DeleteMediaFile(string fileName);
-
-        /// <summary>
         /// Downloads the media file.
         /// </summary>
         /// <param name="fileName">Name of the file.</param>
         /// <returns>MemoryStream.</returns>
         MemoryStream DownloadMediaFile(string fileName);
-
-        /// <summary>
-        /// Shows the media file summary.
-        /// </summary>
-        /// <param name="fileName">Name of the file.</param>
-        /// <returns>dynamic.</returns>
-        dynamic ShowMediaFileSummary(string fileName);
     }
 }

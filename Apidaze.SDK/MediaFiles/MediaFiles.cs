@@ -40,7 +40,7 @@ namespace Apidaze.SDK.MediaFiles
         /// <param name="lastToken">The last token.</param>
         /// <param name="maxItems">The maximum items.</param>
         /// <returns>List&lt;dynamic&gt;.</returns>
-        public List<dynamic> GetMediaFilesList(bool details, string filter, string lastToken, int maxItems)
+        public List<dynamic> GetMediaFilesList(bool details = false, string filter = "", string lastToken = "", int maxItems = 500)
         {
             var restRequest = AuthenticateRequest();
             restRequest.Method = Method.GET;
@@ -53,47 +53,6 @@ namespace Apidaze.SDK.MediaFiles
             EnsureSuccessResponse(response);
 
             return JsonConvert.DeserializeObject<IEnumerable<dynamic>>(response.Content).ToList();
-        }
-
-        /// <summary>
-        /// Uploads the media file.
-        /// </summary>
-        /// <param name="name">The name.</param>
-        /// <param name="mediafile">The mediafile.</param>
-        /// <returns>dynamic.</returns>
-        /// <exception cref="ArgumentException">name must not be null or empty</exception>
-        /// <exception cref="ArgumentException">mediafile must not be null or empty</exception>
-        public dynamic UploadMediaFile(string name, string mediafile)
-        {
-            if (string.IsNullOrEmpty(name)) throw new ArgumentException("name must not be null or empty");
-            if (string.IsNullOrEmpty(mediafile)) throw new ArgumentException("mediafile must not be null or empty");
-
-            var restRequest = AuthenticateRequest();
-            restRequest.Method = Method.POST;
-            restRequest.AddParameter("name", name);
-            restRequest.AddParameter("mediafile", mediafile);
-            var response = Client.Execute(restRequest);
-            EnsureSuccessResponse(response);
-            return JsonConvert.DeserializeObject<dynamic>(response.Content);
-        }
-
-        /// <summary>
-        /// Deletes the media file.
-        /// </summary>
-        /// <param name="fileName">Name of the file.</param>
-        /// <returns>dynamic.</returns>
-        /// <exception cref="ArgumentException">fileName must not be null or empty</exception>
-        public dynamic DeleteMediaFile(string fileName)
-        {
-            if (string.IsNullOrEmpty(fileName)) throw new ArgumentException("fileName must not be null or empty");
-
-            var restRequest = AuthenticateRequest();
-            restRequest.Method = Method.DELETE;
-            restRequest.AddParameter("filename", fileName);
-
-            var response = Client.Execute(restRequest);
-            EnsureSuccessResponse(response);
-            return JsonConvert.DeserializeObject<dynamic>(response.Content);
         }
 
         /// <summary>
@@ -114,25 +73,6 @@ namespace Apidaze.SDK.MediaFiles
 
             var response = Client.DownloadData(restRequest);
             return new MemoryStream(response);
-        }
-
-        /// <summary>
-        /// Shows the media file summary.
-        /// </summary>
-        /// <param name="fileName">Name of the file.</param>
-        /// <returns>dynamic.</returns>
-        /// <exception cref="ArgumentException">fileName must not be null or empty</exception>
-        public dynamic ShowMediaFileSummary(string fileName)
-        {
-            if (string.IsNullOrEmpty(fileName)) throw new ArgumentException("fileName must not be null or empty");
-
-            var restRequest = AuthenticateRequest();
-            restRequest.Method = Method.HEAD;
-            restRequest.AddParameter("filename", fileName);
-
-            var response = Client.Execute(restRequest);
-            EnsureSuccessResponse(response);
-            return JsonConvert.DeserializeObject<dynamic>(response.Content);
         }
     }
 }

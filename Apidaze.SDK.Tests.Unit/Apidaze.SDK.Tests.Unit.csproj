@@ -4,6 +4,7 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="MediaFiles\TestData\mediafile.wav" />
     <None Remove="Recordings\TestData\empty.wav" />
     <None Remove="Recordings\TestData\mediafile.wav" />
     <None Remove="ScriptBuilder\TestScripts\answer.xml" />
@@ -25,6 +26,9 @@
     <None Remove="ScriptBuilder\TestScripts\wait.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MediaFiles\TestData\mediafile.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Recordings\TestData\empty.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
