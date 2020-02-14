@@ -73,7 +73,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             var expectedOutput = GetFileContents("ringback.xml");
             _ApidazeScript.AddNode(new Answer())
                           .AddNode(Ringback.FromFile("http://www.mydomain.com/welcome.wav"))
-                          .AddNode(new Dial { Sipaccount = "bob" })
+                          .AddNode(new Dial { Sipaccount = new List<SipAccount>() { new SipAccount("bob") } })
                           .AddNode(new Hangup());
             const bool noFormatting = true;
 
@@ -315,7 +315,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
         {
             // Arrange
             var expectedOutput = GetFileContents("dial-number.xml").RemoveWhiteSpaces();
-            var dial = new Dial() { Number = new List<Number>() };
+            var dial = new Dial() { Number = new List<Number>() { new Number("1234567890") } };
             _ApidazeScript.AddNode(dial).AddNode(new Hangup());
             const bool noFormatting = false;
 
@@ -334,7 +334,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
         {
             // Arrange
             var expectedOutput = GetFileContents("dial-sipaccount.xml").RemoveWhiteSpaces();
-            var dial = new Dial() { Sipaccount = "targetsipaccount" };
+            var dial = new Dial() { Sipaccount = new List<SipAccount>() { new SipAccount("targetsipaccount") } };
             _ApidazeScript.AddNode(dial).AddNode(new Hangup());
             const bool noFormatting = false;
 
@@ -353,7 +353,7 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
         {
             // Arrange
             var expectedOutput = GetFileContents("dial-sipuri.xml").RemoveWhiteSpaces();
-            var dial = new Dial() { SipUri = "phone_number@anysipdomain.com" };
+            var dial = new Dial() { SipUri = new List<SipUri>() { new SipUri("phone_number@anysipdomain.com") } };
             _ApidazeScript.AddNode(dial).AddNode(new Hangup());
             const bool noFormatting = false;
 
@@ -374,15 +374,15 @@ namespace Apidaze.SDK.Tests.Unit.ScriptBuilder
             var expectedOutput = GetFileContents("dial-all-in-one.xml").RemoveWhiteSpaces();
             var dial = new Dial()
             {
-                SipUri = "phone_number@anysipdomain.com",
+                SipUri = new List<SipUri>() { new SipUri("phone_number@anysipdomain.com") },
                 Timeout = 60,
                 MaxCallDuration = 300,
                 Strategy = StrategyEnum.SEQUENCE,
                 Action = "http://action.url.com",
                 AnswerUrl = "http://answer-url.com",
                 CallerHangupUrl = "http://caller-hangup-url.com",
-                Number = new List<Number>(),
-                Sipaccount = "targetsipaccount"
+                Number = new List<Number>() { new Number("1234567890") },
+                Sipaccount = new List<SipAccount>() { new SipAccount("targetsipaccount") },
             };
             _ApidazeScript.AddNode(dial).AddNode(new Hangup());
             const bool noFormatting = true;
