@@ -107,7 +107,7 @@ namespace Apidaze.SDK.Calls
             if (id == Guid.Empty) throw new ArgumentException("id must not be null");
 
             var restRequest = AuthenticateRequest();
-            restRequest.Resource = Resource + "/{uuid}";
+            restRequest.Resource += "/{uuid}";
             restRequest.Method = Method.DELETE;
             restRequest.AddUrlSegment("uuid", id.ToString());
 
