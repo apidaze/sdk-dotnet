@@ -48,28 +48,44 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
         }
 
         /// <summary>
-        /// Shoulds the serialize input timeout millis.
+        /// Serialize a InputTimeoutMillis conditionally.
+        /// The result of the method determines whether the property is serialized. If the method returns true then the property will be serialized,
+        /// if it returns false then the property will be skipped.
         /// </summary>
-        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        /// <returns><c>true</c> if value greater than 0, <c>false</c> otherwise.</returns>
         public bool ShouldSerializeInputTimeoutMillis()
         {
             return Math.Abs(InputTimeoutMillis) > 0;
         }
 
+        /// <summary>
+        /// Serialize a DigitTimeoutMillis conditionally.
+        /// The result of the method determines whether the property is serialized. If the method returns true then the property will be serialized,
+        /// if it returns false then the property will be skipped.
+        /// </summary>
+        /// <returns><c>true</c> if value greater than 0, <c>false</c> otherwise.</returns>
         public bool ShouldSerializeDigitTimeoutMillis()
         {
             return Math.Abs(DigitTimeoutMillis) > 0;
         }
 
+        /// <summary>
+        /// Serialize a LangEnum conditionally.
+        /// The result of the method determines whether the property is serialized. If the method returns true then the property will be serialized,
+        /// if it returns false then the property will be skipped.
+        /// </summary>
+        /// <returns><c>true</c> if value not equal default <c>false</c> otherwise.</returns>
         public bool ShouldSerializeLangEnum()
         {
             return LangEnum != default;
         }
 
         /// <summary>
-        /// Shoulds the serialize voice.
+        /// Serialize a Voice conditionally.
+        /// The result of the method determines whether the property is serialized. If the method returns true then the property will be serialized,
+        /// if it returns false then the property will be skipped.
         /// </summary>
-        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        /// <returns><c>true</c> if value not equal default <c>false</c> otherwise.</returns>
         public bool ShouldSerializeVoice()
         {
             return Voice != default;

@@ -2,6 +2,7 @@
 using Apidaze.SDK.Calls;
 using Apidaze.SDK.CdrHttpHandlers;
 using Apidaze.SDK.ExternalScripts;
+using Apidaze.SDK.MediaFiles;
 using Apidaze.SDK.Messages;
 using Apidaze.SDK.Recordings;
 using Apidaze.SDK.SipUsers;
@@ -60,5 +61,7 @@ namespace Apidaze.SDK
         IExternalScripts CreateExternalScriptsApi();
 
         ISipUsers CreateSipUsersApi();
+
+        IMediaFiles CreateMediaFilesApi();
     }
 }

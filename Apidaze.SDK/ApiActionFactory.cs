@@ -3,6 +3,7 @@ using Apidaze.SDK.Base;
 using Apidaze.SDK.Calls;
 using Apidaze.SDK.CdrHttpHandlers;
 using Apidaze.SDK.ExternalScripts;
+using Apidaze.SDK.MediaFiles;
 using Apidaze.SDK.Validate;
 using Apidaze.SDK.Messages;
 using Apidaze.SDK.Recordings;
@@ -96,6 +97,11 @@ namespace Apidaze.SDK
         public IExternalScripts CreateExternalScriptsApi()
         {
             return new ExternalScripts.ExternalScripts(new RestClient(_url), _credentials);
+        }
+
+        public IMediaFiles CreateMediaFilesApi()
+        {
+            return new MediaFiles.MediaFiles(new RestClient(_url), _credentials);
         }
 
         public ISipUsers CreateSipUsersApi()
