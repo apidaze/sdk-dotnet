@@ -1,16 +1,12 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-using Apidaze.SDK;
+﻿using Apidaze.SDK;
 using Apidaze.SDK.Base;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
+using System;
+using System.IO;
 
-namespace RecordingsExample
+namespace GetSipUsersExample
 {
-    /// <summary>
-    /// Class Program.
-    /// </summary>
     class Program
     {
         /// <summary>
@@ -34,12 +30,29 @@ namespace RecordingsExample
 
             try
             {
-                // initialize a Recordings API
-                var recordingsApi = apiFactory.CreateRecordingsApi();
+                // initialize a SipUsers API
+                var cdrHttpHandlersApi = apiFactory.CreateSipUsersApi();
 
-                // get recordings list
-                var list =  recordingsApi.GetRecordings();
-                list.ForEach(x => Console.WriteLine("Recordings: {0}", JsonConvert.SerializeObject(x, Formatting.Indented)));
+                // get SIP users list
+                var response = cdrHttpHandlersApi.GetSipUsers();
+                response.ForEach(x => Console.WriteLine("SIP users list: {0}", JsonConvert.SerializeObject(response, Formatting.Indented)));
+
+                // create SIP user
+                var user = cdrHttpHandlersApi.CreateSipUser("testUser10", "test", "test@test.com", "1412555555", "14125423968");
+                Console.WriteLine("SIP user : {0}", JsonConvert.SerializeObject(user, Formatting.Indented));
+
+                // get SIP single user 
+                var singleSipUser = cdrHttpHandlersApi.GetSingleSipUser(user.Id); 
+                Console.WriteLine("Single SIP user: {0}", JsonConvert.SerializeObject(singleSipUser, Formatting.Indented));
+
+                // show SIP user status 
+                var status = cdrHttpHandlersApi.ShowSipUserStatus(singleSipUser.Id);
+                Console.WriteLine("Status SIP user: {0}", JsonConvert.SerializeObject(status, Formatting.Indented));
+
+                // reset SIP password
+                var userWithUpdatedPassword = cdrHttpHandlersApi.ResetUserPassword(singleSipUser.Id);
+                Console.WriteLine("User with updated password: {0}", JsonConvert.SerializeObject(userWithUpdatedPassword, Formatting.Indented));
+
             }
             catch (InvalidOperationException e)
             {

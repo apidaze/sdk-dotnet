@@ -1,16 +1,12 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-using Apidaze.SDK;
+﻿using Apidaze.SDK;
 using Apidaze.SDK.Base;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
+using System;
+using System.IO;
 
-namespace RecordingsExample
+namespace CreateUpdateSipUserExample
 {
-    /// <summary>
-    /// Class Program.
-    /// </summary>
     class Program
     {
         /// <summary>
@@ -34,12 +30,18 @@ namespace RecordingsExample
 
             try
             {
-                // initialize a Recordings API
-                var recordingsApi = apiFactory.CreateRecordingsApi();
+                // initialize a SIP Users API
+                var cdrHttpHandlersApi = apiFactory.CreateSipUsersApi();
 
-                // get recordings list
-                var list =  recordingsApi.GetRecordings();
-                list.ForEach(x => Console.WriteLine("Recordings: {0}", JsonConvert.SerializeObject(x, Formatting.Indented)));
+                // create SIP user
+                var response = cdrHttpHandlersApi.CreateSipUser("testUser2", "test2", "test@test.com", "1412555555", "14125423968");
+                Console.WriteLine("New SIP user : {0}", JsonConvert.SerializeObject(response, Formatting.Indented));
+
+                // update SIP user
+                var updatedSipUser =
+                    cdrHttpHandlersApi.UpdateSipUser(response.Id, "test3", "14125423968", "14125423000", true);
+                Console.WriteLine("Update SIP user : {0}", JsonConvert.SerializeObject(updatedSipUser, Formatting.Indented));
+
             }
             catch (InvalidOperationException e)
             {

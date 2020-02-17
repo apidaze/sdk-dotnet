@@ -59,14 +59,25 @@ namespace Apidaze.SDK.Base
         /// <typeparam name="T"></typeparam>
         /// <param name="requestParams">The request parameters.</param>
         /// <returns>T.</returns>
-        public T Create<T>(Dictionary<string, string> requestParams) where T : new()
+        public T Create<T>(Dictionary<string, string> requestParams, string resource = "") where T : new()
         {
             var restRequest = AuthenticateRequest();
             restRequest.Method = Method.POST;
 
-            foreach (var nameValueParameter in requestParams)
+            if (!string.IsNullOrEmpty(resource))
             {
-                restRequest.AddParameter(nameValueParameter.Key, nameValueParameter.Value);
+                restRequest.Resource += "/{id}" + resource;
+                foreach (var idParam in requestParams)
+                {
+                    restRequest.AddUrlSegment(idParam.Key, idParam.Value);
+                }
+            }
+            else
+            {
+                foreach (var nameValueParameter in requestParams)
+                {
+                    restRequest.AddParameter(nameValueParameter.Key, nameValueParameter.Value);
+                }
             }
 
             var response = Client.Execute<T>(restRequest);
@@ -105,7 +116,7 @@ namespace Apidaze.SDK.Base
             var response = Client.Execute<List<T>>(restRequest);
 
             EnsureSuccessResponse(response);
-           
+
             var deserializedResponse = JsonConvert.DeserializeObject<IEnumerable<T>>(response.Content);
             return deserializedResponse;
         }
@@ -116,11 +127,11 @@ namespace Apidaze.SDK.Base
         /// <typeparam name="T"></typeparam>
         /// <param name="id">The identifier.</param>
         /// <returns>T.</returns>
-        public T FindById<T>(string id)
+        public T FindById<T>(string id, string resource = "")
             where T : new()
         {
             var restRequest = AuthenticateRequest();
-            restRequest.Resource += "/{id}";
+            restRequest.Resource += "/{id}" + resource;
             restRequest.AddUrlSegment("id", id);
             var response = Client.Execute<T>(restRequest);
 
@@ -184,5 +195,5 @@ namespace Apidaze.SDK.Base
             var newException = new InvalidOperationException(response.Content);
             throw newException;
         }
-  }
+    }
 }
