@@ -41,9 +41,12 @@ namespace DownloadRecordingAsStreamExample
                 {
                     Directory.CreateDirectory(Path.GetDirectoryName(targetFilePath));
                 }
+
                 using var stream = recordingsApi.DownloadRecording(sourceFileName);
                 using var fileStream = new FileStream(targetFilePath, FileMode.Create, FileAccess.Write);
                 stream.CopyTo(fileStream);
+                Console.WriteLine("The file has been downloaded as stream.");
+
             }
             catch (InvalidOperationException e)
             {

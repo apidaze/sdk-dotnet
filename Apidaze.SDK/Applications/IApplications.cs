@@ -55,10 +55,25 @@ namespace Apidaze.SDK.Applications
         /// <returns>List&lt;Application&gt;.</returns>
         List<Application> GetApplicationsByName(string name);
 
+        /// <summary>
+        /// Gets the application action by identifier.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>IApiActionFactory.</returns>
         IApiActionFactory GetApplicationActionById(long id);
 
+        /// <summary>
+        /// Gets the application action by API key.
+        /// </summary>
+        /// <param name="apiKey">The API key.</param>
+        /// <returns>IApiActionFactory.</returns>
         IApiActionFactory GetApplicationActionByApiKey(string apiKey);
 
+        /// <summary>
+        /// Gets the name of the application action by.
+        /// </summary>
+        /// <param name="name">The name.</param>
+        /// <returns>IApiActionFactory.</returns>
         IApiActionFactory GetApplicationActionByName(string name);
     }
 }

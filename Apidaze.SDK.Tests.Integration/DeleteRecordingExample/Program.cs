@@ -38,8 +38,11 @@ namespace DeleteRecordingExample
                 var recordingsApi = apiFactory.CreateRecordingsApi();
 
                 // delete recording
-                var sourceFileName = "cb8c318b-ea11-43fd-8bb9-e78557784915.wav";
-                recordingsApi.DeleteRecording(sourceFileName);
+                Console.WriteLine("Number of recordings:{0}", recordingsApi.GetRecordings().Count);
+                recordingsApi.DeleteRecording("51c6660d-3ae5-4c13-bbf4-2e7c35897f3d.wav");
+                Console.WriteLine("The file 51c6660d-3ae5-4c13-bbf4-2e7c35897f3d.wav has been removed.");
+                Console.WriteLine("Number of recordings:{0}", recordingsApi.GetRecordings().Count);
+
             }
             catch (InvalidOperationException e)
             {

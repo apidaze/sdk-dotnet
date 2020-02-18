@@ -1,8 +1,8 @@
 ﻿using Apidaze.SDK.Base;
+using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using RestSharp;
 
 namespace Apidaze.SDK.Applications
 {
@@ -73,7 +73,7 @@ namespace Apidaze.SDK.Applications
         /// */
         public List<Application> GetApplicationsById(long id)
         {
-            return FindByParameter<Application>("api_id", id.ToString()).ToList();
+            return FindByParameter<Application>("app_id", id.ToString()).ToList();
         }
 
         /// <summary>
@@ -92,25 +92,27 @@ namespace Apidaze.SDK.Applications
         {
             if (string.IsNullOrEmpty(name))
             {
-                throw new ArgumentException("apiKey must not be null");
+                throw new ArgumentException("name must not be null");
             }
 
-            return FindByParameter<Application>("api_name", name).ToList();
-        }
-        public IApiActionFactory GetApplicationActionById(long id)
-        {
-            var apiAction = this.GetApplicationsById(id).FirstOrDefault();
-            return apiAction == null
-                ? null
-                : new ApiActionFactory(new Credentials(apiAction.ApiKey, apiAction.ApiSecret));
+            return FindByParameter<Application>("app_name", name).ToList();
         }
 
+        /// <inheritdoc />
+        public IApiActionFactory GetApplicationActionById(long id)
+        {
+            var apiAction = this.GetApplicationsById(id).First();
+            return apiAction != null ? new ApiActionFactory(new Credentials(apiAction.ApiKey, apiAction.ApiSecret)) : null;
+        }
+
+        /// <inheritdoc />
         public IApiActionFactory GetApplicationActionByApiKey(string apiKey)
         {
             var apiAction = this.GetApplicationsByApiKey(apiKey).First();
             return new ApiActionFactory(new Credentials(apiAction.ApiKey, apiAction.ApiSecret));
         }
 
+        /// <inheritdoc />
         public IApiActionFactory GetApplicationActionByName(string name)
         {
             var apiAction = this.GetApplicationsByName(name).First();

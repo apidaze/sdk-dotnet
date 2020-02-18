@@ -41,7 +41,7 @@ namespace GetMediaFiles
                 // get media files list
                 var mediaFiles = mediaFilesApi.GetMediaFilesList();
 
-                mediaFiles.ForEach(x => Console.WriteLine("Media files list: {0}", JsonConvert.SerializeObject(mediaFiles, Formatting.Indented)));
+               Console.WriteLine("Media files list: {0}", JsonConvert.SerializeObject(mediaFiles, Formatting.Indented));
             }
             catch (InvalidOperationException e)
             {

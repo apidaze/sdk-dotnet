@@ -188,7 +188,7 @@ namespace XML
                     Timeout = 24,
                     Strategy = StrategyEnum.SEQUENCE,
                     Number =
-                        new List<Number> { new Number("12", "48123456789"), new Number("12", "48123456789") }
+                        new List<Number> { new Number("14123456789", 12), new Number("14123456789", 12) }
                 }).ToXml();
                 return Encoding.UTF8.GetBytes(intro);
             }

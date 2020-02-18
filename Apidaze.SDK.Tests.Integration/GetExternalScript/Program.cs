@@ -32,7 +32,7 @@ namespace GetExternalScript
             var apiFactory = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret));
 
             // id of script to be fetched
-            const long id = 1585L;
+            const long id = 1801L;
 
             try
             {

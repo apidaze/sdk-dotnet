@@ -109,10 +109,11 @@ namespace Apidaze.SDK.Base
         /// <param name="name">The name.</param>
         /// <param name="value">The value.</param>
         /// <returns>IEnumerable&lt;T&gt;.</returns>
-        public IEnumerable<T> FindByParameter<T>(string name, string value) where T : new()
+        public IEnumerable<T> FindByParameter<T>(string name, string value)
+            where T : new()
         {
             var restRequest = AuthenticateRequest();
-            restRequest.AddQueryParameter("name", value);
+            restRequest.AddQueryParameter(name, value);
             var response = Client.Execute<List<T>>(restRequest);
 
             EnsureSuccessResponse(response);
@@ -140,6 +141,7 @@ namespace Apidaze.SDK.Base
             {
                 return default;
             }
+
             var deserializedResponse = JsonConvert.DeserializeObject<T>(response.Content);
             return deserializedResponse;
         }
