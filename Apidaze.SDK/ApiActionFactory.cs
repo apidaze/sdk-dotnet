@@ -35,7 +35,7 @@ namespace Apidaze.SDK
         /// </summary>
         /// <param name="credentials">The credentials.</param>
         /// <param name="url">The URL.</param>
-        internal ApiActionFactory(Credentials credentials, string url = "https://cpaas-api.dev.voipinnovations.com")
+        internal ApiActionFactory(Credentials credentials, string url = "https://api.apidaze.io/")
         {
             _credentials = credentials;
             _url = url;

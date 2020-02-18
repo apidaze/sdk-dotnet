@@ -32,10 +32,10 @@ namespace MessageExample
             }
 
             // initialize API factory
-            var apiFactory = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret), "https://api.apidaze.io/");
+            var apiFactory = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret));
 
-            var from = "14125423968";
-            var to = "48504916910";
+            var from = "14123456789";
+            var to = "48123456789";
             var messageBody = "Have a nice day!";
 
             try
