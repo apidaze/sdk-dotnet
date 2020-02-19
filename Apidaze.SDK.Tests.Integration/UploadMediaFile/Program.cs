@@ -1,11 +1,11 @@
-﻿using Apidaze.SDK;
+﻿using System;
+using System.IO;
+using Apidaze.SDK;
 using Apidaze.SDK.Base;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
-using System;
-using System.IO;
 
-namespace GetMediaFiles
+namespace GetHeadMediaFiles
 {
     /// <summary>
     /// Class Program.
@@ -30,7 +30,7 @@ namespace GetMediaFiles
             }
 
             // initiate ApplicationAction
-            var applicationClient = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret), "https://cpaas-api.dev.voipinnovations.com/");
+            var applicationClient = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret));
 
             try
             {

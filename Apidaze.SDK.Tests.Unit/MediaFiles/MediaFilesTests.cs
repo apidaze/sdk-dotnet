@@ -1,4 +1,8 @@
-﻿using Apidaze.SDK.Common;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Net;
+using Apidaze.SDK.Common;
 using Apidaze.SDK.MediaFiles;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -6,28 +10,19 @@ using Moq;
 using Newtonsoft.Json;
 using RestSharp;
 using RestSharp.Extensions;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Net;
 using static Apidaze.SDK.Tests.Unit.TestUtil;
 
-namespace Apidaze.SDK.Tests.Unit.Calls
+namespace Apidaze.SDK.Tests.Unit.MediaFiles
 {
+
     /// <summary>
-    /// Defines test class CallsTests.
-    /// Implements the <see cref="BaseTest" />
+    /// Defines test class MediaFilesTests.
+    /// Implements the <see cref="Apidaze.SDK.Tests.Unit.BaseTest" />
     /// </summary>
-    /// <seealso cref="BaseTest" />
+    /// <seealso cref="Apidaze.SDK.Tests.Unit.BaseTest" />
     [TestClass]
     public class MediaFilesTests : BaseTest
     {
-
-        /// <summary>
-        /// The media files API
-        /// </summary>
-        private MediaFiles.MediaFiles _mediaFilesApi;
-
         /// <summary>
         /// The source files dir
         /// </summary>
@@ -46,12 +41,17 @@ namespace Apidaze.SDK.Tests.Unit.Calls
         private static readonly FileInfo SOURCE_FILE = new FileInfo(Path.Combine(SOURCE_FILES_DIR, SOURCE_FILE_NAME));
 
         /// <summary>
+        /// The media files API
+        /// </summary>
+        private SDK.MediaFiles.MediaFiles _mediaFilesApi;
+
+        /// <summary>
         /// Startups this instance.
         /// </summary>
         [TestInitialize]
         public void Startup()
         {
-            _mediaFilesApi = new MediaFiles.MediaFiles(MockIRestClient.Object, CredentialsForTest);
+            _mediaFilesApi = new SDK.MediaFiles.MediaFiles(MockIRestClient.Object, CredentialsForTest);
         }
 
         /// <summary>
@@ -70,9 +70,10 @@ namespace Apidaze.SDK.Tests.Unit.Calls
         public void GetMediaFileList_ListOfMediaFileListAreOnServer_ReturnsListOfMediaFiles()
         {
             // Arrange
-            var mediaFiles = new List<MediaFile> { new MediaFile() { Name = "file1.wav" }, new MediaFile() { Name = "file2.wav" } };
+            var mediaFiles = new List<MediaFile>
+                {new MediaFile {Name = "file1.wav"}, new MediaFile {Name = "file2.wav"}};
             MockIRestClient.Setup(rc => rc.Execute(It.IsAny<RestRequest>())).Returns(
-                new RestResponse { StatusCode = HttpStatusCode.OK, Content = JsonConvert.SerializeObject(mediaFiles) });
+                new RestResponse {StatusCode = HttpStatusCode.OK, Content = JsonConvert.SerializeObject(mediaFiles)});
 
             // Act
             var result = _mediaFilesApi.GetMediaFilesList();
@@ -112,7 +113,8 @@ namespace Apidaze.SDK.Tests.Unit.Calls
             // Arrange
             var expectedStream = new FileStream(SOURCE_FILE.FullName, FileMode.Create);
 
-            MockIRestClient.Setup(rc => rc.Execute(It.IsAny<RestRequest>())).Returns(new RestResponse { StatusCode = HttpStatusCode.OK, Content = JsonConvert.SerializeObject(new Response()) });
+            MockIRestClient.Setup(rc => rc.Execute(It.IsAny<RestRequest>())).Returns(new RestResponse
+                {StatusCode = HttpStatusCode.OK, Content = JsonConvert.SerializeObject(new Response())});
 
             // Act
             var result = _mediaFilesApi.UploadMediaFile("test", SOURCE_FILE.FullName);
@@ -132,7 +134,8 @@ namespace Apidaze.SDK.Tests.Unit.Calls
         public void DeleteMediaFileFromServer_FileName_NoContent()
         {
             // Arrange
-            MockIRestClient.Setup(rc => rc.Execute(It.IsAny<RestRequest>())).Returns(new RestResponse { StatusCode = HttpStatusCode.NoContent });
+            MockIRestClient.Setup(rc => rc.Execute(It.IsAny<RestRequest>()))
+                .Returns(new RestResponse {StatusCode = HttpStatusCode.NoContent});
 
             // Act
             _mediaFilesApi.DeleteMediaFile("test");
@@ -149,7 +152,8 @@ namespace Apidaze.SDK.Tests.Unit.Calls
         public void ShowSummaryMediaFile_FileName_NoContent()
         {
             // Arrange
-            MockIRestClient.Setup(rc => rc.Execute(It.IsAny<RestRequest>())).Returns(new RestResponse { StatusCode = HttpStatusCode.NoContent });
+            MockIRestClient.Setup(rc => rc.Execute(It.IsAny<RestRequest>()))
+                .Returns(new RestResponse {StatusCode = HttpStatusCode.NoContent});
 
             // Act
             _mediaFilesApi.ShowMediaFileSummary("test");
