@@ -35,7 +35,7 @@ namespace UpdateExternalScriptUrl
             var id = 1801L;
 
             // new url
-            var newScriptUrl = "http://.ngrok.io";
+            var newScriptUrl = "";
 
             try
             {

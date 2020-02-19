@@ -32,7 +32,8 @@ namespace Apidaze.SDK.Tests.Unit.Applications
         [TestInitialize]
         public void Startup()
         {
-            _applicationClientApi = new ApplicationClient(MockIRestClient.Object, CredentialsForTest);
+            MockIRestClient.Setup(r => r.BaseUrl).Returns(It.IsAny<Uri>());
+            _applicationClientApi = ApplicationClient.CreateInstance(MockIRestClient.Object, CredentialsForTest);
         }
 
         /// <summary>

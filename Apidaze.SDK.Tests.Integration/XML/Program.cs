@@ -1,13 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using Apidaze.SDK.ScriptBuilder;
+using Apidaze.SDK.ScriptBuilder.POCO;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using Apidaze.SDK.ScriptBuilder;
-using Apidaze.SDK.ScriptBuilder.POCO;
-using RestSharp.Serialization.Json;
 
 namespace XML
 {

@@ -27,7 +27,7 @@ namespace DownloadRecordingToFileExample
             }
 
             // initialize API factory
-            var apiFactory = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret), "https://api.apidaze.io");
+            var apiFactory = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret));
 
             try
             {

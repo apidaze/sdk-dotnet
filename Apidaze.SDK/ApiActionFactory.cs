@@ -35,7 +35,7 @@ namespace Apidaze.SDK
         /// </summary>
         /// <param name="credentials">The credentials.</param>
         /// <param name="url">The URL.</param>
-        internal ApiActionFactory(Credentials credentials, string url = "https://api.apidaze.io/")
+        internal ApiActionFactory(Credentials credentials, string url)
         {
             _credentials = credentials;
             _url = url;
@@ -74,7 +74,7 @@ namespace Apidaze.SDK
         /// <returns>IApplications.</returns>
         public IApplications CreateApplicationsApi()
         {
-            return new Applications.Applications(new RestClient(_url), _credentials);
+            return Applications.Applications.CreateInstance(new RestClient(_url), _credentials);
         }
 
         /// <summary>
