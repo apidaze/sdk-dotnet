@@ -28,7 +28,7 @@ namespace GetApplicationActionExample
             try
             {
                 // get application by id
-                var id = 3164L;
+                var id = 3052L;
                 var applicationsApi = apiFactory.CreateApplicationsApi();
                 var appActionById = applicationsApi.GetApplicationActionById(id);
 

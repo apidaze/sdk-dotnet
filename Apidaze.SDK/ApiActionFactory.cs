@@ -4,15 +4,20 @@ using Apidaze.SDK.Calls;
 using Apidaze.SDK.CdrHttpHandlers;
 using Apidaze.SDK.ExternalScripts;
 using Apidaze.SDK.MediaFiles;
-using Apidaze.SDK.Validate;
 using Apidaze.SDK.Messages;
 using Apidaze.SDK.Recordings;
 using Apidaze.SDK.SipUsers;
+using Apidaze.SDK.Validate;
 using RestSharp;
 
 namespace Apidaze.SDK
 {
 
+    /// <summary>
+    /// Class ApiActionFactory.
+    /// Implements the <see cref="Apidaze.SDK.IApiActionFactory" />
+    /// </summary>
+    /// <seealso cref="Apidaze.SDK.IApiActionFactory" />
     internal class ApiActionFactory : IApiActionFactory
     {
         /// <summary>
@@ -99,11 +104,19 @@ namespace Apidaze.SDK
             return new ExternalScripts.ExternalScripts(new RestClient(_url), _credentials);
         }
 
+        /// <summary>
+        /// Creates the media files API.
+        /// </summary>
+        /// <returns>IMediaFiles.</returns>
         public IMediaFiles CreateMediaFilesApi()
         {
             return new MediaFiles.MediaFiles(new RestClient(_url), _credentials);
         }
 
+        /// <summary>
+        /// Creates the sip users API.
+        /// </summary>
+        /// <returns>ISipUsers.</returns>
         public ISipUsers CreateSipUsersApi()
         {
             return new SipUsers.SipUsers(new RestClient(_url), _credentials);

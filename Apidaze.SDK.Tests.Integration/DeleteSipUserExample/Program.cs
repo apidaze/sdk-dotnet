@@ -3,6 +3,7 @@ using Apidaze.SDK.Base;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.IO;
+using System.Linq;
 
 namespace DeleteSipUserExample
 {
@@ -29,13 +30,13 @@ namespace DeleteSipUserExample
             try
             {
                 // initialize a SIP Users API
-                var cdrHttpHandlersApi = apiFactory.CreateSipUsersApi();
+                var sipUsersApi = apiFactory.CreateSipUsersApi();
 
                 // delete SIP user
-                cdrHttpHandlersApi.GetSipUsers();
-                cdrHttpHandlersApi.DeleteSipUser("2514");
+                var sipUser = sipUsersApi.GetSipUsers().First();
+                sipUsersApi.DeleteSipUser(sipUser.Id);
 
-                Console.WriteLine("User was deleted.");
+                Console.WriteLine("User {0} was deleted.", sipUser.Name);
 
             }
             catch (InvalidOperationException e)

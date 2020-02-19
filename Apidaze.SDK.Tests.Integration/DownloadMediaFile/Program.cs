@@ -14,8 +14,7 @@ namespace DownloadMediaFile
         /// <summary>
         /// Defines the entry point of the application.
         /// </summary>
-        /// <param name="args">The arguments.</param>
-        static void Main(string[] args)
+        static void Main()
         {
             var config = BuildConfig();
 
@@ -42,7 +41,6 @@ namespace DownloadMediaFile
                 downloadMediaFile.CopyTo(fs);
                 fs.Flush();
 
-                Console.WriteLine("System environment variables API_KEY and API_SECRET must be set.");
                 Console.WriteLine("The file zzz8.wav has been downloaded.");
             }
             catch (InvalidOperationException e)

@@ -31,26 +31,26 @@ namespace GetSipUsersExample
             try
             {
                 // initialize a SipUsers API
-                var cdrHttpHandlersApi = apiFactory.CreateSipUsersApi();
+                var sipUsersApi = apiFactory.CreateSipUsersApi();
 
                 // get SIP users list
-                var response = cdrHttpHandlersApi.GetSipUsers();
-                response.ForEach(x => Console.WriteLine("SIP users list: {0}", JsonConvert.SerializeObject(response, Formatting.Indented)));
+                var response = sipUsersApi.GetSipUsers();
+                Console.WriteLine("SIP users list: {0}", JsonConvert.SerializeObject(response, Formatting.Indented));
 
                 // create SIP user
-                var user = cdrHttpHandlersApi.CreateSipUser("testUser10", "test", "test@test.com", "1412555555", "14125423968");
-                Console.WriteLine("SIP user : {0}", JsonConvert.SerializeObject(user, Formatting.Indented));
+                var user = sipUsersApi.CreateSipUser("testUser11", "test", "test@test.com", "1412555555", "14125423968");
+                Console.WriteLine("New SIP user : {0}", JsonConvert.SerializeObject(user, Formatting.Indented));
 
                 // get SIP single user 
-                var singleSipUser = cdrHttpHandlersApi.GetSingleSipUser(user.Id); 
+                var singleSipUser = sipUsersApi.GetSingleSipUser(user.Id); 
                 Console.WriteLine("Single SIP user: {0}", JsonConvert.SerializeObject(singleSipUser, Formatting.Indented));
 
                 // show SIP user status 
-                var status = cdrHttpHandlersApi.ShowSipUserStatus(singleSipUser.Id);
+                var status = sipUsersApi.ShowSipUserStatus(singleSipUser.Id);
                 Console.WriteLine("Status SIP user: {0}", JsonConvert.SerializeObject(status, Formatting.Indented));
 
                 // reset SIP password
-                var userWithUpdatedPassword = cdrHttpHandlersApi.ResetUserPassword(singleSipUser.Id);
+                var userWithUpdatedPassword = sipUsersApi.ResetUserPassword(singleSipUser.Id);
                 Console.WriteLine("User with updated password: {0}", JsonConvert.SerializeObject(userWithUpdatedPassword, Formatting.Indented));
 
             }

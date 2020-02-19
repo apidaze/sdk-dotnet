@@ -64,7 +64,7 @@ namespace CallsAllInOneExample
 
                 // get full list of calls for your domain
                 var calls = callsApi.GetCalls();
-                calls.ForEach(x => Console.WriteLine("Calls: {0}", JsonConvert.SerializeObject(x)));
+                calls.ForEach(x => Console.WriteLine("Calls: {0}", JsonConvert.SerializeObject(x, Formatting.Indented)));
 
                 // delete a call by id
                 callsApi.DeleteCall(callId);

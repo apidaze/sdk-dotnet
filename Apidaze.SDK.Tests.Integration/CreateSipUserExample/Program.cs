@@ -31,16 +31,16 @@ namespace CreateUpdateSipUserExample
             try
             {
                 // initialize a SIP Users API
-                var cdrHttpHandlersApi = apiFactory.CreateSipUsersApi();
+                var sipUsersApi = apiFactory.CreateSipUsersApi();
 
                 // create SIP user
-                var response = cdrHttpHandlersApi.CreateSipUser("testUser2", "test2", "test@test.com", "1412555555", "14125423968");
+                var response = sipUsersApi.CreateSipUser("testUser2234", "test2", "test@test.com", "1412555555", "14125423968");
                 Console.WriteLine("New SIP user : {0}", JsonConvert.SerializeObject(response, Formatting.Indented));
 
                 // update SIP user
                 var updatedSipUser =
-                    cdrHttpHandlersApi.UpdateSipUser(response.Id, "test3", "14125423968", "14125423000", true);
-                Console.WriteLine("Update SIP user : {0}", JsonConvert.SerializeObject(updatedSipUser, Formatting.Indented));
+                    sipUsersApi.UpdateSipUser(response.Id, "test3", "14125423968", "14125423000", true);
+                Console.WriteLine("Updated SIP user : {0}", JsonConvert.SerializeObject(updatedSipUser, Formatting.Indented));
 
             }
             catch (InvalidOperationException e)
