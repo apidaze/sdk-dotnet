@@ -94,11 +94,10 @@ namespace Apidaze.SDK.Tests.Unit.Calls
             var result = _mediaFilesApi.DownloadMediaFile(SOURCE_FILE_NAME);
 
             // Assert
-            Assert.AreSame(expectedStream.ReadAsBytes(), result.ReadAsBytes());
+            Assert.AreSame(expectedStream.ReadAsBytes(), result);
             MockIRestClient.Verify(x => x.DownloadData(It.IsAny<RestRequest>()), Times.Once);
 
             // Clean
-            result.Close();
             expectedStream.Close();
         }
     }

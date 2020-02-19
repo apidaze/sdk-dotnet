@@ -30,8 +30,7 @@ namespace GetMediaFiles
             }
 
             // initiate ApplicationAction
-            var applicationClient = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret));
-
+            var applicationClient = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret), "https://cpaas-api.dev.voipinnovations.com/");
 
             try
             {
@@ -41,7 +40,12 @@ namespace GetMediaFiles
                 // get media files list
                 var mediaFiles = mediaFilesApi.GetMediaFilesList();
 
-               Console.WriteLine("Media files list: {0}", JsonConvert.SerializeObject(mediaFiles, Formatting.Indented));
+                Console.WriteLine("Media files list: {0}", JsonConvert.SerializeObject(mediaFiles, Formatting.Indented));
+
+                // show media file summary 
+                var fileSummary = mediaFilesApi.ShowMediaFileSummary("zzz8.wav");
+                Console.WriteLine("Media file summary: {0}", JsonConvert.SerializeObject(mediaFiles, Formatting.Indented));
+
             }
             catch (InvalidOperationException e)
             {

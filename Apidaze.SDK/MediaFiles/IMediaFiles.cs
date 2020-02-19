@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.IO;
+﻿using Apidaze.SDK.Common;
+using System.Collections.Generic;
 
 namespace Apidaze.SDK.MediaFiles
 {
@@ -16,13 +16,34 @@ namespace Apidaze.SDK.MediaFiles
         /// <param name="lastToken">The last token.</param>
         /// <param name="maxItems">The maximum items.</param>
         /// <returns>List&lt;dynamic&gt;.</returns>
-        List<dynamic> GetMediaFilesList(bool details = false, string filter = "", string lastToken = "", int maxItems = 500);
+        List<MediaFile> GetMediaFilesList(bool details = false, string filter = "", string lastToken = "", int maxItems = 500);
+
+        /// <summary>
+        /// Uploads the media file.
+        /// </summary>
+        /// <param name="name">The name.</param>
+        /// <param name="mediaFile">The media file.</param>
+        /// <returns>dynamic.</returns>
+        Response UploadMediaFile(string name, string mediaFile);
+
+        /// <summary>
+        /// Deletes the media file.
+        /// </summary>
+        /// <param name="fileName">Name of the file.</param>
+        void DeleteMediaFile(string fileName);
 
         /// <summary>
         /// Downloads the media file.
         /// </summary>
         /// <param name="fileName">Name of the file.</param>
         /// <returns>MemoryStream.</returns>
-        MemoryStream DownloadMediaFile(string fileName);
+        byte[] DownloadMediaFile(string fileName);
+
+        /// <summary>
+        /// Shows the media file summary.
+        /// </summary>
+        /// <param name="fileName">Name of the file.</param>
+        /// <returns>dynamic.</returns>
+        ResponseHeader ShowMediaFileSummary(string fileName);
     }
 }

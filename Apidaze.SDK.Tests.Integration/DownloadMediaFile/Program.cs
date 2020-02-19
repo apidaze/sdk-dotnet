@@ -28,20 +28,31 @@ namespace DownloadMediaFile
             }
 
             // initiate ApplicationAction
-            var applicationClient = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret));
+            var applicationClient = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret), "https://cpaas-api.dev.voipinnovations.com/");
 
             try
             {
                 // initialize mediaFilesApi
                 var mediaFilesApi = applicationClient.CreateMediaFilesApi();
 
-                // get media files list
+                //upload media file
+                var uploadedMediaFile = mediaFilesApi.UploadMediaFile("testFile", "fullPath");
+                if (uploadedMediaFile.Status != null)
+                    Console.WriteLine("The file has been uploaded.");
+
+                // download media file
                 var downloadMediaFile = mediaFilesApi.DownloadMediaFile("zzz8.wav");
                 using FileStream fs = new FileStream("zzz8.wav", FileMode.OpenOrCreate);
-                downloadMediaFile.CopyTo(fs);
+                using var ms = new MemoryStream(downloadMediaFile);
+                ms.CopyTo(fs);
                 fs.Flush();
 
                 Console.WriteLine("The file zzz8.wav has been downloaded.");
+
+                // delete media file 
+                mediaFilesApi.DeleteMediaFile("Ensoniq-ESQ-1-Sy-C4.wav");
+                Console.WriteLine("The file has been deleted.");
+
             }
             catch (InvalidOperationException e)
             {

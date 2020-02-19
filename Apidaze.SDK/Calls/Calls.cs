@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Apidaze.SDK.Base;
+using Apidaze.SDK.Common;
 using Apidaze.SDK.Messages;
 using Newtonsoft.Json;
 using RestSharp;
@@ -62,7 +63,7 @@ namespace Apidaze.SDK.Calls
             EnsureSuccessResponse(response);
 
             var deserializedResponse =
-                JsonConvert.DeserializeObject<ResponseCall>(response.Content);
+                JsonConvert.DeserializeObject<Response>(response.Content);
             var guidValue = deserializedResponse.Ok;
             if (guidValue != null) return new Guid(guidValue);
 
@@ -115,27 +116,11 @@ namespace Apidaze.SDK.Calls
             EnsureSuccessResponse(response);
 
             var deserializedResponse =
-                JsonConvert.DeserializeObject<ResponseCall>(response.Content);
+                JsonConvert.DeserializeObject<Response>(response.Content);
             if (deserializedResponse.Failure != null)
                 throw new DeleteCallResponseException(deserializedResponse.Failure);
         }
 
-        /// <summary>
-        /// Class ResponseCall.
-        /// </summary>
-        public class ResponseCall
-        {
-            /// <summary>
-            /// Gets or sets the ok.
-            /// </summary>
-            /// <value>The ok.</value>
-            [JsonProperty("ok")] public string Ok { get; set; }
-
-            /// <summary>
-            /// Gets or sets the failure.
-            /// </summary>
-            /// <value>The failure.</value>
-            [JsonProperty("failure")] public string Failure { get; set; }
-        }
+        
     }
 }
