@@ -32,7 +32,7 @@ namespace UpdateCdrHttpHandlerExample
             var apiFactory = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret));
 
             var handlerId = 107L;
-            var handlerName = "Some cool handler23";
+            var handlerName = "Some cool handler2334";
             var handlerUrl = "http://cool.handler.com";
 
             try
@@ -40,7 +40,7 @@ namespace UpdateCdrHttpHandlerExample
                 // initialize a CdrHttpHandler API
                 var cdrHttpHandlersApi = apiFactory.CreateCdrHttpHandlersApi();
 
-                // create CdrHttpHandler
+                // update CdrHttpHandler
                 var result = cdrHttpHandlersApi.UpdateCdrHttpHandler(handlerId, handlerName, new Uri(handlerUrl));
                 Console.WriteLine("Updated CdrHttpHandler: {0}", JsonConvert.SerializeObject(result, Formatting.Indented));
             }

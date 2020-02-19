@@ -5,6 +5,8 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.IO;
 using Apidaze.SDK.Exception;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace MessageExample
 {
@@ -33,7 +35,7 @@ namespace MessageExample
             var apiFactory = ApplicationManager.CreateApiFactory(new Credentials(apiKey, apiSecret));
 
             var from = "14123456789";
-            var to = "4812345678";
+            var to = "48123456789";
             var messageBody = "Have a nice day!";
 
             try
@@ -43,11 +45,11 @@ namespace MessageExample
 
                 // send a text
                 var response = messageApi.SendTextMessage(new PhoneNumber(from), new PhoneNumber(to), messageBody);
-                Console.WriteLine(response);
+                Console.WriteLine(JToken.Parse(response).ToString(Formatting.Indented));
             }
             catch (InvalidOperationException e)
             {
-                Console.WriteLine("An error occurred during communicating with API", e);
+                Console.WriteLine("An error occurred during communicating with API {0}", e.Message);
                 throw;
             }
             catch (InvalidPhoneNumberException e)

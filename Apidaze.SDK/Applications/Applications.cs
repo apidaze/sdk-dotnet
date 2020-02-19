@@ -1,7 +1,7 @@
-﻿using Apidaze.SDK.Base;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Apidaze.SDK.Base;
 using RestSharp;
 
 namespace Apidaze.SDK.Applications
@@ -16,18 +16,40 @@ namespace Apidaze.SDK.Applications
     public class Applications : BaseApiClient, IApplications
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="Applications" /> class.
+        /// </summary>
+        /// <param name="client">The client.</param>
+        /// <param name="credentials">The credentials.</param>
+        private Applications(IRestClient client, Credentials credentials)
+            : base(client, credentials)
+        {
+            if (client.BaseUrl != null)
+            {
+                ApplicationUrl = client.BaseUrl.ToString();
+            }
+        }
+
+        /// <summary>
         /// Gets the resource.
         /// </summary>
         /// <value>The resource.</value>
         protected override string Resource => "/applications";
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Applications"/> class.
+        /// Gets or sets the application URL.
+        /// </summary>
+        /// <value>The application URL.</value>
+        private string ApplicationUrl { get; set; }
+
+        /// <summary>
+        /// Creates the instance.
         /// </summary>
         /// <param name="client">The client.</param>
         /// <param name="credentials">The credentials.</param>
-        public Applications(IRestClient client, Credentials credentials) : base(client, credentials)
+        /// <returns>Applications.</returns>
+        public static Applications CreateInstance(IRestClient client, Credentials credentials)
         {
+            return new Applications(client, credentials);
         }
 
         /// <summary>
@@ -57,6 +79,7 @@ namespace Apidaze.SDK.Applications
             {
                 throw new ArgumentException("apiKey must not be null");
             }
+
             return FindByParameter<Application>("api_key", apiKey).ToList();
         }
 
@@ -73,7 +96,7 @@ namespace Apidaze.SDK.Applications
         /// */
         public List<Application> GetApplicationsById(long id)
         {
-            return FindByParameter<Application>("api_id", id.ToString()).ToList();
+            return FindByParameter<Application>("app_id", id.ToString()).ToList();
         }
 
         /// <summary>
@@ -81,7 +104,7 @@ namespace Apidaze.SDK.Applications
         /// </summary>
         /// <param name="name">The name.</param>
         /// <returns>List&lt;Application&gt;.</returns>
-        /// <exception cref="ArgumentException">apiKey must not be null</exception>
+        /// <exception cref="ArgumentException">name must not be null</exception>
         /// * Returns an application details retrieved by api key.
         /// * @param name the name of the application to fetch
         /// * @return a list containing one element with application details if it exists, otherwise an empty list
@@ -92,29 +115,31 @@ namespace Apidaze.SDK.Applications
         {
             if (string.IsNullOrEmpty(name))
             {
-                throw new ArgumentException("apiKey must not be null");
+                throw new ArgumentException("name must not be null");
             }
 
-            return FindByParameter<Application>("api_name", name).ToList();
-        }
-        public IApiActionFactory GetApplicationActionById(long id)
-        {
-            var apiAction = this.GetApplicationsById(id).FirstOrDefault();
-            return apiAction == null
-                ? null
-                : new ApiActionFactory(new Credentials(apiAction.ApiKey, apiAction.ApiSecret));
+            return FindByParameter<Application>("app_name", name).ToList();
         }
 
+        /// <inheritdoc />
+        public IApiActionFactory GetApplicationActionById(long id)
+        {
+            var apiAction = this.GetApplicationsById(id).First();
+            return apiAction != null ? new ApiActionFactory(new Credentials(apiAction.ApiKey, apiAction.ApiSecret), ApplicationUrl) : null;
+        }
+
+        /// <inheritdoc />
         public IApiActionFactory GetApplicationActionByApiKey(string apiKey)
         {
             var apiAction = this.GetApplicationsByApiKey(apiKey).First();
-            return new ApiActionFactory(new Credentials(apiAction.ApiKey, apiAction.ApiSecret));
+            return new ApiActionFactory(new Credentials(apiAction.ApiKey, apiAction.ApiSecret), ApplicationUrl);
         }
 
+        /// <inheritdoc />
         public IApiActionFactory GetApplicationActionByName(string name)
         {
             var apiAction = this.GetApplicationsByName(name).First();
-            return new ApiActionFactory(new Credentials(apiAction.ApiKey, apiAction.ApiSecret));
+            return new ApiActionFactory(new Credentials(apiAction.ApiKey, apiAction.ApiSecret), ApplicationUrl);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace IvrExample
         /// <summary>
         /// The port the HttpListener should listen on.
         /// </summary>
-        private static readonly string SERVER_URL = "http://";
+        private static readonly string SERVER_URL = "";
 
         /// <summary>
         /// The localhost.

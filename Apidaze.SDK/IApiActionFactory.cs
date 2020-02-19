@@ -60,8 +60,16 @@ namespace Apidaze.SDK
         /// <returns>IExternalScripts.</returns>
         IExternalScripts CreateExternalScriptsApi();
 
+        /// <summary>
+        /// Creates the sip users API.
+        /// </summary>
+        /// <returns>ISipUsers.</returns>
         ISipUsers CreateSipUsersApi();
 
+        /// <summary>
+        /// Creates the media files API.
+        /// </summary>
+        /// <returns>IMediaFiles.</returns>
         IMediaFiles CreateMediaFilesApi();
     }
 }

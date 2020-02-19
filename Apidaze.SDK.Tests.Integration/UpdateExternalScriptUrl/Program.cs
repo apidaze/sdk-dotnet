@@ -35,14 +35,14 @@ namespace UpdateExternalScriptUrl
             var id = 1801L;
 
             // new url
-            var newScriptUrl = "http://";
+            var newScriptUrl = "";
 
             try
             {
                 // initialize external scripts api
                 var externalScriptsApi = apiFactory.CreateExternalScriptsApi();
 
-                // get an external script
+                // update external script
                 var script = externalScriptsApi.UpdateExternalScriptUrl(id, new Uri(newScriptUrl));
                 Console.WriteLine("Updated {0}", JsonConvert.SerializeObject(script, Formatting.Indented));
             }

@@ -1,13 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using Apidaze.SDK.ScriptBuilder;
+using Apidaze.SDK.ScriptBuilder.POCO;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using Apidaze.SDK.ScriptBuilder;
-using Apidaze.SDK.ScriptBuilder.POCO;
-using RestSharp.Serialization.Json;
 
 namespace XML
 {
@@ -188,7 +186,7 @@ namespace XML
                     Timeout = 24,
                     Strategy = StrategyEnum.SEQUENCE,
                     Number =
-                        new List<Number> { new Number("12", "48123456789"), new Number("12", "48123456789") }
+                        new List<Number> { new Number("14123456789", 12), new Number("14123456789", 12) }
                 }).ToXml();
                 return Encoding.UTF8.GetBytes(intro);
             }

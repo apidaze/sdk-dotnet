@@ -32,7 +32,7 @@ namespace ListApplications
 
                 // get applications
                 var response = applicationsApi.GetApplications();
-                response.ForEach(x => Console.WriteLine("Applications: {0}", JsonConvert.SerializeObject(x, Formatting.Indented)));
+                Console.WriteLine("Applications: {0}", JsonConvert.SerializeObject(response, Formatting.Indented));
             }
             catch (InvalidOperationException e)
             {
