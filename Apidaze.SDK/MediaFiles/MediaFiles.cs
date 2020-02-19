@@ -140,7 +140,7 @@ namespace Apidaze.SDK.MediaFiles
             var response = Client.Execute(restRequest);
             EnsureSuccessResponse(response);
             var headers = response.Headers.ToList();
-            return new ResponseHeader() { Connection = headers.Find(p => p.Name == "Connection").Value.ToString(), ContentLength = response.ContentLength, ContentType = response.ContentType, Date = headers.Find(p => p.Name == "Date").Value.ToString() };
+            return new ResponseHeader() { Connection = headers.Find(p => p.Name == "Connection")?.Value?.ToString(), ContentLength = response.ContentLength, ContentType = response.ContentType, Date = headers.Find(p => p.Name == "Date")?.Value?.ToString() };
         }
     }
 }

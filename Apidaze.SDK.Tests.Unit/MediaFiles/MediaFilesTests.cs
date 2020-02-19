@@ -1,4 +1,6 @@
-﻿using FluentAssertions;
+﻿using Apidaze.SDK.Common;
+using Apidaze.SDK.MediaFiles;
+using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Newtonsoft.Json;
@@ -68,9 +70,9 @@ namespace Apidaze.SDK.Tests.Unit.Calls
         public void GetMediaFileList_ListOfMediaFileListAreOnServer_ReturnsListOfMediaFiles()
         {
             // Arrange
-            var mediaFiles = new List<string> {"file1.wav", "file2.wav", "file3.wav"};
+            var mediaFiles = new List<MediaFile> { new MediaFile() { Name = "file1.wav" }, new MediaFile() { Name = "file2.wav" } };
             MockIRestClient.Setup(rc => rc.Execute(It.IsAny<RestRequest>())).Returns(
-                new RestResponse {StatusCode = HttpStatusCode.OK, Content = JsonConvert.SerializeObject(mediaFiles)});
+                new RestResponse { StatusCode = HttpStatusCode.OK, Content = JsonConvert.SerializeObject(mediaFiles) });
 
             // Act
             var result = _mediaFilesApi.GetMediaFilesList();
@@ -99,6 +101,61 @@ namespace Apidaze.SDK.Tests.Unit.Calls
 
             // Clean
             expectedStream.Close();
+        }
+
+        /// <summary>
+        /// Defines the test method UploadMediaFile_FileWavFromDisk_StatusOK.
+        /// </summary>
+        [TestMethod]
+        public void UploadMediaFile_FileWavFromDisk_StatusOK()
+        {
+            // Arrange
+            var expectedStream = new FileStream(SOURCE_FILE.FullName, FileMode.Create);
+
+            MockIRestClient.Setup(rc => rc.Execute(It.IsAny<RestRequest>())).Returns(new RestResponse { StatusCode = HttpStatusCode.OK, Content = JsonConvert.SerializeObject(new Response()) });
+
+            // Act
+            var result = _mediaFilesApi.UploadMediaFile("test", SOURCE_FILE.FullName);
+
+            // Assert
+            Assert.IsNotNull(result);
+            MockIRestClient.Verify(x => x.Execute(It.IsAny<RestRequest>()), Times.Once);
+
+            // Clean
+            expectedStream.Close();
+        }
+
+        /// <summary>
+        /// Defines the test method DeleteMediaFileFromServer_FileName_NoContent.
+        /// </summary>
+        [TestMethod]
+        public void DeleteMediaFileFromServer_FileName_NoContent()
+        {
+            // Arrange
+            MockIRestClient.Setup(rc => rc.Execute(It.IsAny<RestRequest>())).Returns(new RestResponse { StatusCode = HttpStatusCode.NoContent });
+
+            // Act
+            _mediaFilesApi.DeleteMediaFile("test");
+
+            // Assert
+            MockIRestClient.Verify(x => x.Execute(It.IsAny<RestRequest>()), Times.Once);
+        }
+
+
+        /// <summary>
+        /// Defines the test method ShowSummaryMediaFile_FileName_HeadersContent.
+        /// </summary>
+        [TestMethod]
+        public void ShowSummaryMediaFile_FileName_NoContent()
+        {
+            // Arrange
+            MockIRestClient.Setup(rc => rc.Execute(It.IsAny<RestRequest>())).Returns(new RestResponse { StatusCode = HttpStatusCode.NoContent });
+
+            // Act
+            _mediaFilesApi.ShowMediaFileSummary("test");
+
+            // Assert
+            MockIRestClient.Verify(x => x.Execute(It.IsAny<RestRequest>()), Times.Once);
         }
     }
 }
