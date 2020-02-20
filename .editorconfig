@@ -5,3 +5,6 @@ dotnet_diagnostic.SA1200.severity = none
 
 # SA1101: Prefix local calls with this
 dotnet_diagnostic.SA1101.severity = none
+
+# CS1066: The default value specified will have no effect because it applies to a member that is used in contexts that do not allow optional arguments
+dotnet_diagnostic.CS1066.severity = none

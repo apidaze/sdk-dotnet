@@ -4,7 +4,7 @@ using Apidaze.SDK;
 using Apidaze.SDK.Base;
 using Microsoft.Extensions.Configuration;
 
-namespace DownloadMediaFile
+namespace PostDeleteDownloadMediaFile
 {
     /// <summary>
     /// Class Program.
@@ -35,13 +35,24 @@ namespace DownloadMediaFile
                 // initialize mediaFilesApi
                 var mediaFilesApi = applicationClient.CreateMediaFilesApi();
 
-                // get media files list
-                var downloadMediaFile = mediaFilesApi.DownloadMediaFile("zzz8.wav");
-                using FileStream fs = new FileStream("zzz8.wav", FileMode.OpenOrCreate);
-                downloadMediaFile.CopyTo(fs);
+                //upload media file
+                var uploadedMediaFile = mediaFilesApi.UploadMediaFile("testFile", "fullPath");
+                if (uploadedMediaFile.Status != null)
+                    Console.WriteLine("The file has been uploaded.");
+
+                // download media file
+                var downloadMediaFile = mediaFilesApi.DownloadMediaFile("test.wav");
+                using FileStream fs = new FileStream("test.wav", FileMode.OpenOrCreate);
+                using var ms = new MemoryStream(downloadMediaFile);
+                ms.CopyTo(fs);
                 fs.Flush();
 
-                Console.WriteLine("The file zzz8.wav has been downloaded.");
+                Console.WriteLine("The file test.wav has been downloaded.");
+
+                // delete media file 
+                mediaFilesApi.DeleteMediaFile("test.wav");
+                Console.WriteLine("The file has been deleted.");
+
             }
             catch (InvalidOperationException e)
             {
