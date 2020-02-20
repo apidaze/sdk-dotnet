@@ -1,35 +1,31 @@
-﻿using Newtonsoft.Json;
-using RestSharp;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using HttpStatusCode = System.Net.HttpStatusCode;
+using System.Net;
+using Newtonsoft.Json;
+using RestSharp;
 
 namespace Apidaze.SDK.Base
 {
     /// <summary>
-    /// Class BaseApiClient.
-    /// Implements the <see cref="Apidaze.SDK.Base.IBaseApiClient" />
+    ///     Class BaseApiClient.
+    ///     Implements the <see cref="Apidaze.SDK.Base.IBaseApiClient" />
     /// </summary>
     /// <seealso cref="Apidaze.SDK.Base.IBaseApiClient" />
     public abstract class BaseApiClient : IBaseApiClient
     {
         /// <summary>
-        /// The credentials
+        ///     The credentials
         /// </summary>
         private readonly Credentials _credentials;
-        /// <summary>
-        /// The client
-        /// </summary>
-        protected readonly IRestClient Client;
-        /// <summary>
-        /// Gets the resource.
-        /// </summary>
-        /// <value>The resource.</value>
-        protected abstract string Resource { get; }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="BaseApiClient"/> class.
+        ///     The client
+        /// </summary>
+        protected readonly IRestClient Client;
+
+        /// <summary>
+        ///     Initializes a new instance of the <see cref="BaseApiClient" /> class.
         /// </summary>
         /// <param name="client">The client.</param>
         /// <param name="credentials">The credentials.</param>
@@ -40,21 +36,13 @@ namespace Apidaze.SDK.Base
         }
 
         /// <summary>
-        /// Authenticates the request.
+        ///     Gets the resource.
         /// </summary>
-        /// <returns>RestRequest.</returns>
-        protected RestRequest AuthenticateRequest()
-        {
-            var restRequest = new RestRequest("{api_key}" + Resource);
-            restRequest.AddHeader("Content-Type", "application/x-www-form-urlencoded");
-            restRequest.AddUrlSegment("api_key", _credentials.ApiKey);
-            restRequest.AddQueryParameter("api_secret", _credentials.ApiSecret);
-
-            return restRequest;
-        }
+        /// <value>The resource.</value>
+        protected abstract string Resource { get; }
 
         /// <summary>
-        /// Creates the specified request parameters.
+        ///     Creates the specified request parameters.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="requestParams">The request parameters.</param>
@@ -67,17 +55,12 @@ namespace Apidaze.SDK.Base
             if (!string.IsNullOrEmpty(resource))
             {
                 restRequest.Resource += "/{id}" + resource;
-                foreach (var idParam in requestParams)
-                {
-                    restRequest.AddUrlSegment(idParam.Key, idParam.Value);
-                }
+                foreach (var idParam in requestParams) restRequest.AddUrlSegment(idParam.Key, idParam.Value);
             }
             else
             {
                 foreach (var nameValueParameter in requestParams)
-                {
                     restRequest.AddParameter(nameValueParameter.Key, nameValueParameter.Value);
-                }
             }
 
             var response = Client.Execute<T>(restRequest);
@@ -88,7 +71,7 @@ namespace Apidaze.SDK.Base
         }
 
         /// <summary>
-        /// Finds all.
+        ///     Finds all.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns>IEnumerable&lt;T&gt;.</returns>
@@ -103,7 +86,7 @@ namespace Apidaze.SDK.Base
         }
 
         /// <summary>
-        /// Finds the by parameter.
+        ///     Finds the by parameter.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="name">The name.</param>
@@ -123,7 +106,7 @@ namespace Apidaze.SDK.Base
         }
 
         /// <summary>
-        /// Finds the by identifier.
+        ///     Finds the by identifier.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="id">The identifier.</param>
@@ -137,17 +120,14 @@ namespace Apidaze.SDK.Base
             var response = Client.Execute<T>(restRequest);
 
             EnsureSuccessResponse(response);
-            if (response.StatusCode == HttpStatusCode.NotFound)
-            {
-                return default;
-            }
+            if (response.StatusCode == HttpStatusCode.NotFound) return default;
 
             var deserializedResponse = JsonConvert.DeserializeObject<T>(response.Content);
             return deserializedResponse;
         }
 
         /// <summary>
-        /// Updates the specified identifier.
+        ///     Updates the specified identifier.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="id">The identifier.</param>
@@ -161,9 +141,7 @@ namespace Apidaze.SDK.Base
             restRequest.AddUrlSegment("id", id);
 
             foreach (var nameValueParameter in requestParams)
-            {
                 restRequest.AddParameter(nameValueParameter.Key, nameValueParameter.Value);
-            }
 
             var response = Client.Execute<T>(restRequest);
             EnsureSuccessResponse(response);
@@ -172,7 +150,7 @@ namespace Apidaze.SDK.Base
         }
 
         /// <summary>
-        /// Deletes the specified identifier.
+        ///     Deletes the specified identifier.
         /// </summary>
         /// <param name="id">The identifier.</param>
         public void Delete(string id)
@@ -187,12 +165,26 @@ namespace Apidaze.SDK.Base
         }
 
         /// <summary>
-        /// Ensures the success response.
+        ///     Authenticates the request.
+        /// </summary>
+        /// <returns>RestRequest.</returns>
+        protected RestRequest AuthenticateRequest()
+        {
+            var restRequest = new RestRequest("{api_key}" + Resource);
+            restRequest.AddHeader("Content-Type", "application/x-www-form-urlencoded");
+            restRequest.AddUrlSegment("api_key", _credentials.ApiKey);
+            restRequest.AddQueryParameter("api_secret", _credentials.ApiSecret);
+
+            return restRequest;
+        }
+
+        /// <summary>
+        ///     Ensures the success response.
         /// </summary>
         /// <param name="response">The response.</param>
         internal static void EnsureSuccessResponse(IRestResponse response)
         {
-            if (!new[] { HttpStatusCode.InternalServerError, HttpStatusCode.BadRequest }
+            if (!new[] {HttpStatusCode.InternalServerError, HttpStatusCode.BadRequest}
                 .Contains(response.StatusCode)) return;
             var newException = new InvalidOperationException(response.Content);
             throw newException;

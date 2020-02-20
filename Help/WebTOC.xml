@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="d512f3d1-72de-46b1-b772-7240a4a75ab5" Title="Apidaze.SDK Namespace" Url="html/N-Apidaze.SDK.htm">
+    <HelpTOCNode Id="5fb8440c-fa73-4230-8eaa-e39b4b81b6e4" Title="ApplicationManager Class" Url="html/T-Apidaze.SDK.ApplicationManager.htm">
+      <HelpTOCNode Title="ApplicationManager Members" Url="html/AllMembers.T-Apidaze.SDK.ApplicationManager.htm" />
+      <HelpTOCNode Id="bae6e498-e5af-41b2-9b5b-856b7cb71911" Title="ApplicationManager Methods" Url="html/Methods.T-Apidaze.SDK.ApplicationManager.htm">
+        <HelpTOCNode Title="CreateApiFactory Method " Url="html/M-Apidaze.SDK.ApplicationManager.CreateApiFactory.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f0efe48a-b051-403a-b3a4-783a0df7ef5b" Title="IApiActionFactory Interface" Url="html/T-Apidaze.SDK.IApiActionFactory.htm">
+      <HelpTOCNode Title="IApiActionFactory Members" Url="html/AllMembers.T-Apidaze.SDK.IApiActionFactory.htm" />
+      <HelpTOCNode Id="9bf657f7-6015-41f6-8dbf-a93527847df5" Title="IApiActionFactory Methods" Url="html/Methods.T-Apidaze.SDK.IApiActionFactory.htm">
+        <HelpTOCNode Title="CreateApplicationsApi Method " Url="html/M-Apidaze.SDK.IApiActionFactory.CreateApplicationsApi.htm" />
+        <HelpTOCNode Title="CreateCallsApi Method " Url="html/M-Apidaze.SDK.IApiActionFactory.CreateCallsApi.htm" />
+        <HelpTOCNode Title="CreateCdrHttpHandlersApi Method " Url="html/M-Apidaze.SDK.IApiActionFactory.CreateCdrHttpHandlersApi.htm" />
+        <HelpTOCNode Title="CreateCredentialsValidatorApi Method " Url="html/M-Apidaze.SDK.IApiActionFactory.CreateCredentialsValidatorApi.htm" />
+        <HelpTOCNode Title="CreateExternalScriptsApi Method " Url="html/M-Apidaze.SDK.IApiActionFactory.CreateExternalScriptsApi.htm" />
+        <HelpTOCNode Title="CreateMediaFilesApi Method " Url="html/M-Apidaze.SDK.IApiActionFactory.CreateMediaFilesApi.htm" />
+        <HelpTOCNode Title="CreateMessageApi Method " Url="html/M-Apidaze.SDK.IApiActionFactory.CreateMessageApi.htm" />
+        <HelpTOCNode Title="CreateRecordingsApi Method " Url="html/M-Apidaze.SDK.IApiActionFactory.CreateRecordingsApi.htm" />
+        <HelpTOCNode Title="CreateSipUsersApi Method " Url="html/M-Apidaze.SDK.IApiActionFactory.CreateSipUsersApi.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="12a6dce4-9018-42d5-8786-0eb9146b7680" Title="Apidaze.SDK.Applications Namespace" Url="html/N-Apidaze.SDK.Applications.htm">
+    <HelpTOCNode Id="dcc83665-9015-43a8-818d-21df700d42e5" Title="Application Class" Url="html/T-Apidaze.SDK.Applications.Application.htm">
+      <HelpTOCNode Title="Application Members" Url="html/AllMembers.T-Apidaze.SDK.Applications.Application.htm" />
+      <HelpTOCNode Title="Application Methods" Url="html/Methods.T-Apidaze.SDK.Applications.Application.htm" />
+      <HelpTOCNode Id="ef741f66-6928-42cd-a301-271d8f978dcf" Title="Application Properties" Url="html/Properties.T-Apidaze.SDK.Applications.Application.htm">
+        <HelpTOCNode Title="AccountId Property " Url="html/P-Apidaze.SDK.Applications.Application.AccountId.htm" />
+        <HelpTOCNode Title="ApiKey Property " Url="html/P-Apidaze.SDK.Applications.Application.ApiKey.htm" />
+        <HelpTOCNode Title="ApiSecret Property " Url="html/P-Apidaze.SDK.Applications.Application.ApiSecret.htm" />
+        <HelpTOCNode Title="ApplicationId Property " Url="html/P-Apidaze.SDK.Applications.Application.ApplicationId.htm" />
+        <HelpTOCNode Title="CreatedAt Property " Url="html/P-Apidaze.SDK.Applications.Application.CreatedAt.htm" />
+        <HelpTOCNode Title="FsAddress Property " Url="html/P-Apidaze.SDK.Applications.Application.FsAddress.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-Apidaze.SDK.Applications.Application.Id.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/P-Apidaze.SDK.Applications.Application.Name.htm" />
+        <HelpTOCNode Title="UpdatedAt Property " Url="html/P-Apidaze.SDK.Applications.Application.UpdatedAt.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9c29af90-2b3a-4c1d-a9d0-c8b7393ce28c" Title="Applications Class" Url="html/T-Apidaze.SDK.Applications.Applications.htm">
+      <HelpTOCNode Title="Applications Members" Url="html/AllMembers.T-Apidaze.SDK.Applications.Applications.htm" />
+      <HelpTOCNode Id="bd093a7f-1a3a-4378-ac91-13eb7ac68bfc" Title="Applications Methods" Url="html/Methods.T-Apidaze.SDK.Applications.Applications.htm">
+        <HelpTOCNode Title="CreateInstance Method " Url="html/M-Apidaze.SDK.Applications.Applications.CreateInstance.htm" />
+        <HelpTOCNode Title="GetApplicationActionByApiKey Method " Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationActionByApiKey.htm" />
+        <HelpTOCNode Title="GetApplicationActionById Method " Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationActionById.htm" />
+        <HelpTOCNode Title="GetApplicationActionByName Method " Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationActionByName.htm" />
+        <HelpTOCNode Title="GetApplications Method " Url="html/M-Apidaze.SDK.Applications.Applications.GetApplications.htm" />
+        <HelpTOCNode Title="GetApplicationsByApiKey Method " Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationsByApiKey.htm" />
+        <HelpTOCNode Title="GetApplicationsById Method " Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationsById.htm" />
+        <HelpTOCNode Title="GetApplicationsByName Method " Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationsByName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9d356731-c45d-44f5-8039-30b32e06c2db" Title="IApplications Interface" Url="html/T-Apidaze.SDK.Applications.IApplications.htm">
+      <HelpTOCNode Title="IApplications Members" Url="html/AllMembers.T-Apidaze.SDK.Applications.IApplications.htm" />
+      <HelpTOCNode Id="f77f525a-dfb2-4b7a-b3d4-24e5adbeff97" Title="IApplications Methods" Url="html/Methods.T-Apidaze.SDK.Applications.IApplications.htm">
+        <HelpTOCNode Title="GetApplicationActionByApiKey Method " Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationActionByApiKey.htm" />
+        <HelpTOCNode Title="GetApplicationActionById Method " Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationActionById.htm" />
+        <HelpTOCNode Title="GetApplicationActionByName Method " Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationActionByName.htm" />
+        <HelpTOCNode Title="GetApplications Method " Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplications.htm" />
+        <HelpTOCNode Title="GetApplicationsByApiKey Method " Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationsByApiKey.htm" />
+        <HelpTOCNode Title="GetApplicationsById Method " Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationsById.htm" />
+        <HelpTOCNode Title="GetApplicationsByName Method " Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationsByName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="4e7e1b6c-b840-4c0d-9d7b-5a80e2e95b82" Title="Apidaze.SDK.Base Namespace" Url="html/N-Apidaze.SDK.Base.htm">
+    <HelpTOCNode Id="738a9ec9-f7b4-47d4-b7c1-bfd36263eb59" Title="BaseApiClient Class" Url="html/T-Apidaze.SDK.Base.BaseApiClient.htm">
+      <HelpTOCNode Title="BaseApiClient Members" Url="html/AllMembers.T-Apidaze.SDK.Base.BaseApiClient.htm" />
+      <HelpTOCNode Id="3008efd3-470f-47f5-ab4c-403174d3fdd2" Title="BaseApiClient Methods" Url="html/Methods.T-Apidaze.SDK.Base.BaseApiClient.htm">
+        <HelpTOCNode Title="Create(T) Method " Url="html/M-Apidaze.SDK.Base.BaseApiClient.Create--1.htm" />
+        <HelpTOCNode Title="Delete Method " Url="html/M-Apidaze.SDK.Base.BaseApiClient.Delete.htm" />
+        <HelpTOCNode Title="FindAll(T) Method " Url="html/M-Apidaze.SDK.Base.BaseApiClient.FindAll--1.htm" />
+        <HelpTOCNode Title="FindById(T) Method " Url="html/M-Apidaze.SDK.Base.BaseApiClient.FindById--1.htm" />
+        <HelpTOCNode Title="FindByParameter(T) Method " Url="html/M-Apidaze.SDK.Base.BaseApiClient.FindByParameter--1.htm" />
+        <HelpTOCNode Title="Update(T) Method " Url="html/M-Apidaze.SDK.Base.BaseApiClient.Update--1.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ced47663-455b-4433-bc30-e8d0f0899f14" Title="Credentials Class" Url="html/T-Apidaze.SDK.Base.Credentials.htm">
+      <HelpTOCNode Title="Credentials Members" Url="html/AllMembers.T-Apidaze.SDK.Base.Credentials.htm" />
+      <HelpTOCNode Title="Credentials Constructor " Url="html/M-Apidaze.SDK.Base.Credentials.-ctor.htm" />
+      <HelpTOCNode Title="Credentials Methods" Url="html/Methods.T-Apidaze.SDK.Base.Credentials.htm" />
+      <HelpTOCNode Id="38a55f93-e3d5-48e9-80d3-b4b7a686921a" Title="Credentials Properties" Url="html/Properties.T-Apidaze.SDK.Base.Credentials.htm">
+        <HelpTOCNode Title="ApiKey Property " Url="html/P-Apidaze.SDK.Base.Credentials.ApiKey.htm" />
+        <HelpTOCNode Title="ApiSecret Property " Url="html/P-Apidaze.SDK.Base.Credentials.ApiSecret.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="d3a36a50-c5fc-4241-9d7f-bc6fa7f53279" Title="Apidaze.SDK.Calls Namespace" Url="html/N-Apidaze.SDK.Calls.htm">
+    <HelpTOCNode Id="c2a07911-c406-430b-9001-cdeaf7517df4" Title="Call Class" Url="html/T-Apidaze.SDK.Calls.Call.htm">
+      <HelpTOCNode Title="Call Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.Call.htm" />
+      <HelpTOCNode Title="Call Methods" Url="html/Methods.T-Apidaze.SDK.Calls.Call.htm" />
+      <HelpTOCNode Id="4896fec1-a7c1-45a6-97f5-fe35935e4009" Title="Call Properties" Url="html/Properties.T-Apidaze.SDK.Calls.Call.htm">
+        <HelpTOCNode Title="CallerId Property " Url="html/P-Apidaze.SDK.Calls.Call.CallerId.htm" />
+        <HelpTOCNode Title="CallerIdName Property " Url="html/P-Apidaze.SDK.Calls.Call.CallerIdName.htm" />
+        <HelpTOCNode Title="CallerIdNumber Property " Url="html/P-Apidaze.SDK.Calls.Call.CallerIdNumber.htm" />
+        <HelpTOCNode Title="CallState Property " Url="html/P-Apidaze.SDK.Calls.Call.CallState.htm" />
+        <HelpTOCNode Title="CallUuid Property " Url="html/P-Apidaze.SDK.Calls.Call.CallUuid.htm" />
+        <HelpTOCNode Title="Created Property " Url="html/P-Apidaze.SDK.Calls.Call.Created.htm" />
+        <HelpTOCNode Title="Destination Property " Url="html/P-Apidaze.SDK.Calls.Call.Destination.htm" />
+        <HelpTOCNode Title="URL Property " Url="html/P-Apidaze.SDK.Calls.Call.URL.htm" />
+        <HelpTOCNode Title="Uuid Property " Url="html/P-Apidaze.SDK.Calls.Call.Uuid.htm" />
+        <HelpTOCNode Title="WorkTag Property " Url="html/P-Apidaze.SDK.Calls.Call.WorkTag.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="52d8bf4a-766f-4491-aef8-0af16d9ac5b0" Title="Calls Class" Url="html/T-Apidaze.SDK.Calls.Calls.htm">
+      <HelpTOCNode Title="Calls Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.Calls.htm" />
+      <HelpTOCNode Title="Calls Constructor " Url="html/M-Apidaze.SDK.Calls.Calls.-ctor.htm" />
+      <HelpTOCNode Id="756707fc-4767-43fa-8173-f961b53134c4" Title="Calls Methods" Url="html/Methods.T-Apidaze.SDK.Calls.Calls.htm">
+        <HelpTOCNode Title="CreateCall Method " Url="html/M-Apidaze.SDK.Calls.Calls.CreateCall.htm" />
+        <HelpTOCNode Title="DeleteCall Method " Url="html/M-Apidaze.SDK.Calls.Calls.DeleteCall.htm" />
+        <HelpTOCNode Title="GetCall Method " Url="html/M-Apidaze.SDK.Calls.Calls.GetCall.htm" />
+        <HelpTOCNode Title="GetCalls Method " Url="html/M-Apidaze.SDK.Calls.Calls.GetCalls.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="38936b2e-92be-4163-a7ea-b862d61eea88" Title="CallType Class" Url="html/T-Apidaze.SDK.Calls.CallType.htm">
+      <HelpTOCNode Title="CallType Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.CallType.htm" />
+      <HelpTOCNode Title="CallType Methods" Url="html/Methods.T-Apidaze.SDK.Calls.CallType.htm" />
+      <HelpTOCNode Id="1ad31372-f290-481f-bcf3-1b6902039e3d" Title="CallType Properties" Url="html/Properties.T-Apidaze.SDK.Calls.CallType.htm">
+        <HelpTOCNode Title="NUMBER Property " Url="html/P-Apidaze.SDK.Calls.CallType.NUMBER.htm" />
+        <HelpTOCNode Title="SIP_ACCOUNT Property " Url="html/P-Apidaze.SDK.Calls.CallType.SIP_ACCOUNT.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="cb8a95ee-6d8f-46dd-b08e-e0fc368872ac" Title="CreateCallResponseException Class" Url="html/T-Apidaze.SDK.Calls.CreateCallResponseException.htm">
+      <HelpTOCNode Title="CreateCallResponseException Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.CreateCallResponseException.htm" />
+      <HelpTOCNode Title="CreateCallResponseException Constructor " Url="html/M-Apidaze.SDK.Calls.CreateCallResponseException.-ctor.htm" />
+      <HelpTOCNode Title="CreateCallResponseException Methods" Url="html/Methods.T-Apidaze.SDK.Calls.CreateCallResponseException.htm" />
+      <HelpTOCNode Title="CreateCallResponseException Properties" Url="html/Properties.T-Apidaze.SDK.Calls.CreateCallResponseException.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="5ae18f5b-38f8-44b1-b462-59f01033fde1" Title="DateFormatConverter Class" Url="html/T-Apidaze.SDK.Calls.DateFormatConverter.htm">
+      <HelpTOCNode Title="DateFormatConverter Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.DateFormatConverter.htm" />
+      <HelpTOCNode Title="DateFormatConverter Constructor " Url="html/M-Apidaze.SDK.Calls.DateFormatConverter.-ctor.htm" />
+      <HelpTOCNode Title="DateFormatConverter Methods" Url="html/Methods.T-Apidaze.SDK.Calls.DateFormatConverter.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a89e70d5-479d-4212-a8aa-05a2dc3b799f" Title="DeleteCallResponseException Class" Url="html/T-Apidaze.SDK.Calls.DeleteCallResponseException.htm">
+      <HelpTOCNode Title="DeleteCallResponseException Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.DeleteCallResponseException.htm" />
+      <HelpTOCNode Title="DeleteCallResponseException Constructor " Url="html/M-Apidaze.SDK.Calls.DeleteCallResponseException.-ctor.htm" />
+      <HelpTOCNode Title="DeleteCallResponseException Methods" Url="html/Methods.T-Apidaze.SDK.Calls.DeleteCallResponseException.htm" />
+      <HelpTOCNode Title="DeleteCallResponseException Properties" Url="html/Properties.T-Apidaze.SDK.Calls.DeleteCallResponseException.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="50defe46-cf14-40ba-ac6b-7d5128055ba2" Title="ICalls Interface" Url="html/T-Apidaze.SDK.Calls.ICalls.htm">
+      <HelpTOCNode Title="ICalls Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.ICalls.htm" />
+      <HelpTOCNode Id="6f32e8c9-2688-492b-a27d-e16d2c762fc8" Title="ICalls Methods" Url="html/Methods.T-Apidaze.SDK.Calls.ICalls.htm">
+        <HelpTOCNode Title="CreateCall Method " Url="html/M-Apidaze.SDK.Calls.ICalls.CreateCall.htm" />
+        <HelpTOCNode Title="DeleteCall Method " Url="html/M-Apidaze.SDK.Calls.ICalls.DeleteCall.htm" />
+        <HelpTOCNode Title="GetCall Method " Url="html/M-Apidaze.SDK.Calls.ICalls.GetCall.htm" />
+        <HelpTOCNode Title="GetCalls Method " Url="html/M-Apidaze.SDK.Calls.ICalls.GetCalls.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="66ad1c8b-a1ce-4463-9ac5-9769bf11e719" Title="Apidaze.SDK.CdrHttpHandlers Namespace" Url="html/N-Apidaze.SDK.CdrHttpHandlers.htm">
+    <HelpTOCNode Title="CallLeg Enumeration" Url="html/T-Apidaze.SDK.CdrHttpHandlers.CallLeg.htm" />
+    <HelpTOCNode Id="71fdb2ec-8c3a-4490-8071-c5d2c5cacd11" Title="CdrHttpHandler Class" Url="html/T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.htm">
+      <HelpTOCNode Title="CdrHttpHandler Members" Url="html/AllMembers.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.htm" />
+      <HelpTOCNode Title="CdrHttpHandler Methods" Url="html/Methods.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.htm" />
+      <HelpTOCNode Id="c759d44e-4f5e-4e65-bab7-580199f61467" Title="CdrHttpHandler Properties" Url="html/Properties.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.htm">
+        <HelpTOCNode Title="CallLeg Property " Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.CallLeg.htm" />
+        <HelpTOCNode Title="CreatedAt Property " Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.CreatedAt.htm" />
+        <HelpTOCNode Title="Format Property " Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Format.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Id.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Name.htm" />
+        <HelpTOCNode Title="UpdatedAt Property " Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.UpdatedAt.htm" />
+        <HelpTOCNode Title="Url Property " Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Url.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="91e0af6f-2d5a-4610-b2d9-dda68471e517" Title="CdrHttpHandlers Class" Url="html/T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.htm">
+      <HelpTOCNode Title="CdrHttpHandlers Members" Url="html/AllMembers.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.htm" />
+      <HelpTOCNode Title="CdrHttpHandlers Constructor " Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.-ctor.htm" />
+      <HelpTOCNode Id="85508121-2709-4f4c-91ab-7191be4b7bef" Title="CdrHttpHandlers Methods" Url="html/Methods.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.htm">
+        <HelpTOCNode Title="CreateCdrHttpHandler Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.CreateCdrHttpHandler.htm" />
+        <HelpTOCNode Title="DeleteCdrHttpHandler Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.DeleteCdrHttpHandler.htm" />
+        <HelpTOCNode Title="GetCdrHttpHandlers Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.GetCdrHttpHandlers.htm" />
+        <HelpTOCNode Title="UpdateCdrHttpHandler Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.UpdateCdrHttpHandler.htm" />
+        <HelpTOCNode Title="UpdateCdrHttpHandlerName Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.UpdateCdrHttpHandlerName.htm" />
+        <HelpTOCNode Title="UpdateCdrHttpHandlerUrl Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.UpdateCdrHttpHandlerUrl.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Format Enumeration" Url="html/T-Apidaze.SDK.CdrHttpHandlers.Format.htm" />
+    <HelpTOCNode Id="7b0ef13f-d046-4321-b611-18bc81478106" Title="ICdrHttpHandlers Interface" Url="html/T-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.htm">
+      <HelpTOCNode Title="ICdrHttpHandlers Members" Url="html/AllMembers.T-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.htm" />
+      <HelpTOCNode Id="dfd12f12-b8ef-42e9-ae13-a2c51468bd99" Title="ICdrHttpHandlers Methods" Url="html/Methods.T-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.htm">
+        <HelpTOCNode Title="CreateCdrHttpHandler Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.CreateCdrHttpHandler.htm" />
+        <HelpTOCNode Title="DeleteCdrHttpHandler Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.DeleteCdrHttpHandler.htm" />
+        <HelpTOCNode Title="GetCdrHttpHandlers Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.GetCdrHttpHandlers.htm" />
+        <HelpTOCNode Title="UpdateCdrHttpHandler Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.UpdateCdrHttpHandler.htm" />
+        <HelpTOCNode Title="UpdateCdrHttpHandlerName Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.UpdateCdrHttpHandlerName.htm" />
+        <HelpTOCNode Title="UpdateCdrHttpHandlerUrl Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.UpdateCdrHttpHandlerUrl.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="23359000-05f5-4495-abd7-cc12468bb011" Title="Apidaze.SDK.Common Namespace" Url="html/N-Apidaze.SDK.Common.htm">
+    <HelpTOCNode Id="c777c7f2-afe0-46b0-b2fd-013fc303857b" Title="Response Class" Url="html/T-Apidaze.SDK.Common.Response.htm">
+      <HelpTOCNode Title="Response Members" Url="html/AllMembers.T-Apidaze.SDK.Common.Response.htm" />
+      <HelpTOCNode Title="Response Methods" Url="html/Methods.T-Apidaze.SDK.Common.Response.htm" />
+      <HelpTOCNode Id="73d7aab0-b2a7-4101-afac-0018e6100ced" Title="Response Properties" Url="html/Properties.T-Apidaze.SDK.Common.Response.htm">
+        <HelpTOCNode Title="Failure Property " Url="html/P-Apidaze.SDK.Common.Response.Failure.htm" />
+        <HelpTOCNode Title="Ok Property " Url="html/P-Apidaze.SDK.Common.Response.Ok.htm" />
+        <HelpTOCNode Title="Status Property " Url="html/P-Apidaze.SDK.Common.Response.Status.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="c0520106-35f6-4898-9e2a-8a21294c1015" Title="ResponseHeader Class" Url="html/T-Apidaze.SDK.Common.ResponseHeader.htm">
+      <HelpTOCNode Title="ResponseHeader Members" Url="html/AllMembers.T-Apidaze.SDK.Common.ResponseHeader.htm" />
+      <HelpTOCNode Title="ResponseHeader Methods" Url="html/Methods.T-Apidaze.SDK.Common.ResponseHeader.htm" />
+      <HelpTOCNode Id="967f65da-0d55-4f71-8e66-e44828ca2a57" Title="ResponseHeader Properties" Url="html/Properties.T-Apidaze.SDK.Common.ResponseHeader.htm">
+        <HelpTOCNode Title="Connection Property " Url="html/P-Apidaze.SDK.Common.ResponseHeader.Connection.htm" />
+        <HelpTOCNode Title="ContentLength Property " Url="html/P-Apidaze.SDK.Common.ResponseHeader.ContentLength.htm" />
+        <HelpTOCNode Title="ContentType Property " Url="html/P-Apidaze.SDK.Common.ResponseHeader.ContentType.htm" />
+        <HelpTOCNode Title="Date Property " Url="html/P-Apidaze.SDK.Common.ResponseHeader.Date.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="79ff5d51-31a8-49ad-8d32-a8f7fef60a75" Title="Apidaze.SDK.Exception Namespace" Url="html/N-Apidaze.SDK.Exception.htm">
+    <HelpTOCNode Id="ab719272-eaf7-434e-a0d7-288199e8ee60" Title="ApidazeCredentialsException Class" Url="html/T-Apidaze.SDK.Exception.ApidazeCredentialsException.htm">
+      <HelpTOCNode Title="ApidazeCredentialsException Members" Url="html/AllMembers.T-Apidaze.SDK.Exception.ApidazeCredentialsException.htm" />
+      <HelpTOCNode Title="ApidazeCredentialsException Constructor " Url="html/M-Apidaze.SDK.Exception.ApidazeCredentialsException.-ctor.htm" />
+      <HelpTOCNode Title="ApidazeCredentialsException Methods" Url="html/Methods.T-Apidaze.SDK.Exception.ApidazeCredentialsException.htm" />
+      <HelpTOCNode Title="ApidazeCredentialsException Properties" Url="html/Properties.T-Apidaze.SDK.Exception.ApidazeCredentialsException.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="278cc521-9299-456d-b8c0-ee888caedf1b" Title="ApidazeRestException Class" Url="html/T-Apidaze.SDK.Exception.ApidazeRestException.htm">
+      <HelpTOCNode Title="ApidazeRestException Members" Url="html/AllMembers.T-Apidaze.SDK.Exception.ApidazeRestException.htm" />
+      <HelpTOCNode Title="ApidazeRestException Constructor " Url="html/M-Apidaze.SDK.Exception.ApidazeRestException.-ctor.htm" />
+      <HelpTOCNode Title="ApidazeRestException Methods" Url="html/Methods.T-Apidaze.SDK.Exception.ApidazeRestException.htm" />
+      <HelpTOCNode Id="d7a2f774-19e4-43a4-ab61-0ac4fc0c2d12" Title="ApidazeRestException Properties" Url="html/Properties.T-Apidaze.SDK.Exception.ApidazeRestException.htm">
+        <HelpTOCNode Title="StatusCode Property " Url="html/P-Apidaze.SDK.Exception.ApidazeRestException.StatusCode.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a82cecc9-1548-4e3c-97d8-41bcb68b3c92" Title="CreateCallResponseException Class" Url="html/T-Apidaze.SDK.Exception.CreateCallResponseException.htm">
+      <HelpTOCNode Title="CreateCallResponseException Members" Url="html/AllMembers.T-Apidaze.SDK.Exception.CreateCallResponseException.htm" />
+      <HelpTOCNode Title="CreateCallResponseException Constructor " Url="html/M-Apidaze.SDK.Exception.CreateCallResponseException.-ctor.htm" />
+      <HelpTOCNode Title="CreateCallResponseException Methods" Url="html/Methods.T-Apidaze.SDK.Exception.CreateCallResponseException.htm" />
+      <HelpTOCNode Title="CreateCallResponseException Properties" Url="html/Properties.T-Apidaze.SDK.Exception.CreateCallResponseException.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="726a727e-3d48-4f68-98e5-6be9c95773c8" Title="DeleteCallResponseException Class" Url="html/T-Apidaze.SDK.Exception.DeleteCallResponseException.htm">
+      <HelpTOCNode Title="DeleteCallResponseException Members" Url="html/AllMembers.T-Apidaze.SDK.Exception.DeleteCallResponseException.htm" />
+      <HelpTOCNode Title="DeleteCallResponseException Constructor " Url="html/M-Apidaze.SDK.Exception.DeleteCallResponseException.-ctor.htm" />
+      <HelpTOCNode Title="DeleteCallResponseException Methods" Url="html/Methods.T-Apidaze.SDK.Exception.DeleteCallResponseException.htm" />
+      <HelpTOCNode Title="DeleteCallResponseException Properties" Url="html/Properties.T-Apidaze.SDK.Exception.DeleteCallResponseException.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="bae84504-cf1b-49ee-894e-70b8fdb2a6a6" Title="InvalidPhoneNumberException Class" Url="html/T-Apidaze.SDK.Exception.InvalidPhoneNumberException.htm">
+      <HelpTOCNode Title="InvalidPhoneNumberException Members" Url="html/AllMembers.T-Apidaze.SDK.Exception.InvalidPhoneNumberException.htm" />
+      <HelpTOCNode Title="InvalidPhoneNumberException Constructor " Url="html/M-Apidaze.SDK.Exception.InvalidPhoneNumberException.-ctor.htm" />
+      <HelpTOCNode Title="InvalidPhoneNumberException Methods" Url="html/Methods.T-Apidaze.SDK.Exception.InvalidPhoneNumberException.htm" />
+      <HelpTOCNode Title="InvalidPhoneNumberException Properties" Url="html/Properties.T-Apidaze.SDK.Exception.InvalidPhoneNumberException.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="0e173268-7310-4a3b-9546-cecb948e0da9" Title="Apidaze.SDK.ExternalScripts Namespace" Url="html/N-Apidaze.SDK.ExternalScripts.htm">
+    <HelpTOCNode Id="7cfaf456-6954-4a9b-8aa2-f482caab35d9" Title="ExternalScript Class" Url="html/T-Apidaze.SDK.ExternalScripts.ExternalScript.htm">
+      <HelpTOCNode Title="ExternalScript Members" Url="html/AllMembers.T-Apidaze.SDK.ExternalScripts.ExternalScript.htm" />
+      <HelpTOCNode Title="ExternalScript Methods" Url="html/Methods.T-Apidaze.SDK.ExternalScripts.ExternalScript.htm" />
+      <HelpTOCNode Id="dd771aed-2f3a-4ed6-a545-de9cfc597a81" Title="ExternalScript Properties" Url="html/Properties.T-Apidaze.SDK.ExternalScripts.ExternalScript.htm">
+        <HelpTOCNode Title="CreatedAt Property " Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.CreatedAt.htm" />
+        <HelpTOCNode Title="DevCustomerId Property " Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.DevCustomerId.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.Id.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.Name.htm" />
+        <HelpTOCNode Title="ResellerCustomerId Property " Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.ResellerCustomerId.htm" />
+        <HelpTOCNode Title="SmsUrl Property " Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.SmsUrl.htm" />
+        <HelpTOCNode Title="UpdatedAt Property " Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.UpdatedAt.htm" />
+        <HelpTOCNode Title="Url Property " Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.Url.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d41f7b0c-8ec6-426c-a74a-6f471a996a90" Title="ExternalScripts Class" Url="html/T-Apidaze.SDK.ExternalScripts.ExternalScripts.htm">
+      <HelpTOCNode Title="ExternalScripts Members" Url="html/AllMembers.T-Apidaze.SDK.ExternalScripts.ExternalScripts.htm" />
+      <HelpTOCNode Title="ExternalScripts Constructor " Url="html/M-Apidaze.SDK.ExternalScripts.ExternalScripts.-ctor.htm" />
+      <HelpTOCNode Id="87d29b61-0956-438f-91df-9d36489aabe1" Title="ExternalScripts Methods" Url="html/Methods.T-Apidaze.SDK.ExternalScripts.ExternalScripts.htm">
+        <HelpTOCNode Title="GetExternalScript Method " Url="html/M-Apidaze.SDK.ExternalScripts.ExternalScripts.GetExternalScript.htm" />
+        <HelpTOCNode Title="GetExternalScripts Method " Url="html/M-Apidaze.SDK.ExternalScripts.ExternalScripts.GetExternalScripts.htm" />
+        <HelpTOCNode Title="UpdateExternalScript Method " Url="html/M-Apidaze.SDK.ExternalScripts.ExternalScripts.UpdateExternalScript.htm" />
+        <HelpTOCNode Title="UpdateExternalScriptUrl Method " Url="html/M-Apidaze.SDK.ExternalScripts.ExternalScripts.UpdateExternalScriptUrl.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="4b0b590d-3646-4139-b699-1b2bc85fbfcf" Title="IExternalScripts Interface" Url="html/T-Apidaze.SDK.ExternalScripts.IExternalScripts.htm">
+      <HelpTOCNode Title="IExternalScripts Members" Url="html/AllMembers.T-Apidaze.SDK.ExternalScripts.IExternalScripts.htm" />
+      <HelpTOCNode Id="8ce7f109-031c-4cf4-8dd3-7660ffc29ae9" Title="IExternalScripts Methods" Url="html/Methods.T-Apidaze.SDK.ExternalScripts.IExternalScripts.htm">
+        <HelpTOCNode Title="GetExternalScript Method " Url="html/M-Apidaze.SDK.ExternalScripts.IExternalScripts.GetExternalScript.htm" />
+        <HelpTOCNode Title="GetExternalScripts Method " Url="html/M-Apidaze.SDK.ExternalScripts.IExternalScripts.GetExternalScripts.htm" />
+        <HelpTOCNode Title="UpdateExternalScript Method " Url="html/M-Apidaze.SDK.ExternalScripts.IExternalScripts.UpdateExternalScript.htm" />
+        <HelpTOCNode Title="UpdateExternalScriptUrl Method " Url="html/M-Apidaze.SDK.ExternalScripts.IExternalScripts.UpdateExternalScriptUrl.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="f6518b73-0adf-4981-9d2e-bae081ecd511" Title="Apidaze.SDK.MediaFiles Namespace" Url="html/N-Apidaze.SDK.MediaFiles.htm">
+    <HelpTOCNode Id="f37a2423-d57e-4474-b81b-a5fcc522c67f" Title="IMediaFiles Interface" Url="html/T-Apidaze.SDK.MediaFiles.IMediaFiles.htm">
+      <HelpTOCNode Title="IMediaFiles Members" Url="html/AllMembers.T-Apidaze.SDK.MediaFiles.IMediaFiles.htm" />
+      <HelpTOCNode Id="e5a75e87-e90c-4d85-9b43-e53e4d37d90c" Title="IMediaFiles Methods" Url="html/Methods.T-Apidaze.SDK.MediaFiles.IMediaFiles.htm">
+        <HelpTOCNode Title="DeleteMediaFile Method " Url="html/M-Apidaze.SDK.MediaFiles.IMediaFiles.DeleteMediaFile.htm" />
+        <HelpTOCNode Title="DownloadMediaFile Method " Url="html/M-Apidaze.SDK.MediaFiles.IMediaFiles.DownloadMediaFile.htm" />
+        <HelpTOCNode Title="GetMediaFilesList Method " Url="html/M-Apidaze.SDK.MediaFiles.IMediaFiles.GetMediaFilesList.htm" />
+        <HelpTOCNode Title="ShowMediaFileSummary Method " Url="html/M-Apidaze.SDK.MediaFiles.IMediaFiles.ShowMediaFileSummary.htm" />
+        <HelpTOCNode Title="UploadMediaFile Method " Url="html/M-Apidaze.SDK.MediaFiles.IMediaFiles.UploadMediaFile.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="573cf07b-0664-4f88-80af-a6411220b725" Title="MediaFile Class" Url="html/T-Apidaze.SDK.MediaFiles.MediaFile.htm">
+      <HelpTOCNode Title="MediaFile Members" Url="html/AllMembers.T-Apidaze.SDK.MediaFiles.MediaFile.htm" />
+      <HelpTOCNode Title="MediaFile Methods" Url="html/Methods.T-Apidaze.SDK.MediaFiles.MediaFile.htm" />
+      <HelpTOCNode Id="e37f900b-3a57-49bb-8d00-aa2c296fa557" Title="MediaFile Properties" Url="html/Properties.T-Apidaze.SDK.MediaFiles.MediaFile.htm">
+        <HelpTOCNode Title="Modified Property " Url="html/P-Apidaze.SDK.MediaFiles.MediaFile.Modified.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/P-Apidaze.SDK.MediaFiles.MediaFile.Name.htm" />
+        <HelpTOCNode Title="Size Property " Url="html/P-Apidaze.SDK.MediaFiles.MediaFile.Size.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="19110afe-2575-4565-952c-727c1258db21" Title="MediaFiles Class" Url="html/T-Apidaze.SDK.MediaFiles.MediaFiles.htm">
+      <HelpTOCNode Title="MediaFiles Members" Url="html/AllMembers.T-Apidaze.SDK.MediaFiles.MediaFiles.htm" />
+      <HelpTOCNode Title="MediaFiles Constructor " Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.-ctor.htm" />
+      <HelpTOCNode Id="4a003089-9e4e-4f5d-910e-67ae74a3bba1" Title="MediaFiles Methods" Url="html/Methods.T-Apidaze.SDK.MediaFiles.MediaFiles.htm">
+        <HelpTOCNode Title="DeleteMediaFile Method " Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.DeleteMediaFile.htm" />
+        <HelpTOCNode Title="DownloadMediaFile Method " Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.DownloadMediaFile.htm" />
+        <HelpTOCNode Title="GetMediaFilesList Method " Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.GetMediaFilesList.htm" />
+        <HelpTOCNode Title="ShowMediaFileSummary Method " Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.ShowMediaFileSummary.htm" />
+        <HelpTOCNode Title="UploadMediaFile Method " Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.UploadMediaFile.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="886b2b25-8d8c-4f5d-93aa-e0f21d120daf" Title="Apidaze.SDK.Messages Namespace" Url="html/N-Apidaze.SDK.Messages.htm">
+    <HelpTOCNode Id="77dcb45c-6473-4dc2-83ea-2dfd6190fae3" Title="IMessage Interface" Url="html/T-Apidaze.SDK.Messages.IMessage.htm">
+      <HelpTOCNode Title="IMessage Members" Url="html/AllMembers.T-Apidaze.SDK.Messages.IMessage.htm" />
+      <HelpTOCNode Id="1b070ef7-95f3-4cfa-b5c5-c90e812edc16" Title="IMessage Methods" Url="html/Methods.T-Apidaze.SDK.Messages.IMessage.htm">
+        <HelpTOCNode Title="SendTextMessage Method " Url="html/M-Apidaze.SDK.Messages.IMessage.SendTextMessage.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="7d70b3d5-733a-4697-b02b-6cd6720524b1" Title="Message Class" Url="html/T-Apidaze.SDK.Messages.Message.htm">
+      <HelpTOCNode Title="Message Members" Url="html/AllMembers.T-Apidaze.SDK.Messages.Message.htm" />
+      <HelpTOCNode Title="Message Constructor " Url="html/M-Apidaze.SDK.Messages.Message.-ctor.htm" />
+      <HelpTOCNode Id="bcfd5bb2-d80b-443d-a6f9-e551a1ea312d" Title="Message Methods" Url="html/Methods.T-Apidaze.SDK.Messages.Message.htm">
+        <HelpTOCNode Title="SendTextMessage Method " Url="html/M-Apidaze.SDK.Messages.Message.SendTextMessage.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b95ca5f9-4d10-47fd-8261-1340f53296ff" Title="PhoneNumber Class" Url="html/T-Apidaze.SDK.Messages.PhoneNumber.htm">
+      <HelpTOCNode Title="PhoneNumber Members" Url="html/AllMembers.T-Apidaze.SDK.Messages.PhoneNumber.htm" />
+      <HelpTOCNode Title="PhoneNumber Constructor " Url="html/M-Apidaze.SDK.Messages.PhoneNumber.-ctor.htm" />
+      <HelpTOCNode Id="e56c53a6-1de3-4cf4-90ae-c15e01fdb228" Title="PhoneNumber Methods" Url="html/Methods.T-Apidaze.SDK.Messages.PhoneNumber.htm">
+        <HelpTOCNode Title="ToString Method " Url="html/M-Apidaze.SDK.Messages.PhoneNumber.ToString.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="de98a341-d538-4863-8956-8375caca80d8" Title="Apidaze.SDK.Recordings Namespace" Url="html/N-Apidaze.SDK.Recordings.htm">
+    <HelpTOCNode Id="3a280924-bbc6-4edf-b0e1-876ddefe1514" Title="IRecordings Interface" Url="html/T-Apidaze.SDK.Recordings.IRecordings.htm">
+      <HelpTOCNode Title="IRecordings Members" Url="html/AllMembers.T-Apidaze.SDK.Recordings.IRecordings.htm" />
+      <HelpTOCNode Id="f184358c-fbc8-4d96-92f6-d37704e0a638" Title="IRecordings Methods" Url="html/Methods.T-Apidaze.SDK.Recordings.IRecordings.htm">
+        <HelpTOCNode Title="DeleteRecording Method " Url="html/M-Apidaze.SDK.Recordings.IRecordings.DeleteRecording.htm" />
+        <HelpTOCNode Title="DownloadRecording Method " Url="html/M-Apidaze.SDK.Recordings.IRecordings.DownloadRecording.htm" />
+        <HelpTOCNode Title="DownloadRecordingToFile Method " Url="html/M-Apidaze.SDK.Recordings.IRecordings.DownloadRecordingToFile.htm" />
+        <HelpTOCNode Title="DownloadRecordingToFileAsync Method " Url="html/M-Apidaze.SDK.Recordings.IRecordings.DownloadRecordingToFileAsync.htm" />
+        <HelpTOCNode Title="GetRecordings Method " Url="html/M-Apidaze.SDK.Recordings.IRecordings.GetRecordings.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ace61cd9-8558-4125-92ed-6e74153e03c5" Title="Recordings Class" Url="html/T-Apidaze.SDK.Recordings.Recordings.htm">
+      <HelpTOCNode Title="Recordings Members" Url="html/AllMembers.T-Apidaze.SDK.Recordings.Recordings.htm" />
+      <HelpTOCNode Title="Recordings Constructor " Url="html/M-Apidaze.SDK.Recordings.Recordings.-ctor.htm" />
+      <HelpTOCNode Id="6ca2e805-f846-48a7-9317-f565ccec750b" Title="Recordings Methods" Url="html/Methods.T-Apidaze.SDK.Recordings.Recordings.htm">
+        <HelpTOCNode Title="DeleteRecording Method " Url="html/M-Apidaze.SDK.Recordings.Recordings.DeleteRecording.htm" />
+        <HelpTOCNode Title="DownloadRecording Method " Url="html/M-Apidaze.SDK.Recordings.Recordings.DownloadRecording.htm" />
+        <HelpTOCNode Title="DownloadRecordingToFile Method " Url="html/M-Apidaze.SDK.Recordings.Recordings.DownloadRecordingToFile.htm" />
+        <HelpTOCNode Title="DownloadRecordingToFileAsync Method " Url="html/M-Apidaze.SDK.Recordings.Recordings.DownloadRecordingToFileAsync.htm" />
+        <HelpTOCNode Title="GetRecordings Method " Url="html/M-Apidaze.SDK.Recordings.Recordings.GetRecordings.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="67863f0f-c606-494a-a240-4f2d84ab2603" Title="Apidaze.SDK.ScriptBuilder Namespace" Url="html/N-Apidaze.SDK.ScriptBuilder.htm">
+    <HelpTOCNode Id="f14b462e-4086-4abd-92fa-6d7206e2f165" Title="ApidazeScript Class" Url="html/T-Apidaze.SDK.ScriptBuilder.ApidazeScript.htm">
+      <HelpTOCNode Title="ApidazeScript Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.ApidazeScript.htm" />
+      <HelpTOCNode Title="ApidazeScript Constructor " Url="html/M-Apidaze.SDK.ScriptBuilder.ApidazeScript.-ctor.htm" />
+      <HelpTOCNode Id="fc93fa65-8808-40ec-a65d-2cfc001fe31f" Title="ApidazeScript Methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.ApidazeScript.htm">
+        <HelpTOCNode Title="AddNode Method " Url="html/M-Apidaze.SDK.ScriptBuilder.ApidazeScript.AddNode.htm" />
+        <HelpTOCNode Title="Build Method " Url="html/M-Apidaze.SDK.ScriptBuilder.ApidazeScript.Build.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2830011e-03af-4bf0-8741-cf07e08cb7c7" Title="ApidazeScript Properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.ApidazeScript.htm">
+        <HelpTOCNode Title="Nodes Property " Url="html/P-Apidaze.SDK.ScriptBuilder.ApidazeScript.Nodes.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="d79b102d-5ed8-4d0c-99d7-588482c6f944" Title="Apidaze.SDK.ScriptBuilder.POCO Namespace" Url="html/N-Apidaze.SDK.ScriptBuilder.POCO.htm">
+    <HelpTOCNode Id="59f7032c-8bee-48dc-af13-50dff428caef" Title="Answer Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Answer.htm">
+      <HelpTOCNode Title="Answer Methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Answer.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="576cd3f4-f0a4-4455-bcbe-ed986a603726" Title="Bind Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Bind.htm">
+      <HelpTOCNode Title="Bind Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Bind.htm" />
+      <HelpTOCNode Id="2634899f-2f51-4748-be0c-9abd6cdcecbe" Title="Bind Constructor " Url="html/Overload-Apidaze.SDK.ScriptBuilder.POCO.Bind.-ctor.htm">
+        <HelpTOCNode Title="Bind Constructor " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Bind.-ctor.htm" />
+        <HelpTOCNode Title="Bind Constructor (String, String)" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Bind.-ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Bind Methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Bind.htm" />
+      <HelpTOCNode Id="718c692b-b9f3-49fe-bafb-7b96ead91bfe" Title="Bind Properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Bind.htm">
+        <HelpTOCNode Title="Action Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Bind.Action.htm" />
+        <HelpTOCNode Title="Value Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Bind.Value.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="64a2a04c-f4b9-461f-a544-e199ee505269" Title="Conference Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Conference.htm">
+      <HelpTOCNode Title="Conference Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Conference.htm" />
+      <HelpTOCNode Title="Conference Methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Conference.htm" />
+      <HelpTOCNode Id="1f04803b-cd04-4588-b63f-2c8d80c19e8b" Title="Conference Properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Conference.htm">
+        <HelpTOCNode Title="Name Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Conference.Name.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="bb47d1b5-6550-4d8e-ab64-97264000e5ee" Title="Dial Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Dial.htm">
+      <HelpTOCNode Title="Dial Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Dial.htm" />
+      <HelpTOCNode Id="8b3c61d8-d6ef-4354-85c3-e28e0e0f4857" Title="Dial Methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Dial.htm">
+        <HelpTOCNode Title="ShouldSerializeMaxCallDuration Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Dial.ShouldSerializeMaxCallDuration.htm" />
+        <HelpTOCNode Title="ShouldSerializeStrategy Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Dial.ShouldSerializeStrategy.htm" />
+        <HelpTOCNode Title="ShouldSerializeTimeout Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Dial.ShouldSerializeTimeout.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f0a60807-c5ce-4f94-b8d0-99f8d73f2f44" Title="Dial Properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Dial.htm">
+        <HelpTOCNode Title="Action Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Action.htm" />
+        <HelpTOCNode Title="AnswerUrl Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.AnswerUrl.htm" />
+        <HelpTOCNode Title="CallerHangupUrl Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.CallerHangupUrl.htm" />
+        <HelpTOCNode Title="MaxCallDuration Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.MaxCallDuration.htm" />
+        <HelpTOCNode Title="Number Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Number.htm" />
+        <HelpTOCNode Title="Sipaccount Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Sipaccount.htm" />
+        <HelpTOCNode Title="SipUri Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.SipUri.htm" />
+        <HelpTOCNode Title="Strategy Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Strategy.htm" />
+        <HelpTOCNode Title="Timeout Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Timeout.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="bc7342ba-fc3a-4d2d-b47e-394c859520f3" Title="Echo Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Echo.htm">
+      <HelpTOCNode Title="Echo Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Echo.htm" />
+      <HelpTOCNode Id="13e5b4cc-7a2f-4326-82d4-ff9e0d628b64" Title="Echo Methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Echo.htm">
+        <HelpTOCNode Title="SetDuration Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Echo.SetDuration.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a6f3f505-764e-43ca-891e-09a4aa5f4d68" Title="Echo Properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Echo.htm">
+        <HelpTOCNode Title="Delay Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Echo.Delay.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="23928b09-39cd-4c98-a8ce-f16b73f52cbd" Title="Hangup Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Hangup.htm">
+      <HelpTOCNode Title="Hangup Methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Hangup.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="5050cfaf-86c3-462f-826c-043d2779baba" Title="Intercept Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Intercept.htm">
+      <HelpTOCNode Title="Intercept Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Intercept.htm" />
+      <HelpTOCNode Title="Intercept Methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Intercept.htm" />
+      <HelpTOCNode Id="d6ed0b1a-fc0d-42bd-b26c-4ec844108f96" Title="Intercept Properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Intercept.htm">
+        <HelpTOCNode Title="Uuid Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Intercept.Uuid.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="LangEnum Enumeration" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+    <HelpTOCNode Id="5c21c61a-781f-4e69-8a1e-de6a86400a42" Title="Number Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Number.htm">
+      <HelpTOCNode Title="Number Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Number.htm" />
+      <HelpTOCNode Id="8abc47e3-13de-4e8e-8792-50c4f2f92c4d" Title="Number Constructor " Url="html/Overload-Apidaze.SDK.ScriptBuilder.POCO.Number.-ctor.htm">
+        <HelpTOCNode Title="Number Constructor " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Number.-ctor.htm" />
+        <HelpTOCNode Title="Number Constructor (String, Double)" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Number.-ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="88c96821-ba06-49bc-817a-c7e46bb37d8a" Title="Number Methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Number.htm">
+        <HelpTOCNode Title="ShouldSerializeTimeout Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Number.ShouldSerializeTimeout.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="15e7bb03-3271-4568-8337-a206596b4f81" Title="Number Properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Number.htm">
+        <HelpTOCNode Title="Timeout Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Number.Timeout.htm" />
+        <HelpTOCNode Title="Value Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Number.Value.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="3dd8d4c9-5fae-4160-bd8b-8c5cd4e1e64e" Title="Playback Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Playback.htm">
+      <HelpTOCNode Title="Playback Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Playback.htm" />
+      <HelpTOCNode Id="160cc6aa-0135-4c07-a547-9ccffedf94a6" Title="Playback Methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Playback.htm">
+        <HelpTOCNode Title="FromFile Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Playback.FromFile.htm" />
+        <HelpTOCNode Title="ShouldSerializeInputTimeoutMillis Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Playback.ShouldSerializeInputTimeoutMillis.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a863a062-9ab6-46b2-bc8c-c7c0fb1af192" Title="Playback Properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Playback.htm">
+        <HelpTOCNode Title="Binds Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Playback.Binds.htm" />
+        <HelpTOCNode Title="File Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Playback.File.htm" />
+        <HelpTOCNode Title="InputTimeoutMillis Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Playback.InputTimeoutMillis.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="03d827bb-3eae-495e-ba19-ede3a0023689" Title="Record Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Record.htm">
+      <HelpTOCNode Title="Record Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Record.htm" />
+      <HelpTOCNode Id="fd147168-ecd1-44a5-bef2-deecd40329ac" Title="Record Methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Record.htm">
+        <HelpTOCNode Title="ShouldSerializeALeg Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Record.ShouldSerializeALeg.htm" />
+        <HelpTOCNode Title="ShouldSerializeBLeg Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Record.ShouldSerializeBLeg.htm" />
+        <HelpTOCNode Title="ShouldSerializeOnAnswered Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Record.ShouldSerializeOnAnswered.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="af1da694-4277-4b85-a004-562c7f51419f" Title="Record Properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Record.htm">
+        <HelpTOCNode Title="ALeg Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Record.ALeg.htm" />
+        <HelpTOCNode Title="BLeg Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Record.BLeg.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Record.Name.htm" />
+        <HelpTOCNode Title="OnAnswered Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Record.OnAnswered.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="cc552d70-c4fd-46f5-a53f-abcd81f15790" Title="Ringback Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Ringback.htm">
+      <HelpTOCNode Title="Ringback Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Ringback.htm" />
+      <HelpTOCNode Id="25865044-362b-4e41-9258-780bc6fa905b" Title="Ringback Methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Ringback.htm">
+        <HelpTOCNode Title="FromFile Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Ringback.FromFile.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="894b299c-404d-4eb5-8d9f-0ad43e55edce" Title="Ringback Properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Ringback.htm">
+        <HelpTOCNode Title="Url Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Ringback.Url.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="aee2b2d0-60f1-4664-a61c-4f2d4897a979" Title="SipAccount Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.htm">
+      <HelpTOCNode Title="SipAccount Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.htm" />
+      <HelpTOCNode Id="dd8bb76a-1283-4f33-b876-bb41fa0701ff" Title="SipAccount Constructor " Url="html/Overload-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.-ctor.htm">
+        <HelpTOCNode Title="SipAccount Constructor " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.-ctor.htm" />
+        <HelpTOCNode Title="SipAccount Constructor (String, Double)" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.-ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3d3bab20-dda7-42b1-908e-ad44438c6b2c" Title="SipAccount Methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.htm">
+        <HelpTOCNode Title="ShouldSerializeTimeout Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.ShouldSerializeTimeout.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9f63f8fb-5575-4952-88ca-7bff3aaa3b86" Title="SipAccount Properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.htm">
+        <HelpTOCNode Title="Timeout Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.Timeout.htm" />
+        <HelpTOCNode Title="Value Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.Value.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5bcb408e-4763-4f71-b54e-75b8199f903a" Title="SipUri Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.SipUri.htm">
+      <HelpTOCNode Title="SipUri Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.SipUri.htm" />
+      <HelpTOCNode Id="b482bae6-b734-443d-8dbc-4f44bb213436" Title="SipUri Constructor " Url="html/Overload-Apidaze.SDK.ScriptBuilder.POCO.SipUri.-ctor.htm">
+        <HelpTOCNode Title="SipUri Constructor " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.SipUri.-ctor.htm" />
+        <HelpTOCNode Title="SipUri Constructor (String, Double)" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.SipUri.-ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="921704ee-d152-40c5-ad28-6552851a0994" Title="SipUri Methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.SipUri.htm">
+        <HelpTOCNode Title="ShouldSerializeTimeout Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.SipUri.ShouldSerializeTimeout.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="35089b73-5c5e-4839-9f21-163347b3b462" Title="SipUri Properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.SipUri.htm">
+        <HelpTOCNode Title="Timeout Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.SipUri.Timeout.htm" />
+        <HelpTOCNode Title="Value Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.SipUri.Value.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f4030587-88b5-4a4a-b6b1-95ec9eb09fd8" Title="Speak Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Speak.htm">
+      <HelpTOCNode Title="Speak Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Speak.htm" />
+      <HelpTOCNode Title="Speak Constructor " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.-ctor.htm" />
+      <HelpTOCNode Id="4875ef35-a7d6-4e57-a025-349c372adab1" Title="Speak Methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Speak.htm">
+        <HelpTOCNode Title="ShouldSerializeDigitTimeoutMillis Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeDigitTimeoutMillis.htm" />
+        <HelpTOCNode Title="ShouldSerializeInputTimeoutMillis Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeInputTimeoutMillis.htm" />
+        <HelpTOCNode Title="ShouldSerializeLangEnum Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeLangEnum.htm" />
+        <HelpTOCNode Title="ShouldSerializeVoice Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeVoice.htm" />
+        <HelpTOCNode Title="WithText Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.WithText.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5a8a74fb-b437-4515-845f-4b178e85fd3c" Title="Speak Properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Speak.htm">
+        <HelpTOCNode Title="Binds Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.Binds.htm" />
+        <HelpTOCNode Title="DigitTimeoutMillis Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.DigitTimeoutMillis.htm" />
+        <HelpTOCNode Title="InputTimeoutMillis Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.InputTimeoutMillis.htm" />
+        <HelpTOCNode Title="LangEnum Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.LangEnum.htm" />
+        <HelpTOCNode Title="Text Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.Text.htm" />
+        <HelpTOCNode Title="Voice Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.Voice.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="StrategyEnum Enumeration" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.htm" />
+    <HelpTOCNode Title="VoiceEnum Enumeration" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.htm" />
+    <HelpTOCNode Id="40f45354-acfc-4a6a-8d8b-96d73f99051a" Title="Wait Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Wait.htm">
+      <HelpTOCNode Title="Wait Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Wait.htm" />
+      <HelpTOCNode Id="644a510d-06eb-4e24-94bf-ecc120f7cdd4" Title="Wait Methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Wait.htm">
+        <HelpTOCNode Title="SetDuration Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Wait.SetDuration.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b66cf76a-4b9f-4614-8f31-6b48ecbbc5c5" Title="Wait Properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Wait.htm">
+        <HelpTOCNode Title="Value Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Wait.Value.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="620d8fdf-b106-4aaa-b092-270fda77bdba" Title="Apidaze.SDK.SipUsers Namespace" Url="html/N-Apidaze.SDK.SipUsers.htm">
+    <HelpTOCNode Id="8b588695-e425-4afd-81e3-ace2c112cb80" Title="CallerIdentity Class" Url="html/T-Apidaze.SDK.SipUsers.CallerIdentity.htm">
+      <HelpTOCNode Title="CallerIdentity Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.CallerIdentity.htm" />
+      <HelpTOCNode Title="CallerIdentity Methods" Url="html/Methods.T-Apidaze.SDK.SipUsers.CallerIdentity.htm" />
+      <HelpTOCNode Id="4bc4d6e0-5c2a-4282-8d74-b606973172d9" Title="CallerIdentity Properties" Url="html/Properties.T-Apidaze.SDK.SipUsers.CallerIdentity.htm">
+        <HelpTOCNode Title="InternalCallerIdName Property " Url="html/P-Apidaze.SDK.SipUsers.CallerIdentity.InternalCallerIdName.htm" />
+        <HelpTOCNode Title="InternalCallerIdNumber Property " Url="html/P-Apidaze.SDK.SipUsers.CallerIdentity.InternalCallerIdNumber.htm" />
+        <HelpTOCNode Title="OutboundCallerIdName Property " Url="html/P-Apidaze.SDK.SipUsers.CallerIdentity.OutboundCallerIdName.htm" />
+        <HelpTOCNode Title="OutboundCallerIdNumber Property " Url="html/P-Apidaze.SDK.SipUsers.CallerIdentity.OutboundCallerIdNumber.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e2b686db-6fe2-440b-b009-7b4fe536c5aa" Title="ISipUsers Interface" Url="html/T-Apidaze.SDK.SipUsers.ISipUsers.htm">
+      <HelpTOCNode Title="ISipUsers Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.ISipUsers.htm" />
+      <HelpTOCNode Id="88a19a77-2c81-454a-96c3-4b88ddf20959" Title="ISipUsers Methods" Url="html/Methods.T-Apidaze.SDK.SipUsers.ISipUsers.htm">
+        <HelpTOCNode Title="CreateSipUser Method " Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.CreateSipUser.htm" />
+        <HelpTOCNode Title="DeleteSipUser Method " Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.DeleteSipUser.htm" />
+        <HelpTOCNode Title="GetSingleSipUser Method " Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.GetSingleSipUser.htm" />
+        <HelpTOCNode Title="GetSipUsers Method " Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.GetSipUsers.htm" />
+        <HelpTOCNode Title="ResetUserPassword Method " Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.ResetUserPassword.htm" />
+        <HelpTOCNode Title="ShowSipUserStatus Method " Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.ShowSipUserStatus.htm" />
+        <HelpTOCNode Title="UpdateSipUser Method " Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.UpdateSipUser.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="493daaa3-a865-4d43-8f9b-d6431ccae56e" Title="Sip Class" Url="html/T-Apidaze.SDK.SipUsers.Sip.htm">
+      <HelpTOCNode Title="Sip Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.Sip.htm" />
+      <HelpTOCNode Title="Sip Methods" Url="html/Methods.T-Apidaze.SDK.SipUsers.Sip.htm" />
+      <HelpTOCNode Id="1d19ce75-13c9-4b08-b431-e38c6c8c6749" Title="Sip Properties" Url="html/Properties.T-Apidaze.SDK.SipUsers.Sip.htm">
+        <HelpTOCNode Title="Password Property " Url="html/P-Apidaze.SDK.SipUsers.Sip.Password.htm" />
+        <HelpTOCNode Title="Username Property " Url="html/P-Apidaze.SDK.SipUsers.Sip.Username.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a1ec66b7-a6b5-423e-8a53-de254bac6c1c" Title="SipUser Class" Url="html/T-Apidaze.SDK.SipUsers.SipUser.htm">
+      <HelpTOCNode Title="SipUser Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.SipUser.htm" />
+      <HelpTOCNode Title="SipUser Methods" Url="html/Methods.T-Apidaze.SDK.SipUsers.SipUser.htm" />
+      <HelpTOCNode Id="84b012a0-9ea2-4d7f-9b56-5e6c27eedb77" Title="SipUser Properties" Url="html/Properties.T-Apidaze.SDK.SipUsers.SipUser.htm">
+        <HelpTOCNode Title="CallerId Property " Url="html/P-Apidaze.SDK.SipUsers.SipUser.CallerId.htm" />
+        <HelpTOCNode Title="CreatedAt Property " Url="html/P-Apidaze.SDK.SipUsers.SipUser.CreatedAt.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-Apidaze.SDK.SipUsers.SipUser.Id.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/P-Apidaze.SDK.SipUsers.SipUser.Name.htm" />
+        <HelpTOCNode Title="Sip Property " Url="html/P-Apidaze.SDK.SipUsers.SipUser.Sip.htm" />
+        <HelpTOCNode Title="UpdatedAt Property " Url="html/P-Apidaze.SDK.SipUsers.SipUser.UpdatedAt.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="27fda0fc-78d6-4c0f-b2cc-96ecf449fe58" Title="SipUsers Class" Url="html/T-Apidaze.SDK.SipUsers.SipUsers.htm">
+      <HelpTOCNode Title="SipUsers Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.SipUsers.htm" />
+      <HelpTOCNode Title="SipUsers Constructor " Url="html/M-Apidaze.SDK.SipUsers.SipUsers.-ctor.htm" />
+      <HelpTOCNode Id="f3d5920b-066f-47ca-9ab5-c2986c257927" Title="SipUsers Methods" Url="html/Methods.T-Apidaze.SDK.SipUsers.SipUsers.htm">
+        <HelpTOCNode Title="CreateSipUser Method " Url="html/M-Apidaze.SDK.SipUsers.SipUsers.CreateSipUser.htm" />
+        <HelpTOCNode Title="DeleteSipUser Method " Url="html/M-Apidaze.SDK.SipUsers.SipUsers.DeleteSipUser.htm" />
+        <HelpTOCNode Title="GetSingleSipUser Method " Url="html/M-Apidaze.SDK.SipUsers.SipUsers.GetSingleSipUser.htm" />
+        <HelpTOCNode Title="GetSipUsers Method " Url="html/M-Apidaze.SDK.SipUsers.SipUsers.GetSipUsers.htm" />
+        <HelpTOCNode Title="ResetUserPassword Method " Url="html/M-Apidaze.SDK.SipUsers.SipUsers.ResetUserPassword.htm" />
+        <HelpTOCNode Title="ShowSipUserStatus Method " Url="html/M-Apidaze.SDK.SipUsers.SipUsers.ShowSipUserStatus.htm" />
+        <HelpTOCNode Title="UpdateSipUser Method " Url="html/M-Apidaze.SDK.SipUsers.SipUsers.UpdateSipUser.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="dfb3d89c-207a-4e16-969f-8f6491d4e5fe" Title="SipUserStatus Class" Url="html/T-Apidaze.SDK.SipUsers.SipUserStatus.htm">
+      <HelpTOCNode Title="SipUserStatus Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.SipUserStatus.htm" />
+      <HelpTOCNode Title="SipUserStatus Methods" Url="html/Methods.T-Apidaze.SDK.SipUsers.SipUserStatus.htm" />
+      <HelpTOCNode Id="c0f817a3-c4e9-4c73-9cdb-0c1c49aa5c3a" Title="SipUserStatus Properties" Url="html/Properties.T-Apidaze.SDK.SipUsers.SipUserStatus.htm">
+        <HelpTOCNode Title="Status Property " Url="html/P-Apidaze.SDK.SipUsers.SipUserStatus.Status.htm" />
+        <HelpTOCNode Title="Uri Property " Url="html/P-Apidaze.SDK.SipUsers.SipUserStatus.Uri.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="87da1f08-0584-4c13-ac3a-22ad1887559f" Title="Apidaze.SDK.Validate Namespace" Url="html/N-Apidaze.SDK.Validate.htm">
+    <HelpTOCNode Id="e1577886-2d39-461d-b1d9-4b583fe1a9e5" Title="CredentialsValidator Class" Url="html/T-Apidaze.SDK.Validate.CredentialsValidator.htm">
+      <HelpTOCNode Title="CredentialsValidator Members" Url="html/AllMembers.T-Apidaze.SDK.Validate.CredentialsValidator.htm" />
+      <HelpTOCNode Title="CredentialsValidator Constructor " Url="html/M-Apidaze.SDK.Validate.CredentialsValidator.-ctor.htm" />
+      <HelpTOCNode Id="cd2a3f65-8a77-4d61-9d30-f66206f49b39" Title="CredentialsValidator Methods" Url="html/Methods.T-Apidaze.SDK.Validate.CredentialsValidator.htm">
+        <HelpTOCNode Title="ValidateCredentials Method " Url="html/M-Apidaze.SDK.Validate.CredentialsValidator.ValidateCredentials.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="29ceb04d-b23d-4bf0-aa1c-b98f44c3ccd5" Title="ICredentialsValidator Interface" Url="html/T-Apidaze.SDK.Validate.ICredentialsValidator.htm">
+      <HelpTOCNode Title="ICredentialsValidator Members" Url="html/AllMembers.T-Apidaze.SDK.Validate.ICredentialsValidator.htm" />
+      <HelpTOCNode Id="b7f9a524-6e94-4e55-a61b-57d4fdadb9cf" Title="ICredentialsValidator Methods" Url="html/Methods.T-Apidaze.SDK.Validate.ICredentialsValidator.htm">
+        <HelpTOCNode Title="ValidateCredentials Method " Url="html/M-Apidaze.SDK.Validate.ICredentialsValidator.ValidateCredentials.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

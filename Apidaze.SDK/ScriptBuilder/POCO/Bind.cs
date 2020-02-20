@@ -3,30 +3,19 @@
 namespace Apidaze.SDK.ScriptBuilder.POCO
 {
     /// <summary>
-    /// Class Bind.
+    ///     Class Bind.
     /// </summary>
     public class Bind
     {
         /// <summary>
-        /// Gets or sets the action.
-        /// </summary>
-        /// <value>The action.</value>
-        [XmlAttribute("action")] public string Action { get; set; }
-
-        /// <summary>
-        /// Gets or sets the value.
-        /// </summary>
-        /// <value>The value.</value>
-        [XmlText(typeof(string))] public string Value { get; set; }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Bind" /> class.
+        ///     Initializes a new instance of the <see cref="Bind" /> class.
         /// </summary>
         public Bind()
         {
         }
+
         /// <summary>
-        /// Initializes a new instance of the <see cref="Bind" /> class.
+        ///     Initializes a new instance of the <see cref="Bind" /> class.
         /// </summary>
         /// <param name="action">The action.</param>
         /// <param name="value">The value.</param>
@@ -35,5 +24,19 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
             Action = action;
             Value = value;
         }
+
+        /// <summary>
+        ///     Gets or sets the action.
+        /// </summary>
+        /// <value>The action.</value>
+        [XmlAttribute("action")]
+        public string Action { get; set; }
+
+        /// <summary>
+        ///     Gets or sets the value.
+        /// </summary>
+        /// <value>The value.</value>
+        [XmlText(typeof(string))]
+        public string Value { get; set; }
     }
 }

@@ -4,22 +4,22 @@ using Apidaze.SDK.Exception;
 namespace Apidaze.SDK.Messages
 {
     /// <summary>
-    /// Class PhoneNumber.
+    ///     Class PhoneNumber.
     /// </summary>
     public class PhoneNumber
     {
         /// <summary>
-        /// The number pattern
+        ///     The number pattern
         /// </summary>
         private const string NumberPattern = "^([1-9][0-9]+)$";
 
         /// <summary>
-        /// The number
+        ///     The number
         /// </summary>
         private readonly string _number;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="PhoneNumber"/> class.
+        ///     Initializes a new instance of the <see cref="PhoneNumber" /> class.
         /// </summary>
         /// <param name="number">The number.</param>
         public PhoneNumber(string number)
@@ -28,7 +28,7 @@ namespace Apidaze.SDK.Messages
         }
 
         /// <summary>
-        /// Determines whether the specified number is number.
+        ///     Determines whether the specified number is number.
         /// </summary>
         /// <param name="number">The number.</param>
         /// <returns>System.String.</returns>
@@ -42,7 +42,7 @@ namespace Apidaze.SDK.Messages
         }
 
         /// <summary>
-        /// Returns a <see cref="System.String" /> that represents this instance.
+        ///     Returns a <see cref="System.String" /> that represents this instance.
         /// </summary>
         /// <returns>A <see cref="System.String" /> that represents this instance.</returns>
         public override string ToString()

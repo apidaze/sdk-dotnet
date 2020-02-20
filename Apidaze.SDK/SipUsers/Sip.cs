@@ -3,19 +3,19 @@
 namespace Apidaze.SDK.SipUsers
 {
     /// <summary>
-    /// Class Sip.
+    ///     Class Sip.
     /// </summary>
     public class Sip
     {
         /// <summary>
-        /// Gets or sets the username.
+        ///     Gets or sets the username.
         /// </summary>
         /// <value>The username.</value>
         [JsonProperty("username")]
         public string Username { get; set; }
 
         /// <summary>
-        /// Gets or sets the password.
+        ///     Gets or sets the password.
         /// </summary>
         /// <value>The password.</value>
         [JsonProperty("password")]

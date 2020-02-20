@@ -1,26 +1,26 @@
-﻿using Apidaze.SDK.Base;
-using RestSharp;
-using RestSharp.Extensions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using Apidaze.SDK.Base;
+using RestSharp;
+using RestSharp.Extensions;
 
 namespace Apidaze.SDK.Recordings
 {
     /// <summary>
-    /// Class Recordings.
-    /// Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
-    /// Implements the <see cref="Apidaze.SDK.Recordings.IRecordings" />
+    ///     Class Recordings.
+    ///     Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
+    ///     Implements the <see cref="Apidaze.SDK.Recordings.IRecordings" />
     /// </summary>
     /// <seealso cref="Apidaze.SDK.Base.BaseApiClient" />
     /// <seealso cref="Apidaze.SDK.Recordings.IRecordings" />
     public class Recordings : BaseApiClient, IRecordings
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Recordings" /> class.
+        ///     Initializes a new instance of the <see cref="Recordings" /> class.
         /// </summary>
         /// <param name="client">The client.</param>
         /// <param name="credentials">The credentials.</param>
@@ -29,13 +29,13 @@ namespace Apidaze.SDK.Recordings
         }
 
         /// <summary>
-        /// Gets the resource.
+        ///     Gets the resource.
         /// </summary>
         /// <value>The resource.</value>
         protected override string Resource => "/recordings";
 
         /// <summary>
-        /// Gets the recordings list.
+        ///     Gets the recordings list.
         /// </summary>
         /// <returns>IEnumerable&lt;System.String&gt;.</returns>
         public List<string> GetRecordings()
@@ -44,7 +44,7 @@ namespace Apidaze.SDK.Recordings
         }
 
         /// <summary>
-        /// Downloads the recording.
+        ///     Downloads the recording.
         /// </summary>
         /// <param name="sourceFileName">Name of the source file.</param>
         /// <returns>Stream.</returns>
@@ -63,7 +63,7 @@ namespace Apidaze.SDK.Recordings
         }
 
         /// <summary>
-        /// Downloads the recording to file.
+        ///     Downloads the recording to file.
         /// </summary>
         /// <param name="sourceFileName">Name of the source file.</param>
         /// <param name="target">The target.</param>
@@ -76,13 +76,8 @@ namespace Apidaze.SDK.Recordings
             return SaveFileToFolder(sourceFileName, target, response);
         }
 
-        private static void CheckStatusCode(IRestResponse response)
-        {
-            if (response.StatusCode != HttpStatusCode.OK) throw new InvalidOperationException(response.ErrorMessage);
-        }
-
         /// <summary>
-        /// Deletes the recording.
+        ///     Deletes the recording.
         /// </summary>
         /// <param name="fileName">Name of the file.</param>
         /// <exception cref="ArgumentException">file name must not be null or empty</exception>
@@ -92,8 +87,13 @@ namespace Apidaze.SDK.Recordings
             Delete(fileName);
         }
 
+        private static void CheckStatusCode(IRestResponse response)
+        {
+            if (response.StatusCode != HttpStatusCode.OK) throw new InvalidOperationException(response.ErrorMessage);
+        }
+
         /// <summary>
-        /// Downloads the request.
+        ///     Downloads the request.
         /// </summary>
         /// <param name="sourceFileName">Name of the source file.</param>
         /// <returns>RestRequest.</returns>

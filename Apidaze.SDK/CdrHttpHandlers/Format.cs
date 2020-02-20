@@ -1,20 +1,22 @@
 ﻿namespace Apidaze.SDK.CdrHttpHandlers
 {
     /// <summary>
-    /// Enum Format
+    ///     Enum Format
     /// </summary>
     public enum Format
     {
         /// <summary>
-        /// The regular
+        ///     The regular
         /// </summary>
         Regular,
+
         /// <summary>
-        /// The json
+        ///     The json
         /// </summary>
         Json,
+
         /// <summary>
-        /// The XML
+        ///     The XML
         /// </summary>
         Xml
     }

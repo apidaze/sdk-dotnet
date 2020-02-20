@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Apidaze.SDK.Base;
 using Apidaze.SDK.Common;
 using Apidaze.SDK.Messages;
@@ -11,16 +10,16 @@ using RestSharp;
 namespace Apidaze.SDK.Calls
 {
     /// <summary>
-    /// Class Calls.
-    /// Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
-    /// Implements the <see cref="Apidaze.SDK.Calls.ICalls" />
+    ///     Class Calls.
+    ///     Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
+    ///     Implements the <see cref="Apidaze.SDK.Calls.ICalls" />
     /// </summary>
     /// <seealso cref="Apidaze.SDK.Base.BaseApiClient" />
     /// <seealso cref="Apidaze.SDK.Calls.ICalls" />
     public class Calls : BaseApiClient, ICalls
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Calls" /> class.
+        ///     Initializes a new instance of the <see cref="Calls" /> class.
         /// </summary>
         /// <param name="client">The client.</param>
         /// <param name="credentials">The credentials.</param>
@@ -29,13 +28,13 @@ namespace Apidaze.SDK.Calls
         }
 
         /// <summary>
-        /// Gets the resource.
+        ///     Gets the resource.
         /// </summary>
         /// <value>The resource.</value>
         protected override string Resource => "/calls";
 
         /// <summary>
-        /// Creates the call.
+        ///     Creates the call.
         /// </summary>
         /// <param name="callerId">The caller identifier.</param>
         /// <param name="origin">The origin.</param>
@@ -74,7 +73,7 @@ namespace Apidaze.SDK.Calls
         }
 
         /// <summary>
-        /// Gets the calls.
+        ///     Gets the calls.
         /// </summary>
         /// <returns>List&lt;Call&gt;.</returns>
         public List<Call> GetCalls()
@@ -83,7 +82,7 @@ namespace Apidaze.SDK.Calls
         }
 
         /// <summary>
-        /// Gets the call.
+        ///     Gets the call.
         /// </summary>
         /// <param name="id">The identifier.</param>
         /// <returns>Call.</returns>
@@ -97,7 +96,7 @@ namespace Apidaze.SDK.Calls
         }
 
         /// <summary>
-        /// Deletes the call.
+        ///     Deletes the call.
         /// </summary>
         /// <param name="id">The identifier.</param>
         /// <exception cref="ArgumentException">id must not be null</exception>
@@ -120,7 +119,5 @@ namespace Apidaze.SDK.Calls
             if (deserializedResponse.Failure != null)
                 throw new DeleteCallResponseException(deserializedResponse.Failure);
         }
-
-        
     }
 }

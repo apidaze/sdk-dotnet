@@ -12,26 +12,25 @@ using RestSharp;
 
 namespace Apidaze.SDK
 {
-
     /// <summary>
-    /// Class ApiActionFactory.
-    /// Implements the <see cref="Apidaze.SDK.IApiActionFactory" />
+    ///     Class ApiActionFactory.
+    ///     Implements the <see cref="Apidaze.SDK.IApiActionFactory" />
     /// </summary>
     /// <seealso cref="Apidaze.SDK.IApiActionFactory" />
     internal class ApiActionFactory : IApiActionFactory
     {
         /// <summary>
-        /// The credentials
+        ///     The credentials
         /// </summary>
         private readonly Credentials _credentials;
 
         /// <summary>
-        /// The URL
+        ///     The URL
         /// </summary>
         private readonly string _url;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ApiActionFactory" /> class.
+        ///     Initializes a new instance of the <see cref="ApiActionFactory" /> class.
         /// </summary>
         /// <param name="credentials">The credentials.</param>
         /// <param name="url">The URL.</param>
@@ -42,7 +41,7 @@ namespace Apidaze.SDK
         }
 
         /// <summary>
-        /// Creates the message API.
+        ///     Creates the message API.
         /// </summary>
         /// <returns>IMessage.</returns>
         public IMessage CreateMessageApi()
@@ -51,7 +50,7 @@ namespace Apidaze.SDK
         }
 
         /// <summary>
-        /// Creates the credentials validator API.
+        ///     Creates the credentials validator API.
         /// </summary>
         /// <returns>ICredentialsValidator.</returns>
         public ICredentialsValidator CreateCredentialsValidatorApi()
@@ -60,7 +59,7 @@ namespace Apidaze.SDK
         }
 
         /// <summary>
-        /// Creates the calls API.
+        ///     Creates the calls API.
         /// </summary>
         /// <returns>ICalls.</returns>
         public ICalls CreateCallsApi()
@@ -69,7 +68,7 @@ namespace Apidaze.SDK
         }
 
         /// <summary>
-        /// Creates the applications API.
+        ///     Creates the applications API.
         /// </summary>
         /// <returns>IApplications.</returns>
         public IApplications CreateApplicationsApi()
@@ -78,7 +77,7 @@ namespace Apidaze.SDK
         }
 
         /// <summary>
-        /// Creates the CDR HTTP handlers API.
+        ///     Creates the CDR HTTP handlers API.
         /// </summary>
         /// <returns>ICdrHttpHandlers.</returns>
         public ICdrHttpHandlers CreateCdrHttpHandlersApi()
@@ -87,7 +86,7 @@ namespace Apidaze.SDK
         }
 
         /// <summary>
-        /// Creates the recordings API.
+        ///     Creates the recordings API.
         /// </summary>
         /// <returns>IRecordings.</returns>
         public IRecordings CreateRecordingsApi()
@@ -96,7 +95,7 @@ namespace Apidaze.SDK
         }
 
         /// <summary>
-        /// Creates the external scripts API.
+        ///     Creates the external scripts API.
         /// </summary>
         /// <returns>IExternalScripts.</returns>
         public IExternalScripts CreateExternalScriptsApi()
@@ -105,7 +104,7 @@ namespace Apidaze.SDK
         }
 
         /// <summary>
-        /// Creates the media files API.
+        ///     Creates the media files API.
         /// </summary>
         /// <returns>IMediaFiles.</returns>
         public IMediaFiles CreateMediaFilesApi()
@@ -114,7 +113,7 @@ namespace Apidaze.SDK
         }
 
         /// <summary>
-        /// Creates the sip users API.
+        ///     Creates the sip users API.
         /// </summary>
         /// <returns>ISipUsers.</returns>
         public ISipUsers CreateSipUsersApi()

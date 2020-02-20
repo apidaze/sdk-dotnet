@@ -1,28 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Apidaze.SDK.Base;
 using RestSharp;
 
 namespace Apidaze.SDK.ExternalScripts
 {
     /// <summary>
-    /// Class ExternalScripts.
-    /// Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
-    /// Implements the <see cref="Apidaze.SDK.ExternalScripts.IExternalScripts" />
+    ///     Class ExternalScripts.
+    ///     Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
+    ///     Implements the <see cref="Apidaze.SDK.ExternalScripts.IExternalScripts" />
     /// </summary>
     /// <seealso cref="Apidaze.SDK.Base.BaseApiClient" />
     /// <seealso cref="Apidaze.SDK.ExternalScripts.IExternalScripts" />
     public class ExternalScripts : BaseApiClient, IExternalScripts
     {
         /// <summary>
-        /// The maximum name length
+        ///     The maximum name length
         /// </summary>
         private readonly int MaxNameLength = 40;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ExternalScripts" /> class.
+        ///     Initializes a new instance of the <see cref="ExternalScripts" /> class.
         /// </summary>
         /// <param name="client">The client.</param>
         /// <param name="credentials">The credentials.</param>
@@ -31,13 +30,13 @@ namespace Apidaze.SDK.ExternalScripts
         }
 
         /// <summary>
-        /// Gets the resource.
+        ///     Gets the resource.
         /// </summary>
         /// <value>The resource.</value>
         protected override string Resource => "/externalscripts";
 
         /// <summary>
-        /// Gets the external scripts.
+        ///     Gets the external scripts.
         /// </summary>
         /// <returns>List&lt;ExternalScript&gt;.</returns>
         public List<ExternalScript> GetExternalScripts()
@@ -46,7 +45,7 @@ namespace Apidaze.SDK.ExternalScripts
         }
 
         /// <summary>
-        /// Gets the external script.
+        ///     Gets the external script.
         /// </summary>
         /// <param name="id">The identifier.</param>
         /// <returns>ExternalScript.</returns>
@@ -56,7 +55,7 @@ namespace Apidaze.SDK.ExternalScripts
         }
 
         /// <summary>
-        /// Updates the external script.
+        ///     Updates the external script.
         /// </summary>
         /// <param name="id">The identifier.</param>
         /// <param name="name">The name.</param>
@@ -80,7 +79,7 @@ namespace Apidaze.SDK.ExternalScripts
         }
 
         /// <summary>
-        /// Updates the external script URL.
+        ///     Updates the external script URL.
         /// </summary>
         /// <param name="id">The identifier.</param>
         /// <param name="url">The URL.</param>

@@ -3,24 +3,25 @@
 namespace Apidaze.SDK.ScriptBuilder.POCO
 {
     /// <summary>
-    /// Class Ringback.
+    ///     Class Ringback.
     /// </summary>
     public class Ringback
     {
         /// <summary>
-        /// Gets or sets the URL.
+        ///     Gets or sets the URL.
         /// </summary>
         /// <value>The URL.</value>
-        [XmlText(typeof(string))] public string Url { get; set; }
+        [XmlText(typeof(string))]
+        public string Url { get; set; }
 
         /// <summary>
-        /// Froms the file.
+        ///     Froms the file.
         /// </summary>
         /// <param name="url">The URL.</param>
         /// <returns>Ringback.</returns>
         public static Ringback FromFile(string url)
         {
-            return new Ringback { Url = url };
+            return new Ringback {Url = url};
         }
     }
 }

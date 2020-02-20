@@ -1,16 +1,16 @@
-﻿using Apidaze.SDK.Messages;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using Apidaze.SDK.Messages;
 
 namespace Apidaze.SDK.Calls
 {
     /// <summary>
-    /// Interface ICalls
+    ///     Interface ICalls
     /// </summary>
     public interface ICalls
     {
         /// <summary>
-        /// Creates the call.
+        ///     Creates the call.
         /// </summary>
         /// <param name="callerId">The caller identifier.</param>
         /// <param name="origin">The origin.</param>
@@ -20,20 +20,20 @@ namespace Apidaze.SDK.Calls
         Guid CreateCall(PhoneNumber callerId, string origin, string destination, string callType);
 
         /// <summary>
-        /// Gets the calls.
+        ///     Gets the calls.
         /// </summary>
         /// <returns>List&lt;Call&gt;.</returns>
         List<Call> GetCalls();
 
         /// <summary>
-        /// Gets the call.
+        ///     Gets the call.
         /// </summary>
         /// <param name="id">The identifier.</param>
         /// <returns>Call.</returns>
         Call GetCall(Guid id);
 
         /// <summary>
-        /// Deletes the call.
+        ///     Deletes the call.
         /// </summary>
         /// <param name="id">The identifier.</param>
         void DeleteCall(Guid id);
