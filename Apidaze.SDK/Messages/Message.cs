@@ -6,16 +6,16 @@ using RestSharp;
 namespace Apidaze.SDK.Messages
 {
     /// <summary>
-    /// Class Message.
-    /// Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
-    /// Implements the <see cref="Apidaze.SDK.Messages.IMessage" />
+    ///     Class Message.
+    ///     Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
+    ///     Implements the <see cref="Apidaze.SDK.Messages.IMessage" />
     /// </summary>
     /// <seealso cref="Apidaze.SDK.Base.BaseApiClient" />
     /// <seealso cref="Apidaze.SDK.Messages.IMessage" />
     public class Message : BaseApiClient, IMessage
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Message" /> class.
+        ///     Initializes a new instance of the <see cref="Message" /> class.
         /// </summary>
         /// <param name="client">The client.</param>
         /// <param name="credentials">The credentials.</param>
@@ -24,13 +24,13 @@ namespace Apidaze.SDK.Messages
         }
 
         /// <summary>
-        /// Gets the resource.
+        ///     Gets the resource.
         /// </summary>
         /// <value>The resource.</value>
         protected override string Resource => "/sms/send";
 
         /// <summary>
-        /// Sends the text message.
+        ///     Sends the text message.
         /// </summary>
         /// <param name="from">From.</param>
         /// <param name="to">To.</param>
@@ -53,7 +53,7 @@ namespace Apidaze.SDK.Messages
         }
 
         /// <summary>
-        /// Builds the request.
+        ///     Builds the request.
         /// </summary>
         /// <param name="from">From.</param>
         /// <param name="to">To.</param>

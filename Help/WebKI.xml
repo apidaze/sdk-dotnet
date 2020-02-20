@@ -1,0 +1,1450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title=" enumeration member">
+    <HelpKINode Title="StrategyEnum Enumeration" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.htm" />
+    <HelpKINode Title="StrategyEnum Enumeration" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.htm" />
+    <HelpKINode Title="StrategyEnum Enumeration" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AccountId property" Url="html/P-Apidaze.SDK.Applications.Application.AccountId.htm" />
+  <HelpKINode Title="Action property">
+    <HelpKINode Title="Action Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Action.htm" />
+    <HelpKINode Title="Action Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Bind.Action.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddNode method" Url="html/M-Apidaze.SDK.ScriptBuilder.ApidazeScript.AddNode.htm" />
+  <HelpKINode Title="ALeg property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Record.ALeg.htm" />
+  <HelpKINode Title="Answer class">
+    <HelpKINode Title="Answer Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Answer.htm" />
+    <HelpKINode Title="Answer Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Answer.htm" />
+    <HelpKINode Title="about Answer class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Answer.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Answer.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Answer.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AnswerUrl property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.AnswerUrl.htm" />
+  <HelpKINode Title="Apidaze.SDK namespace" Url="html/N-Apidaze.SDK.htm" />
+  <HelpKINode Title="Apidaze.SDK.ApplicationManager class">
+    <HelpKINode Title="ApplicationManager Class" Url="html/T-Apidaze.SDK.ApplicationManager.htm" />
+    <HelpKINode Title="ApplicationManager Members" Url="html/AllMembers.T-Apidaze.SDK.ApplicationManager.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Applications namespace" Url="html/N-Apidaze.SDK.Applications.htm" />
+  <HelpKINode Title="Apidaze.SDK.Applications.Application class">
+    <HelpKINode Title="Application Class" Url="html/T-Apidaze.SDK.Applications.Application.htm" />
+    <HelpKINode Title="Application Members" Url="html/AllMembers.T-Apidaze.SDK.Applications.Application.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Applications.Applications class">
+    <HelpKINode Title="Applications Class" Url="html/T-Apidaze.SDK.Applications.Applications.htm" />
+    <HelpKINode Title="Applications Members" Url="html/AllMembers.T-Apidaze.SDK.Applications.Applications.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Applications.IApplications interface">
+    <HelpKINode Title="IApplications Interface" Url="html/T-Apidaze.SDK.Applications.IApplications.htm" />
+    <HelpKINode Title="IApplications Members" Url="html/AllMembers.T-Apidaze.SDK.Applications.IApplications.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Base namespace" Url="html/N-Apidaze.SDK.Base.htm" />
+  <HelpKINode Title="Apidaze.SDK.Base.BaseApiClient class">
+    <HelpKINode Title="BaseApiClient Class" Url="html/T-Apidaze.SDK.Base.BaseApiClient.htm" />
+    <HelpKINode Title="BaseApiClient Members" Url="html/AllMembers.T-Apidaze.SDK.Base.BaseApiClient.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Base.Credentials class">
+    <HelpKINode Title="Credentials Class" Url="html/T-Apidaze.SDK.Base.Credentials.htm" />
+    <HelpKINode Title="Credentials Members" Url="html/AllMembers.T-Apidaze.SDK.Base.Credentials.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Calls namespace" Url="html/N-Apidaze.SDK.Calls.htm" />
+  <HelpKINode Title="Apidaze.SDK.Calls.Call class">
+    <HelpKINode Title="Call Class" Url="html/T-Apidaze.SDK.Calls.Call.htm" />
+    <HelpKINode Title="Call Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.Call.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Calls.Calls class">
+    <HelpKINode Title="Calls Class" Url="html/T-Apidaze.SDK.Calls.Calls.htm" />
+    <HelpKINode Title="Calls Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.Calls.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Calls.CallType class">
+    <HelpKINode Title="CallType Class" Url="html/T-Apidaze.SDK.Calls.CallType.htm" />
+    <HelpKINode Title="CallType Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.CallType.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Calls.CreateCallResponseException class">
+    <HelpKINode Title="CreateCallResponseException Class" Url="html/T-Apidaze.SDK.Calls.CreateCallResponseException.htm" />
+    <HelpKINode Title="CreateCallResponseException Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.CreateCallResponseException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Calls.DateFormatConverter class">
+    <HelpKINode Title="DateFormatConverter Class" Url="html/T-Apidaze.SDK.Calls.DateFormatConverter.htm" />
+    <HelpKINode Title="DateFormatConverter Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.DateFormatConverter.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Calls.DeleteCallResponseException class">
+    <HelpKINode Title="DeleteCallResponseException Class" Url="html/T-Apidaze.SDK.Calls.DeleteCallResponseException.htm" />
+    <HelpKINode Title="DeleteCallResponseException Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.DeleteCallResponseException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Calls.ICalls interface">
+    <HelpKINode Title="ICalls Interface" Url="html/T-Apidaze.SDK.Calls.ICalls.htm" />
+    <HelpKINode Title="ICalls Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.ICalls.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.CdrHttpHandlers namespace" Url="html/N-Apidaze.SDK.CdrHttpHandlers.htm" />
+  <HelpKINode Title="Apidaze.SDK.CdrHttpHandlers.CallLeg enumeration" Url="html/T-Apidaze.SDK.CdrHttpHandlers.CallLeg.htm" />
+  <HelpKINode Title="Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler class">
+    <HelpKINode Title="CdrHttpHandler Class" Url="html/T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.htm" />
+    <HelpKINode Title="CdrHttpHandler Members" Url="html/AllMembers.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers class">
+    <HelpKINode Title="CdrHttpHandlers Class" Url="html/T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.htm" />
+    <HelpKINode Title="CdrHttpHandlers Members" Url="html/AllMembers.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.CdrHttpHandlers.Format enumeration" Url="html/T-Apidaze.SDK.CdrHttpHandlers.Format.htm" />
+  <HelpKINode Title="Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers interface">
+    <HelpKINode Title="ICdrHttpHandlers Interface" Url="html/T-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.htm" />
+    <HelpKINode Title="ICdrHttpHandlers Members" Url="html/AllMembers.T-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Common namespace" Url="html/N-Apidaze.SDK.Common.htm" />
+  <HelpKINode Title="Apidaze.SDK.Common.Response class">
+    <HelpKINode Title="Response Class" Url="html/T-Apidaze.SDK.Common.Response.htm" />
+    <HelpKINode Title="Response Members" Url="html/AllMembers.T-Apidaze.SDK.Common.Response.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Common.ResponseHeader class">
+    <HelpKINode Title="ResponseHeader Class" Url="html/T-Apidaze.SDK.Common.ResponseHeader.htm" />
+    <HelpKINode Title="ResponseHeader Members" Url="html/AllMembers.T-Apidaze.SDK.Common.ResponseHeader.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Exception namespace" Url="html/N-Apidaze.SDK.Exception.htm" />
+  <HelpKINode Title="Apidaze.SDK.Exception.ApidazeCredentialsException class">
+    <HelpKINode Title="ApidazeCredentialsException Class" Url="html/T-Apidaze.SDK.Exception.ApidazeCredentialsException.htm" />
+    <HelpKINode Title="ApidazeCredentialsException Members" Url="html/AllMembers.T-Apidaze.SDK.Exception.ApidazeCredentialsException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Exception.ApidazeRestException class">
+    <HelpKINode Title="ApidazeRestException Class" Url="html/T-Apidaze.SDK.Exception.ApidazeRestException.htm" />
+    <HelpKINode Title="ApidazeRestException Members" Url="html/AllMembers.T-Apidaze.SDK.Exception.ApidazeRestException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Exception.CreateCallResponseException class">
+    <HelpKINode Title="CreateCallResponseException Class" Url="html/T-Apidaze.SDK.Exception.CreateCallResponseException.htm" />
+    <HelpKINode Title="CreateCallResponseException Members" Url="html/AllMembers.T-Apidaze.SDK.Exception.CreateCallResponseException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Exception.DeleteCallResponseException class">
+    <HelpKINode Title="DeleteCallResponseException Class" Url="html/T-Apidaze.SDK.Exception.DeleteCallResponseException.htm" />
+    <HelpKINode Title="DeleteCallResponseException Members" Url="html/AllMembers.T-Apidaze.SDK.Exception.DeleteCallResponseException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Exception.InvalidPhoneNumberException class">
+    <HelpKINode Title="InvalidPhoneNumberException Class" Url="html/T-Apidaze.SDK.Exception.InvalidPhoneNumberException.htm" />
+    <HelpKINode Title="InvalidPhoneNumberException Members" Url="html/AllMembers.T-Apidaze.SDK.Exception.InvalidPhoneNumberException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ExternalScripts namespace" Url="html/N-Apidaze.SDK.ExternalScripts.htm" />
+  <HelpKINode Title="Apidaze.SDK.ExternalScripts.ExternalScript class">
+    <HelpKINode Title="ExternalScript Class" Url="html/T-Apidaze.SDK.ExternalScripts.ExternalScript.htm" />
+    <HelpKINode Title="ExternalScript Members" Url="html/AllMembers.T-Apidaze.SDK.ExternalScripts.ExternalScript.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ExternalScripts.ExternalScripts class">
+    <HelpKINode Title="ExternalScripts Class" Url="html/T-Apidaze.SDK.ExternalScripts.ExternalScripts.htm" />
+    <HelpKINode Title="ExternalScripts Members" Url="html/AllMembers.T-Apidaze.SDK.ExternalScripts.ExternalScripts.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ExternalScripts.IExternalScripts interface">
+    <HelpKINode Title="IExternalScripts Interface" Url="html/T-Apidaze.SDK.ExternalScripts.IExternalScripts.htm" />
+    <HelpKINode Title="IExternalScripts Members" Url="html/AllMembers.T-Apidaze.SDK.ExternalScripts.IExternalScripts.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.IApiActionFactory interface">
+    <HelpKINode Title="IApiActionFactory Interface" Url="html/T-Apidaze.SDK.IApiActionFactory.htm" />
+    <HelpKINode Title="IApiActionFactory Members" Url="html/AllMembers.T-Apidaze.SDK.IApiActionFactory.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.MediaFiles namespace" Url="html/N-Apidaze.SDK.MediaFiles.htm" />
+  <HelpKINode Title="Apidaze.SDK.MediaFiles.IMediaFiles interface">
+    <HelpKINode Title="IMediaFiles Interface" Url="html/T-Apidaze.SDK.MediaFiles.IMediaFiles.htm" />
+    <HelpKINode Title="IMediaFiles Members" Url="html/AllMembers.T-Apidaze.SDK.MediaFiles.IMediaFiles.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.MediaFiles.MediaFile class">
+    <HelpKINode Title="MediaFile Class" Url="html/T-Apidaze.SDK.MediaFiles.MediaFile.htm" />
+    <HelpKINode Title="MediaFile Members" Url="html/AllMembers.T-Apidaze.SDK.MediaFiles.MediaFile.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.MediaFiles.MediaFiles class">
+    <HelpKINode Title="MediaFiles Class" Url="html/T-Apidaze.SDK.MediaFiles.MediaFiles.htm" />
+    <HelpKINode Title="MediaFiles Members" Url="html/AllMembers.T-Apidaze.SDK.MediaFiles.MediaFiles.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Messages namespace" Url="html/N-Apidaze.SDK.Messages.htm" />
+  <HelpKINode Title="Apidaze.SDK.Messages.IMessage interface">
+    <HelpKINode Title="IMessage Interface" Url="html/T-Apidaze.SDK.Messages.IMessage.htm" />
+    <HelpKINode Title="IMessage Members" Url="html/AllMembers.T-Apidaze.SDK.Messages.IMessage.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Messages.Message class">
+    <HelpKINode Title="Message Class" Url="html/T-Apidaze.SDK.Messages.Message.htm" />
+    <HelpKINode Title="Message Members" Url="html/AllMembers.T-Apidaze.SDK.Messages.Message.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Messages.PhoneNumber class">
+    <HelpKINode Title="PhoneNumber Class" Url="html/T-Apidaze.SDK.Messages.PhoneNumber.htm" />
+    <HelpKINode Title="PhoneNumber Members" Url="html/AllMembers.T-Apidaze.SDK.Messages.PhoneNumber.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Recordings namespace" Url="html/N-Apidaze.SDK.Recordings.htm" />
+  <HelpKINode Title="Apidaze.SDK.Recordings.IRecordings interface">
+    <HelpKINode Title="IRecordings Interface" Url="html/T-Apidaze.SDK.Recordings.IRecordings.htm" />
+    <HelpKINode Title="IRecordings Members" Url="html/AllMembers.T-Apidaze.SDK.Recordings.IRecordings.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Recordings.Recordings class">
+    <HelpKINode Title="Recordings Class" Url="html/T-Apidaze.SDK.Recordings.Recordings.htm" />
+    <HelpKINode Title="Recordings Members" Url="html/AllMembers.T-Apidaze.SDK.Recordings.Recordings.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder namespace" Url="html/N-Apidaze.SDK.ScriptBuilder.htm" />
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.ApidazeScript class">
+    <HelpKINode Title="ApidazeScript Class" Url="html/T-Apidaze.SDK.ScriptBuilder.ApidazeScript.htm" />
+    <HelpKINode Title="ApidazeScript Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.ApidazeScript.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO namespace" Url="html/N-Apidaze.SDK.ScriptBuilder.POCO.htm" />
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.Answer class">
+    <HelpKINode Title="Answer Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Answer.htm" />
+    <HelpKINode Title="Answer Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Answer.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.Bind class">
+    <HelpKINode Title="Bind Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Bind.htm" />
+    <HelpKINode Title="Bind Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Bind.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.Conference class">
+    <HelpKINode Title="Conference Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Conference.htm" />
+    <HelpKINode Title="Conference Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Conference.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.Dial class">
+    <HelpKINode Title="Dial Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Dial.htm" />
+    <HelpKINode Title="Dial Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Dial.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.Echo class">
+    <HelpKINode Title="Echo Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Echo.htm" />
+    <HelpKINode Title="Echo Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Echo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.Hangup class">
+    <HelpKINode Title="Hangup Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Hangup.htm" />
+    <HelpKINode Title="Hangup Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Hangup.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.Intercept class">
+    <HelpKINode Title="Intercept Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Intercept.htm" />
+    <HelpKINode Title="Intercept Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Intercept.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.LangEnum enumeration" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.Number class">
+    <HelpKINode Title="Number Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Number.htm" />
+    <HelpKINode Title="Number Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Number.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.Playback class">
+    <HelpKINode Title="Playback Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Playback.htm" />
+    <HelpKINode Title="Playback Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Playback.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.Record class">
+    <HelpKINode Title="Record Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Record.htm" />
+    <HelpKINode Title="Record Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Record.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.Ringback class">
+    <HelpKINode Title="Ringback Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Ringback.htm" />
+    <HelpKINode Title="Ringback Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Ringback.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.SipAccount class">
+    <HelpKINode Title="SipAccount Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.htm" />
+    <HelpKINode Title="SipAccount Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.SipUri class">
+    <HelpKINode Title="SipUri Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.SipUri.htm" />
+    <HelpKINode Title="SipUri Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.SipUri.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.Speak class">
+    <HelpKINode Title="Speak Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Speak.htm" />
+    <HelpKINode Title="Speak Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Speak.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum enumeration" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.htm" />
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum enumeration" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.htm" />
+  <HelpKINode Title="Apidaze.SDK.ScriptBuilder.POCO.Wait class">
+    <HelpKINode Title="Wait Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Wait.htm" />
+    <HelpKINode Title="Wait Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Wait.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.SipUsers namespace" Url="html/N-Apidaze.SDK.SipUsers.htm" />
+  <HelpKINode Title="Apidaze.SDK.SipUsers.CallerIdentity class">
+    <HelpKINode Title="CallerIdentity Class" Url="html/T-Apidaze.SDK.SipUsers.CallerIdentity.htm" />
+    <HelpKINode Title="CallerIdentity Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.CallerIdentity.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.SipUsers.ISipUsers interface">
+    <HelpKINode Title="ISipUsers Interface" Url="html/T-Apidaze.SDK.SipUsers.ISipUsers.htm" />
+    <HelpKINode Title="ISipUsers Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.ISipUsers.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.SipUsers.Sip class">
+    <HelpKINode Title="Sip Class" Url="html/T-Apidaze.SDK.SipUsers.Sip.htm" />
+    <HelpKINode Title="Sip Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.Sip.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.SipUsers.SipUser class">
+    <HelpKINode Title="SipUser Class" Url="html/T-Apidaze.SDK.SipUsers.SipUser.htm" />
+    <HelpKINode Title="SipUser Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.SipUser.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.SipUsers.SipUsers class">
+    <HelpKINode Title="SipUsers Class" Url="html/T-Apidaze.SDK.SipUsers.SipUsers.htm" />
+    <HelpKINode Title="SipUsers Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.SipUsers.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.SipUsers.SipUserStatus class">
+    <HelpKINode Title="SipUserStatus Class" Url="html/T-Apidaze.SDK.SipUsers.SipUserStatus.htm" />
+    <HelpKINode Title="SipUserStatus Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.SipUserStatus.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Validate namespace" Url="html/N-Apidaze.SDK.Validate.htm" />
+  <HelpKINode Title="Apidaze.SDK.Validate.CredentialsValidator class">
+    <HelpKINode Title="CredentialsValidator Class" Url="html/T-Apidaze.SDK.Validate.CredentialsValidator.htm" />
+    <HelpKINode Title="CredentialsValidator Members" Url="html/AllMembers.T-Apidaze.SDK.Validate.CredentialsValidator.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Apidaze.SDK.Validate.ICredentialsValidator interface">
+    <HelpKINode Title="ICredentialsValidator Interface" Url="html/T-Apidaze.SDK.Validate.ICredentialsValidator.htm" />
+    <HelpKINode Title="ICredentialsValidator Members" Url="html/AllMembers.T-Apidaze.SDK.Validate.ICredentialsValidator.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApidazeCredentialsException class">
+    <HelpKINode Title="ApidazeCredentialsException Class" Url="html/T-Apidaze.SDK.Exception.ApidazeCredentialsException.htm" />
+    <HelpKINode Title="ApidazeCredentialsException Members" Url="html/AllMembers.T-Apidaze.SDK.Exception.ApidazeCredentialsException.htm" />
+    <HelpKINode Title="about ApidazeCredentialsException class" Url="html/T-Apidaze.SDK.Exception.ApidazeCredentialsException.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Exception.ApidazeCredentialsException.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.Exception.ApidazeCredentialsException.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Exception.ApidazeCredentialsException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.Exception.ApidazeCredentialsException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApidazeCredentialsException.ApidazeCredentialsException constructor" Url="html/M-Apidaze.SDK.Exception.ApidazeCredentialsException.-ctor.htm" />
+  <HelpKINode Title="ApidazeRestException class">
+    <HelpKINode Title="ApidazeRestException Class" Url="html/T-Apidaze.SDK.Exception.ApidazeRestException.htm" />
+    <HelpKINode Title="ApidazeRestException Members" Url="html/AllMembers.T-Apidaze.SDK.Exception.ApidazeRestException.htm" />
+    <HelpKINode Title="about ApidazeRestException class" Url="html/T-Apidaze.SDK.Exception.ApidazeRestException.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Exception.ApidazeRestException.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.Exception.ApidazeRestException.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Exception.ApidazeRestException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.Exception.ApidazeRestException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApidazeRestException.ApidazeRestException constructor" Url="html/M-Apidaze.SDK.Exception.ApidazeRestException.-ctor.htm" />
+  <HelpKINode Title="ApidazeRestException.StatusCode property" Url="html/P-Apidaze.SDK.Exception.ApidazeRestException.StatusCode.htm" />
+  <HelpKINode Title="ApidazeScript class">
+    <HelpKINode Title="ApidazeScript Class" Url="html/T-Apidaze.SDK.ScriptBuilder.ApidazeScript.htm" />
+    <HelpKINode Title="ApidazeScript Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.ApidazeScript.htm" />
+    <HelpKINode Title="about ApidazeScript class" Url="html/T-Apidaze.SDK.ScriptBuilder.ApidazeScript.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.ApidazeScript.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.ScriptBuilder.ApidazeScript.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.ApidazeScript.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.ApidazeScript.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApidazeScript.AddNode method" Url="html/M-Apidaze.SDK.ScriptBuilder.ApidazeScript.AddNode.htm" />
+  <HelpKINode Title="ApidazeScript.ApidazeScript constructor" Url="html/M-Apidaze.SDK.ScriptBuilder.ApidazeScript.-ctor.htm" />
+  <HelpKINode Title="ApidazeScript.Build method" Url="html/M-Apidaze.SDK.ScriptBuilder.ApidazeScript.Build.htm" />
+  <HelpKINode Title="ApidazeScript.Nodes property" Url="html/P-Apidaze.SDK.ScriptBuilder.ApidazeScript.Nodes.htm" />
+  <HelpKINode Title="ApiKey property">
+    <HelpKINode Title="ApiKey Property " Url="html/P-Apidaze.SDK.Applications.Application.ApiKey.htm" />
+    <HelpKINode Title="ApiKey Property " Url="html/P-Apidaze.SDK.Base.Credentials.ApiKey.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApiSecret property">
+    <HelpKINode Title="ApiSecret Property " Url="html/P-Apidaze.SDK.Applications.Application.ApiSecret.htm" />
+    <HelpKINode Title="ApiSecret Property " Url="html/P-Apidaze.SDK.Base.Credentials.ApiSecret.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Application class">
+    <HelpKINode Title="Application Class" Url="html/T-Apidaze.SDK.Applications.Application.htm" />
+    <HelpKINode Title="Application Members" Url="html/AllMembers.T-Apidaze.SDK.Applications.Application.htm" />
+    <HelpKINode Title="about Application class" Url="html/T-Apidaze.SDK.Applications.Application.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Applications.Application.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Applications.Application.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.Applications.Application.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Application.AccountId property" Url="html/P-Apidaze.SDK.Applications.Application.AccountId.htm" />
+  <HelpKINode Title="Application.ApiKey property" Url="html/P-Apidaze.SDK.Applications.Application.ApiKey.htm" />
+  <HelpKINode Title="Application.ApiSecret property" Url="html/P-Apidaze.SDK.Applications.Application.ApiSecret.htm" />
+  <HelpKINode Title="Application.ApplicationId property" Url="html/P-Apidaze.SDK.Applications.Application.ApplicationId.htm" />
+  <HelpKINode Title="Application.CreatedAt property" Url="html/P-Apidaze.SDK.Applications.Application.CreatedAt.htm" />
+  <HelpKINode Title="Application.FsAddress property" Url="html/P-Apidaze.SDK.Applications.Application.FsAddress.htm" />
+  <HelpKINode Title="Application.Id property" Url="html/P-Apidaze.SDK.Applications.Application.Id.htm" />
+  <HelpKINode Title="Application.Name property" Url="html/P-Apidaze.SDK.Applications.Application.Name.htm" />
+  <HelpKINode Title="Application.UpdatedAt property" Url="html/P-Apidaze.SDK.Applications.Application.UpdatedAt.htm" />
+  <HelpKINode Title="ApplicationId property" Url="html/P-Apidaze.SDK.Applications.Application.ApplicationId.htm" />
+  <HelpKINode Title="ApplicationManager class">
+    <HelpKINode Title="ApplicationManager Class" Url="html/T-Apidaze.SDK.ApplicationManager.htm" />
+    <HelpKINode Title="ApplicationManager Members" Url="html/AllMembers.T-Apidaze.SDK.ApplicationManager.htm" />
+    <HelpKINode Title="about ApplicationManager class" Url="html/T-Apidaze.SDK.ApplicationManager.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ApplicationManager.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ApplicationManager.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ApplicationManager.CreateApiFactory method" Url="html/M-Apidaze.SDK.ApplicationManager.CreateApiFactory.htm" />
+  <HelpKINode Title="Applications class">
+    <HelpKINode Title="Applications Class" Url="html/T-Apidaze.SDK.Applications.Applications.htm" />
+    <HelpKINode Title="Applications Members" Url="html/AllMembers.T-Apidaze.SDK.Applications.Applications.htm" />
+    <HelpKINode Title="about Applications class" Url="html/T-Apidaze.SDK.Applications.Applications.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Applications.Applications.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Applications.Applications.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Applications.CreateInstance method" Url="html/M-Apidaze.SDK.Applications.Applications.CreateInstance.htm" />
+  <HelpKINode Title="Applications.GetApplicationActionByApiKey method" Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationActionByApiKey.htm" />
+  <HelpKINode Title="Applications.GetApplicationActionById method" Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationActionById.htm" />
+  <HelpKINode Title="Applications.GetApplicationActionByName method" Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationActionByName.htm" />
+  <HelpKINode Title="Applications.GetApplications method" Url="html/M-Apidaze.SDK.Applications.Applications.GetApplications.htm" />
+  <HelpKINode Title="Applications.GetApplicationsByApiKey method" Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationsByApiKey.htm" />
+  <HelpKINode Title="Applications.GetApplicationsById method" Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationsById.htm" />
+  <HelpKINode Title="Applications.GetApplicationsByName method" Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationsByName.htm" />
+  <HelpKINode Title="BaseApiClient class">
+    <HelpKINode Title="BaseApiClient Class" Url="html/T-Apidaze.SDK.Base.BaseApiClient.htm" />
+    <HelpKINode Title="BaseApiClient Members" Url="html/AllMembers.T-Apidaze.SDK.Base.BaseApiClient.htm" />
+    <HelpKINode Title="about BaseApiClient class" Url="html/T-Apidaze.SDK.Base.BaseApiClient.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Base.BaseApiClient.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Base.BaseApiClient.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BaseApiClient.Create(Of T) method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.Create--1.htm" />
+  <HelpKINode Title="BaseApiClient.Create&lt;T&gt; method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.Create--1.htm" />
+  <HelpKINode Title="BaseApiClient.Delete method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.Delete.htm" />
+  <HelpKINode Title="BaseApiClient.FindAll(Of T) method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.FindAll--1.htm" />
+  <HelpKINode Title="BaseApiClient.FindAll&lt;T&gt; method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.FindAll--1.htm" />
+  <HelpKINode Title="BaseApiClient.FindById(Of T) method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.FindById--1.htm" />
+  <HelpKINode Title="BaseApiClient.FindById&lt;T&gt; method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.FindById--1.htm" />
+  <HelpKINode Title="BaseApiClient.FindByParameter(Of T) method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.FindByParameter--1.htm" />
+  <HelpKINode Title="BaseApiClient.FindByParameter&lt;T&gt; method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.FindByParameter--1.htm" />
+  <HelpKINode Title="BaseApiClient.Update(Of T) method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.Update--1.htm" />
+  <HelpKINode Title="BaseApiClient.Update&lt;T&gt; method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.Update--1.htm" />
+  <HelpKINode Title="Bind class">
+    <HelpKINode Title="Bind Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Bind.htm" />
+    <HelpKINode Title="Bind Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Bind.htm" />
+    <HelpKINode Title="about Bind class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Bind.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Bind.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Apidaze.SDK.ScriptBuilder.POCO.Bind.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Bind.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Bind.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Bind.Action property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Bind.Action.htm" />
+  <HelpKINode Title="Bind.Bind constructor" Url="html/Overload-Apidaze.SDK.ScriptBuilder.POCO.Bind.-ctor.htm" />
+  <HelpKINode Title="Bind.Value property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Bind.Value.htm" />
+  <HelpKINode Title="Binds property">
+    <HelpKINode Title="Binds Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.Binds.htm" />
+    <HelpKINode Title="Binds Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Playback.Binds.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BLeg property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Record.BLeg.htm" />
+  <HelpKINode Title="Build method" Url="html/M-Apidaze.SDK.ScriptBuilder.ApidazeScript.Build.htm" />
+  <HelpKINode Title="Call class">
+    <HelpKINode Title="Call Class" Url="html/T-Apidaze.SDK.Calls.Call.htm" />
+    <HelpKINode Title="Call Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.Call.htm" />
+    <HelpKINode Title="about Call class" Url="html/T-Apidaze.SDK.Calls.Call.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Calls.Call.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Calls.Call.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.Calls.Call.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Call.CallerId property" Url="html/P-Apidaze.SDK.Calls.Call.CallerId.htm" />
+  <HelpKINode Title="Call.CallerIdName property" Url="html/P-Apidaze.SDK.Calls.Call.CallerIdName.htm" />
+  <HelpKINode Title="Call.CallerIdNumber property" Url="html/P-Apidaze.SDK.Calls.Call.CallerIdNumber.htm" />
+  <HelpKINode Title="Call.CallState property" Url="html/P-Apidaze.SDK.Calls.Call.CallState.htm" />
+  <HelpKINode Title="Call.CallUuid property" Url="html/P-Apidaze.SDK.Calls.Call.CallUuid.htm" />
+  <HelpKINode Title="Call.Created property" Url="html/P-Apidaze.SDK.Calls.Call.Created.htm" />
+  <HelpKINode Title="Call.Destination property" Url="html/P-Apidaze.SDK.Calls.Call.Destination.htm" />
+  <HelpKINode Title="Call.URL property" Url="html/P-Apidaze.SDK.Calls.Call.URL.htm" />
+  <HelpKINode Title="Call.Uuid property" Url="html/P-Apidaze.SDK.Calls.Call.Uuid.htm" />
+  <HelpKINode Title="Call.WorkTag property" Url="html/P-Apidaze.SDK.Calls.Call.WorkTag.htm" />
+  <HelpKINode Title="CallerHangupUrl property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.CallerHangupUrl.htm" />
+  <HelpKINode Title="CallerId property">
+    <HelpKINode Title="CallerId Property " Url="html/P-Apidaze.SDK.Calls.Call.CallerId.htm" />
+    <HelpKINode Title="CallerId Property " Url="html/P-Apidaze.SDK.SipUsers.SipUser.CallerId.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CallerIdentity class">
+    <HelpKINode Title="CallerIdentity Class" Url="html/T-Apidaze.SDK.SipUsers.CallerIdentity.htm" />
+    <HelpKINode Title="CallerIdentity Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.CallerIdentity.htm" />
+    <HelpKINode Title="about CallerIdentity class" Url="html/T-Apidaze.SDK.SipUsers.CallerIdentity.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.CallerIdentity.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.SipUsers.CallerIdentity.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.SipUsers.CallerIdentity.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CallerIdentity.InternalCallerIdName property" Url="html/P-Apidaze.SDK.SipUsers.CallerIdentity.InternalCallerIdName.htm" />
+  <HelpKINode Title="CallerIdentity.InternalCallerIdNumber property" Url="html/P-Apidaze.SDK.SipUsers.CallerIdentity.InternalCallerIdNumber.htm" />
+  <HelpKINode Title="CallerIdentity.OutboundCallerIdName property" Url="html/P-Apidaze.SDK.SipUsers.CallerIdentity.OutboundCallerIdName.htm" />
+  <HelpKINode Title="CallerIdentity.OutboundCallerIdNumber property" Url="html/P-Apidaze.SDK.SipUsers.CallerIdentity.OutboundCallerIdNumber.htm" />
+  <HelpKINode Title="CallerIdName property" Url="html/P-Apidaze.SDK.Calls.Call.CallerIdName.htm" />
+  <HelpKINode Title="CallerIdNumber property" Url="html/P-Apidaze.SDK.Calls.Call.CallerIdNumber.htm" />
+  <HelpKINode Title="CallLeg enumeration" Url="html/T-Apidaze.SDK.CdrHttpHandlers.CallLeg.htm" />
+  <HelpKINode Title="CallLeg property" Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.CallLeg.htm" />
+  <HelpKINode Title="CallLeg.Inbound field" Url="html/F-Apidaze.SDK.CdrHttpHandlers.CallLeg.Inbound.htm" />
+  <HelpKINode Title="CallLeg.Outbound field" Url="html/F-Apidaze.SDK.CdrHttpHandlers.CallLeg.Outbound.htm" />
+  <HelpKINode Title="CallLeg.Xml field" Url="html/F-Apidaze.SDK.CdrHttpHandlers.CallLeg.Xml.htm" />
+  <HelpKINode Title="Calls class">
+    <HelpKINode Title="Calls Class" Url="html/T-Apidaze.SDK.Calls.Calls.htm" />
+    <HelpKINode Title="Calls Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.Calls.htm" />
+    <HelpKINode Title="about Calls class" Url="html/T-Apidaze.SDK.Calls.Calls.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Calls.Calls.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.Calls.Calls.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Calls.Calls.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Calls.Calls constructor" Url="html/M-Apidaze.SDK.Calls.Calls.-ctor.htm" />
+  <HelpKINode Title="Calls.CreateCall method" Url="html/M-Apidaze.SDK.Calls.Calls.CreateCall.htm" />
+  <HelpKINode Title="Calls.DeleteCall method" Url="html/M-Apidaze.SDK.Calls.Calls.DeleteCall.htm" />
+  <HelpKINode Title="Calls.GetCall method" Url="html/M-Apidaze.SDK.Calls.Calls.GetCall.htm" />
+  <HelpKINode Title="Calls.GetCalls method" Url="html/M-Apidaze.SDK.Calls.Calls.GetCalls.htm" />
+  <HelpKINode Title="CallState property" Url="html/P-Apidaze.SDK.Calls.Call.CallState.htm" />
+  <HelpKINode Title="CallType class">
+    <HelpKINode Title="CallType Class" Url="html/T-Apidaze.SDK.Calls.CallType.htm" />
+    <HelpKINode Title="CallType Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.CallType.htm" />
+    <HelpKINode Title="about CallType class" Url="html/T-Apidaze.SDK.Calls.CallType.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Calls.CallType.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Calls.CallType.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.Calls.CallType.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CallType.NUMBER property" Url="html/P-Apidaze.SDK.Calls.CallType.NUMBER.htm" />
+  <HelpKINode Title="CallType.SIP_ACCOUNT property" Url="html/P-Apidaze.SDK.Calls.CallType.SIP_ACCOUNT.htm" />
+  <HelpKINode Title="CallUuid property" Url="html/P-Apidaze.SDK.Calls.Call.CallUuid.htm" />
+  <HelpKINode Title="CdrHttpHandler class">
+    <HelpKINode Title="CdrHttpHandler Class" Url="html/T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.htm" />
+    <HelpKINode Title="CdrHttpHandler Members" Url="html/AllMembers.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.htm" />
+    <HelpKINode Title="about CdrHttpHandler class" Url="html/T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CdrHttpHandler.CallLeg property" Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.CallLeg.htm" />
+  <HelpKINode Title="CdrHttpHandler.CreatedAt property" Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.CreatedAt.htm" />
+  <HelpKINode Title="CdrHttpHandler.Format property" Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Format.htm" />
+  <HelpKINode Title="CdrHttpHandler.Id property" Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Id.htm" />
+  <HelpKINode Title="CdrHttpHandler.Name property" Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Name.htm" />
+  <HelpKINode Title="CdrHttpHandler.UpdatedAt property" Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.UpdatedAt.htm" />
+  <HelpKINode Title="CdrHttpHandler.Url property" Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Url.htm" />
+  <HelpKINode Title="CdrHttpHandlers class">
+    <HelpKINode Title="CdrHttpHandlers Class" Url="html/T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.htm" />
+    <HelpKINode Title="CdrHttpHandlers Members" Url="html/AllMembers.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.htm" />
+    <HelpKINode Title="about CdrHttpHandlers class" Url="html/T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CdrHttpHandlers.CdrHttpHandlers constructor" Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.-ctor.htm" />
+  <HelpKINode Title="CdrHttpHandlers.CreateCdrHttpHandler method" Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.CreateCdrHttpHandler.htm" />
+  <HelpKINode Title="CdrHttpHandlers.DeleteCdrHttpHandler method" Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.DeleteCdrHttpHandler.htm" />
+  <HelpKINode Title="CdrHttpHandlers.GetCdrHttpHandlers method" Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.GetCdrHttpHandlers.htm" />
+  <HelpKINode Title="CdrHttpHandlers.UpdateCdrHttpHandler method" Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.UpdateCdrHttpHandler.htm" />
+  <HelpKINode Title="CdrHttpHandlers.UpdateCdrHttpHandlerName method" Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.UpdateCdrHttpHandlerName.htm" />
+  <HelpKINode Title="CdrHttpHandlers.UpdateCdrHttpHandlerUrl method" Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.UpdateCdrHttpHandlerUrl.htm" />
+  <HelpKINode Title="Conference class">
+    <HelpKINode Title="Conference Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Conference.htm" />
+    <HelpKINode Title="Conference Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Conference.htm" />
+    <HelpKINode Title="about Conference class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Conference.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Conference.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Conference.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Conference.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Conference.Name property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Conference.Name.htm" />
+  <HelpKINode Title="Connection property" Url="html/P-Apidaze.SDK.Common.ResponseHeader.Connection.htm" />
+  <HelpKINode Title="ContentLength property" Url="html/P-Apidaze.SDK.Common.ResponseHeader.ContentLength.htm" />
+  <HelpKINode Title="ContentType property" Url="html/P-Apidaze.SDK.Common.ResponseHeader.ContentType.htm" />
+  <HelpKINode Title="Create(Of T) method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.Create--1.htm" />
+  <HelpKINode Title="Create&lt;T&gt; method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.Create--1.htm" />
+  <HelpKINode Title="CreateApiFactory method" Url="html/M-Apidaze.SDK.ApplicationManager.CreateApiFactory.htm" />
+  <HelpKINode Title="CreateApplicationsApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateApplicationsApi.htm" />
+  <HelpKINode Title="CreateCall method">
+    <HelpKINode Title="CreateCall Method " Url="html/M-Apidaze.SDK.Calls.Calls.CreateCall.htm" />
+    <HelpKINode Title="CreateCall Method " Url="html/M-Apidaze.SDK.Calls.ICalls.CreateCall.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreateCallResponseException class">
+    <HelpKINode Title="CreateCallResponseException Class" Url="html/T-Apidaze.SDK.Calls.CreateCallResponseException.htm" />
+    <HelpKINode Title="CreateCallResponseException Class" Url="html/T-Apidaze.SDK.Exception.CreateCallResponseException.htm" />
+    <HelpKINode Title="CreateCallResponseException Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.CreateCallResponseException.htm" />
+    <HelpKINode Title="CreateCallResponseException Members" Url="html/AllMembers.T-Apidaze.SDK.Exception.CreateCallResponseException.htm" />
+    <HelpKINode Title="about CreateCallResponseException class" Url="html/T-Apidaze.SDK.Exception.CreateCallResponseException.htm" />
+    <HelpKINode Title="about CreateCallResponseException class" Url="html/T-Apidaze.SDK.Calls.CreateCallResponseException.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Calls.CreateCallResponseException.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Exception.CreateCallResponseException.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.Calls.CreateCallResponseException.-ctor.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.Exception.CreateCallResponseException.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Calls.CreateCallResponseException.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Exception.CreateCallResponseException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.Exception.CreateCallResponseException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.Calls.CreateCallResponseException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreateCallResponseException.CreateCallResponseException constructor">
+    <HelpKINode Title="CreateCallResponseException Constructor " Url="html/M-Apidaze.SDK.Exception.CreateCallResponseException.-ctor.htm" />
+    <HelpKINode Title="CreateCallResponseException Constructor " Url="html/M-Apidaze.SDK.Calls.CreateCallResponseException.-ctor.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreateCallsApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateCallsApi.htm" />
+  <HelpKINode Title="CreateCdrHttpHandler method">
+    <HelpKINode Title="CreateCdrHttpHandler Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.CreateCdrHttpHandler.htm" />
+    <HelpKINode Title="CreateCdrHttpHandler Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.CreateCdrHttpHandler.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreateCdrHttpHandlersApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateCdrHttpHandlersApi.htm" />
+  <HelpKINode Title="CreateCredentialsValidatorApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateCredentialsValidatorApi.htm" />
+  <HelpKINode Title="Created property" Url="html/P-Apidaze.SDK.Calls.Call.Created.htm" />
+  <HelpKINode Title="CreatedAt property">
+    <HelpKINode Title="CreatedAt Property " Url="html/P-Apidaze.SDK.SipUsers.SipUser.CreatedAt.htm" />
+    <HelpKINode Title="CreatedAt Property " Url="html/P-Apidaze.SDK.Applications.Application.CreatedAt.htm" />
+    <HelpKINode Title="CreatedAt Property " Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.CreatedAt.htm" />
+    <HelpKINode Title="CreatedAt Property " Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.CreatedAt.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreateExternalScriptsApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateExternalScriptsApi.htm" />
+  <HelpKINode Title="CreateInstance method" Url="html/M-Apidaze.SDK.Applications.Applications.CreateInstance.htm" />
+  <HelpKINode Title="CreateMediaFilesApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateMediaFilesApi.htm" />
+  <HelpKINode Title="CreateMessageApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateMessageApi.htm" />
+  <HelpKINode Title="CreateRecordingsApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateRecordingsApi.htm" />
+  <HelpKINode Title="CreateSipUser method">
+    <HelpKINode Title="CreateSipUser Method " Url="html/M-Apidaze.SDK.SipUsers.SipUsers.CreateSipUser.htm" />
+    <HelpKINode Title="CreateSipUser Method " Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.CreateSipUser.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreateSipUsersApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateSipUsersApi.htm" />
+  <HelpKINode Title="Credentials class">
+    <HelpKINode Title="Credentials Class" Url="html/T-Apidaze.SDK.Base.Credentials.htm" />
+    <HelpKINode Title="Credentials Members" Url="html/AllMembers.T-Apidaze.SDK.Base.Credentials.htm" />
+    <HelpKINode Title="about Credentials class" Url="html/T-Apidaze.SDK.Base.Credentials.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Base.Credentials.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.Base.Credentials.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Base.Credentials.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.Base.Credentials.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Credentials.ApiKey property" Url="html/P-Apidaze.SDK.Base.Credentials.ApiKey.htm" />
+  <HelpKINode Title="Credentials.ApiSecret property" Url="html/P-Apidaze.SDK.Base.Credentials.ApiSecret.htm" />
+  <HelpKINode Title="Credentials.Credentials constructor" Url="html/M-Apidaze.SDK.Base.Credentials.-ctor.htm" />
+  <HelpKINode Title="CredentialsValidator class">
+    <HelpKINode Title="CredentialsValidator Class" Url="html/T-Apidaze.SDK.Validate.CredentialsValidator.htm" />
+    <HelpKINode Title="CredentialsValidator Members" Url="html/AllMembers.T-Apidaze.SDK.Validate.CredentialsValidator.htm" />
+    <HelpKINode Title="about CredentialsValidator class" Url="html/T-Apidaze.SDK.Validate.CredentialsValidator.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Validate.CredentialsValidator.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.Validate.CredentialsValidator.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Validate.CredentialsValidator.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CredentialsValidator.CredentialsValidator constructor" Url="html/M-Apidaze.SDK.Validate.CredentialsValidator.-ctor.htm" />
+  <HelpKINode Title="CredentialsValidator.ValidateCredentials method" Url="html/M-Apidaze.SDK.Validate.CredentialsValidator.ValidateCredentials.htm" />
+  <HelpKINode Title="DANISH enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="DANISH field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.DANISH.htm" />
+  <HelpKINode Title="Date property" Url="html/P-Apidaze.SDK.Common.ResponseHeader.Date.htm" />
+  <HelpKINode Title="DateFormatConverter class">
+    <HelpKINode Title="DateFormatConverter Class" Url="html/T-Apidaze.SDK.Calls.DateFormatConverter.htm" />
+    <HelpKINode Title="DateFormatConverter Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.DateFormatConverter.htm" />
+    <HelpKINode Title="about DateFormatConverter class" Url="html/T-Apidaze.SDK.Calls.DateFormatConverter.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Calls.DateFormatConverter.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.Calls.DateFormatConverter.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Calls.DateFormatConverter.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DateFormatConverter.DateFormatConverter constructor" Url="html/M-Apidaze.SDK.Calls.DateFormatConverter.-ctor.htm" />
+  <HelpKINode Title="Delay property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Echo.Delay.htm" />
+  <HelpKINode Title="Delete method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.Delete.htm" />
+  <HelpKINode Title="DeleteCall method">
+    <HelpKINode Title="DeleteCall Method " Url="html/M-Apidaze.SDK.Calls.Calls.DeleteCall.htm" />
+    <HelpKINode Title="DeleteCall Method " Url="html/M-Apidaze.SDK.Calls.ICalls.DeleteCall.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DeleteCallResponseException class">
+    <HelpKINode Title="DeleteCallResponseException Class" Url="html/T-Apidaze.SDK.Exception.DeleteCallResponseException.htm" />
+    <HelpKINode Title="DeleteCallResponseException Class" Url="html/T-Apidaze.SDK.Calls.DeleteCallResponseException.htm" />
+    <HelpKINode Title="DeleteCallResponseException Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.DeleteCallResponseException.htm" />
+    <HelpKINode Title="DeleteCallResponseException Members" Url="html/AllMembers.T-Apidaze.SDK.Exception.DeleteCallResponseException.htm" />
+    <HelpKINode Title="about DeleteCallResponseException class" Url="html/T-Apidaze.SDK.Exception.DeleteCallResponseException.htm" />
+    <HelpKINode Title="about DeleteCallResponseException class" Url="html/T-Apidaze.SDK.Calls.DeleteCallResponseException.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Exception.DeleteCallResponseException.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Calls.DeleteCallResponseException.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.Exception.DeleteCallResponseException.-ctor.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.Calls.DeleteCallResponseException.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Exception.DeleteCallResponseException.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Calls.DeleteCallResponseException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.Calls.DeleteCallResponseException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.Exception.DeleteCallResponseException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DeleteCallResponseException.DeleteCallResponseException constructor">
+    <HelpKINode Title="DeleteCallResponseException Constructor " Url="html/M-Apidaze.SDK.Exception.DeleteCallResponseException.-ctor.htm" />
+    <HelpKINode Title="DeleteCallResponseException Constructor " Url="html/M-Apidaze.SDK.Calls.DeleteCallResponseException.-ctor.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DeleteCdrHttpHandler method">
+    <HelpKINode Title="DeleteCdrHttpHandler Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.DeleteCdrHttpHandler.htm" />
+    <HelpKINode Title="DeleteCdrHttpHandler Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.DeleteCdrHttpHandler.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DeleteMediaFile method">
+    <HelpKINode Title="DeleteMediaFile Method " Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.DeleteMediaFile.htm" />
+    <HelpKINode Title="DeleteMediaFile Method " Url="html/M-Apidaze.SDK.MediaFiles.IMediaFiles.DeleteMediaFile.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DeleteRecording method">
+    <HelpKINode Title="DeleteRecording Method " Url="html/M-Apidaze.SDK.Recordings.IRecordings.DeleteRecording.htm" />
+    <HelpKINode Title="DeleteRecording Method " Url="html/M-Apidaze.SDK.Recordings.Recordings.DeleteRecording.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DeleteSipUser method">
+    <HelpKINode Title="DeleteSipUser Method " Url="html/M-Apidaze.SDK.SipUsers.SipUsers.DeleteSipUser.htm" />
+    <HelpKINode Title="DeleteSipUser Method " Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.DeleteSipUser.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Destination property" Url="html/P-Apidaze.SDK.Calls.Call.Destination.htm" />
+  <HelpKINode Title="DevCustomerId property" Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.DevCustomerId.htm" />
+  <HelpKINode Title="Dial class">
+    <HelpKINode Title="Dial Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Dial.htm" />
+    <HelpKINode Title="Dial Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Dial.htm" />
+    <HelpKINode Title="about Dial class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Dial.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Dial.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Dial.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Dial.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Dial.Action property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Action.htm" />
+  <HelpKINode Title="Dial.AnswerUrl property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.AnswerUrl.htm" />
+  <HelpKINode Title="Dial.CallerHangupUrl property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.CallerHangupUrl.htm" />
+  <HelpKINode Title="Dial.MaxCallDuration property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.MaxCallDuration.htm" />
+  <HelpKINode Title="Dial.Number property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Number.htm" />
+  <HelpKINode Title="Dial.ShouldSerializeMaxCallDuration method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Dial.ShouldSerializeMaxCallDuration.htm" />
+  <HelpKINode Title="Dial.ShouldSerializeStrategy method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Dial.ShouldSerializeStrategy.htm" />
+  <HelpKINode Title="Dial.ShouldSerializeTimeout method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Dial.ShouldSerializeTimeout.htm" />
+  <HelpKINode Title="Dial.Sipaccount property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Sipaccount.htm" />
+  <HelpKINode Title="Dial.SipUri property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.SipUri.htm" />
+  <HelpKINode Title="Dial.Strategy property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Strategy.htm" />
+  <HelpKINode Title="Dial.Timeout property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Timeout.htm" />
+  <HelpKINode Title="DigitTimeoutMillis property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.DigitTimeoutMillis.htm" />
+  <HelpKINode Title="DownloadMediaFile method">
+    <HelpKINode Title="DownloadMediaFile Method " Url="html/M-Apidaze.SDK.MediaFiles.IMediaFiles.DownloadMediaFile.htm" />
+    <HelpKINode Title="DownloadMediaFile Method " Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.DownloadMediaFile.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DownloadRecording method">
+    <HelpKINode Title="DownloadRecording Method " Url="html/M-Apidaze.SDK.Recordings.IRecordings.DownloadRecording.htm" />
+    <HelpKINode Title="DownloadRecording Method " Url="html/M-Apidaze.SDK.Recordings.Recordings.DownloadRecording.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DownloadRecordingToFile method">
+    <HelpKINode Title="DownloadRecordingToFile Method " Url="html/M-Apidaze.SDK.Recordings.Recordings.DownloadRecordingToFile.htm" />
+    <HelpKINode Title="DownloadRecordingToFile Method " Url="html/M-Apidaze.SDK.Recordings.IRecordings.DownloadRecordingToFile.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DownloadRecordingToFileAsync method">
+    <HelpKINode Title="DownloadRecordingToFileAsync Method " Url="html/M-Apidaze.SDK.Recordings.IRecordings.DownloadRecordingToFileAsync.htm" />
+    <HelpKINode Title="DownloadRecordingToFileAsync Method " Url="html/M-Apidaze.SDK.Recordings.Recordings.DownloadRecordingToFileAsync.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DUTCH enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="DUTCH field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.DUTCH.htm" />
+  <HelpKINode Title="Echo class">
+    <HelpKINode Title="Echo Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Echo.htm" />
+    <HelpKINode Title="Echo Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Echo.htm" />
+    <HelpKINode Title="about Echo class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Echo.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Echo.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Echo.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Echo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Echo.Delay property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Echo.Delay.htm" />
+  <HelpKINode Title="Echo.SetDuration method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Echo.SetDuration.htm" />
+  <HelpKINode Title="ENGLISH_AUSTRALIA enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="ENGLISH_AUSTRALIA field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.ENGLISH_AUSTRALIA.htm" />
+  <HelpKINode Title="ENGLISH_UK enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="ENGLISH_UK field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.ENGLISH_UK.htm" />
+  <HelpKINode Title="ENGLISH_US enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="ENGLISH_US field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.ENGLISH_US.htm" />
+  <HelpKINode Title="ExternalScript class">
+    <HelpKINode Title="ExternalScript Class" Url="html/T-Apidaze.SDK.ExternalScripts.ExternalScript.htm" />
+    <HelpKINode Title="ExternalScript Members" Url="html/AllMembers.T-Apidaze.SDK.ExternalScripts.ExternalScript.htm" />
+    <HelpKINode Title="about ExternalScript class" Url="html/T-Apidaze.SDK.ExternalScripts.ExternalScript.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ExternalScripts.ExternalScript.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ExternalScripts.ExternalScript.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.ExternalScripts.ExternalScript.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExternalScript.CreatedAt property" Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.CreatedAt.htm" />
+  <HelpKINode Title="ExternalScript.DevCustomerId property" Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.DevCustomerId.htm" />
+  <HelpKINode Title="ExternalScript.Id property" Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.Id.htm" />
+  <HelpKINode Title="ExternalScript.Name property" Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.Name.htm" />
+  <HelpKINode Title="ExternalScript.ResellerCustomerId property" Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.ResellerCustomerId.htm" />
+  <HelpKINode Title="ExternalScript.SmsUrl property" Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.SmsUrl.htm" />
+  <HelpKINode Title="ExternalScript.UpdatedAt property" Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.UpdatedAt.htm" />
+  <HelpKINode Title="ExternalScript.Url property" Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.Url.htm" />
+  <HelpKINode Title="ExternalScripts class">
+    <HelpKINode Title="ExternalScripts Class" Url="html/T-Apidaze.SDK.ExternalScripts.ExternalScripts.htm" />
+    <HelpKINode Title="ExternalScripts Members" Url="html/AllMembers.T-Apidaze.SDK.ExternalScripts.ExternalScripts.htm" />
+    <HelpKINode Title="about ExternalScripts class" Url="html/T-Apidaze.SDK.ExternalScripts.ExternalScripts.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ExternalScripts.ExternalScripts.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.ExternalScripts.ExternalScripts.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ExternalScripts.ExternalScripts.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExternalScripts.ExternalScripts constructor" Url="html/M-Apidaze.SDK.ExternalScripts.ExternalScripts.-ctor.htm" />
+  <HelpKINode Title="ExternalScripts.GetExternalScript method" Url="html/M-Apidaze.SDK.ExternalScripts.ExternalScripts.GetExternalScript.htm" />
+  <HelpKINode Title="ExternalScripts.GetExternalScripts method" Url="html/M-Apidaze.SDK.ExternalScripts.ExternalScripts.GetExternalScripts.htm" />
+  <HelpKINode Title="ExternalScripts.UpdateExternalScript method" Url="html/M-Apidaze.SDK.ExternalScripts.ExternalScripts.UpdateExternalScript.htm" />
+  <HelpKINode Title="ExternalScripts.UpdateExternalScriptUrl method" Url="html/M-Apidaze.SDK.ExternalScripts.ExternalScripts.UpdateExternalScriptUrl.htm" />
+  <HelpKINode Title="Failure property" Url="html/P-Apidaze.SDK.Common.Response.Failure.htm" />
+  <HelpKINode Title="FEMALE_A enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.htm" />
+  <HelpKINode Title="FEMALE_A field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.FEMALE_A.htm" />
+  <HelpKINode Title="FEMALE_B enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.htm" />
+  <HelpKINode Title="FEMALE_B field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.FEMALE_B.htm" />
+  <HelpKINode Title="FEMALE_C enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.htm" />
+  <HelpKINode Title="FEMALE_C field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.FEMALE_C.htm" />
+  <HelpKINode Title="File property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Playback.File.htm" />
+  <HelpKINode Title="FindAll(Of T) method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.FindAll--1.htm" />
+  <HelpKINode Title="FindAll&lt;T&gt; method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.FindAll--1.htm" />
+  <HelpKINode Title="FindById(Of T) method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.FindById--1.htm" />
+  <HelpKINode Title="FindById&lt;T&gt; method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.FindById--1.htm" />
+  <HelpKINode Title="FindByParameter(Of T) method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.FindByParameter--1.htm" />
+  <HelpKINode Title="FindByParameter&lt;T&gt; method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.FindByParameter--1.htm" />
+  <HelpKINode Title="Format enumeration" Url="html/T-Apidaze.SDK.CdrHttpHandlers.Format.htm" />
+  <HelpKINode Title="Format property" Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Format.htm" />
+  <HelpKINode Title="Format.Json field" Url="html/F-Apidaze.SDK.CdrHttpHandlers.Format.Json.htm" />
+  <HelpKINode Title="Format.Regular field" Url="html/F-Apidaze.SDK.CdrHttpHandlers.Format.Regular.htm" />
+  <HelpKINode Title="Format.Xml field" Url="html/F-Apidaze.SDK.CdrHttpHandlers.Format.Xml.htm" />
+  <HelpKINode Title="FRENCH_CANADA enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="FRENCH_CANADA field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.FRENCH_CANADA.htm" />
+  <HelpKINode Title="FRENCH_FRANCE enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="FRENCH_FRANCE field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.FRENCH_FRANCE.htm" />
+  <HelpKINode Title="FromFile method">
+    <HelpKINode Title="FromFile Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Playback.FromFile.htm" />
+    <HelpKINode Title="FromFile Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Ringback.FromFile.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FsAddress property" Url="html/P-Apidaze.SDK.Applications.Application.FsAddress.htm" />
+  <HelpKINode Title="GERMAN enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="GERMAN field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.GERMAN.htm" />
+  <HelpKINode Title="GetApplicationActionByApiKey method">
+    <HelpKINode Title="GetApplicationActionByApiKey Method " Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationActionByApiKey.htm" />
+    <HelpKINode Title="GetApplicationActionByApiKey Method " Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationActionByApiKey.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetApplicationActionById method">
+    <HelpKINode Title="GetApplicationActionById Method " Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationActionById.htm" />
+    <HelpKINode Title="GetApplicationActionById Method " Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationActionById.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetApplicationActionByName method">
+    <HelpKINode Title="GetApplicationActionByName Method " Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationActionByName.htm" />
+    <HelpKINode Title="GetApplicationActionByName Method " Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationActionByName.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetApplications method">
+    <HelpKINode Title="GetApplications Method " Url="html/M-Apidaze.SDK.Applications.Applications.GetApplications.htm" />
+    <HelpKINode Title="GetApplications Method " Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplications.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetApplicationsByApiKey method">
+    <HelpKINode Title="GetApplicationsByApiKey Method " Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationsByApiKey.htm" />
+    <HelpKINode Title="GetApplicationsByApiKey Method " Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationsByApiKey.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetApplicationsById method">
+    <HelpKINode Title="GetApplicationsById Method " Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationsById.htm" />
+    <HelpKINode Title="GetApplicationsById Method " Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationsById.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetApplicationsByName method">
+    <HelpKINode Title="GetApplicationsByName Method " Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationsByName.htm" />
+    <HelpKINode Title="GetApplicationsByName Method " Url="html/M-Apidaze.SDK.Applications.Applications.GetApplicationsByName.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetCall method">
+    <HelpKINode Title="GetCall Method " Url="html/M-Apidaze.SDK.Calls.Calls.GetCall.htm" />
+    <HelpKINode Title="GetCall Method " Url="html/M-Apidaze.SDK.Calls.ICalls.GetCall.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetCalls method">
+    <HelpKINode Title="GetCalls Method " Url="html/M-Apidaze.SDK.Calls.ICalls.GetCalls.htm" />
+    <HelpKINode Title="GetCalls Method " Url="html/M-Apidaze.SDK.Calls.Calls.GetCalls.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetCdrHttpHandlers method">
+    <HelpKINode Title="GetCdrHttpHandlers Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.GetCdrHttpHandlers.htm" />
+    <HelpKINode Title="GetCdrHttpHandlers Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.GetCdrHttpHandlers.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetExternalScript method">
+    <HelpKINode Title="GetExternalScript Method " Url="html/M-Apidaze.SDK.ExternalScripts.ExternalScripts.GetExternalScript.htm" />
+    <HelpKINode Title="GetExternalScript Method " Url="html/M-Apidaze.SDK.ExternalScripts.IExternalScripts.GetExternalScript.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetExternalScripts method">
+    <HelpKINode Title="GetExternalScripts Method " Url="html/M-Apidaze.SDK.ExternalScripts.ExternalScripts.GetExternalScripts.htm" />
+    <HelpKINode Title="GetExternalScripts Method " Url="html/M-Apidaze.SDK.ExternalScripts.IExternalScripts.GetExternalScripts.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetMediaFilesList method">
+    <HelpKINode Title="GetMediaFilesList Method " Url="html/M-Apidaze.SDK.MediaFiles.IMediaFiles.GetMediaFilesList.htm" />
+    <HelpKINode Title="GetMediaFilesList Method " Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.GetMediaFilesList.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetRecordings method">
+    <HelpKINode Title="GetRecordings Method " Url="html/M-Apidaze.SDK.Recordings.IRecordings.GetRecordings.htm" />
+    <HelpKINode Title="GetRecordings Method " Url="html/M-Apidaze.SDK.Recordings.Recordings.GetRecordings.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetSingleSipUser method">
+    <HelpKINode Title="GetSingleSipUser Method " Url="html/M-Apidaze.SDK.SipUsers.SipUsers.GetSingleSipUser.htm" />
+    <HelpKINode Title="GetSingleSipUser Method " Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.GetSingleSipUser.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetSipUsers method">
+    <HelpKINode Title="GetSipUsers Method " Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.GetSipUsers.htm" />
+    <HelpKINode Title="GetSipUsers Method " Url="html/M-Apidaze.SDK.SipUsers.SipUsers.GetSipUsers.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Hangup class">
+    <HelpKINode Title="Hangup Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Hangup.htm" />
+    <HelpKINode Title="Hangup Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Hangup.htm" />
+    <HelpKINode Title="about Hangup class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Hangup.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Hangup.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Hangup.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IApiActionFactory interface">
+    <HelpKINode Title="IApiActionFactory Interface" Url="html/T-Apidaze.SDK.IApiActionFactory.htm" />
+    <HelpKINode Title="IApiActionFactory Members" Url="html/AllMembers.T-Apidaze.SDK.IApiActionFactory.htm" />
+    <HelpKINode Title="about IApiActionFactory interface" Url="html/T-Apidaze.SDK.IApiActionFactory.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.IApiActionFactory.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.IApiActionFactory.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IApiActionFactory.CreateApplicationsApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateApplicationsApi.htm" />
+  <HelpKINode Title="IApiActionFactory.CreateCallsApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateCallsApi.htm" />
+  <HelpKINode Title="IApiActionFactory.CreateCdrHttpHandlersApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateCdrHttpHandlersApi.htm" />
+  <HelpKINode Title="IApiActionFactory.CreateCredentialsValidatorApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateCredentialsValidatorApi.htm" />
+  <HelpKINode Title="IApiActionFactory.CreateExternalScriptsApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateExternalScriptsApi.htm" />
+  <HelpKINode Title="IApiActionFactory.CreateMediaFilesApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateMediaFilesApi.htm" />
+  <HelpKINode Title="IApiActionFactory.CreateMessageApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateMessageApi.htm" />
+  <HelpKINode Title="IApiActionFactory.CreateRecordingsApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateRecordingsApi.htm" />
+  <HelpKINode Title="IApiActionFactory.CreateSipUsersApi method" Url="html/M-Apidaze.SDK.IApiActionFactory.CreateSipUsersApi.htm" />
+  <HelpKINode Title="IApplications interface">
+    <HelpKINode Title="IApplications Interface" Url="html/T-Apidaze.SDK.Applications.IApplications.htm" />
+    <HelpKINode Title="IApplications Members" Url="html/AllMembers.T-Apidaze.SDK.Applications.IApplications.htm" />
+    <HelpKINode Title="about IApplications interface" Url="html/T-Apidaze.SDK.Applications.IApplications.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Applications.IApplications.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Applications.IApplications.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IApplications.GetApplicationActionByApiKey method" Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationActionByApiKey.htm" />
+  <HelpKINode Title="IApplications.GetApplicationActionById method" Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationActionById.htm" />
+  <HelpKINode Title="IApplications.GetApplicationActionByName method" Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationActionByName.htm" />
+  <HelpKINode Title="IApplications.GetApplications method" Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplications.htm" />
+  <HelpKINode Title="IApplications.GetApplicationsByApiKey method" Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationsByApiKey.htm" />
+  <HelpKINode Title="IApplications.GetApplicationsById method" Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationsById.htm" />
+  <HelpKINode Title="IApplications.GetApplicationsByName method" Url="html/M-Apidaze.SDK.Applications.IApplications.GetApplicationsByName.htm" />
+  <HelpKINode Title="ICalls interface">
+    <HelpKINode Title="ICalls Interface" Url="html/T-Apidaze.SDK.Calls.ICalls.htm" />
+    <HelpKINode Title="ICalls Members" Url="html/AllMembers.T-Apidaze.SDK.Calls.ICalls.htm" />
+    <HelpKINode Title="about ICalls interface" Url="html/T-Apidaze.SDK.Calls.ICalls.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Calls.ICalls.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Calls.ICalls.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ICalls.CreateCall method" Url="html/M-Apidaze.SDK.Calls.ICalls.CreateCall.htm" />
+  <HelpKINode Title="ICalls.DeleteCall method" Url="html/M-Apidaze.SDK.Calls.ICalls.DeleteCall.htm" />
+  <HelpKINode Title="ICalls.GetCall method" Url="html/M-Apidaze.SDK.Calls.ICalls.GetCall.htm" />
+  <HelpKINode Title="ICalls.GetCalls method" Url="html/M-Apidaze.SDK.Calls.ICalls.GetCalls.htm" />
+  <HelpKINode Title="ICdrHttpHandlers interface">
+    <HelpKINode Title="ICdrHttpHandlers Interface" Url="html/T-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.htm" />
+    <HelpKINode Title="ICdrHttpHandlers Members" Url="html/AllMembers.T-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.htm" />
+    <HelpKINode Title="about ICdrHttpHandlers interface" Url="html/T-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ICdrHttpHandlers.CreateCdrHttpHandler method" Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.CreateCdrHttpHandler.htm" />
+  <HelpKINode Title="ICdrHttpHandlers.DeleteCdrHttpHandler method" Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.DeleteCdrHttpHandler.htm" />
+  <HelpKINode Title="ICdrHttpHandlers.GetCdrHttpHandlers method" Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.GetCdrHttpHandlers.htm" />
+  <HelpKINode Title="ICdrHttpHandlers.UpdateCdrHttpHandler method" Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.UpdateCdrHttpHandler.htm" />
+  <HelpKINode Title="ICdrHttpHandlers.UpdateCdrHttpHandlerName method" Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.UpdateCdrHttpHandlerName.htm" />
+  <HelpKINode Title="ICdrHttpHandlers.UpdateCdrHttpHandlerUrl method" Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.UpdateCdrHttpHandlerUrl.htm" />
+  <HelpKINode Title="ICredentialsValidator interface">
+    <HelpKINode Title="ICredentialsValidator Interface" Url="html/T-Apidaze.SDK.Validate.ICredentialsValidator.htm" />
+    <HelpKINode Title="ICredentialsValidator Members" Url="html/AllMembers.T-Apidaze.SDK.Validate.ICredentialsValidator.htm" />
+    <HelpKINode Title="about ICredentialsValidator interface" Url="html/T-Apidaze.SDK.Validate.ICredentialsValidator.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Validate.ICredentialsValidator.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Validate.ICredentialsValidator.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ICredentialsValidator.ValidateCredentials method" Url="html/M-Apidaze.SDK.Validate.ICredentialsValidator.ValidateCredentials.htm" />
+  <HelpKINode Title="Id property">
+    <HelpKINode Title="Id Property " Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Id.htm" />
+    <HelpKINode Title="Id Property " Url="html/P-Apidaze.SDK.SipUsers.SipUser.Id.htm" />
+    <HelpKINode Title="Id Property " Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.Id.htm" />
+    <HelpKINode Title="Id Property " Url="html/P-Apidaze.SDK.Applications.Application.Id.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IExternalScripts interface">
+    <HelpKINode Title="IExternalScripts Interface" Url="html/T-Apidaze.SDK.ExternalScripts.IExternalScripts.htm" />
+    <HelpKINode Title="IExternalScripts Members" Url="html/AllMembers.T-Apidaze.SDK.ExternalScripts.IExternalScripts.htm" />
+    <HelpKINode Title="about IExternalScripts interface" Url="html/T-Apidaze.SDK.ExternalScripts.IExternalScripts.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ExternalScripts.IExternalScripts.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ExternalScripts.IExternalScripts.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IExternalScripts.GetExternalScript method" Url="html/M-Apidaze.SDK.ExternalScripts.IExternalScripts.GetExternalScript.htm" />
+  <HelpKINode Title="IExternalScripts.GetExternalScripts method" Url="html/M-Apidaze.SDK.ExternalScripts.IExternalScripts.GetExternalScripts.htm" />
+  <HelpKINode Title="IExternalScripts.UpdateExternalScript method" Url="html/M-Apidaze.SDK.ExternalScripts.IExternalScripts.UpdateExternalScript.htm" />
+  <HelpKINode Title="IExternalScripts.UpdateExternalScriptUrl method" Url="html/M-Apidaze.SDK.ExternalScripts.IExternalScripts.UpdateExternalScriptUrl.htm" />
+  <HelpKINode Title="IMediaFiles interface">
+    <HelpKINode Title="IMediaFiles Interface" Url="html/T-Apidaze.SDK.MediaFiles.IMediaFiles.htm" />
+    <HelpKINode Title="IMediaFiles Members" Url="html/AllMembers.T-Apidaze.SDK.MediaFiles.IMediaFiles.htm" />
+    <HelpKINode Title="about IMediaFiles interface" Url="html/T-Apidaze.SDK.MediaFiles.IMediaFiles.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.MediaFiles.IMediaFiles.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.MediaFiles.IMediaFiles.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IMediaFiles.DeleteMediaFile method" Url="html/M-Apidaze.SDK.MediaFiles.IMediaFiles.DeleteMediaFile.htm" />
+  <HelpKINode Title="IMediaFiles.DownloadMediaFile method" Url="html/M-Apidaze.SDK.MediaFiles.IMediaFiles.DownloadMediaFile.htm" />
+  <HelpKINode Title="IMediaFiles.GetMediaFilesList method" Url="html/M-Apidaze.SDK.MediaFiles.IMediaFiles.GetMediaFilesList.htm" />
+  <HelpKINode Title="IMediaFiles.ShowMediaFileSummary method" Url="html/M-Apidaze.SDK.MediaFiles.IMediaFiles.ShowMediaFileSummary.htm" />
+  <HelpKINode Title="IMediaFiles.UploadMediaFile method" Url="html/M-Apidaze.SDK.MediaFiles.IMediaFiles.UploadMediaFile.htm" />
+  <HelpKINode Title="IMessage interface">
+    <HelpKINode Title="IMessage Interface" Url="html/T-Apidaze.SDK.Messages.IMessage.htm" />
+    <HelpKINode Title="IMessage Members" Url="html/AllMembers.T-Apidaze.SDK.Messages.IMessage.htm" />
+    <HelpKINode Title="about IMessage interface" Url="html/T-Apidaze.SDK.Messages.IMessage.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Messages.IMessage.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Messages.IMessage.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IMessage.SendTextMessage method" Url="html/M-Apidaze.SDK.Messages.IMessage.SendTextMessage.htm" />
+  <HelpKINode Title="Inbound enumeration member" Url="html/T-Apidaze.SDK.CdrHttpHandlers.CallLeg.htm" />
+  <HelpKINode Title="Inbound field" Url="html/F-Apidaze.SDK.CdrHttpHandlers.CallLeg.Inbound.htm" />
+  <HelpKINode Title="InputTimeoutMillis property">
+    <HelpKINode Title="InputTimeoutMillis Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.InputTimeoutMillis.htm" />
+    <HelpKINode Title="InputTimeoutMillis Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Playback.InputTimeoutMillis.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Intercept class">
+    <HelpKINode Title="Intercept Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Intercept.htm" />
+    <HelpKINode Title="Intercept Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Intercept.htm" />
+    <HelpKINode Title="about Intercept class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Intercept.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Intercept.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Intercept.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Intercept.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Intercept.Uuid property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Intercept.Uuid.htm" />
+  <HelpKINode Title="InternalCallerIdName property" Url="html/P-Apidaze.SDK.SipUsers.CallerIdentity.InternalCallerIdName.htm" />
+  <HelpKINode Title="InternalCallerIdNumber property" Url="html/P-Apidaze.SDK.SipUsers.CallerIdentity.InternalCallerIdNumber.htm" />
+  <HelpKINode Title="InvalidPhoneNumberException class">
+    <HelpKINode Title="InvalidPhoneNumberException Class" Url="html/T-Apidaze.SDK.Exception.InvalidPhoneNumberException.htm" />
+    <HelpKINode Title="InvalidPhoneNumberException Members" Url="html/AllMembers.T-Apidaze.SDK.Exception.InvalidPhoneNumberException.htm" />
+    <HelpKINode Title="about InvalidPhoneNumberException class" Url="html/T-Apidaze.SDK.Exception.InvalidPhoneNumberException.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Exception.InvalidPhoneNumberException.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.Exception.InvalidPhoneNumberException.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Exception.InvalidPhoneNumberException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.Exception.InvalidPhoneNumberException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InvalidPhoneNumberException.InvalidPhoneNumberException constructor" Url="html/M-Apidaze.SDK.Exception.InvalidPhoneNumberException.-ctor.htm" />
+  <HelpKINode Title="IRecordings interface">
+    <HelpKINode Title="IRecordings Interface" Url="html/T-Apidaze.SDK.Recordings.IRecordings.htm" />
+    <HelpKINode Title="IRecordings Members" Url="html/AllMembers.T-Apidaze.SDK.Recordings.IRecordings.htm" />
+    <HelpKINode Title="about IRecordings interface" Url="html/T-Apidaze.SDK.Recordings.IRecordings.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Recordings.IRecordings.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Recordings.IRecordings.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IRecordings.DeleteRecording method" Url="html/M-Apidaze.SDK.Recordings.IRecordings.DeleteRecording.htm" />
+  <HelpKINode Title="IRecordings.DownloadRecording method" Url="html/M-Apidaze.SDK.Recordings.IRecordings.DownloadRecording.htm" />
+  <HelpKINode Title="IRecordings.DownloadRecordingToFile method" Url="html/M-Apidaze.SDK.Recordings.IRecordings.DownloadRecordingToFile.htm" />
+  <HelpKINode Title="IRecordings.DownloadRecordingToFileAsync method" Url="html/M-Apidaze.SDK.Recordings.IRecordings.DownloadRecordingToFileAsync.htm" />
+  <HelpKINode Title="IRecordings.GetRecordings method" Url="html/M-Apidaze.SDK.Recordings.IRecordings.GetRecordings.htm" />
+  <HelpKINode Title="ISipUsers interface">
+    <HelpKINode Title="ISipUsers Interface" Url="html/T-Apidaze.SDK.SipUsers.ISipUsers.htm" />
+    <HelpKINode Title="ISipUsers Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.ISipUsers.htm" />
+    <HelpKINode Title="about ISipUsers interface" Url="html/T-Apidaze.SDK.SipUsers.ISipUsers.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.ISipUsers.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.SipUsers.ISipUsers.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ISipUsers.CreateSipUser method" Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.CreateSipUser.htm" />
+  <HelpKINode Title="ISipUsers.DeleteSipUser method" Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.DeleteSipUser.htm" />
+  <HelpKINode Title="ISipUsers.GetSingleSipUser method" Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.GetSingleSipUser.htm" />
+  <HelpKINode Title="ISipUsers.GetSipUsers method" Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.GetSipUsers.htm" />
+  <HelpKINode Title="ISipUsers.ResetUserPassword method" Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.ResetUserPassword.htm" />
+  <HelpKINode Title="ISipUsers.ShowSipUserStatus method" Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.ShowSipUserStatus.htm" />
+  <HelpKINode Title="ISipUsers.UpdateSipUser method" Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.UpdateSipUser.htm" />
+  <HelpKINode Title="ITALIAN enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="ITALIAN field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.ITALIAN.htm" />
+  <HelpKINode Title="JAPANESE enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="JAPANESE field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.JAPANESE.htm" />
+  <HelpKINode Title="Json enumeration member" Url="html/T-Apidaze.SDK.CdrHttpHandlers.Format.htm" />
+  <HelpKINode Title="Json field" Url="html/F-Apidaze.SDK.CdrHttpHandlers.Format.Json.htm" />
+  <HelpKINode Title="KOREAN enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="KOREAN field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.KOREAN.htm" />
+  <HelpKINode Title="LangEnum enumeration" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="LangEnum property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.LangEnum.htm" />
+  <HelpKINode Title="LangEnum.DANISH field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.DANISH.htm" />
+  <HelpKINode Title="LangEnum.DUTCH field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.DUTCH.htm" />
+  <HelpKINode Title="LangEnum.ENGLISH_AUSTRALIA field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.ENGLISH_AUSTRALIA.htm" />
+  <HelpKINode Title="LangEnum.ENGLISH_UK field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.ENGLISH_UK.htm" />
+  <HelpKINode Title="LangEnum.ENGLISH_US field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.ENGLISH_US.htm" />
+  <HelpKINode Title="LangEnum.FRENCH_CANADA field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.FRENCH_CANADA.htm" />
+  <HelpKINode Title="LangEnum.FRENCH_FRANCE field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.FRENCH_FRANCE.htm" />
+  <HelpKINode Title="LangEnum.GERMAN field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.GERMAN.htm" />
+  <HelpKINode Title="LangEnum.ITALIAN field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.ITALIAN.htm" />
+  <HelpKINode Title="LangEnum.JAPANESE field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.JAPANESE.htm" />
+  <HelpKINode Title="LangEnum.KOREAN field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.KOREAN.htm" />
+  <HelpKINode Title="LangEnum.NONE field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.NONE.htm" />
+  <HelpKINode Title="LangEnum.NORWEGIAN field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.NORWEGIAN.htm" />
+  <HelpKINode Title="LangEnum.POLISH field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.POLISH.htm" />
+  <HelpKINode Title="LangEnum.PORTUGESE_BRAZIL field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.PORTUGESE_BRAZIL.htm" />
+  <HelpKINode Title="LangEnum.PORTUGESE_PORTUGAL field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.PORTUGESE_PORTUGAL.htm" />
+  <HelpKINode Title="LangEnum.RUSSIAN field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.RUSSIAN.htm" />
+  <HelpKINode Title="LangEnum.SLOVAK field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.SLOVAK.htm" />
+  <HelpKINode Title="LangEnum.SPANISH field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.SPANISH.htm" />
+  <HelpKINode Title="LangEnum.SWEDISH field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.SWEDISH.htm" />
+  <HelpKINode Title="LangEnum.TURKISH field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.TURKISH.htm" />
+  <HelpKINode Title="LangEnum.UKRAINIAN field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.UKRAINIAN.htm" />
+  <HelpKINode Title="MALE_A enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.htm" />
+  <HelpKINode Title="MALE_A field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.MALE_A.htm" />
+  <HelpKINode Title="MALE_B enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.htm" />
+  <HelpKINode Title="MALE_B field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.MALE_B.htm" />
+  <HelpKINode Title="MALE_C enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.htm" />
+  <HelpKINode Title="MALE_C field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.MALE_C.htm" />
+  <HelpKINode Title="MaxCallDuration property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.MaxCallDuration.htm" />
+  <HelpKINode Title="MediaFile class">
+    <HelpKINode Title="MediaFile Class" Url="html/T-Apidaze.SDK.MediaFiles.MediaFile.htm" />
+    <HelpKINode Title="MediaFile Members" Url="html/AllMembers.T-Apidaze.SDK.MediaFiles.MediaFile.htm" />
+    <HelpKINode Title="about MediaFile class" Url="html/T-Apidaze.SDK.MediaFiles.MediaFile.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.MediaFiles.MediaFile.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.MediaFiles.MediaFile.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.MediaFiles.MediaFile.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MediaFile.Modified property" Url="html/P-Apidaze.SDK.MediaFiles.MediaFile.Modified.htm" />
+  <HelpKINode Title="MediaFile.Name property" Url="html/P-Apidaze.SDK.MediaFiles.MediaFile.Name.htm" />
+  <HelpKINode Title="MediaFile.Size property" Url="html/P-Apidaze.SDK.MediaFiles.MediaFile.Size.htm" />
+  <HelpKINode Title="MediaFiles class">
+    <HelpKINode Title="MediaFiles Class" Url="html/T-Apidaze.SDK.MediaFiles.MediaFiles.htm" />
+    <HelpKINode Title="MediaFiles Members" Url="html/AllMembers.T-Apidaze.SDK.MediaFiles.MediaFiles.htm" />
+    <HelpKINode Title="about MediaFiles class" Url="html/T-Apidaze.SDK.MediaFiles.MediaFiles.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.MediaFiles.MediaFiles.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.MediaFiles.MediaFiles.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MediaFiles.DeleteMediaFile method" Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.DeleteMediaFile.htm" />
+  <HelpKINode Title="MediaFiles.DownloadMediaFile method" Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.DownloadMediaFile.htm" />
+  <HelpKINode Title="MediaFiles.GetMediaFilesList method" Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.GetMediaFilesList.htm" />
+  <HelpKINode Title="MediaFiles.MediaFiles constructor" Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.-ctor.htm" />
+  <HelpKINode Title="MediaFiles.ShowMediaFileSummary method" Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.ShowMediaFileSummary.htm" />
+  <HelpKINode Title="MediaFiles.UploadMediaFile method" Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.UploadMediaFile.htm" />
+  <HelpKINode Title="Message class">
+    <HelpKINode Title="Message Class" Url="html/T-Apidaze.SDK.Messages.Message.htm" />
+    <HelpKINode Title="Message Members" Url="html/AllMembers.T-Apidaze.SDK.Messages.Message.htm" />
+    <HelpKINode Title="about Message class" Url="html/T-Apidaze.SDK.Messages.Message.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Messages.Message.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.Messages.Message.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Messages.Message.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Message.Message constructor" Url="html/M-Apidaze.SDK.Messages.Message.-ctor.htm" />
+  <HelpKINode Title="Message.SendTextMessage method" Url="html/M-Apidaze.SDK.Messages.Message.SendTextMessage.htm" />
+  <HelpKINode Title="Modified property" Url="html/P-Apidaze.SDK.MediaFiles.MediaFile.Modified.htm" />
+  <HelpKINode Title="Name property">
+    <HelpKINode Title="Name Property " Url="html/P-Apidaze.SDK.Applications.Application.Name.htm" />
+    <HelpKINode Title="Name Property " Url="html/P-Apidaze.SDK.SipUsers.SipUser.Name.htm" />
+    <HelpKINode Title="Name Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Record.Name.htm" />
+    <HelpKINode Title="Name Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Conference.Name.htm" />
+    <HelpKINode Title="Name Property " Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.Name.htm" />
+    <HelpKINode Title="Name Property " Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Name.htm" />
+    <HelpKINode Title="Name Property " Url="html/P-Apidaze.SDK.MediaFiles.MediaFile.Name.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Nodes property" Url="html/P-Apidaze.SDK.ScriptBuilder.ApidazeScript.Nodes.htm" />
+  <HelpKINode Title="NONE enumeration member">
+    <HelpKINode Title="LangEnum Enumeration" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+    <HelpKINode Title="StrategyEnum Enumeration" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.htm" />
+    <HelpKINode Title="VoiceEnum Enumeration" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NONE field">
+    <HelpKINode Title="NONE Field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.NONE.htm" />
+    <HelpKINode Title="NONE Field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.NONE.htm" />
+    <HelpKINode Title="NONE Field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.NONE.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NORWEGIAN enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="NORWEGIAN field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.NORWEGIAN.htm" />
+  <HelpKINode Title="Number class">
+    <HelpKINode Title="Number Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Number.htm" />
+    <HelpKINode Title="Number Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Number.htm" />
+    <HelpKINode Title="about Number class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Number.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Number.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Apidaze.SDK.ScriptBuilder.POCO.Number.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Number.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Number.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Number property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Number.htm" />
+  <HelpKINode Title="NUMBER property" Url="html/P-Apidaze.SDK.Calls.CallType.NUMBER.htm" />
+  <HelpKINode Title="Number.Number constructor" Url="html/Overload-Apidaze.SDK.ScriptBuilder.POCO.Number.-ctor.htm" />
+  <HelpKINode Title="Number.ShouldSerializeTimeout method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Number.ShouldSerializeTimeout.htm" />
+  <HelpKINode Title="Number.Timeout property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Number.Timeout.htm" />
+  <HelpKINode Title="Number.Value property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Number.Value.htm" />
+  <HelpKINode Title="Ok property" Url="html/P-Apidaze.SDK.Common.Response.Ok.htm" />
+  <HelpKINode Title="OnAnswered property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Record.OnAnswered.htm" />
+  <HelpKINode Title="Outbound enumeration member" Url="html/T-Apidaze.SDK.CdrHttpHandlers.CallLeg.htm" />
+  <HelpKINode Title="Outbound field" Url="html/F-Apidaze.SDK.CdrHttpHandlers.CallLeg.Outbound.htm" />
+  <HelpKINode Title="OutboundCallerIdName property" Url="html/P-Apidaze.SDK.SipUsers.CallerIdentity.OutboundCallerIdName.htm" />
+  <HelpKINode Title="OutboundCallerIdNumber property" Url="html/P-Apidaze.SDK.SipUsers.CallerIdentity.OutboundCallerIdNumber.htm" />
+  <HelpKINode Title="Password property" Url="html/P-Apidaze.SDK.SipUsers.Sip.Password.htm" />
+  <HelpKINode Title="PhoneNumber class">
+    <HelpKINode Title="PhoneNumber Class" Url="html/T-Apidaze.SDK.Messages.PhoneNumber.htm" />
+    <HelpKINode Title="PhoneNumber Members" Url="html/AllMembers.T-Apidaze.SDK.Messages.PhoneNumber.htm" />
+    <HelpKINode Title="about PhoneNumber class" Url="html/T-Apidaze.SDK.Messages.PhoneNumber.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Messages.PhoneNumber.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.Messages.PhoneNumber.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Messages.PhoneNumber.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PhoneNumber.PhoneNumber constructor" Url="html/M-Apidaze.SDK.Messages.PhoneNumber.-ctor.htm" />
+  <HelpKINode Title="PhoneNumber.ToString method" Url="html/M-Apidaze.SDK.Messages.PhoneNumber.ToString.htm" />
+  <HelpKINode Title="Playback class">
+    <HelpKINode Title="Playback Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Playback.htm" />
+    <HelpKINode Title="Playback Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Playback.htm" />
+    <HelpKINode Title="about Playback class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Playback.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Playback.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Playback.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Playback.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Playback.Binds property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Playback.Binds.htm" />
+  <HelpKINode Title="Playback.File property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Playback.File.htm" />
+  <HelpKINode Title="Playback.FromFile method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Playback.FromFile.htm" />
+  <HelpKINode Title="Playback.InputTimeoutMillis property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Playback.InputTimeoutMillis.htm" />
+  <HelpKINode Title="Playback.ShouldSerializeInputTimeoutMillis method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Playback.ShouldSerializeInputTimeoutMillis.htm" />
+  <HelpKINode Title="POLISH enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="POLISH field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.POLISH.htm" />
+  <HelpKINode Title="PORTUGESE_BRAZIL enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="PORTUGESE_BRAZIL field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.PORTUGESE_BRAZIL.htm" />
+  <HelpKINode Title="PORTUGESE_PORTUGAL enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="PORTUGESE_PORTUGAL field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.PORTUGESE_PORTUGAL.htm" />
+  <HelpKINode Title="Record class">
+    <HelpKINode Title="Record Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Record.htm" />
+    <HelpKINode Title="Record Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Record.htm" />
+    <HelpKINode Title="about Record class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Record.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Record.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Record.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Record.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Record.ALeg property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Record.ALeg.htm" />
+  <HelpKINode Title="Record.BLeg property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Record.BLeg.htm" />
+  <HelpKINode Title="Record.Name property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Record.Name.htm" />
+  <HelpKINode Title="Record.OnAnswered property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Record.OnAnswered.htm" />
+  <HelpKINode Title="Record.ShouldSerializeALeg method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Record.ShouldSerializeALeg.htm" />
+  <HelpKINode Title="Record.ShouldSerializeBLeg method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Record.ShouldSerializeBLeg.htm" />
+  <HelpKINode Title="Record.ShouldSerializeOnAnswered method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Record.ShouldSerializeOnAnswered.htm" />
+  <HelpKINode Title="Recordings class">
+    <HelpKINode Title="Recordings Class" Url="html/T-Apidaze.SDK.Recordings.Recordings.htm" />
+    <HelpKINode Title="Recordings Members" Url="html/AllMembers.T-Apidaze.SDK.Recordings.Recordings.htm" />
+    <HelpKINode Title="about Recordings class" Url="html/T-Apidaze.SDK.Recordings.Recordings.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Recordings.Recordings.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.Recordings.Recordings.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Recordings.Recordings.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Recordings.DeleteRecording method" Url="html/M-Apidaze.SDK.Recordings.Recordings.DeleteRecording.htm" />
+  <HelpKINode Title="Recordings.DownloadRecording method" Url="html/M-Apidaze.SDK.Recordings.Recordings.DownloadRecording.htm" />
+  <HelpKINode Title="Recordings.DownloadRecordingToFile method" Url="html/M-Apidaze.SDK.Recordings.Recordings.DownloadRecordingToFile.htm" />
+  <HelpKINode Title="Recordings.DownloadRecordingToFileAsync method" Url="html/M-Apidaze.SDK.Recordings.Recordings.DownloadRecordingToFileAsync.htm" />
+  <HelpKINode Title="Recordings.GetRecordings method" Url="html/M-Apidaze.SDK.Recordings.Recordings.GetRecordings.htm" />
+  <HelpKINode Title="Recordings.Recordings constructor" Url="html/M-Apidaze.SDK.Recordings.Recordings.-ctor.htm" />
+  <HelpKINode Title="Regular enumeration member" Url="html/T-Apidaze.SDK.CdrHttpHandlers.Format.htm" />
+  <HelpKINode Title="Regular field" Url="html/F-Apidaze.SDK.CdrHttpHandlers.Format.Regular.htm" />
+  <HelpKINode Title="ResellerCustomerId property" Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.ResellerCustomerId.htm" />
+  <HelpKINode Title="ResetUserPassword method">
+    <HelpKINode Title="ResetUserPassword Method " Url="html/M-Apidaze.SDK.SipUsers.SipUsers.ResetUserPassword.htm" />
+    <HelpKINode Title="ResetUserPassword Method " Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.ResetUserPassword.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Response class">
+    <HelpKINode Title="Response Class" Url="html/T-Apidaze.SDK.Common.Response.htm" />
+    <HelpKINode Title="Response Members" Url="html/AllMembers.T-Apidaze.SDK.Common.Response.htm" />
+    <HelpKINode Title="about Response class" Url="html/T-Apidaze.SDK.Common.Response.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Common.Response.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Common.Response.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.Common.Response.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Response.Failure property" Url="html/P-Apidaze.SDK.Common.Response.Failure.htm" />
+  <HelpKINode Title="Response.Ok property" Url="html/P-Apidaze.SDK.Common.Response.Ok.htm" />
+  <HelpKINode Title="Response.Status property" Url="html/P-Apidaze.SDK.Common.Response.Status.htm" />
+  <HelpKINode Title="ResponseHeader class">
+    <HelpKINode Title="ResponseHeader Class" Url="html/T-Apidaze.SDK.Common.ResponseHeader.htm" />
+    <HelpKINode Title="ResponseHeader Members" Url="html/AllMembers.T-Apidaze.SDK.Common.ResponseHeader.htm" />
+    <HelpKINode Title="about ResponseHeader class" Url="html/T-Apidaze.SDK.Common.ResponseHeader.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.Common.ResponseHeader.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.Common.ResponseHeader.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.Common.ResponseHeader.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ResponseHeader.Connection property" Url="html/P-Apidaze.SDK.Common.ResponseHeader.Connection.htm" />
+  <HelpKINode Title="ResponseHeader.ContentLength property" Url="html/P-Apidaze.SDK.Common.ResponseHeader.ContentLength.htm" />
+  <HelpKINode Title="ResponseHeader.ContentType property" Url="html/P-Apidaze.SDK.Common.ResponseHeader.ContentType.htm" />
+  <HelpKINode Title="ResponseHeader.Date property" Url="html/P-Apidaze.SDK.Common.ResponseHeader.Date.htm" />
+  <HelpKINode Title="Ringback class">
+    <HelpKINode Title="Ringback Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Ringback.htm" />
+    <HelpKINode Title="Ringback Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Ringback.htm" />
+    <HelpKINode Title="about Ringback class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Ringback.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Ringback.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Ringback.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Ringback.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Ringback.FromFile method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Ringback.FromFile.htm" />
+  <HelpKINode Title="Ringback.Url property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Ringback.Url.htm" />
+  <HelpKINode Title="RUSSIAN enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="RUSSIAN field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.RUSSIAN.htm" />
+  <HelpKINode Title="SendTextMessage method">
+    <HelpKINode Title="SendTextMessage Method " Url="html/M-Apidaze.SDK.Messages.Message.SendTextMessage.htm" />
+    <HelpKINode Title="SendTextMessage Method " Url="html/M-Apidaze.SDK.Messages.IMessage.SendTextMessage.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SEQUENCE enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.htm" />
+  <HelpKINode Title="SEQUENCE field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.SEQUENCE.htm" />
+  <HelpKINode Title="SetDuration method">
+    <HelpKINode Title="SetDuration Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Echo.SetDuration.htm" />
+    <HelpKINode Title="SetDuration Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Wait.SetDuration.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ShouldSerializeALeg method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Record.ShouldSerializeALeg.htm" />
+  <HelpKINode Title="ShouldSerializeBLeg method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Record.ShouldSerializeBLeg.htm" />
+  <HelpKINode Title="ShouldSerializeDigitTimeoutMillis method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeDigitTimeoutMillis.htm" />
+  <HelpKINode Title="ShouldSerializeInputTimeoutMillis method">
+    <HelpKINode Title="ShouldSerializeInputTimeoutMillis Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Playback.ShouldSerializeInputTimeoutMillis.htm" />
+    <HelpKINode Title="ShouldSerializeInputTimeoutMillis Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeInputTimeoutMillis.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ShouldSerializeLangEnum method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeLangEnum.htm" />
+  <HelpKINode Title="ShouldSerializeMaxCallDuration method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Dial.ShouldSerializeMaxCallDuration.htm" />
+  <HelpKINode Title="ShouldSerializeOnAnswered method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Record.ShouldSerializeOnAnswered.htm" />
+  <HelpKINode Title="ShouldSerializeStrategy method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Dial.ShouldSerializeStrategy.htm" />
+  <HelpKINode Title="ShouldSerializeTimeout method">
+    <HelpKINode Title="ShouldSerializeTimeout Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.ShouldSerializeTimeout.htm" />
+    <HelpKINode Title="ShouldSerializeTimeout Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.SipUri.ShouldSerializeTimeout.htm" />
+    <HelpKINode Title="ShouldSerializeTimeout Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Dial.ShouldSerializeTimeout.htm" />
+    <HelpKINode Title="ShouldSerializeTimeout Method " Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Number.ShouldSerializeTimeout.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ShouldSerializeVoice method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeVoice.htm" />
+  <HelpKINode Title="ShowMediaFileSummary method">
+    <HelpKINode Title="ShowMediaFileSummary Method " Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.ShowMediaFileSummary.htm" />
+    <HelpKINode Title="ShowMediaFileSummary Method " Url="html/M-Apidaze.SDK.MediaFiles.IMediaFiles.ShowMediaFileSummary.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ShowSipUserStatus method">
+    <HelpKINode Title="ShowSipUserStatus Method " Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.ShowSipUserStatus.htm" />
+    <HelpKINode Title="ShowSipUserStatus Method " Url="html/M-Apidaze.SDK.SipUsers.SipUsers.ShowSipUserStatus.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SIMULTANEOUS enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.htm" />
+  <HelpKINode Title="SIMULTANEOUS field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.SIMULTANEOUS.htm" />
+  <HelpKINode Title="Sip class">
+    <HelpKINode Title="Sip Class" Url="html/T-Apidaze.SDK.SipUsers.Sip.htm" />
+    <HelpKINode Title="Sip Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.Sip.htm" />
+    <HelpKINode Title="about Sip class" Url="html/T-Apidaze.SDK.SipUsers.Sip.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.Sip.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.SipUsers.Sip.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.SipUsers.Sip.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Sip property" Url="html/P-Apidaze.SDK.SipUsers.SipUser.Sip.htm" />
+  <HelpKINode Title="Sip.Password property" Url="html/P-Apidaze.SDK.SipUsers.Sip.Password.htm" />
+  <HelpKINode Title="Sip.Username property" Url="html/P-Apidaze.SDK.SipUsers.Sip.Username.htm" />
+  <HelpKINode Title="SipAccount class">
+    <HelpKINode Title="SipAccount Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.htm" />
+    <HelpKINode Title="SipAccount Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.htm" />
+    <HelpKINode Title="about SipAccount class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Sipaccount property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Sipaccount.htm" />
+  <HelpKINode Title="SipAccount.ShouldSerializeTimeout method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.ShouldSerializeTimeout.htm" />
+  <HelpKINode Title="SipAccount.SipAccount constructor" Url="html/Overload-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.-ctor.htm" />
+  <HelpKINode Title="SipAccount.Timeout property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.Timeout.htm" />
+  <HelpKINode Title="SipAccount.Value property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.Value.htm" />
+  <HelpKINode Title="SipUri class">
+    <HelpKINode Title="SipUri Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.SipUri.htm" />
+    <HelpKINode Title="SipUri Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.SipUri.htm" />
+    <HelpKINode Title="about SipUri class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.SipUri.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.SipUri.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-Apidaze.SDK.ScriptBuilder.POCO.SipUri.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.SipUri.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.SipUri.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SipUri property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.SipUri.htm" />
+  <HelpKINode Title="SipUri.ShouldSerializeTimeout method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.SipUri.ShouldSerializeTimeout.htm" />
+  <HelpKINode Title="SipUri.SipUri constructor" Url="html/Overload-Apidaze.SDK.ScriptBuilder.POCO.SipUri.-ctor.htm" />
+  <HelpKINode Title="SipUri.Timeout property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.SipUri.Timeout.htm" />
+  <HelpKINode Title="SipUri.Value property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.SipUri.Value.htm" />
+  <HelpKINode Title="SipUser class">
+    <HelpKINode Title="SipUser Class" Url="html/T-Apidaze.SDK.SipUsers.SipUser.htm" />
+    <HelpKINode Title="SipUser Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.SipUser.htm" />
+    <HelpKINode Title="about SipUser class" Url="html/T-Apidaze.SDK.SipUsers.SipUser.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.SipUser.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.SipUsers.SipUser.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.SipUsers.SipUser.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SipUser.CallerId property" Url="html/P-Apidaze.SDK.SipUsers.SipUser.CallerId.htm" />
+  <HelpKINode Title="SipUser.CreatedAt property" Url="html/P-Apidaze.SDK.SipUsers.SipUser.CreatedAt.htm" />
+  <HelpKINode Title="SipUser.Id property" Url="html/P-Apidaze.SDK.SipUsers.SipUser.Id.htm" />
+  <HelpKINode Title="SipUser.Name property" Url="html/P-Apidaze.SDK.SipUsers.SipUser.Name.htm" />
+  <HelpKINode Title="SipUser.Sip property" Url="html/P-Apidaze.SDK.SipUsers.SipUser.Sip.htm" />
+  <HelpKINode Title="SipUser.UpdatedAt property" Url="html/P-Apidaze.SDK.SipUsers.SipUser.UpdatedAt.htm" />
+  <HelpKINode Title="SipUsers class">
+    <HelpKINode Title="SipUsers Class" Url="html/T-Apidaze.SDK.SipUsers.SipUsers.htm" />
+    <HelpKINode Title="SipUsers Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.SipUsers.htm" />
+    <HelpKINode Title="about SipUsers class" Url="html/T-Apidaze.SDK.SipUsers.SipUsers.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.SipUsers.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.SipUsers.SipUsers.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.SipUsers.SipUsers.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SipUsers.CreateSipUser method" Url="html/M-Apidaze.SDK.SipUsers.SipUsers.CreateSipUser.htm" />
+  <HelpKINode Title="SipUsers.DeleteSipUser method" Url="html/M-Apidaze.SDK.SipUsers.SipUsers.DeleteSipUser.htm" />
+  <HelpKINode Title="SipUsers.GetSingleSipUser method" Url="html/M-Apidaze.SDK.SipUsers.SipUsers.GetSingleSipUser.htm" />
+  <HelpKINode Title="SipUsers.GetSipUsers method" Url="html/M-Apidaze.SDK.SipUsers.SipUsers.GetSipUsers.htm" />
+  <HelpKINode Title="SipUsers.ResetUserPassword method" Url="html/M-Apidaze.SDK.SipUsers.SipUsers.ResetUserPassword.htm" />
+  <HelpKINode Title="SipUsers.ShowSipUserStatus method" Url="html/M-Apidaze.SDK.SipUsers.SipUsers.ShowSipUserStatus.htm" />
+  <HelpKINode Title="SipUsers.SipUsers constructor" Url="html/M-Apidaze.SDK.SipUsers.SipUsers.-ctor.htm" />
+  <HelpKINode Title="SipUsers.UpdateSipUser method" Url="html/M-Apidaze.SDK.SipUsers.SipUsers.UpdateSipUser.htm" />
+  <HelpKINode Title="SipUserStatus class">
+    <HelpKINode Title="SipUserStatus Class" Url="html/T-Apidaze.SDK.SipUsers.SipUserStatus.htm" />
+    <HelpKINode Title="SipUserStatus Members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.SipUserStatus.htm" />
+    <HelpKINode Title="about SipUserStatus class" Url="html/T-Apidaze.SDK.SipUsers.SipUserStatus.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.SipUsers.SipUserStatus.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.SipUsers.SipUserStatus.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.SipUsers.SipUserStatus.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SipUserStatus.Status property" Url="html/P-Apidaze.SDK.SipUsers.SipUserStatus.Status.htm" />
+  <HelpKINode Title="SipUserStatus.Uri property" Url="html/P-Apidaze.SDK.SipUsers.SipUserStatus.Uri.htm" />
+  <HelpKINode Title="SIP_ACCOUNT property" Url="html/P-Apidaze.SDK.Calls.CallType.SIP_ACCOUNT.htm" />
+  <HelpKINode Title="Size property" Url="html/P-Apidaze.SDK.MediaFiles.MediaFile.Size.htm" />
+  <HelpKINode Title="SLOVAK enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="SLOVAK field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.SLOVAK.htm" />
+  <HelpKINode Title="SmsUrl property" Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.SmsUrl.htm" />
+  <HelpKINode Title="SPANISH enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="SPANISH field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.SPANISH.htm" />
+  <HelpKINode Title="Speak class">
+    <HelpKINode Title="Speak Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Speak.htm" />
+    <HelpKINode Title="Speak Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Speak.htm" />
+    <HelpKINode Title="about Speak class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Speak.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Speak.htm" />
+    <HelpKINode Title="constructor" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Speak.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Speak.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Speak.Binds property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.Binds.htm" />
+  <HelpKINode Title="Speak.DigitTimeoutMillis property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.DigitTimeoutMillis.htm" />
+  <HelpKINode Title="Speak.InputTimeoutMillis property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.InputTimeoutMillis.htm" />
+  <HelpKINode Title="Speak.LangEnum property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.LangEnum.htm" />
+  <HelpKINode Title="Speak.ShouldSerializeDigitTimeoutMillis method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeDigitTimeoutMillis.htm" />
+  <HelpKINode Title="Speak.ShouldSerializeInputTimeoutMillis method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeInputTimeoutMillis.htm" />
+  <HelpKINode Title="Speak.ShouldSerializeLangEnum method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeLangEnum.htm" />
+  <HelpKINode Title="Speak.ShouldSerializeVoice method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeVoice.htm" />
+  <HelpKINode Title="Speak.Speak constructor" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.-ctor.htm" />
+  <HelpKINode Title="Speak.Text property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.Text.htm" />
+  <HelpKINode Title="Speak.Voice property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.Voice.htm" />
+  <HelpKINode Title="Speak.WithText method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.WithText.htm" />
+  <HelpKINode Title="Status property">
+    <HelpKINode Title="Status Property " Url="html/P-Apidaze.SDK.Common.Response.Status.htm" />
+    <HelpKINode Title="Status Property " Url="html/P-Apidaze.SDK.SipUsers.SipUserStatus.Status.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StatusCode property" Url="html/P-Apidaze.SDK.Exception.ApidazeRestException.StatusCode.htm" />
+  <HelpKINode Title="Strategy property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Strategy.htm" />
+  <HelpKINode Title="StrategyEnum enumeration" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.htm" />
+  <HelpKINode Title="StrategyEnum.NONE field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.NONE.htm" />
+  <HelpKINode Title="StrategyEnum.SEQUENCE field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.SEQUENCE.htm" />
+  <HelpKINode Title="StrategyEnum.SIMULTANEOUS field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.SIMULTANEOUS.htm" />
+  <HelpKINode Title="SWEDISH enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="SWEDISH field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.SWEDISH.htm" />
+  <HelpKINode Title="Text property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.Text.htm" />
+  <HelpKINode Title="Timeout property">
+    <HelpKINode Title="Timeout Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.SipUri.Timeout.htm" />
+    <HelpKINode Title="Timeout Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Timeout.htm" />
+    <HelpKINode Title="Timeout Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Number.Timeout.htm" />
+    <HelpKINode Title="Timeout Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.Timeout.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ToString method" Url="html/M-Apidaze.SDK.Messages.PhoneNumber.ToString.htm" />
+  <HelpKINode Title="TURKISH enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="TURKISH field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.TURKISH.htm" />
+  <HelpKINode Title="UKRAINIAN enumeration member" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" />
+  <HelpKINode Title="UKRAINIAN field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.UKRAINIAN.htm" />
+  <HelpKINode Title="Update(Of T) method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.Update--1.htm" />
+  <HelpKINode Title="Update&lt;T&gt; method" Url="html/M-Apidaze.SDK.Base.BaseApiClient.Update--1.htm" />
+  <HelpKINode Title="UpdateCdrHttpHandler method">
+    <HelpKINode Title="UpdateCdrHttpHandler Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.UpdateCdrHttpHandler.htm" />
+    <HelpKINode Title="UpdateCdrHttpHandler Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.UpdateCdrHttpHandler.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UpdateCdrHttpHandlerName method">
+    <HelpKINode Title="UpdateCdrHttpHandlerName Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.UpdateCdrHttpHandlerName.htm" />
+    <HelpKINode Title="UpdateCdrHttpHandlerName Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.UpdateCdrHttpHandlerName.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UpdateCdrHttpHandlerUrl method">
+    <HelpKINode Title="UpdateCdrHttpHandlerUrl Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.UpdateCdrHttpHandlerUrl.htm" />
+    <HelpKINode Title="UpdateCdrHttpHandlerUrl Method " Url="html/M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.UpdateCdrHttpHandlerUrl.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UpdatedAt property">
+    <HelpKINode Title="UpdatedAt Property " Url="html/P-Apidaze.SDK.SipUsers.SipUser.UpdatedAt.htm" />
+    <HelpKINode Title="UpdatedAt Property " Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.UpdatedAt.htm" />
+    <HelpKINode Title="UpdatedAt Property " Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.UpdatedAt.htm" />
+    <HelpKINode Title="UpdatedAt Property " Url="html/P-Apidaze.SDK.Applications.Application.UpdatedAt.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UpdateExternalScript method">
+    <HelpKINode Title="UpdateExternalScript Method " Url="html/M-Apidaze.SDK.ExternalScripts.IExternalScripts.UpdateExternalScript.htm" />
+    <HelpKINode Title="UpdateExternalScript Method " Url="html/M-Apidaze.SDK.ExternalScripts.ExternalScripts.UpdateExternalScript.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UpdateExternalScriptUrl method">
+    <HelpKINode Title="UpdateExternalScriptUrl Method " Url="html/M-Apidaze.SDK.ExternalScripts.ExternalScripts.UpdateExternalScriptUrl.htm" />
+    <HelpKINode Title="UpdateExternalScriptUrl Method " Url="html/M-Apidaze.SDK.ExternalScripts.IExternalScripts.UpdateExternalScriptUrl.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UpdateSipUser method">
+    <HelpKINode Title="UpdateSipUser Method " Url="html/M-Apidaze.SDK.SipUsers.SipUsers.UpdateSipUser.htm" />
+    <HelpKINode Title="UpdateSipUser Method " Url="html/M-Apidaze.SDK.SipUsers.ISipUsers.UpdateSipUser.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UploadMediaFile method">
+    <HelpKINode Title="UploadMediaFile Method " Url="html/M-Apidaze.SDK.MediaFiles.IMediaFiles.UploadMediaFile.htm" />
+    <HelpKINode Title="UploadMediaFile Method " Url="html/M-Apidaze.SDK.MediaFiles.MediaFiles.UploadMediaFile.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Uri property" Url="html/P-Apidaze.SDK.SipUsers.SipUserStatus.Uri.htm" />
+  <HelpKINode Title="Url property">
+    <HelpKINode Title="Url Property " Url="html/P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Url.htm" />
+    <HelpKINode Title="Url Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Ringback.Url.htm" />
+    <HelpKINode Title="Url Property " Url="html/P-Apidaze.SDK.ExternalScripts.ExternalScript.Url.htm" />
+  </HelpKINode>
+  <HelpKINode Title="URL property" Url="html/P-Apidaze.SDK.Calls.Call.URL.htm" />
+  <HelpKINode Title="Username property" Url="html/P-Apidaze.SDK.SipUsers.Sip.Username.htm" />
+  <HelpKINode Title="Uuid property">
+    <HelpKINode Title="Uuid Property " Url="html/P-Apidaze.SDK.Calls.Call.Uuid.htm" />
+    <HelpKINode Title="Uuid Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Intercept.Uuid.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ValidateCredentials method">
+    <HelpKINode Title="ValidateCredentials Method " Url="html/M-Apidaze.SDK.Validate.CredentialsValidator.ValidateCredentials.htm" />
+    <HelpKINode Title="ValidateCredentials Method " Url="html/M-Apidaze.SDK.Validate.ICredentialsValidator.ValidateCredentials.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Value property">
+    <HelpKINode Title="Value Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.SipUri.Value.htm" />
+    <HelpKINode Title="Value Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.Value.htm" />
+    <HelpKINode Title="Value Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Bind.Value.htm" />
+    <HelpKINode Title="Value Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Number.Value.htm" />
+    <HelpKINode Title="Value Property " Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Wait.Value.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Voice property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Speak.Voice.htm" />
+  <HelpKINode Title="VoiceEnum enumeration" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.htm" />
+  <HelpKINode Title="VoiceEnum.FEMALE_A field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.FEMALE_A.htm" />
+  <HelpKINode Title="VoiceEnum.FEMALE_B field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.FEMALE_B.htm" />
+  <HelpKINode Title="VoiceEnum.FEMALE_C field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.FEMALE_C.htm" />
+  <HelpKINode Title="VoiceEnum.MALE_A field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.MALE_A.htm" />
+  <HelpKINode Title="VoiceEnum.MALE_B field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.MALE_B.htm" />
+  <HelpKINode Title="VoiceEnum.MALE_C field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.MALE_C.htm" />
+  <HelpKINode Title="VoiceEnum.NONE field" Url="html/F-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.NONE.htm" />
+  <HelpKINode Title="Wait class">
+    <HelpKINode Title="Wait Class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Wait.htm" />
+    <HelpKINode Title="Wait Members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Wait.htm" />
+    <HelpKINode Title="about Wait class" Url="html/T-Apidaze.SDK.ScriptBuilder.POCO.Wait.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Wait.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Wait.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Wait.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Wait.SetDuration method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Wait.SetDuration.htm" />
+  <HelpKINode Title="Wait.Value property" Url="html/P-Apidaze.SDK.ScriptBuilder.POCO.Wait.Value.htm" />
+  <HelpKINode Title="WithText method" Url="html/M-Apidaze.SDK.ScriptBuilder.POCO.Speak.WithText.htm" />
+  <HelpKINode Title="WorkTag property" Url="html/P-Apidaze.SDK.Calls.Call.WorkTag.htm" />
+  <HelpKINode Title="Xml enumeration member">
+    <HelpKINode Title="CallLeg Enumeration" Url="html/T-Apidaze.SDK.CdrHttpHandlers.CallLeg.htm" />
+    <HelpKINode Title="Format Enumeration" Url="html/T-Apidaze.SDK.CdrHttpHandlers.Format.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Xml field">
+    <HelpKINode Title="Xml Field" Url="html/F-Apidaze.SDK.CdrHttpHandlers.CallLeg.Xml.htm" />
+    <HelpKINode Title="Xml Field" Url="html/F-Apidaze.SDK.CdrHttpHandlers.Format.Xml.htm" />
+  </HelpKINode>
+</HelpKI>

@@ -1,0 +1,2192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Apidaze.SDK</name>
+  </assembly>
+  <members>
+    <member name="T:Apidaze.SDK.Applications.Application">
+      <summary>
+       Class Application.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.Applications.Application.Id">
+      <summary>
+       Gets or sets the identifier.
+   </summary>
+      <value>The identifier.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Applications.Application.AccountId">
+      <summary>
+       Gets or sets the account identifier.
+   </summary>
+      <value>The account identifier.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Applications.Application.ApplicationId">
+      <summary>
+       Gets or sets the application identifier.
+   </summary>
+      <value>The application identifier.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Applications.Application.ApiKey">
+      <summary>
+       Gets or sets the API key.
+   </summary>
+      <value>The API key.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Applications.Application.ApiSecret">
+      <summary>
+       Gets or sets the API secret.
+   </summary>
+      <value>The API secret.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Applications.Application.Name">
+      <summary>
+       Gets or sets the name.
+   </summary>
+      <value>The name.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Applications.Application.FsAddress">
+      <summary>
+       Gets or sets the fs address.
+   </summary>
+      <value>The fs address.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Applications.Application.CreatedAt">
+      <summary>
+       Gets or sets the created at.
+   </summary>
+      <value>The created at.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Applications.Application.UpdatedAt">
+      <summary>
+       Gets or sets the updated at.
+   </summary>
+      <value>The updated at.</value>
+    </member>
+    <member name="T:Apidaze.SDK.Applications.Applications">
+      <summary>
+       Class Applications.
+       Implements the <see cref="T:Apidaze.SDK.Base.BaseApiClient" />
+       Implements the <see cref="T:Apidaze.SDK.Applications.IApplications" /></summary>
+      <seealso cref="T:Apidaze.SDK.Base.BaseApiClient" />
+      <seealso cref="T:Apidaze.SDK.Applications.IApplications" />
+    </member>
+    <member name="M:Apidaze.SDK.Applications.Applications.GetApplications">
+      <summary>
+       Gets the applications.
+   </summary>
+      <returns>List&lt;Application&gt;.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Applications.Applications.GetApplicationsByApiKey(System.String)">
+      <summary>
+       Gets the applications by API key.
+   </summary>
+      <param name="apiKey">The API key.</param>
+      <returns>List&lt;Application&gt;.</returns>
+      <exception cref="T:System.ArgumentException">apiKey must not be null</exception>
+   * Returns an application details retrieved by api key.
+   * @param apiKey api key of the application to fetch
+   * @return a list containing one element with application details if it exists, otherwise an empty list
+   * @throws IOException
+   * @throws HttpResponseException
+   */
+</member>
+    <member name="M:Apidaze.SDK.Applications.Applications.GetApplicationsById(System.Int64)">
+      <summary>
+       Gets the applications by identifier.
+   </summary>
+      <param name="id">The identifier.</param>
+      <returns>List&lt;Application&gt;.</returns>
+   * Returns an application details retrieved by application id.
+   * @param id id of the application to fetch
+   * @return a list containing one element with application details if it exists, otherwise an empty list
+   * @throws IOException
+   * @throws HttpResponseException
+   */
+</member>
+    <member name="M:Apidaze.SDK.Applications.Applications.GetApplicationsByName(System.String)">
+      <summary>
+       Gets the name of the applications by.
+   </summary>
+      <param name="name">The name.</param>
+      <returns>List&lt;Application&gt;.</returns>
+      <exception cref="T:System.ArgumentException">name must not be null</exception>
+   * Returns an application details retrieved by api key.
+   * @param name the name of the application to fetch
+   * @return a list containing one element with application details if it exists, otherwise an empty list
+   * @throws IOException
+   * @throws HttpResponseException
+   */
+</member>
+    <member name="M:Apidaze.SDK.Applications.Applications.GetApplicationActionById(System.Int64)">
+      <inheritdoc />
+    </member>
+    <member name="M:Apidaze.SDK.Applications.Applications.GetApplicationActionByApiKey(System.String)">
+      <inheritdoc />
+    </member>
+    <member name="M:Apidaze.SDK.Applications.Applications.GetApplicationActionByName(System.String)">
+      <inheritdoc />
+    </member>
+    <member name="M:Apidaze.SDK.Applications.Applications.CreateInstance(IRestClient,Credentials)">
+      <summary>
+       Creates the instance.
+   </summary>
+      <param name="client">The client.</param>
+      <param name="credentials">The credentials.</param>
+      <returns>Applications.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.Applications.IApplications">
+      <summary>
+       Interface IApplications
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.Applications.IApplications.GetApplications">
+      <summary>
+       Gets the applications.
+   </summary>
+      <returns>List&lt;Application&gt;.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Applications.IApplications.GetApplicationsById(System.Int64)">   Returns an application details retrieved by application id.
+   @param id id of the application to fetch
+   @return a list containing one element with application details if it exists, otherwise an empty list
+   @throws IOException
+   @throws HttpResponseException
+   <summary>
+       Gets the applications by identifier.
+   </summary><param name="id">The identifier.</param><returns>List&lt;Application&gt;.</returns></member>
+    <member name="M:Apidaze.SDK.Applications.IApplications.GetApplicationsByApiKey(System.String)">   Returns an application details retrieved by api key.
+   @param apiKey api key of the application to fetch
+   @return a list containing one element with application details if it exists, otherwise an empty list
+   @throws IOException
+   @throws HttpResponseException
+   <summary>
+       Gets the applications by API key.
+   </summary><param name="apiKey">The API key.</param><returns>List&lt;Application&gt;.</returns></member>
+    <member name="M:Apidaze.SDK.Applications.IApplications.GetApplicationsByName(System.String)">   Returns an application details retrieved by api key.
+   @param name the name of the application to fetch
+   @return a list containing one element with application details if it exists, otherwise an empty list
+   @throws IOException
+   @throws HttpResponseException
+   <summary>
+       Gets the name of the applications by.
+   </summary><param name="name">The name.</param><returns>List&lt;Application&gt;.</returns></member>
+    <member name="M:Apidaze.SDK.Applications.IApplications.GetApplicationActionById(System.Int64)">
+      <summary>
+       Gets the application action by identifier.
+   </summary>
+      <param name="id">The identifier.</param>
+      <returns>IApiActionFactory.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Applications.IApplications.GetApplicationActionByApiKey(System.String)">
+      <summary>
+       Gets the application action by API key.
+   </summary>
+      <param name="apiKey">The API key.</param>
+      <returns>IApiActionFactory.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Applications.IApplications.GetApplicationActionByName(System.String)">
+      <summary>
+       Gets the name of the application action by.
+   </summary>
+      <param name="name">The name.</param>
+      <returns>IApiActionFactory.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.Base.BaseApiClient">
+      <summary>
+       Class BaseApiClient.
+       Implements the <see cref="T:Apidaze.SDK.Base.IBaseApiClient" /></summary>
+      <seealso cref="T:Apidaze.SDK.Base.IBaseApiClient" />
+    </member>
+    <member name="M:Apidaze.SDK.Base.BaseApiClient.Create``1(Dictionary{System.String, System.String},System.String)">
+      <summary>
+       Creates the specified request parameters.
+   </summary>
+      <typeparam name="T">
+      </typeparam>
+      <param name="requestParams">The request parameters.</param>
+      <returns>T.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Base.BaseApiClient.FindAll``1">
+      <summary>
+       Finds all.
+   </summary>
+      <typeparam name="T">
+      </typeparam>
+      <returns>IEnumerable&lt;T&gt;.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Base.BaseApiClient.FindByParameter``1(System.String,System.String)">
+      <summary>
+       Finds the by parameter.
+   </summary>
+      <typeparam name="T">
+      </typeparam>
+      <param name="name">The name.</param>
+      <param name="value">The value.</param>
+      <returns>IEnumerable&lt;T&gt;.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Base.BaseApiClient.FindById``1(System.String,System.String)">
+      <summary>
+       Finds the by identifier.
+   </summary>
+      <typeparam name="T">
+      </typeparam>
+      <param name="id">The identifier.</param>
+      <returns>T.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Base.BaseApiClient.Update``1(System.String,Dictionary{System.String, System.String})">
+      <summary>
+       Updates the specified identifier.
+   </summary>
+      <typeparam name="T">
+      </typeparam>
+      <param name="id">The identifier.</param>
+      <param name="requestParams">The request parameters.</param>
+      <returns>T.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Base.BaseApiClient.Delete(System.String)">
+      <summary>
+       Deletes the specified identifier.
+   </summary>
+      <param name="id">The identifier.</param>
+    </member>
+    <member name="T:Apidaze.SDK.Base.Credentials">
+      <summary>
+       The credentials to use in authenticate in Apidaze REST API
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.Base.Credentials.#ctor(System.String,System.String)">
+      <summary>
+       Initializes a new instance of the <see cref="T:plivo.Authentication.BasicAuth" /> class.
+   </summary>
+      <param name="apiKey">Auth identifier.</param>
+      <param name="apiSecret">The API secret.</param>
+      <exception cref="T:Apidaze.SDK.Exception.ApidazeCredentialsException">Authentication credentials not supplied</exception>
+    </member>
+    <member name="P:Apidaze.SDK.Base.Credentials.ApiKey">
+      <summary>
+       Gets or sets the authentication identifier.
+   </summary>
+      <value>The authentication identifier.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Base.Credentials.ApiSecret">
+      <summary>
+       Gets or sets the authentication token.
+   </summary>
+      <value>The authentication token.</value>
+    </member>
+    <member name="T:Apidaze.SDK.Calls.Call">
+      <summary>
+       Class Call.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.Calls.Call.Uuid">
+      <summary>
+       Gets or sets the UUID.
+   </summary>
+      <value>The UUID.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Calls.Call.Created">
+      <summary>
+       Gets or sets the created.
+   </summary>
+      <value>The created.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Calls.Call.CallerIdName">
+      <summary>
+       Gets or sets the name of the caller identifier.
+   </summary>
+      <value>The name of the caller identifier.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Calls.Call.CallerIdNumber">
+      <summary>
+       Gets or sets the caller identifier number.
+   </summary>
+      <value>The caller identifier number.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Calls.Call.Destination">
+      <summary>
+       Gets or sets the destination.
+   </summary>
+      <value>The destination.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Calls.Call.CallUuid">
+      <summary>
+       Gets or sets the call UUID.
+   </summary>
+      <value>The call UUID.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Calls.Call.CallerId">
+      <summary>
+       Gets or sets the caller identifier.
+   </summary>
+      <value>The caller identifier.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Calls.Call.URL">
+      <summary>
+       Gets or sets the URL.
+   </summary>
+      <value>The URL.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Calls.Call.WorkTag">
+      <summary>
+       Gets or sets the work tag.
+   </summary>
+      <value>The work tag.</value>
+    </member>
+    <member name="T:Apidaze.SDK.Calls.Calls">
+      <summary>
+       Class Calls.
+       Implements the <see cref="T:Apidaze.SDK.Base.BaseApiClient" />
+       Implements the <see cref="T:Apidaze.SDK.Calls.ICalls" /></summary>
+      <seealso cref="T:Apidaze.SDK.Base.BaseApiClient" />
+      <seealso cref="T:Apidaze.SDK.Calls.ICalls" />
+    </member>
+    <member name="M:Apidaze.SDK.Calls.Calls.#ctor(IRestClient,Credentials)">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.Calls.Calls" /> class.
+   </summary>
+      <param name="client">The client.</param>
+      <param name="credentials">The credentials.</param>
+    </member>
+    <member name="M:Apidaze.SDK.Calls.Calls.CreateCall(PhoneNumber,System.String,System.String,System.String)">
+      <summary>
+       Creates the call.
+   </summary>
+      <param name="callerId">The caller identifier.</param>
+      <param name="origin">The origin.</param>
+      <param name="destination">The destination.</param>
+      <param name="callType">Type of the call.</param>
+      <returns>Guid.</returns>
+      <exception cref="T:System.ArgumentException">origin must not be null or empty</exception>
+      <exception cref="T:System.ArgumentException">destination must not be null or empty</exception>
+      <exception cref="T:Apidaze.SDK.Calls.CreateCallResponseException">
+      </exception>
+      <exception cref="T:System.ArgumentException">origin must not be null or empty</exception>
+      <exception cref="T:System.ArgumentException">destination must not be null or empty</exception>
+    </member>
+    <member name="M:Apidaze.SDK.Calls.Calls.GetCalls">
+      <summary>
+       Gets the calls.
+   </summary>
+      <returns>List&lt;Call&gt;.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Calls.Calls.GetCall(Guid)">
+      <summary>
+       Gets the call.
+   </summary>
+      <param name="id">The identifier.</param>
+      <returns>Call.</returns>
+      <exception cref="T:System.ArgumentException">id must not be null</exception>
+      <exception cref="T:System.ArgumentException">id must not be null</exception>
+    </member>
+    <member name="M:Apidaze.SDK.Calls.Calls.DeleteCall(Guid)">
+      <summary>
+       Deletes the call.
+   </summary>
+      <param name="id">The identifier.</param>
+      <exception cref="T:System.ArgumentException">id must not be null</exception>
+      <exception cref="T:Apidaze.SDK.Calls.DeleteCallResponseException">
+      </exception>
+      <exception cref="T:System.ArgumentException">id must not be null</exception>
+    </member>
+    <member name="T:Apidaze.SDK.Calls.CallType">
+      <summary>
+       Class CallType.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.Calls.CallType.NUMBER">
+      <summary>
+       Gets the number.
+   </summary>
+      <value>The number.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Calls.CallType.SIP_ACCOUNT">
+      <summary>
+       Gets the sip account.
+   </summary>
+      <value>The sip account.</value>
+    </member>
+    <member name="T:Apidaze.SDK.Calls.CreateCallResponseException">
+      <summary>
+       Class CreateCallResponseException.
+       Implements the <see cref="T:System.SystemException" /></summary>
+      <seealso cref="T:System.SystemException" />
+    </member>
+    <member name="M:Apidaze.SDK.Calls.CreateCallResponseException.#ctor(System.String)">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.Calls.CreateCallResponseException" /> class.
+   </summary>
+      <param name="message">The message.</param>
+    </member>
+    <member name="T:Apidaze.SDK.Calls.DateFormatConverter">
+      <summary>
+       Class DateFormatConverter.
+       Implements the <see cref="Newtonsoft.Json.Converters.IsoDateTimeConverter" /></summary>
+      <seealso cref="Newtonsoft.Json.Converters.IsoDateTimeConverter" />
+    </member>
+    <member name="M:Apidaze.SDK.Calls.DateFormatConverter.#ctor(System.String)">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.Calls.DateFormatConverter" /> class.
+   </summary>
+      <param name="format">The format.</param>
+    </member>
+    <member name="T:Apidaze.SDK.Calls.DeleteCallResponseException">
+      <summary>
+       Class DeleteCallResponseException.
+       Implements the <see cref="T:System.SystemException" /></summary>
+      <seealso cref="T:System.SystemException" />
+    </member>
+    <member name="M:Apidaze.SDK.Calls.DeleteCallResponseException.#ctor(System.String)">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.Calls.DeleteCallResponseException" /> class.
+   </summary>
+      <param name="message">The message.</param>
+    </member>
+    <member name="T:Apidaze.SDK.Calls.ICalls">
+      <summary>
+       Interface ICalls
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.Calls.ICalls.CreateCall(PhoneNumber,System.String,System.String,System.String)">
+      <summary>
+       Creates the call.
+   </summary>
+      <param name="callerId">The caller identifier.</param>
+      <param name="origin">The origin.</param>
+      <param name="destination">The destination.</param>
+      <param name="callType">Type of the call.</param>
+      <returns>Guid.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Calls.ICalls.GetCalls">
+      <summary>
+       Gets the calls.
+   </summary>
+      <returns>List&lt;Call&gt;.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Calls.ICalls.GetCall(Guid)">
+      <summary>
+       Gets the call.
+   </summary>
+      <param name="id">The identifier.</param>
+      <returns>Call.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Calls.ICalls.DeleteCall(Guid)">
+      <summary>
+       Deletes the call.
+   </summary>
+      <param name="id">The identifier.</param>
+    </member>
+    <member name="T:Apidaze.SDK.CdrHttpHandlers.CallLeg">
+      <summary>
+       Enum CallLeg
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.CdrHttpHandlers.CallLeg.Inbound">
+      <summary>
+       The inbound
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.CdrHttpHandlers.CallLeg.Outbound">
+      <summary>
+       The outbound
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.CdrHttpHandlers.CallLeg.Xml">
+      <summary>
+       The XML
+   </summary>
+    </member>
+    <member name="T:Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler">
+      <summary>
+       Class CdrHttpHandler.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Id">
+      <summary>
+       Gets or sets the identifier.
+   </summary>
+      <value>The identifier.</value>
+    </member>
+    <member name="P:Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Name">
+      <summary>
+       Gets or sets the name.
+   </summary>
+      <value>The name.</value>
+    </member>
+    <member name="P:Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Format">
+      <summary>
+       Gets or sets the format.
+   </summary>
+      <value>The format.</value>
+    </member>
+    <member name="P:Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.CallLeg">
+      <summary>
+       Gets or sets the call leg.
+   </summary>
+      <value>The call leg.</value>
+    </member>
+    <member name="P:Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.CreatedAt">
+      <summary>
+       Gets or sets the created at.
+   </summary>
+      <value>The created at.</value>
+    </member>
+    <member name="P:Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.UpdatedAt">
+      <summary>
+       Gets or sets the updated at.
+   </summary>
+      <value>The updated at.</value>
+    </member>
+    <member name="T:Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers">
+      <summary>
+       Class CdrHttpHandlers.
+       Implements the <see cref="T:Apidaze.SDK.Base.BaseApiClient" />
+       Implements the <see cref="T:Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers" /></summary>
+      <seealso cref="T:Apidaze.SDK.Base.BaseApiClient" />
+      <seealso cref="T:Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers" />
+    </member>
+    <member name="M:Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.#ctor(IRestClient,Credentials)">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers" /> class.
+   </summary>
+      <param name="client">The client.</param>
+      <param name="credentials">The credentials.</param>
+    </member>
+    <member name="M:Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.GetCdrHttpHandlers">
+      <summary>
+       Gets the CDR HTTP handlers.
+   </summary>
+      <returns>List&lt;CdrHttpHandler&gt;.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.CreateCdrHttpHandler(System.String,Uri)">
+      <summary>
+       Creates the CDR HTTP handler.
+   </summary>
+      <param name="name">The name.</param>
+      <param name="url">The URL.</param>
+      <returns>CdrHttpHandler.</returns>
+      <exception cref="T:System.ArgumentException">origin must not be null or empty</exception>
+      <exception cref="T:System.ArgumentException">destination must not be null or empty</exception>
+    </member>
+    <member name="M:Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.UpdateCdrHttpHandler(System.Int64,System.String,Uri)">
+      <summary>
+       Updates the CDR HTTP handler.
+   </summary>
+      <param name="id">The identifier.</param>
+      <param name="name">The name.</param>
+      <param name="url">The URL.</param>
+      <returns>CdrHttpHandler.</returns>
+      <exception cref="T:System.ArgumentException">origin must not be null or empty</exception>
+      <exception cref="T:System.ArgumentException">destination must not be null or empty</exception>
+    </member>
+    <member name="M:Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.UpdateCdrHttpHandlerName(System.Int64,System.String)">
+      <summary>
+       Updates the name of the CDR HTTP handler.
+   </summary>
+      <param name="id">The identifier.</param>
+      <param name="name">The name.</param>
+      <returns>CdrHttpHandler.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.UpdateCdrHttpHandlerUrl(System.Int64,Uri)">
+      <summary>
+       Updates the CDR HTTP handler URL.
+   </summary>
+      <param name="id">The identifier.</param>
+      <param name="url">The URL.</param>
+      <returns>CdrHttpHandler.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.DeleteCdrHttpHandler(System.Int64)">
+      <summary>
+       Deletes the CDR HTTP handler.
+   </summary>
+      <param name="id">The identifier.</param>
+    </member>
+    <member name="T:Apidaze.SDK.CdrHttpHandlers.Format">
+      <summary>
+       Enum Format
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.CdrHttpHandlers.Format.Regular">
+      <summary>
+       The regular
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.CdrHttpHandlers.Format.Json">
+      <summary>
+       The json
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.CdrHttpHandlers.Format.Xml">
+      <summary>
+       The XML
+   </summary>
+    </member>
+    <member name="T:Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers">
+      <summary>
+       Interface ICdrHttpHandlers
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.GetCdrHttpHandlers">
+      <summary>
+       Gets the CDR HTTP handlers.
+   </summary>
+      <returns>List&lt;CdrHttpHandler&gt;.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.CreateCdrHttpHandler(System.String,Uri)">
+      <summary>
+       Creates the CDR HTTP handler.
+   </summary>
+      <param name="name">The name.</param>
+      <param name="url">The URL.</param>
+      <returns>CdrHttpHandler.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.UpdateCdrHttpHandler(System.Int64,System.String,Uri)">
+      <summary>
+       Updates the CDR HTTP handler.
+   </summary>
+      <param name="id">The identifier.</param>
+      <param name="name">The name.</param>
+      <param name="url">The URL.</param>
+      <returns>CdrHttpHandler.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.UpdateCdrHttpHandlerName(System.Int64,System.String)">
+      <summary>
+       Updates the name of the CDR HTTP handler.
+   </summary>
+      <param name="id">The identifier.</param>
+      <param name="name">The name.</param>
+      <returns>CdrHttpHandler.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.UpdateCdrHttpHandlerUrl(System.Int64,Uri)">
+      <summary>
+       Updates the CDR HTTP handler URL.
+   </summary>
+      <param name="id">The identifier.</param>
+      <param name="url">The URL.</param>
+      <returns>CdrHttpHandler.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.DeleteCdrHttpHandler(System.Int64)">
+      <summary>
+       Deletes the CDR HTTP handler.
+   </summary>
+      <param name="id">The identifier.</param>
+    </member>
+    <member name="T:Apidaze.SDK.Common.Response">
+      <summary>
+       Class Response.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.Common.Response.Ok">
+      <summary>
+       Gets or sets the ok.
+   </summary>
+      <value>The ok.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Common.Response.Failure">
+      <summary>
+       Gets or sets the failure.
+   </summary>
+      <value>The failure.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Common.Response.Status">
+      <summary>
+       Gets or sets the status.
+   </summary>
+      <value>The status.</value>
+    </member>
+    <member name="T:Apidaze.SDK.Common.ResponseHeader">
+      <summary>
+       Class ResponseHeader.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.Common.ResponseHeader.Connection">
+      <summary>
+       Gets or sets the connection.
+   </summary>
+      <value>The connection.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Common.ResponseHeader.ContentLength">
+      <summary>
+       Gets or sets the length of the content.
+   </summary>
+      <value>The length of the content.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Common.ResponseHeader.ContentType">
+      <summary>
+       Gets or sets the type of the content.
+   </summary>
+      <value>The type of the content.</value>
+    </member>
+    <member name="P:Apidaze.SDK.Common.ResponseHeader.Date">
+      <summary>
+       Gets or sets the date.
+   </summary>
+      <value>The date.</value>
+    </member>
+    <member name="T:Apidaze.SDK.Exception.ApidazeCredentialsException">
+      <summary>
+       Class ApidazeCredentialsException.
+       Implements the <see cref="T:Apidaze.SDK.Exception.ApidazeRestException" /></summary>
+      <seealso cref="T:Apidaze.SDK.Exception.ApidazeRestException" />
+    </member>
+    <member name="M:Apidaze.SDK.Exception.ApidazeCredentialsException.#ctor(System.String,System.UInt32)">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.Exception.ApidazeCredentialsException" /> class.
+   </summary>
+      <param name="message">The message.</param>
+      <param name="statusCode">The status code.</param>
+    </member>
+    <member name="T:Apidaze.SDK.Exception.ApidazeRestException">
+      <summary>
+       Class ApidazeRestException.
+       Implements the <see cref="T:System.Exception" /></summary>
+      <seealso cref="T:System.Exception" />
+    </member>
+    <member name="M:Apidaze.SDK.Exception.ApidazeRestException.#ctor(System.String,System.UInt32)">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.Exception.ApidazeRestException" /> class.
+   </summary>
+      <param name="message">The message.</param>
+      <param name="statusCode">The status code.</param>
+    </member>
+    <member name="P:Apidaze.SDK.Exception.ApidazeRestException.StatusCode">
+      <summary>
+       Gets or sets the status code.
+   </summary>
+      <value>The status code.</value>
+    </member>
+    <member name="T:Apidaze.SDK.Exception.InvalidPhoneNumberException">
+      <summary>
+       Class InvalidPhoneNumberException.
+       Implements the <see cref="T:System.Exception" /></summary>
+      <seealso cref="T:System.Exception" />
+    </member>
+    <member name="M:Apidaze.SDK.Exception.InvalidPhoneNumberException.#ctor(System.String)">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.Exception.InvalidPhoneNumberException" /> class.
+   </summary>
+      <param name="message">The message.</param>
+    </member>
+    <member name="T:Apidaze.SDK.ExternalScripts.ExternalScript">
+      <summary>
+       Class ExternalScript.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.ExternalScripts.ExternalScript.Id">
+      <summary>
+       Gets or sets the identifier.
+   </summary>
+      <value>The identifier.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ExternalScripts.ExternalScript.Name">
+      <summary>
+       Gets or sets the name.
+   </summary>
+      <value>The name.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ExternalScripts.ExternalScript.Url">
+      <summary>
+       Gets or sets the URL.
+   </summary>
+      <value>The URL.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ExternalScripts.ExternalScript.SmsUrl">
+      <summary>
+       Gets or sets the SMS URL.
+   </summary>
+      <value>The SMS URL.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ExternalScripts.ExternalScript.ResellerCustomerId">
+      <summary>
+       Gets or sets the reseller customer identifier.
+   </summary>
+      <value>The reseller customer identifier.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ExternalScripts.ExternalScript.DevCustomerId">
+      <summary>
+       Gets or sets the dev customer identifier.
+   </summary>
+      <value>The dev customer identifier.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ExternalScripts.ExternalScript.CreatedAt">
+      <summary>
+       Gets or sets the created at.
+   </summary>
+      <value>The created at.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ExternalScripts.ExternalScript.UpdatedAt">
+      <summary>
+       Gets or sets the updated at.
+   </summary>
+      <value>The updated at.</value>
+    </member>
+    <member name="T:Apidaze.SDK.ExternalScripts.ExternalScripts">
+      <summary>
+       Class ExternalScripts.
+       Implements the <see cref="T:Apidaze.SDK.Base.BaseApiClient" />
+       Implements the <see cref="T:Apidaze.SDK.ExternalScripts.IExternalScripts" /></summary>
+      <seealso cref="T:Apidaze.SDK.Base.BaseApiClient" />
+      <seealso cref="T:Apidaze.SDK.ExternalScripts.IExternalScripts" />
+    </member>
+    <member name="M:Apidaze.SDK.ExternalScripts.ExternalScripts.#ctor(IRestClient,Credentials)">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.ExternalScripts.ExternalScripts" /> class.
+   </summary>
+      <param name="client">The client.</param>
+      <param name="credentials">The credentials.</param>
+    </member>
+    <member name="M:Apidaze.SDK.ExternalScripts.ExternalScripts.GetExternalScripts">
+      <summary>
+       Gets the external scripts.
+   </summary>
+      <returns>List&lt;ExternalScript&gt;.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.ExternalScripts.ExternalScripts.GetExternalScript(System.Int64)">
+      <summary>
+       Gets the external script.
+   </summary>
+      <param name="id">The identifier.</param>
+      <returns>ExternalScript.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.ExternalScripts.ExternalScripts.UpdateExternalScript(System.Int64,System.String,Uri)">
+      <summary>
+       Updates the external script.
+   </summary>
+      <param name="id">The identifier.</param>
+      <param name="name">The name.</param>
+      <param name="url">The URL.</param>
+      <returns>ExternalScript.</returns>
+      <exception cref="T:System.ArgumentException">origin must not be null or empty</exception>
+      <exception cref="T:System.ArgumentException">destination must not be null or empty</exception>
+      <exception cref="T:System.ArgumentException">name: maximum " + MaxNameLength + " characters long</exception>
+      <exception cref="T:System.ArgumentException">origin must not be null or empty</exception>
+      <exception cref="T:System.ArgumentException">destination must not be null or empty</exception>
+      <exception cref="T:System.ArgumentException">name: maximum " + MaxNameLength + " characters long</exception>
+    </member>
+    <member name="M:Apidaze.SDK.ExternalScripts.ExternalScripts.UpdateExternalScriptUrl(System.Int64,Uri)">
+      <summary>
+       Updates the external script URL.
+   </summary>
+      <param name="id">The identifier.</param>
+      <param name="url">The URL.</param>
+      <returns>ExternalScript.</returns>
+      <exception cref="T:System.ArgumentException">destination must not be null or empty</exception>
+      <exception cref="T:System.ArgumentException">destination must not be null or empty</exception>
+    </member>
+    <member name="T:Apidaze.SDK.ExternalScripts.IExternalScripts">
+      <summary>
+       Interface IExternalScripts
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.ExternalScripts.IExternalScripts.GetExternalScripts">
+      <summary>
+       Gets the external scripts.
+   </summary>
+      <returns>List&lt;ExternalScript&gt;.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.ExternalScripts.IExternalScripts.GetExternalScript(System.Int64)">
+      <summary>
+       Gets the external script.
+   </summary>
+      <param name="id">The identifier.</param>
+      <returns>ExternalScript.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.ExternalScripts.IExternalScripts.UpdateExternalScript(System.Int64,System.String,Uri)">
+      <summary>
+       Updates the external script.
+   </summary>
+      <param name="id">The identifier.</param>
+      <param name="name">The name.</param>
+      <param name="url">The URL.</param>
+      <returns>ExternalScript.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.ExternalScripts.IExternalScripts.UpdateExternalScriptUrl(System.Int64,Uri)">
+      <summary>
+       Updates the external script URL.
+   </summary>
+      <param name="id">The identifier.</param>
+      <param name="url">The URL.</param>
+      <returns>ExternalScript.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.MediaFiles.IMediaFiles">
+      <summary>
+       Interface IMediaFiles.
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.MediaFiles.IMediaFiles.GetMediaFilesList(System.Boolean,System.String,System.String,System.Int32)">
+      <summary>
+       Gets the media files list.
+   </summary>
+      <param name="details">if set to <c>true</c> [details].</param>
+      <param name="filter">The filter.</param>
+      <param name="lastToken">The last token.</param>
+      <param name="maxItems">The maximum items.</param>
+      <returns>List&lt;dynamic&gt;.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.MediaFiles.IMediaFiles.UploadMediaFile(System.String,System.String)">
+      <summary>
+       Uploads the media file.
+   </summary>
+      <param name="name">The name.</param>
+      <param name="mediaFile">The media file.</param>
+      <returns>dynamic.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.MediaFiles.IMediaFiles.DeleteMediaFile(System.String)">
+      <summary>
+       Deletes the media file.
+   </summary>
+      <param name="fileName">Name of the file.</param>
+    </member>
+    <member name="M:Apidaze.SDK.MediaFiles.IMediaFiles.DownloadMediaFile(System.String)">
+      <summary>
+       Downloads the media file.
+   </summary>
+      <param name="fileName">Name of the file.</param>
+      <returns>MemoryStream.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.MediaFiles.IMediaFiles.ShowMediaFileSummary(System.String)">
+      <summary>
+       Shows the media file summary.
+   </summary>
+      <param name="fileName">Name of the file.</param>
+      <returns>dynamic.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.MediaFiles.MediaFile">
+      <summary>
+       Class MediaFile.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.MediaFiles.MediaFile.Name">
+      <summary>
+       Gets or sets the name.
+   </summary>
+      <value>The name.</value>
+    </member>
+    <member name="P:Apidaze.SDK.MediaFiles.MediaFile.Size">
+      <summary>
+       Gets or sets the size.
+   </summary>
+      <value>The size.</value>
+    </member>
+    <member name="P:Apidaze.SDK.MediaFiles.MediaFile.Modified">
+      <summary>
+       Gets or sets the modified.
+   </summary>
+      <value>The modified.</value>
+    </member>
+    <member name="T:Apidaze.SDK.MediaFiles.MediaFiles">
+      <summary>
+       Class MediaFiles.
+       Implements the <see cref="T:Apidaze.SDK.Base.BaseApiClient" />
+       Implements the <see cref="T:Apidaze.SDK.MediaFiles.IMediaFiles" /></summary>
+      <seealso cref="T:Apidaze.SDK.Base.BaseApiClient" />
+      <seealso cref="T:Apidaze.SDK.MediaFiles.IMediaFiles" />
+    </member>
+    <member name="M:Apidaze.SDK.MediaFiles.MediaFiles.#ctor(IRestClient,Credentials)">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.MediaFiles.MediaFiles" /> class.
+   </summary>
+      <param name="client">The client.</param>
+      <param name="credentials">The credentials.</param>
+    </member>
+    <member name="M:Apidaze.SDK.MediaFiles.MediaFiles.GetMediaFilesList(System.Boolean,System.String,System.String,System.Int32)">
+      <summary>
+       Gets the media files list.
+   </summary>
+      <param name="details">if set to <c>true</c> [details].</param>
+      <param name="filter">The filter.</param>
+      <param name="lastToken">The last token.</param>
+      <param name="maxItems">The maximum items.</param>
+      <returns>List&lt;dynamic&gt;.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.MediaFiles.MediaFiles.UploadMediaFile(System.String,System.String)">
+      <summary>
+       Uploads the media file.
+   </summary>
+      <param name="name">The name.</param>
+      <param name="mediaFile">The media file.</param>
+      <returns>dynamic.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.MediaFiles.MediaFiles.DownloadMediaFile(System.String)">
+      <summary>
+       Downloads the media file.
+   </summary>
+      <param name="fileName">Name of the file.</param>
+      <returns>MemoryStream.</returns>
+      <exception cref="T:System.ArgumentException">fileName must not be null or empty</exception>
+    </member>
+    <member name="M:Apidaze.SDK.MediaFiles.MediaFiles.ShowMediaFileSummary(System.String)">
+      <summary>
+       Shows the media file summary.
+   </summary>
+      <param name="fileName">Name of the file.</param>
+      <returns>dynamic.</returns>
+      <exception cref="T:System.NotImplementedException">
+      </exception>
+    </member>
+    <member name="T:Apidaze.SDK.Messages.IMessage">
+      <summary>
+       Interface IMessage
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.Messages.IMessage.SendTextMessage(PhoneNumber,PhoneNumber,System.String)">
+      <summary>
+       Sends the text message.
+   </summary>
+      <param name="from">From.</param>
+      <param name="to">To.</param>
+      <param name="bodyMessage">The body message.</param>
+      <returns>System.String.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.Messages.Message">
+      <summary>
+       Class Message.
+       Implements the <see cref="T:Apidaze.SDK.Base.BaseApiClient" />
+       Implements the <see cref="T:Apidaze.SDK.Messages.IMessage" /></summary>
+      <seealso cref="T:Apidaze.SDK.Base.BaseApiClient" />
+      <seealso cref="T:Apidaze.SDK.Messages.IMessage" />
+    </member>
+    <member name="M:Apidaze.SDK.Messages.Message.#ctor(IRestClient,Credentials)">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.Messages.Message" /> class.
+   </summary>
+      <param name="client">The client.</param>
+      <param name="credentials">The credentials.</param>
+    </member>
+    <member name="M:Apidaze.SDK.Messages.Message.SendTextMessage(PhoneNumber,PhoneNumber,System.String)">
+      <summary>
+       Sends the text message.
+   </summary>
+      <param name="from">From.</param>
+      <param name="to">To.</param>
+      <param name="bodyMessage">The body message.</param>
+      <returns>System.String.</returns>
+      <exception cref="T:System.ArgumentException">body must not be null or empty</exception>
+      <exception cref="T:System.ArgumentException">body must not be null or empty</exception>
+    </member>
+    <member name="T:Apidaze.SDK.Messages.PhoneNumber">
+      <summary>
+       Class PhoneNumber.
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.Messages.PhoneNumber.#ctor(System.String)">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.Messages.PhoneNumber" /> class.
+   </summary>
+      <param name="number">The number.</param>
+    </member>
+    <member name="M:Apidaze.SDK.Messages.PhoneNumber.ToString">
+      <summary>
+       Returns a <see cref="T:System.String" /> that represents this instance.
+   </summary>
+      <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.Recordings.IRecordings">
+      <summary>
+       Interface IRecordings
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.Recordings.IRecordings.GetRecordings">
+      <summary>
+       Gets the recordings list.
+   </summary>
+      <returns>IEnumerable&lt;System.String&gt;.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Recordings.IRecordings.DownloadRecording(System.String)">
+      <summary>
+       Downloads the recording.
+   </summary>
+      <param name="sourceFileName">Name of the source file.</param>
+      <returns>Stream.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Recordings.IRecordings.DownloadRecordingToFile(System.String,System.String)">
+      <summary>
+       Downloads the recording to file.
+   </summary>
+      <param name="sourceFileName">Name of the source file.</param>
+      <param name="target">The target.</param>
+      <returns>FileInfo.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Recordings.IRecordings.DeleteRecording(System.String)">
+      <summary>
+       Deletes the recording.
+   </summary>
+      <param name="fileName">Name of the file.</param>
+    </member>
+    <member name="T:Apidaze.SDK.Recordings.Recordings">
+      <summary>
+       Class Recordings.
+       Implements the <see cref="T:Apidaze.SDK.Base.BaseApiClient" />
+       Implements the <see cref="T:Apidaze.SDK.Recordings.IRecordings" /></summary>
+      <seealso cref="T:Apidaze.SDK.Base.BaseApiClient" />
+      <seealso cref="T:Apidaze.SDK.Recordings.IRecordings" />
+    </member>
+    <member name="M:Apidaze.SDK.Recordings.Recordings.#ctor(IRestClient,Credentials)">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.Recordings.Recordings" /> class.
+   </summary>
+      <param name="client">The client.</param>
+      <param name="credentials">The credentials.</param>
+    </member>
+    <member name="M:Apidaze.SDK.Recordings.Recordings.GetRecordings">
+      <summary>
+       Gets the recordings list.
+   </summary>
+      <returns>IEnumerable&lt;System.String&gt;.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Recordings.Recordings.DownloadRecording(System.String)">
+      <summary>
+       Downloads the recording.
+   </summary>
+      <param name="sourceFileName">Name of the source file.</param>
+      <returns>Stream.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.Recordings.Recordings.DownloadRecordingToFile(System.String,System.String)">
+      <summary>
+       Downloads the recording to file.
+   </summary>
+      <param name="sourceFileName">Name of the source file.</param>
+      <param name="target">The target.</param>
+      <returns>FileInfo.</returns>
+      <exception cref="T:System.InvalidOperationException">
+      </exception>
+    </member>
+    <member name="M:Apidaze.SDK.Recordings.Recordings.DeleteRecording(System.String)">
+      <summary>
+       Deletes the recording.
+   </summary>
+      <param name="fileName">Name of the file.</param>
+      <exception cref="T:System.ArgumentException">file name must not be null or empty</exception>
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.Answer">
+      <summary>
+   Class Answer.
+   Implements the <see cref="Object" /></summary>
+      <seealso cref="Object" />
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.Bind">
+      <summary>
+       Class Bind.
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Bind.#ctor">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.ScriptBuilder.POCO.Bind" /> class.
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Bind.#ctor(System.String,System.String)">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.ScriptBuilder.POCO.Bind" /> class.
+   </summary>
+      <param name="action">The action.</param>
+      <param name="value">The value.</param>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Bind.Action">
+      <summary>
+       Gets or sets the action.
+   </summary>
+      <value>The action.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Bind.Value">
+      <summary>
+       Gets or sets the value.
+   </summary>
+      <value>The value.</value>
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.Conference">
+      <summary>
+       Class Conference.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Conference.Name">
+      <summary>
+       Gets or sets the name.
+   </summary>
+      <value>The name.</value>
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.Dial">
+      <summary>
+       Class Dial.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Dial.Number">
+      <summary>
+       Gets or sets the number.
+   </summary>
+      <value>The number.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Dial.Sipaccount">
+      <summary>
+       Gets or sets the sipaccount.
+   </summary>
+      <value>The sipaccount.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Dial.SipUri">
+      <summary>
+       Gets or sets the sip URI.
+   </summary>
+      <value>The sip URI.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Dial.Timeout">
+      <summary>
+       Gets or sets the timeout.
+   </summary>
+      <value>The timeout.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Dial.MaxCallDuration">
+      <summary>
+       Gets or sets the maximum duration of the call.
+   </summary>
+      <value>The maximum duration of the call.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Dial.Strategy">
+      <summary>
+       Gets or sets the strategy.
+   </summary>
+      <value>The strategy.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Dial.Action">
+      <summary>
+       Gets or sets the action.
+   </summary>
+      <value>The action.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Dial.AnswerUrl">
+      <summary>
+       Gets or sets the answer URL.
+   </summary>
+      <value>The answer URL.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Dial.CallerHangupUrl">
+      <summary>
+       Gets or sets the caller hangup URL.
+   </summary>
+      <value>The caller hangup URL.</value>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Dial.ShouldSerializeTimeout">
+      <summary>
+       Serialize a Timeout conditionally.
+       The result of the method determines whether the property is serialized. If the method returns true then the
+       property will be serialized,
+       if it returns false then the property will be skipped.
+   </summary>
+      <returns>
+        <c>true</c> if value greater than 0, <c>false</c> otherwise.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Dial.ShouldSerializeMaxCallDuration">
+      <summary>
+       Serialize a MaxCallDuration conditionally.
+       The result of the method determines whether the property is serialized. If the method returns true then the
+       property will be serialized,
+       if it returns false then the property will be skipped.
+   </summary>
+      <returns>
+        <c>true</c> if value greater than 0, <c>false</c> otherwise.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Dial.ShouldSerializeStrategy">
+      <summary>
+       Serialize a Strategy conditionally.
+       The result of the method determines whether the property is serialized. If the method returns true then the
+       property will be serialized,
+       if it returns false then the property will be skipped.
+   </summary>
+      <returns>
+        <c>true</c> if value not equal default, <c>false</c> otherwise.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.Echo">
+      <summary>
+       Class Echo.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Echo.Delay">
+      <summary>
+       Gets or sets the delay.
+   </summary>
+      <value>The delay.</value>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Echo.SetDuration(System.Double)">
+      <summary>
+       Sets the duration.
+   </summary>
+      <param name="delay">The delay.</param>
+      <returns>Echo.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.Hangup">
+      <summary>
+   Class Hangup.
+   Implements the <see cref="Object" /></summary>
+      <seealso cref="Object" />
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.Intercept">
+      <summary>
+       Class Intercept.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Intercept.Uuid">
+      <summary>
+       Gets or sets the UUID.
+   </summary>
+      <value>The UUID.</value>
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.LangEnum">
+      <summary>
+       Enum LangEnum
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.ITALIAN">
+      <summary>
+       The italian
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.JAPANESE">
+      <summary>
+       The japanese
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.NORWEGIAN">
+      <summary>
+       The norwegian
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.PORTUGESE_BRAZIL">
+      <summary>
+       The portugese brazil
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.PORTUGESE_PORTUGAL">
+      <summary>
+       The portugese portugal
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.SLOVAK">
+      <summary>
+       The slovak
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.SPANISH">
+      <summary>
+       The spanish
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.SWEDISH">
+      <summary>
+       The swedish
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.UKRAINIAN">
+      <summary>
+       The ukrainian
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.ENGLISH_AUSTRALIA">
+      <summary>
+       The english australia
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.ENGLISH_UK">
+      <summary>
+       The english uk
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.FRENCH_CANADA">
+      <summary>
+       The french canada
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.FRENCH_FRANCE">
+      <summary>
+       The french france
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.GERMAN">
+      <summary>
+       The german
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.KOREAN">
+      <summary>
+       The korean
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.POLISH">
+      <summary>
+       The polish
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.RUSSIAN">
+      <summary>
+       The russian
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.LangEnum.TURKISH">
+      <summary>
+       The turkish
+   </summary>
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.Number">
+      <summary>
+   Class Number.
+   Implements the <see cref="T:System.Object" /></summary>
+      <seealso cref="T:System.Object" />
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Number.#ctor">
+      <summary>
+   Initializes a new instance of the <see cref="T:Apidaze.SDK.ScriptBuilder.POCO.Number" /> class.
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Number.#ctor(System.String,System.Double)">
+      <summary>
+   Initializes a new instance of the <see cref="T:Apidaze.SDK.ScriptBuilder.POCO.Number" /> class.
+   </summary>
+      <param name="value">The value.</param>
+      <param name="timeout">The timeout.</param>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Number.Timeout">
+      <summary>
+   Gets or sets the timeout.
+   </summary>
+      <value>The timeout.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Number.Value">
+      <summary>
+   Gets or sets the value.
+   </summary>
+      <value>The value.</value>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Number.ShouldSerializeTimeout">
+      <summary>
+   Serialize a Timeout conditionally.
+   The result of the method determines whether the property is serialized. If the method returns true then the
+   property will be serialized,
+   if it returns false then the property will be skipped.
+   </summary>
+      <returns>
+        <c>true</c> if value greater than 0, <c>false</c> otherwise.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.Playback">
+      <summary>
+       Class Playback.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Playback.InputTimeoutMillis">
+      <summary>
+       Gets or sets the input timeout millis.
+   </summary>
+      <value>The input timeout millis.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Playback.File">
+      <summary>
+       Gets or sets the file.
+   </summary>
+      <value>The file.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Playback.Binds">
+      <summary>
+       Gets or sets the binds.
+   </summary>
+      <value>The binds.</value>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Playback.FromFile(System.String)">
+      <summary>
+       Froms the file.
+   </summary>
+      <param name="file">The file.</param>
+      <returns>Playback.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Playback.ShouldSerializeInputTimeoutMillis">
+      <summary>
+       Serialize a InputTimeoutMillis conditionally.
+       The result of the method determines whether the property is serialized. If the method returns true then the
+       property will be serialized,
+       if it returns false then the property will be skipped.
+   </summary>
+      <returns>
+        <c>true</c> if value greater than 0, <c>false</c> otherwise.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.Record">
+      <summary>
+       Class Record.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Record.Name">
+      <summary>
+       Gets or sets the name.
+   </summary>
+      <value>The name.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Record.OnAnswered">
+      <summary>
+       Gets or sets a value indicating whether [on answered].
+   </summary>
+      <value>
+        <c>true</c> if [on answered]; otherwise, <c>false</c>.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Record.ALeg">
+      <summary>
+       Gets or sets a value indicating whether [a leg].
+   </summary>
+      <value>
+        <c>true</c> if [a leg]; otherwise, <c>false</c>.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Record.BLeg">
+      <summary>
+       Gets or sets a value indicating whether [b leg].
+   </summary>
+      <value>
+        <c>true</c> if [b leg]; otherwise, <c>false</c>.</value>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Record.ShouldSerializeOnAnswered">
+      <summary>
+       Serialize a OnAnswered conditionally.
+       The result of the method determines whether the property is serialized. If the method returns true then the
+       property will be serialized,
+       if it returns false then the property will be skipped.
+   </summary>
+      <returns>
+        <c>true</c> if value true <c>false</c> otherwise.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Record.ShouldSerializeALeg">
+      <summary>
+       Serialize a ALeg conditionally.
+       The result of the method determines whether the property is serialized. If the method returns true then the
+       property will be serialized,
+       if it returns false then the property will be skipped.
+   </summary>
+      <returns>
+        <c>true</c> if value not true <c>false</c> otherwise.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Record.ShouldSerializeBLeg">
+      <summary>
+       Serialize a BLeg conditionally.
+       The result of the method determines whether the property is serialized. If the method returns true then the
+       property will be serialized,
+       if it returns false then the property will be skipped.
+   </summary>
+      <returns>
+        <c>true</c> if value not true <c>false</c> otherwise.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.Ringback">
+      <summary>
+       Class Ringback.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Ringback.Url">
+      <summary>
+       Gets or sets the URL.
+   </summary>
+      <value>The URL.</value>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Ringback.FromFile(System.String)">
+      <summary>
+       Froms the file.
+   </summary>
+      <param name="url">The URL.</param>
+      <returns>Ringback.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.SipAccount">
+      <summary>
+   Class SipAccount.
+   Implements the <see cref="T:System.Object" /></summary>
+      <seealso cref="T:System.Object" />
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.SipAccount.#ctor">
+      <summary>
+   Initializes a new instance of the <see cref="T:Apidaze.SDK.ScriptBuilder.POCO.SipAccount" /> class.
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.SipAccount.#ctor(System.String,System.Double)">
+      <summary>
+   Initializes a new instance of the <see cref="T:Apidaze.SDK.ScriptBuilder.POCO.SipAccount" /> class.
+   </summary>
+      <param name="value">The value.</param>
+      <param name="timeout">The timeout.</param>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.SipAccount.Timeout">
+      <summary>
+   Gets or sets the timeout.
+   </summary>
+      <value>The timeout.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.SipAccount.Value">
+      <summary>
+   Gets or sets the value.
+   </summary>
+      <value>The value.</value>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.SipAccount.ShouldSerializeTimeout">
+      <summary>
+   Serialize a Timeout conditionally.
+   The result of the method determines whether the property is serialized. If the method returns true then the
+   property will be serialized,
+   if it returns false then the property will be skipped.
+   </summary>
+      <returns>
+        <c>true</c> if value greater than 0, <c>false</c> otherwise.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.SipUri">
+      <summary>
+   Class SipUri.
+   Implements the <see cref="T:System.Object" /></summary>
+      <seealso cref="T:System.Object" />
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.SipUri.#ctor">
+      <summary>
+   Initializes a new instance of the <see cref="T:Apidaze.SDK.ScriptBuilder.POCO.SipUri" /> class.
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.SipUri.#ctor(System.String,System.Double)">
+      <summary>
+   Initializes a new instance of the <see cref="T:Apidaze.SDK.ScriptBuilder.POCO.SipUri" /> class.
+   </summary>
+      <param name="value">The value.</param>
+      <param name="timeout">The timeout.</param>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.SipUri.Timeout">
+      <summary>
+   Gets or sets the timeout.
+   </summary>
+      <value>The timeout.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.SipUri.Value">
+      <summary>
+   Gets or sets the value.
+   </summary>
+      <value>The value.</value>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.SipUri.ShouldSerializeTimeout">
+      <summary>
+   Serialize a Timeout conditionally.
+   The result of the method determines whether the property is serialized. If the method returns true then the
+   property will be serialized,
+   if it returns false then the property will be skipped.
+   </summary>
+      <returns>
+        <c>true</c> if value greater than 0, <c>false</c> otherwise.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.Speak">
+      <summary>
+       Class Speak.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Speak.Text">
+      <summary>
+       Gets or sets the text.
+   </summary>
+      <value>The text.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Speak.Binds">
+      <summary>
+       Gets or sets the binds.
+   </summary>
+      <value>The binds.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Speak.LangEnum">
+      <summary>
+       Gets or sets the language enum.
+   </summary>
+      <value>The language enum.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Speak.Voice">
+      <summary>
+       Gets or sets the voice.
+   </summary>
+      <value>The voice.</value>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Speak.InputTimeoutMillis">
+      <summary>
+       Gets or sets the input timeout millis.
+   </summary>
+      <value>The input timeout millis.</value>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeInputTimeoutMillis">
+      <summary>
+       Serialize a InputTimeoutMillis conditionally.
+       The result of the method determines whether the property is serialized. If the method returns true then the
+       property will be serialized,
+       if it returns false then the property will be skipped.
+   </summary>
+      <returns>
+        <c>true</c> if value greater than 0, <c>false</c> otherwise.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeDigitTimeoutMillis">
+      <summary>
+       Serialize a DigitTimeoutMillis conditionally.
+       The result of the method determines whether the property is serialized. If the method returns true then the
+       property will be serialized,
+       if it returns false then the property will be skipped.
+   </summary>
+      <returns>
+        <c>true</c> if value greater than 0, <c>false</c> otherwise.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeLangEnum">
+      <summary>
+       Serialize a LangEnum conditionally.
+       The result of the method determines whether the property is serialized. If the method returns true then the
+       property will be serialized,
+       if it returns false then the property will be skipped.
+   </summary>
+      <returns>
+        <c>true</c> if value not equal default <c>false</c> otherwise.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeVoice">
+      <summary>
+       Serialize a Voice conditionally.
+       The result of the method determines whether the property is serialized. If the method returns true then the
+       property will be serialized,
+       if it returns false then the property will be skipped.
+   </summary>
+      <returns>
+        <c>true</c> if value not equal default <c>false</c> otherwise.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Speak.WithText(System.String)">
+      <summary>
+       Withes the text.
+   </summary>
+      <param name="text">The text.</param>
+      <returns>Speak.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum">
+      <summary>
+   Enum StrategyEnum
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.NONE">
+      <summary>
+   The none
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.SIMULTANEOUS">
+      <summary>
+   The simultaneous
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.SEQUENCE">
+      <summary>
+   The sequence
+   </summary>
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum">
+      <summary>
+       Enum VoiceEnum
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.FEMALE_C">
+      <summary>
+       The female c
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.MALE_A">
+      <summary>
+       The male a
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.MALE_B">
+      <summary>
+       The male b
+   </summary>
+    </member>
+    <member name="F:Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.MALE_C">
+      <summary>
+       The male c
+   </summary>
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.POCO.Wait">
+      <summary>
+       Class Wait.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.POCO.Wait.Value">
+      <summary>
+       Gets or sets the value.
+   </summary>
+      <value>The value.</value>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.POCO.Wait.SetDuration(System.Double)">
+      <summary>
+       Sets the duration.
+   </summary>
+      <param name="value">The value.</param>
+      <returns>Wait.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.ScriptBuilder.ApidazeScript">
+      <summary>
+       Class ApidazeScript.
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.ApidazeScript.#ctor">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.ScriptBuilder.ApidazeScript" /> class.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.ScriptBuilder.ApidazeScript.Nodes">
+      <summary>
+       Gets or sets the nodes.
+   </summary>
+      <value>The nodes.</value>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.ApidazeScript.Build">
+      <summary>
+       Builds this instance.
+   </summary>
+      <returns>ApidazeScript.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.ScriptBuilder.ApidazeScript.AddNode(System.Object)">
+      <summary>
+       Adds the node.
+   </summary>
+      <param name="node">The node.</param>
+      <returns>ApidazeScript.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.SipUsers.CallerIdentity">
+      <summary>
+       Class CallerIdentity.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.SipUsers.CallerIdentity.OutboundCallerIdName">
+      <summary>
+       Gets or sets the name of the outbound caller identifier.
+   </summary>
+      <value>The name of the outbound caller identifier.</value>
+    </member>
+    <member name="P:Apidaze.SDK.SipUsers.CallerIdentity.OutboundCallerIdNumber">
+      <summary>
+       Gets or sets the outbound caller identifier number.
+   </summary>
+      <value>The outbound caller identifier number.</value>
+    </member>
+    <member name="P:Apidaze.SDK.SipUsers.CallerIdentity.InternalCallerIdName">
+      <summary>
+       Gets or sets the name of the internal caller identifier.
+   </summary>
+      <value>The name of the internal caller identifier.</value>
+    </member>
+    <member name="P:Apidaze.SDK.SipUsers.CallerIdentity.InternalCallerIdNumber">
+      <summary>
+       Gets or sets the internal caller identifier number.
+   </summary>
+      <value>The internal caller identifier number.</value>
+    </member>
+    <member name="T:Apidaze.SDK.SipUsers.ISipUsers">
+      <summary>
+       Interface ISipUsers
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.SipUsers.ISipUsers.GetSipUsers">
+      <summary>
+       Gets the sip users.
+   </summary>
+      <returns>List&lt;System.String&gt;.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.SipUsers.ISipUsers.CreateSipUser(System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+       Creates the sip user.
+   </summary>
+      <param name="userName">Name of the user.</param>
+      <param name="name">The name.</param>
+      <param name="emailAddress">The email address.</param>
+      <param name="internalCallerIdNumber">The internal caller identifier number.</param>
+      <param name="externalCallerIdNumber">The external caller identifier number.</param>
+      <returns>SipUser.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.SipUsers.ISipUsers.DeleteSipUser(System.String)">
+      <summary>
+       Deletes the sip user.
+   </summary>
+      <param name="id">The identifier.</param>
+    </member>
+    <member name="M:Apidaze.SDK.SipUsers.ISipUsers.GetSingleSipUser(System.String)">
+      <summary>
+       Gets the single sip user.
+   </summary>
+      <param name="id">The identifier.</param>
+      <returns>SipUser.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.SipUsers.ISipUsers.UpdateSipUser(System.String,System.String,System.String,System.String,System.Boolean)">
+      <summary>
+       Updates the sip user.
+   </summary>
+      <param name="id">The identifier.</param>
+      <param name="name">The name.</param>
+      <param name="internalCallerIdNumber">The internal caller identifier number.</param>
+      <param name="externalCallerIdNumber">The external caller identifier number.</param>
+      <param name="resetPassword">if set to <c>true</c> [reset password].</param>
+      <returns>SipUser.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.SipUsers.ISipUsers.ShowSipUserStatus(System.String)">
+      <summary>
+       Shows the sip user status.
+   </summary>
+      <param name="id">The identifier.</param>
+      <returns>SipUserStatus.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.SipUsers.ISipUsers.ResetUserPassword(System.String)">
+      <summary>
+       Resets the user password.
+   </summary>
+      <param name="id">The identifier.</param>
+      <returns>SipUser.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.SipUsers.Sip">
+      <summary>
+       Class Sip.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.SipUsers.Sip.Username">
+      <summary>
+       Gets or sets the username.
+   </summary>
+      <value>The username.</value>
+    </member>
+    <member name="P:Apidaze.SDK.SipUsers.Sip.Password">
+      <summary>
+       Gets or sets the password.
+   </summary>
+      <value>The password.</value>
+    </member>
+    <member name="T:Apidaze.SDK.SipUsers.SipUser">
+      <summary>
+       Class SipUser.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.SipUsers.SipUser.Id">
+      <summary>
+       Gets or sets the identifier.
+   </summary>
+      <value>The identifier.</value>
+    </member>
+    <member name="P:Apidaze.SDK.SipUsers.SipUser.Name">
+      <summary>
+       Gets or sets the name.
+   </summary>
+      <value>The name.</value>
+    </member>
+    <member name="P:Apidaze.SDK.SipUsers.SipUser.CallerId">
+      <summary>
+       Gets or sets the caller identifier.
+   </summary>
+      <value>The caller identifier.</value>
+    </member>
+    <member name="P:Apidaze.SDK.SipUsers.SipUser.Sip">
+      <summary>
+       Gets or sets the sip.
+   </summary>
+      <value>The sip.</value>
+    </member>
+    <member name="P:Apidaze.SDK.SipUsers.SipUser.CreatedAt">
+      <summary>
+       Gets or sets the created at.
+   </summary>
+      <value>The created at.</value>
+    </member>
+    <member name="P:Apidaze.SDK.SipUsers.SipUser.UpdatedAt">
+      <summary>
+       Gets or sets the updated at.
+   </summary>
+      <value>The updated at.</value>
+    </member>
+    <member name="T:Apidaze.SDK.SipUsers.SipUsers">
+      <summary>
+       Class SipUsers.
+       Implements the <see cref="T:Apidaze.SDK.Base.BaseApiClient" />
+       Implements the <see cref="T:Apidaze.SDK.SipUsers.ISipUsers" /></summary>
+      <seealso cref="T:Apidaze.SDK.Base.BaseApiClient" />
+      <seealso cref="T:Apidaze.SDK.SipUsers.ISipUsers" />
+    </member>
+    <member name="M:Apidaze.SDK.SipUsers.SipUsers.#ctor(IRestClient,Credentials)">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.SipUsers.SipUsers" /> class.
+   </summary>
+      <param name="client">The client.</param>
+      <param name="credentials">The credentials.</param>
+    </member>
+    <member name="M:Apidaze.SDK.SipUsers.SipUsers.GetSipUsers">
+      <summary>
+       Gets the sip users.
+   </summary>
+      <returns>IEnumerable&lt;System.String&gt;.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.SipUsers.SipUsers.CreateSipUser(System.String,System.String,System.String,System.String,System.String)">
+      <summary>
+       Creates the sip user.
+   </summary>
+      <param name="userName">Name of the user.</param>
+      <param name="name">The name.</param>
+      <param name="emailAddress">The email address.</param>
+      <param name="internalCallerIdNumber">The internal caller identifier number.</param>
+      <param name="externalCallerIdNumber">The external caller identifier number.</param>
+      <returns>SipUser.</returns>
+      <exception cref="T:System.ArgumentException">userName must not be null or empty</exception>
+      <exception cref="T:System.ArgumentException">userName must not be null or empty</exception>
+    </member>
+    <member name="M:Apidaze.SDK.SipUsers.SipUsers.DeleteSipUser(System.String)">
+      <summary>
+       Deletes the sip user.
+   </summary>
+      <param name="id">The identifier.</param>
+    </member>
+    <member name="M:Apidaze.SDK.SipUsers.SipUsers.GetSingleSipUser(System.String)">
+      <summary>
+       Gets the single sip user.
+   </summary>
+      <param name="id">The identifier.</param>
+      <returns>SipUser.</returns>
+      <exception cref="T:System.ArgumentException">id must not be null</exception>
+      <exception cref="T:System.ArgumentException">id must not be null</exception>
+    </member>
+    <member name="M:Apidaze.SDK.SipUsers.SipUsers.UpdateSipUser(System.String,System.String,System.String,System.String,System.Boolean)">
+      <summary>
+       Updates the sip user.
+   </summary>
+      <param name="id">The identifier.</param>
+      <param name="name">The name.</param>
+      <param name="internalCallerIdNumber">The internal caller identifier number.</param>
+      <param name="externalCallerIdNumber">The external caller identifier number.</param>
+      <param name="resetPassword">if set to <c>true</c> [reset password].</param>
+      <returns>SipUser.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.SipUsers.SipUsers.ShowSipUserStatus(System.String)">
+      <summary>
+       Shows the sip user status.
+   </summary>
+      <param name="id">The identifier.</param>
+      <returns>SipUserStatus.</returns>
+      <exception cref="T:System.ArgumentException">id must not be null</exception>
+    </member>
+    <member name="M:Apidaze.SDK.SipUsers.SipUsers.ResetUserPassword(System.String)">
+      <summary>
+       Resets the user password.
+   </summary>
+      <param name="id">The identifier.</param>
+      <returns>SipUser.</returns>
+      <exception cref="T:System.ArgumentException">id must not be null or empty</exception>
+    </member>
+    <member name="T:Apidaze.SDK.SipUsers.SipUserStatus">
+      <summary>
+       Class SipUserStatus.
+   </summary>
+    </member>
+    <member name="P:Apidaze.SDK.SipUsers.SipUserStatus.Uri">
+      <summary>
+       Gets or sets the URI.
+   </summary>
+      <value>The URI.</value>
+    </member>
+    <member name="P:Apidaze.SDK.SipUsers.SipUserStatus.Status">
+      <summary>
+       Gets or sets the status.
+   </summary>
+      <value>The status.</value>
+    </member>
+    <member name="T:Apidaze.SDK.Validate.CredentialsValidator">
+      <summary>
+       Class CredentialsValidator.
+       Implements the <see cref="T:Apidaze.SDK.Base.BaseApiClient" />
+       Implements the <see cref="T:Apidaze.SDK.Validate.ICredentialsValidator" /></summary>
+      <seealso cref="T:Apidaze.SDK.Base.BaseApiClient" />
+      <seealso cref="T:Apidaze.SDK.Validate.ICredentialsValidator" />
+    </member>
+    <member name="M:Apidaze.SDK.Validate.CredentialsValidator.#ctor(IRestClient,Credentials)">
+      <summary>
+       Initializes a new instance of the <see cref="T:Apidaze.SDK.Validate.CredentialsValidator" /> class.
+   </summary>
+      <param name="client">The client.</param>
+      <param name="credentials">The credentials.</param>
+    </member>
+    <member name="M:Apidaze.SDK.Validate.CredentialsValidator.ValidateCredentials">
+      <summary>
+       Validates the credentials.
+   </summary>
+      <returns>
+        <c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.Validate.ICredentialsValidator">
+      <summary>
+       Interface ICredentialsValidator
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.Validate.ICredentialsValidator.ValidateCredentials">
+      <summary>
+       Validates the credentials.
+   </summary>
+      <returns>
+        <c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+    </member>
+    <member name="N:Apidaze.SDK">
+      <summary>
+    ApiActionFactory object that will create Apidaze API request objects on a per-application.
+   </summary>
+    </member>
+    <member name="T:Apidaze.SDK.ApplicationManager">
+      <summary>
+       Class ApplicationManager.
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.ApplicationManager.CreateApiFactory(Credentials,System.String)">
+      <summary>
+       Creates the API factory.
+   </summary>
+      <param name="credentials">The credentials.</param>
+      <param name="url">The URL.</param>
+      <returns>IApiActionFactory.</returns>
+    </member>
+    <member name="T:Apidaze.SDK.IApiActionFactory">
+      <summary>
+       Interface IApiActionFactory
+   </summary>
+    </member>
+    <member name="M:Apidaze.SDK.IApiActionFactory.CreateMessageApi">
+      <summary>
+       Creates the message API.
+   </summary>
+      <returns>IMessage.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.IApiActionFactory.CreateCredentialsValidatorApi">
+      <summary>
+       Creates the credentials validator API.
+   </summary>
+      <returns>ICredentialsValidator.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.IApiActionFactory.CreateCallsApi">
+      <summary>
+       Creates the calls API.
+   </summary>
+      <returns>ICalls.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.IApiActionFactory.CreateApplicationsApi">
+      <summary>
+       Creates the applications API.
+   </summary>
+      <returns>IApplications.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.IApiActionFactory.CreateCdrHttpHandlersApi">
+      <summary>
+       Creates the CDR HTTP handlers API.
+   </summary>
+      <returns>ICdrHttpHandlers.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.IApiActionFactory.CreateRecordingsApi">
+      <summary>
+       Creates the recordings API.
+   </summary>
+      <returns>IRecordings.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.IApiActionFactory.CreateExternalScriptsApi">
+      <summary>
+       Creates the external scripts API.
+   </summary>
+      <returns>IExternalScripts.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.IApiActionFactory.CreateSipUsersApi">
+      <summary>
+       Creates the sip users API.
+   </summary>
+      <returns>ISipUsers.</returns>
+    </member>
+    <member name="M:Apidaze.SDK.IApiActionFactory.CreateMediaFilesApi">
+      <summary>
+       Creates the media files API.
+   </summary>
+      <returns>IMediaFiles.</returns>
+    </member>
+  </members>
+</doc>

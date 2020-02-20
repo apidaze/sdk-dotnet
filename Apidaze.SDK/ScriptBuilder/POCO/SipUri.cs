@@ -3,16 +3,25 @@ using System.Xml.Serialization;
 
 namespace Apidaze.SDK.ScriptBuilder.POCO
 {
+    /// <summary>
+    /// Class SipUri.
+    /// Implements the <see cref="Object" />
+    /// </summary>
+    /// <seealso cref="Object" />
     public class SipUri
     {
-        [XmlAttribute("timeout")] public double Timeout { get; set; }
-
-        [XmlText(typeof(string))] public string Value { get; set; }
-
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SipUri"/> class.
+        /// </summary>
         public SipUri()
         {
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SipUri"/> class.
+        /// </summary>
+        /// <param name="value">The value.</param>
+        /// <param name="timeout">The timeout.</param>
         public SipUri(string value, double timeout = default)
         {
             Timeout = timeout;
@@ -20,8 +29,21 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
         }
 
         /// <summary>
+        /// Gets or sets the timeout.
+        /// </summary>
+        /// <value>The timeout.</value>
+        [XmlAttribute("timeout")] public double Timeout { get; set; }
+
+        /// <summary>
+        /// Gets or sets the value.
+        /// </summary>
+        /// <value>The value.</value>
+        [XmlText(typeof(string))] public string Value { get; set; }
+
+        /// <summary>
         /// Serialize a Timeout conditionally.
-        /// The result of the method determines whether the property is serialized. If the method returns true then the property will be serialized,
+        /// The result of the method determines whether the property is serialized. If the method returns true then the
+        /// property will be serialized,
         /// if it returns false then the property will be skipped.
         /// </summary>
         /// <returns><c>true</c> if value greater than 0, <c>false</c> otherwise.</returns>

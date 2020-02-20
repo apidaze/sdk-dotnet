@@ -1,21 +1,21 @@
-﻿using Apidaze.SDK.ScriptBuilder.POCO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
+using Apidaze.SDK.ScriptBuilder.POCO;
 
 namespace Apidaze.SDK.ScriptBuilder
 {
     /// <summary>
-    /// Class ApidazeScript.
+    ///     Class ApidazeScript.
     /// </summary>
     [XmlRoot(ElementName = "document")]
     public class ApidazeScript
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ApidazeScript" /> class.
+        ///     Initializes a new instance of the <see cref="ApidazeScript" /> class.
         /// </summary>
         public ApidazeScript()
         {
@@ -23,16 +23,7 @@ namespace Apidaze.SDK.ScriptBuilder
         }
 
         /// <summary>
-        /// Builds this instance.
-        /// </summary>
-        /// <returns>ApidazeScript.</returns>
-        public static ApidazeScript Build()
-        {
-            return new ApidazeScript();
-        }
-
-        /// <summary>
-        /// Gets or sets the nodes.
+        ///     Gets or sets the nodes.
         /// </summary>
         /// <value>The nodes.</value>
         [XmlArrayItem(typeof(Conference), ElementName = "conference")]
@@ -51,7 +42,16 @@ namespace Apidaze.SDK.ScriptBuilder
         public List<object> Nodes { get; set; }
 
         /// <summary>
-        /// Adds the node.
+        ///     Builds this instance.
+        /// </summary>
+        /// <returns>ApidazeScript.</returns>
+        public static ApidazeScript Build()
+        {
+            return new ApidazeScript();
+        }
+
+        /// <summary>
+        ///     Adds the node.
         /// </summary>
         /// <param name="node">The node.</param>
         /// <returns>ApidazeScript.</returns>
@@ -62,7 +62,7 @@ namespace Apidaze.SDK.ScriptBuilder
         }
 
         /// <summary>
-        /// Converts to xml.
+        ///     Converts to xml.
         /// </summary>
         /// <param name="withFormatting">if set to <c>true</c> [with formatting].</param>
         /// <param name="omitXmlDeclaration">if set to <c>true</c> [omit XML declaration].</param>
@@ -84,7 +84,7 @@ namespace Apidaze.SDK.ScriptBuilder
                 ConformanceLevel = ConformanceLevel.Document,
                 CloseOutput = false,
                 Indent = withFormatting,
-                NewLineHandling = NewLineHandling.Replace,
+                NewLineHandling = NewLineHandling.Replace
             };
 
             var xns = new XmlSerializerNamespaces();
@@ -98,14 +98,14 @@ namespace Apidaze.SDK.ScriptBuilder
         }
 
         /// <summary>
-        /// Class UTF8StringWriter.
-        /// Implements the <see cref="System.IO.StringWriter" />
+        ///     Class UTF8StringWriter.
+        ///     Implements the <see cref="System.IO.StringWriter" />
         /// </summary>
         /// <seealso cref="System.IO.StringWriter" />
         private class UTF8StringWriter : StringWriter
         {
             /// <summary>
-            /// Gets the encoding.
+            ///     Gets the encoding.
             /// </summary>
             /// <value>The encoding.</value>
             public override Encoding Encoding => Encoding.UTF8;

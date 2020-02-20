@@ -3,7 +3,7 @@
 namespace Apidaze.SDK.ScriptBuilder.POCO
 {
     /// <summary>
-    /// Enum LangEnum
+    ///     Enum LangEnum
     /// </summary>
     public enum LangEnum
     {
@@ -11,77 +11,95 @@ namespace Apidaze.SDK.ScriptBuilder.POCO
         [XmlEnum(Name = "en-US")] ENGLISH_US,
         [XmlEnum(Name = "da-DK")] DANISH,
         [XmlEnum(Name = "nl-NL")] DUTCH,
+
         /// <summary>
-        /// The italian
+        ///     The italian
         /// </summary>
         [XmlEnum(Name = "it-IT")] ITALIAN,
+
         /// <summary>
-        /// The japanese
+        ///     The japanese
         /// </summary>
         [XmlEnum(Name = "ja-JP")] JAPANESE,
+
         /// <summary>
-        /// The norwegian
+        ///     The norwegian
         /// </summary>
         [XmlEnum(Name = "nb-NO")] NORWEGIAN,
+
         /// <summary>
-        /// The portugese brazil
+        ///     The portugese brazil
         /// </summary>
         [XmlEnum(Name = "pt-BR")] PORTUGESE_BRAZIL,
+
         /// <summary>
-        /// The portugese portugal
+        ///     The portugese portugal
         /// </summary>
         [XmlEnum(Name = "pt-PT")] PORTUGESE_PORTUGAL,
+
         /// <summary>
-        /// The slovak
+        ///     The slovak
         /// </summary>
         [XmlEnum(Name = "sk-SK")] SLOVAK,
+
         /// <summary>
-        /// The spanish
+        ///     The spanish
         /// </summary>
         [XmlEnum(Name = "es-ES")] SPANISH,
+
         /// <summary>
-        /// The swedish
+        ///     The swedish
         /// </summary>
         [XmlEnum(Name = "sv-SE")] SWEDISH,
+
         /// <summary>
-        /// The ukrainian
+        ///     The ukrainian
         /// </summary>
         [XmlEnum(Name = "uk-UA")] UKRAINIAN,
+
         /// <summary>
-        /// The english australia
+        ///     The english australia
         /// </summary>
         [XmlEnum(Name = "en-AU")] ENGLISH_AUSTRALIA,
+
         /// <summary>
-        /// The english uk
+        ///     The english uk
         /// </summary>
         [XmlEnum(Name = "en-GB")] ENGLISH_UK,
+
         /// <summary>
-        /// The french canada
+        ///     The french canada
         /// </summary>
         [XmlEnum(Name = "fr-CA")] FRENCH_CANADA,
+
         /// <summary>
-        /// The french france
+        ///     The french france
         /// </summary>
         [XmlEnum(Name = "fr-FR")] FRENCH_FRANCE,
+
         /// <summary>
-        /// The german
+        ///     The german
         /// </summary>
         [XmlEnum(Name = "de-DE")] GERMAN,
+
         /// <summary>
-        /// The korean
+        ///     The korean
         /// </summary>
         [XmlEnum(Name = "ko-KR")] KOREAN,
+
         /// <summary>
-        /// The polish
+        ///     The polish
         /// </summary>
         [XmlEnum(Name = "po-PL")] POLISH,
+
         /// <summary>
-        /// The russian
+        ///     The russian
         /// </summary>
         [XmlEnum(Name = "ru-RU")] RUSSIAN,
+
         /// <summary>
-        /// The turkish
+        ///     The turkish
         /// </summary>
-        [XmlEnum(Name = "tr-TR")] TURKISH,
+        [XmlEnum(Name = "tr-TR")] TURKISH
     }
 }

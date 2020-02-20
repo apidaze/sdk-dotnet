@@ -3,12 +3,12 @@
 namespace Apidaze.SDK.Base
 {
     /// <summary>
-    /// Interface IBaseApiClient
+    ///     Interface IBaseApiClient
     /// </summary>
     internal interface IBaseApiClient
     {
         /// <summary>
-        /// Creates the specified request parameters.
+        ///     Creates the specified request parameters.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="requestParams">The request parameters.</param>
@@ -16,14 +16,14 @@ namespace Apidaze.SDK.Base
         T Create<T>(Dictionary<string, string> requestParams, string resource = "") where T : new();
 
         /// <summary>
-        /// Finds all.
+        ///     Finds all.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns>IEnumerable&lt;T&gt;.</returns>
         IEnumerable<T> FindAll<T>();
 
         /// <summary>
-        /// Finds the by parameter.
+        ///     Finds the by parameter.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="name">The name.</param>
@@ -32,7 +32,7 @@ namespace Apidaze.SDK.Base
         IEnumerable<T> FindByParameter<T>(string name, string value) where T : new();
 
         /// <summary>
-        /// Finds the by identifier.
+        ///     Finds the by identifier.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="id">The identifier.</param>
@@ -40,7 +40,7 @@ namespace Apidaze.SDK.Base
         T FindById<T>(string id, string resource = "") where T : new();
 
         /// <summary>
-        /// Updates the specified identifier.
+        ///     Updates the specified identifier.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="id">The identifier.</param>
@@ -49,7 +49,7 @@ namespace Apidaze.SDK.Base
         T Update<T>(string id, Dictionary<string, string> requestParams) where T : new();
 
         /// <summary>
-        /// Deletes the specified identifier.
+        ///     Deletes the specified identifier.
         /// </summary>
         /// <param name="id">The identifier.</param>
         void Delete(string id);

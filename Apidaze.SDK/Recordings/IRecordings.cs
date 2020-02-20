@@ -5,18 +5,18 @@ using System.Threading.Tasks;
 namespace Apidaze.SDK.Recordings
 {
     /// <summary>
-    /// Interface IRecordings
+    ///     Interface IRecordings
     /// </summary>
     public interface IRecordings
     {
         /// <summary>
-        /// Gets the recordings list.
+        ///     Gets the recordings list.
         /// </summary>
         /// <returns>IEnumerable&lt;System.String&gt;.</returns>
         List<string> GetRecordings();
 
         /// <summary>
-        /// Downloads the recording.
+        ///     Downloads the recording.
         /// </summary>
         /// <param name="sourceFileName">Name of the source file.</param>
         /// <returns>Stream.</returns>
@@ -25,7 +25,7 @@ namespace Apidaze.SDK.Recordings
         Task<FileInfo> DownloadRecordingToFileAsync(string sourceFileName, string target);
 
         /// <summary>
-        /// Downloads the recording to file.
+        ///     Downloads the recording to file.
         /// </summary>
         /// <param name="sourceFileName">Name of the source file.</param>
         /// <param name="target">The target.</param>
@@ -33,7 +33,7 @@ namespace Apidaze.SDK.Recordings
         FileInfo DownloadRecordingToFile(string sourceFileName, string target);
 
         /// <summary>
-        /// Deletes the recording.
+        ///     Deletes the recording.
         /// </summary>
         /// <param name="fileName">Name of the file.</param>
         void DeleteRecording(string fileName);

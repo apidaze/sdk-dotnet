@@ -5,24 +5,26 @@ using Newtonsoft.Json.Converters;
 namespace Apidaze.SDK.CdrHttpHandlers
 {
     /// <summary>
-    /// Class CdrHttpHandler.
+    ///     Class CdrHttpHandler.
     /// </summary>
     public class CdrHttpHandler
     {
         /// <summary>
-        /// Gets or sets the identifier.
+        ///     Gets or sets the identifier.
         /// </summary>
         /// <value>The identifier.</value>
-        [JsonProperty("id")] public long Id { get; set; }
+        [JsonProperty("id")]
+        public long Id { get; set; }
 
         /// <summary>
-        /// Gets or sets the name.
+        ///     Gets or sets the name.
         /// </summary>
         /// <value>The name.</value>
-        [JsonProperty("name")] public string Name { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets the format.
+        ///     Gets or sets the format.
         /// </summary>
         /// <value>The format.</value>
         [JsonProperty("format")]
@@ -32,7 +34,7 @@ namespace Apidaze.SDK.CdrHttpHandlers
         [JsonProperty("url")] public Uri Url { get; set; }
 
         /// <summary>
-        /// Gets or sets the call leg.
+        ///     Gets or sets the call leg.
         /// </summary>
         /// <value>The call leg.</value>
         [JsonConverter(typeof(StringEnumConverter))]
@@ -40,15 +42,17 @@ namespace Apidaze.SDK.CdrHttpHandlers
         public CallLeg CallLeg { get; set; }
 
         /// <summary>
-        /// Gets or sets the created at.
+        ///     Gets or sets the created at.
         /// </summary>
         /// <value>The created at.</value>
-        [JsonProperty("created_at")] public DateTime CreatedAt { get; set; }
+        [JsonProperty("created_at")]
+        public DateTime CreatedAt { get; set; }
 
         /// <summary>
-        /// Gets or sets the updated at.
+        ///     Gets or sets the updated at.
         /// </summary>
         /// <value>The updated at.</value>
-        [JsonProperty("updated_at")] public DateTime UpdatedAt { get; set; }
+        [JsonProperty("updated_at")]
+        public DateTime UpdatedAt { get; set; }
     }
 }

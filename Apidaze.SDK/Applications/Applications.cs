@@ -7,53 +7,39 @@ using RestSharp;
 namespace Apidaze.SDK.Applications
 {
     /// <summary>
-    /// Class Applications.
-    /// Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
-    /// Implements the <see cref="Apidaze.SDK.Applications.IApplications" />
+    ///     Class Applications.
+    ///     Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
+    ///     Implements the <see cref="Apidaze.SDK.Applications.IApplications" />
     /// </summary>
     /// <seealso cref="Apidaze.SDK.Base.BaseApiClient" />
     /// <seealso cref="Apidaze.SDK.Applications.IApplications" />
     public class Applications : BaseApiClient, IApplications
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Applications" /> class.
+        ///     Initializes a new instance of the <see cref="Applications" /> class.
         /// </summary>
         /// <param name="client">The client.</param>
         /// <param name="credentials">The credentials.</param>
         private Applications(IRestClient client, Credentials credentials)
             : base(client, credentials)
         {
-            if (client.BaseUrl != null)
-            {
-                ApplicationUrl = client.BaseUrl.ToString();
-            }
+            if (client.BaseUrl != null) ApplicationUrl = client.BaseUrl.ToString();
         }
 
         /// <summary>
-        /// Gets the resource.
+        ///     Gets the resource.
         /// </summary>
         /// <value>The resource.</value>
         protected override string Resource => "/applications";
 
         /// <summary>
-        /// Gets or sets the application URL.
+        ///     Gets or sets the application URL.
         /// </summary>
         /// <value>The application URL.</value>
-        private string ApplicationUrl { get; set; }
+        private string ApplicationUrl { get; }
 
         /// <summary>
-        /// Creates the instance.
-        /// </summary>
-        /// <param name="client">The client.</param>
-        /// <param name="credentials">The credentials.</param>
-        /// <returns>Applications.</returns>
-        public static Applications CreateInstance(IRestClient client, Credentials credentials)
-        {
-            return new Applications(client, credentials);
-        }
-
-        /// <summary>
-        /// Gets the applications.
+        ///     Gets the applications.
         /// </summary>
         /// <returns>List&lt;Application&gt;.</returns>
         public List<Application> GetApplications()
@@ -62,7 +48,7 @@ namespace Apidaze.SDK.Applications
         }
 
         /// <summary>
-        /// Gets the applications by API key.
+        ///     Gets the applications by API key.
         /// </summary>
         /// <param name="apiKey">The API key.</param>
         /// <returns>List&lt;Application&gt;.</returns>
@@ -75,16 +61,13 @@ namespace Apidaze.SDK.Applications
         /// */
         public List<Application> GetApplicationsByApiKey(string apiKey)
         {
-            if (string.IsNullOrEmpty(apiKey))
-            {
-                throw new ArgumentException("apiKey must not be null");
-            }
+            if (string.IsNullOrEmpty(apiKey)) throw new ArgumentException("apiKey must not be null");
 
             return FindByParameter<Application>("api_key", apiKey).ToList();
         }
 
         /// <summary>
-        /// Gets the applications by identifier.
+        ///     Gets the applications by identifier.
         /// </summary>
         /// <param name="id">The identifier.</param>
         /// <returns>List&lt;Application&gt;.</returns>
@@ -100,7 +83,7 @@ namespace Apidaze.SDK.Applications
         }
 
         /// <summary>
-        /// Gets the name of the applications by.
+        ///     Gets the name of the applications by.
         /// </summary>
         /// <param name="name">The name.</param>
         /// <returns>List&lt;Application&gt;.</returns>
@@ -113,10 +96,7 @@ namespace Apidaze.SDK.Applications
         /// */
         public List<Application> GetApplicationsByName(string name)
         {
-            if (string.IsNullOrEmpty(name))
-            {
-                throw new ArgumentException("name must not be null");
-            }
+            if (string.IsNullOrEmpty(name)) throw new ArgumentException("name must not be null");
 
             return FindByParameter<Application>("app_name", name).ToList();
         }
@@ -124,22 +104,35 @@ namespace Apidaze.SDK.Applications
         /// <inheritdoc />
         public IApiActionFactory GetApplicationActionById(long id)
         {
-            var apiAction = this.GetApplicationsById(id).First();
-            return apiAction != null ? new ApiActionFactory(new Credentials(apiAction.ApiKey, apiAction.ApiSecret), ApplicationUrl) : null;
+            var apiAction = GetApplicationsById(id).First();
+            return apiAction != null
+                ? new ApiActionFactory(new Credentials(apiAction.ApiKey, apiAction.ApiSecret), ApplicationUrl)
+                : null;
         }
 
         /// <inheritdoc />
         public IApiActionFactory GetApplicationActionByApiKey(string apiKey)
         {
-            var apiAction = this.GetApplicationsByApiKey(apiKey).First();
+            var apiAction = GetApplicationsByApiKey(apiKey).First();
             return new ApiActionFactory(new Credentials(apiAction.ApiKey, apiAction.ApiSecret), ApplicationUrl);
         }
 
         /// <inheritdoc />
         public IApiActionFactory GetApplicationActionByName(string name)
         {
-            var apiAction = this.GetApplicationsByName(name).First();
+            var apiAction = GetApplicationsByName(name).First();
             return new ApiActionFactory(new Credentials(apiAction.ApiKey, apiAction.ApiSecret), ApplicationUrl);
+        }
+
+        /// <summary>
+        ///     Creates the instance.
+        /// </summary>
+        /// <param name="client">The client.</param>
+        /// <param name="credentials">The credentials.</param>
+        /// <returns>Applications.</returns>
+        public static Applications CreateInstance(IRestClient client, Credentials credentials)
+        {
+            return new Applications(client, credentials);
         }
     }
 }

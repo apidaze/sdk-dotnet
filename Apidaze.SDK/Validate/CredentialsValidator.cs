@@ -5,16 +5,16 @@ using RestSharp;
 namespace Apidaze.SDK.Validate
 {
     /// <summary>
-    /// Class CredentialsValidator.
-    /// Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
-    /// Implements the <see cref="Apidaze.SDK.Validates.ICredentialsValidator" />
+    ///     Class CredentialsValidator.
+    ///     Implements the <see cref="Apidaze.SDK.Base.BaseApiClient" />
+    ///     Implements the <see cref="Apidaze.SDK.Validates.ICredentialsValidator" />
     /// </summary>
     /// <seealso cref="Apidaze.SDK.Base.BaseApiClient" />
     /// <seealso cref="Apidaze.SDK.Validates.ICredentialsValidator" />
     public class CredentialsValidator : BaseApiClient, ICredentialsValidator
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="CredentialsValidator" /> class.
+        ///     Initializes a new instance of the <see cref="CredentialsValidator" /> class.
         /// </summary>
         /// <param name="client">The client.</param>
         /// <param name="credentials">The credentials.</param>
@@ -23,13 +23,13 @@ namespace Apidaze.SDK.Validate
         }
 
         /// <summary>
-        /// Gets the resource.
+        ///     Gets the resource.
         /// </summary>
         /// <value>The resource.</value>
         protected override string Resource => "/validates";
 
         /// <summary>
-        /// Validates the credentials.
+        ///     Validates the credentials.
         /// </summary>
         /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
         public bool ValidateCredentials()

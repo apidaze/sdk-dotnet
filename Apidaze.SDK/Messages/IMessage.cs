@@ -1,12 +1,12 @@
 ﻿namespace Apidaze.SDK.Messages
 {
     /// <summary>
-    /// Interface IMessage
+    ///     Interface IMessage
     /// </summary>
     public interface IMessage
     {
         /// <summary>
-        /// Sends the text message.
+        ///     Sends the text message.
         /// </summary>
         /// <param name="from">From.</param>
         /// <param name="to">To.</param>

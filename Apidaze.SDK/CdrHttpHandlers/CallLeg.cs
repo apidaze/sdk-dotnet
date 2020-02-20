@@ -1,20 +1,22 @@
 ﻿namespace Apidaze.SDK.CdrHttpHandlers
 {
     /// <summary>
-    /// Enum CallLeg
+    ///     Enum CallLeg
     /// </summary>
     public enum CallLeg
     {
         /// <summary>
-        /// The inbound
+        ///     The inbound
         /// </summary>
         Inbound,
+
         /// <summary>
-        /// The outbound
+        ///     The outbound
         /// </summary>
         Outbound,
+
         /// <summary>
-        /// The XML
+        ///     The XML
         /// </summary>
         Xml
     }

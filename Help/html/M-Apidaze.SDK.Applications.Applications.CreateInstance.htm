@@ -1,0 +1,1850 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"[]>
+<html>
+  <head><link rel="shortcut icon" href="../favicon.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="save" content="history" />
+    <title>CreateInstance Method </title>
+    <link rel="stylesheet" type="text/css" href="../styles/lightweight.css" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
+    <link rel="stylesheet" type="text/css" href="../styles/lw-code.css" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
+    <script type="text/javascript" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt" src="../scripts/languageSelector.js"> </script>
+    <meta name="container" content="Apidaze.SDK.Applications" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
+    <meta name="file" content="M-Apidaze.SDK.Applications.Applications.CreateInstance" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
+    <meta name="guid" content="M-Apidaze.SDK.Applications.Applications.CreateInstance" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt" />
+    <xml xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <MSHelp:Attr Name="AssetID" Value="M:Apidaze.SDK.Applications.Applications.CreateInstance(IRestClient,Credentials)" />
+      <MSHelp:TOCTitle Title="CreateInstance Method " />
+      <MSHelp:RLTitle Title="Applications.CreateInstance Method  (Apidaze.SDK.Applications)" />
+      <MSHelp:Keyword Index="A" Term="M:Apidaze.SDK.Applications.Applications.CreateInstance(IRestClient,Credentials)" />
+      <MSHelp:Keyword Index="A" Term="frlrfApidazeSDKApplicationsApplicationsClassCreateInstanceTopic" />
+      <MSHelp:Keyword Index="K" Term="CreateInstance method" />
+      <MSHelp:Keyword Index="K" Term="Applications.CreateInstance method" />
+      <MSHelp:Keyword Index="F" Term="Apidaze.SDK.Applications.Applications.CreateInstance" />
+      <MSHelp:Attr Name="APIType" Value="Managed" />
+      <MSHelp:Attr Name="APILocation" Value="Apidaze.SDK.dll" />
+      <MSHelp:Attr Name="APIName" Value="Apidaze.SDK.Applications.Applications.CreateInstance" />
+      <MSHelp:Attr Name="DevLang" Value="CSharp" />
+      <MSHelp:Attr Name="DevLang" Value="VB" />
+      <MSHelp:Attr Name="Locale" Value="en-us" />
+      <MSHelp:Attr Name="TopicType" Value="kbSyntax" />
+      <MSHelp:Attr Name="TopicType" Value="apiref" />
+      <MSHelp:Attr Name="Abstract" Value="Creates the instance." />
+      <MSHelp:Attr Name="AssemblyVersion" Value="" />
+    </xml>
+  <link rel="stylesheet" href="../TOC.css"><script type="text/javascript" src="../TOC.js"></script></head>
+  <body onload="javascript: Initialize('.aspx');" onresize="javascript: ResizeTree();">
+            <div id="TOCDiv" class="TOCDiv" style="width: 310px; float: left; position: relative; ">
+
+            <div id="divSearchOpts" class="SearchOpts" style="height: 95px; display: none;">
+                <div class="SearchOptsInner">
+                    <img class="TOCLink" onclick="javascript: ShowHideSearch(false);" src="../Close.png" height="24" width="24" alt="Hide Search" title="Hide Search" style="float: right;" />
+                    <span class="Title">Keyword(s) to search:</span>
+                </div>
+                <div class="SearchOptsInner">
+                    <input id="txtSearchText" type="text" style="width: 95.5%;" onkeypress="javascript: return OnSearchTextKeyPress(event);" />
+                </div>
+                <div class="SearchOptsInner">
+                    <input id="chkSortByTitle" type="checkbox" />&nbsp;Sort results by title
+                    <input type="button" value="Search" onclick="javascript: return PerformSearch();" style="float: right;" />
+                </div>
+            </div>
+
+            <div id="divIndexOpts" class="IndexOpts" style="height: 28px; display: none;">
+                <img class="TOCLink" onclick="javascript: ShowHideIndex(false);"
+                     src="../Close.png" height="24" width="24" alt="Hide Keyword Index" title="Hide Keyword Index" style="float: right;" />
+                <span class="Title">Keyword Index</span>
+            </div>
+
+            <div id="divNavOpts" class="NavOpts" style="height: 28px;">
+                <!--<img class="TOCLink" onclick="javascript: SyncTOC();" src="../SyncTOC.png"
+                     height="24" width="24" alt="Sync to TOC" title="Sync to TOC" />-->
+                <img class="TOCLink" onclick="javascript: ExpandOrCollapseAll(true);"
+                     src="../ExpandAll.png" height="24" width="24" alt="Expand all" title="Expand all" />
+                <img class="TOCLink" onclick="javascript: ExpandOrCollapseAll(false);"
+                     src="../CollapseAll.png" height="24" width="24" alt="Collapse all" title="Collapse all" />
+                <!--<img class="TOCLink" onclick="javascript: alert('Please make sure to use either Index.aspx or Index.php to enable the Keyword Index feature.');"
+                     src="../Index.png" height="24" width="24" alt="Keyword Index" title="Keyword Index" />-->
+                <img class="TOCLink" onclick="javascript: ShowHideSearch(true);"
+                     src="../Search.png" height="24" width="24" alt="Search" title="Search" />
+                <img class="TOCLink" onclick="javascript: ShowDirectLink();"
+                     src="../Link.png" height="24" width="24" alt="Get direct link to the displayed topic" title="Get direct link to the displayed topic" />
+                <a href="#" onclick="javascript: window.history.go(-1); return false;">
+                    <img class="TOCLink" style="float: right;"
+                         src="../Back.png" height="24" width="24" alt="Previous page" title="Previous page" />
+                </a>
+            </div>
+
+            <div class="Tree" id="divSearchResults" style="display: none;"
+                 onselectstart="javascript: return false;">
+            </div>
+
+            <div class="Tree" id="divIndexResults" style="display: none;"
+                 onselectstart="javascript: return false;">
+            </div>
+
+            <div class="Tree" id="divTree" onselectstart="javascript: return false;">
+              <div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="N-Apidaze.SDK.htm" target="_self">Apidaze.SDK Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ApplicationManager.htm" target="_self">ApplicationManager Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ApplicationManager.htm" target="_self">ApplicationManager Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.ApplicationManager.htm" target="_self">ApplicationManager Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ApplicationManager.CreateApiFactory.htm" target="_self">CreateApiFactory Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.IApiActionFactory.htm" target="_self">IApiActionFactory Interface</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.IApiActionFactory.htm" target="_self">IApiActionFactory Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.IApiActionFactory.htm" target="_self">IApiActionFactory Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.IApiActionFactory.CreateApplicationsApi.htm" target="_self">CreateApplicationsApi Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.IApiActionFactory.CreateCallsApi.htm" target="_self">CreateCallsApi Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.IApiActionFactory.CreateCdrHttpHandlersApi.htm" target="_self">CreateCdrHttpHandlersApi Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.IApiActionFactory.CreateCredentialsValidatorApi.htm" target="_self">CreateCredentialsValidatorApi Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.IApiActionFactory.CreateExternalScriptsApi.htm" target="_self">CreateExternalScriptsApi Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.IApiActionFactory.CreateMediaFilesApi.htm" target="_self">CreateMediaFilesApi Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.IApiActionFactory.CreateMessageApi.htm" target="_self">CreateMessageApi Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.IApiActionFactory.CreateRecordingsApi.htm" target="_self">CreateRecordingsApi Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.IApiActionFactory.CreateSipUsersApi.htm" target="_self">CreateSipUsersApi Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="N-Apidaze.SDK.Applications.htm" target="_self">Apidaze.SDK.Applications Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Applications.Application.htm" target="_self">Application Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Applications.Application.htm" target="_self">Application Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.Applications.Application.htm" target="_self">Application Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.Applications.Application.htm" target="_self">Application Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Applications.Application.AccountId.htm" target="_self">AccountId Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Applications.Application.ApiKey.htm" target="_self">ApiKey Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Applications.Application.ApiSecret.htm" target="_self">ApiSecret Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Applications.Application.ApplicationId.htm" target="_self">ApplicationId Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Applications.Application.CreatedAt.htm" target="_self">CreatedAt Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Applications.Application.FsAddress.htm" target="_self">FsAddress Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Applications.Application.Id.htm" target="_self">Id Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Applications.Application.Name.htm" target="_self">Name Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Applications.Application.UpdatedAt.htm" target="_self">UpdatedAt Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Applications.Applications.htm" target="_self">Applications Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Applications.Applications.htm" target="_self">Applications Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.Applications.Applications.htm" target="_self">Applications Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Applications.Applications.CreateInstance.htm" target="_self">CreateInstance Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Applications.Applications.GetApplicationActionByApiKey.htm" target="_self">GetApplicationActionByApiKey Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Applications.Applications.GetApplicationActionById.htm" target="_self">GetApplicationActionById Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Applications.Applications.GetApplicationActionByName.htm" target="_self">GetApplicationActionByName Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Applications.Applications.GetApplications.htm" target="_self">GetApplications Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Applications.Applications.GetApplicationsByApiKey.htm" target="_self">GetApplicationsByApiKey Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Applications.Applications.GetApplicationsById.htm" target="_self">GetApplicationsById Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Applications.Applications.GetApplicationsByName.htm" target="_self">GetApplicationsByName Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Applications.IApplications.htm" target="_self">IApplications Interface</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Applications.IApplications.htm" target="_self">IApplications Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.Applications.IApplications.htm" target="_self">IApplications Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Applications.IApplications.GetApplicationActionByApiKey.htm" target="_self">GetApplicationActionByApiKey Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Applications.IApplications.GetApplicationActionById.htm" target="_self">GetApplicationActionById Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Applications.IApplications.GetApplicationActionByName.htm" target="_self">GetApplicationActionByName Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Applications.IApplications.GetApplications.htm" target="_self">GetApplications Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Applications.IApplications.GetApplicationsByApiKey.htm" target="_self">GetApplicationsByApiKey Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Applications.IApplications.GetApplicationsById.htm" target="_self">GetApplicationsById Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Applications.IApplications.GetApplicationsByName.htm" target="_self">GetApplicationsByName Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="N-Apidaze.SDK.Base.htm" target="_self">Apidaze.SDK.Base Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Base.BaseApiClient.htm" target="_self">BaseApiClient Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Base.BaseApiClient.htm" target="_self">BaseApiClient Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.Base.BaseApiClient.htm" target="_self">BaseApiClient Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Base.BaseApiClient.Create--1.htm" target="_self">Create(T) Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Base.BaseApiClient.Delete.htm" target="_self">Delete Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Base.BaseApiClient.FindAll--1.htm" target="_self">FindAll(T) Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Base.BaseApiClient.FindById--1.htm" target="_self">FindById(T) Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Base.BaseApiClient.FindByParameter--1.htm" target="_self">FindByParameter(T) Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Base.BaseApiClient.Update--1.htm" target="_self">Update(T) Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Base.Credentials.htm" target="_self">Credentials Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Base.Credentials.htm" target="_self">Credentials Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Base.Credentials.-ctor.htm" target="_self">Credentials Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.Base.Credentials.htm" target="_self">Credentials Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.Base.Credentials.htm" target="_self">Credentials Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Base.Credentials.ApiKey.htm" target="_self">ApiKey Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Base.Credentials.ApiSecret.htm" target="_self">ApiSecret Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="N-Apidaze.SDK.Calls.htm" target="_self">Apidaze.SDK.Calls Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Calls.Call.htm" target="_self">Call Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Calls.Call.htm" target="_self">Call Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.Calls.Call.htm" target="_self">Call Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.Calls.Call.htm" target="_self">Call Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Calls.Call.CallerId.htm" target="_self">CallerId Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Calls.Call.CallerIdName.htm" target="_self">CallerIdName Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Calls.Call.CallerIdNumber.htm" target="_self">CallerIdNumber Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Calls.Call.CallState.htm" target="_self">CallState Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Calls.Call.CallUuid.htm" target="_self">CallUuid Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Calls.Call.Created.htm" target="_self">Created Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Calls.Call.Destination.htm" target="_self">Destination Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Calls.Call.URL.htm" target="_self">URL Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Calls.Call.Uuid.htm" target="_self">Uuid Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Calls.Call.WorkTag.htm" target="_self">WorkTag Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Calls.Calls.htm" target="_self">Calls Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Calls.Calls.htm" target="_self">Calls Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Calls.Calls.-ctor.htm" target="_self">Calls Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.Calls.Calls.htm" target="_self">Calls Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Calls.Calls.CreateCall.htm" target="_self">CreateCall Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Calls.Calls.DeleteCall.htm" target="_self">DeleteCall Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Calls.Calls.GetCall.htm" target="_self">GetCall Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Calls.Calls.GetCalls.htm" target="_self">GetCalls Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Calls.CallType.htm" target="_self">CallType Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Calls.CallType.htm" target="_self">CallType Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.Calls.CallType.htm" target="_self">CallType Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.Calls.CallType.htm" target="_self">CallType Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Calls.CallType.NUMBER.htm" target="_self">NUMBER Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Calls.CallType.SIP_ACCOUNT.htm" target="_self">SIP_ACCOUNT Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Calls.CreateCallResponseException.htm" target="_self">CreateCallResponseException Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Calls.CreateCallResponseException.htm" target="_self">CreateCallResponseException Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Calls.CreateCallResponseException.-ctor.htm" target="_self">CreateCallResponseException Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.Calls.CreateCallResponseException.htm" target="_self">CreateCallResponseException Methods</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Properties.T-Apidaze.SDK.Calls.CreateCallResponseException.htm" target="_self">CreateCallResponseException Properties</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Calls.DateFormatConverter.htm" target="_self">DateFormatConverter Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Calls.DateFormatConverter.htm" target="_self">DateFormatConverter Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Calls.DateFormatConverter.-ctor.htm" target="_self">DateFormatConverter Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.Calls.DateFormatConverter.htm" target="_self">DateFormatConverter Methods</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Calls.DeleteCallResponseException.htm" target="_self">DeleteCallResponseException Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Calls.DeleteCallResponseException.htm" target="_self">DeleteCallResponseException Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Calls.DeleteCallResponseException.-ctor.htm" target="_self">DeleteCallResponseException Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.Calls.DeleteCallResponseException.htm" target="_self">DeleteCallResponseException Methods</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Properties.T-Apidaze.SDK.Calls.DeleteCallResponseException.htm" target="_self">DeleteCallResponseException Properties</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Calls.ICalls.htm" target="_self">ICalls Interface</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Calls.ICalls.htm" target="_self">ICalls Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.Calls.ICalls.htm" target="_self">ICalls Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Calls.ICalls.CreateCall.htm" target="_self">CreateCall Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Calls.ICalls.DeleteCall.htm" target="_self">DeleteCall Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Calls.ICalls.GetCall.htm" target="_self">GetCall Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Calls.ICalls.GetCalls.htm" target="_self">GetCalls Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="N-Apidaze.SDK.CdrHttpHandlers.htm" target="_self">Apidaze.SDK.CdrHttpHandlers Namespace</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="T-Apidaze.SDK.CdrHttpHandlers.CallLeg.htm" target="_self">CallLeg Enumeration</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.htm" target="_self">CdrHttpHandler Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.htm" target="_self">CdrHttpHandler Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.htm" target="_self">CdrHttpHandler Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.htm" target="_self">CdrHttpHandler Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.CallLeg.htm" target="_self">CallLeg Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.CreatedAt.htm" target="_self">CreatedAt Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Format.htm" target="_self">Format Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Id.htm" target="_self">Id Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Name.htm" target="_self">Name Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.UpdatedAt.htm" target="_self">UpdatedAt Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandler.Url.htm" target="_self">Url Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.htm" target="_self">CdrHttpHandlers Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.htm" target="_self">CdrHttpHandlers Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.-ctor.htm" target="_self">CdrHttpHandlers Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.htm" target="_self">CdrHttpHandlers Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.CreateCdrHttpHandler.htm" target="_self">CreateCdrHttpHandler Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.DeleteCdrHttpHandler.htm" target="_self">DeleteCdrHttpHandler Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.GetCdrHttpHandlers.htm" target="_self">GetCdrHttpHandlers Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.UpdateCdrHttpHandler.htm" target="_self">UpdateCdrHttpHandler Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.UpdateCdrHttpHandlerName.htm" target="_self">UpdateCdrHttpHandlerName Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.CdrHttpHandlers.CdrHttpHandlers.UpdateCdrHttpHandlerUrl.htm" target="_self">UpdateCdrHttpHandlerUrl Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="T-Apidaze.SDK.CdrHttpHandlers.Format.htm" target="_self">Format Enumeration</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.htm" target="_self">ICdrHttpHandlers Interface</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.htm" target="_self">ICdrHttpHandlers Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.htm" target="_self">ICdrHttpHandlers Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.CreateCdrHttpHandler.htm" target="_self">CreateCdrHttpHandler Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.DeleteCdrHttpHandler.htm" target="_self">DeleteCdrHttpHandler Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.GetCdrHttpHandlers.htm" target="_self">GetCdrHttpHandlers Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.UpdateCdrHttpHandler.htm" target="_self">UpdateCdrHttpHandler Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.UpdateCdrHttpHandlerName.htm" target="_self">UpdateCdrHttpHandlerName Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.CdrHttpHandlers.ICdrHttpHandlers.UpdateCdrHttpHandlerUrl.htm" target="_self">UpdateCdrHttpHandlerUrl Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="N-Apidaze.SDK.Common.htm" target="_self">Apidaze.SDK.Common Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Common.Response.htm" target="_self">Response Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Common.Response.htm" target="_self">Response Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.Common.Response.htm" target="_self">Response Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.Common.Response.htm" target="_self">Response Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Common.Response.Failure.htm" target="_self">Failure Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Common.Response.Ok.htm" target="_self">Ok Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Common.Response.Status.htm" target="_self">Status Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Common.ResponseHeader.htm" target="_self">ResponseHeader Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Common.ResponseHeader.htm" target="_self">ResponseHeader Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.Common.ResponseHeader.htm" target="_self">ResponseHeader Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.Common.ResponseHeader.htm" target="_self">ResponseHeader Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Common.ResponseHeader.Connection.htm" target="_self">Connection Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Common.ResponseHeader.ContentLength.htm" target="_self">ContentLength Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Common.ResponseHeader.ContentType.htm" target="_self">ContentType Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Common.ResponseHeader.Date.htm" target="_self">Date Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="N-Apidaze.SDK.Exception.htm" target="_self">Apidaze.SDK.Exception Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Exception.ApidazeCredentialsException.htm" target="_self">ApidazeCredentialsException Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Exception.ApidazeCredentialsException.htm" target="_self">ApidazeCredentialsException Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Exception.ApidazeCredentialsException.-ctor.htm" target="_self">ApidazeCredentialsException Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.Exception.ApidazeCredentialsException.htm" target="_self">ApidazeCredentialsException Methods</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Properties.T-Apidaze.SDK.Exception.ApidazeCredentialsException.htm" target="_self">ApidazeCredentialsException Properties</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Exception.ApidazeRestException.htm" target="_self">ApidazeRestException Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Exception.ApidazeRestException.htm" target="_self">ApidazeRestException Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Exception.ApidazeRestException.-ctor.htm" target="_self">ApidazeRestException Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.Exception.ApidazeRestException.htm" target="_self">ApidazeRestException Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.Exception.ApidazeRestException.htm" target="_self">ApidazeRestException Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.Exception.ApidazeRestException.StatusCode.htm" target="_self">StatusCode Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Exception.CreateCallResponseException.htm" target="_self">CreateCallResponseException Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Exception.CreateCallResponseException.htm" target="_self">CreateCallResponseException Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Exception.CreateCallResponseException.-ctor.htm" target="_self">CreateCallResponseException Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.Exception.CreateCallResponseException.htm" target="_self">CreateCallResponseException Methods</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Properties.T-Apidaze.SDK.Exception.CreateCallResponseException.htm" target="_self">CreateCallResponseException Properties</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Exception.DeleteCallResponseException.htm" target="_self">DeleteCallResponseException Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Exception.DeleteCallResponseException.htm" target="_self">DeleteCallResponseException Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Exception.DeleteCallResponseException.-ctor.htm" target="_self">DeleteCallResponseException Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.Exception.DeleteCallResponseException.htm" target="_self">DeleteCallResponseException Methods</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Properties.T-Apidaze.SDK.Exception.DeleteCallResponseException.htm" target="_self">DeleteCallResponseException Properties</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Exception.InvalidPhoneNumberException.htm" target="_self">InvalidPhoneNumberException Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Exception.InvalidPhoneNumberException.htm" target="_self">InvalidPhoneNumberException Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Exception.InvalidPhoneNumberException.-ctor.htm" target="_self">InvalidPhoneNumberException Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.Exception.InvalidPhoneNumberException.htm" target="_self">InvalidPhoneNumberException Methods</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Properties.T-Apidaze.SDK.Exception.InvalidPhoneNumberException.htm" target="_self">InvalidPhoneNumberException Properties</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="N-Apidaze.SDK.ExternalScripts.htm" target="_self">Apidaze.SDK.ExternalScripts Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ExternalScripts.ExternalScript.htm" target="_self">ExternalScript Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ExternalScripts.ExternalScript.htm" target="_self">ExternalScript Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.ExternalScripts.ExternalScript.htm" target="_self">ExternalScript Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.ExternalScripts.ExternalScript.htm" target="_self">ExternalScript Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ExternalScripts.ExternalScript.CreatedAt.htm" target="_self">CreatedAt Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ExternalScripts.ExternalScript.DevCustomerId.htm" target="_self">DevCustomerId Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ExternalScripts.ExternalScript.Id.htm" target="_self">Id Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ExternalScripts.ExternalScript.Name.htm" target="_self">Name Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ExternalScripts.ExternalScript.ResellerCustomerId.htm" target="_self">ResellerCustomerId Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ExternalScripts.ExternalScript.SmsUrl.htm" target="_self">SmsUrl Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ExternalScripts.ExternalScript.UpdatedAt.htm" target="_self">UpdatedAt Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ExternalScripts.ExternalScript.Url.htm" target="_self">Url Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ExternalScripts.ExternalScripts.htm" target="_self">ExternalScripts Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ExternalScripts.ExternalScripts.htm" target="_self">ExternalScripts Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ExternalScripts.ExternalScripts.-ctor.htm" target="_self">ExternalScripts Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.ExternalScripts.ExternalScripts.htm" target="_self">ExternalScripts Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ExternalScripts.ExternalScripts.GetExternalScript.htm" target="_self">GetExternalScript Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ExternalScripts.ExternalScripts.GetExternalScripts.htm" target="_self">GetExternalScripts Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ExternalScripts.ExternalScripts.UpdateExternalScript.htm" target="_self">UpdateExternalScript Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ExternalScripts.ExternalScripts.UpdateExternalScriptUrl.htm" target="_self">UpdateExternalScriptUrl Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ExternalScripts.IExternalScripts.htm" target="_self">IExternalScripts Interface</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ExternalScripts.IExternalScripts.htm" target="_self">IExternalScripts Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.ExternalScripts.IExternalScripts.htm" target="_self">IExternalScripts Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ExternalScripts.IExternalScripts.GetExternalScript.htm" target="_self">GetExternalScript Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ExternalScripts.IExternalScripts.GetExternalScripts.htm" target="_self">GetExternalScripts Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ExternalScripts.IExternalScripts.UpdateExternalScript.htm" target="_self">UpdateExternalScript Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ExternalScripts.IExternalScripts.UpdateExternalScriptUrl.htm" target="_self">UpdateExternalScriptUrl Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="N-Apidaze.SDK.MediaFiles.htm" target="_self">Apidaze.SDK.MediaFiles Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.MediaFiles.IMediaFiles.htm" target="_self">IMediaFiles Interface</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.MediaFiles.IMediaFiles.htm" target="_self">IMediaFiles Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.MediaFiles.IMediaFiles.htm" target="_self">IMediaFiles Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.MediaFiles.IMediaFiles.DeleteMediaFile.htm" target="_self">DeleteMediaFile Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.MediaFiles.IMediaFiles.DownloadMediaFile.htm" target="_self">DownloadMediaFile Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.MediaFiles.IMediaFiles.GetMediaFilesList.htm" target="_self">GetMediaFilesList Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.MediaFiles.IMediaFiles.ShowMediaFileSummary.htm" target="_self">ShowMediaFileSummary Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.MediaFiles.IMediaFiles.UploadMediaFile.htm" target="_self">UploadMediaFile Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.MediaFiles.MediaFile.htm" target="_self">MediaFile Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.MediaFiles.MediaFile.htm" target="_self">MediaFile Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.MediaFiles.MediaFile.htm" target="_self">MediaFile Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.MediaFiles.MediaFile.htm" target="_self">MediaFile Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.MediaFiles.MediaFile.Modified.htm" target="_self">Modified Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.MediaFiles.MediaFile.Name.htm" target="_self">Name Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.MediaFiles.MediaFile.Size.htm" target="_self">Size Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.MediaFiles.MediaFiles.htm" target="_self">MediaFiles Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.MediaFiles.MediaFiles.htm" target="_self">MediaFiles Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.MediaFiles.MediaFiles.-ctor.htm" target="_self">MediaFiles Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.MediaFiles.MediaFiles.htm" target="_self">MediaFiles Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.MediaFiles.MediaFiles.DeleteMediaFile.htm" target="_self">DeleteMediaFile Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.MediaFiles.MediaFiles.DownloadMediaFile.htm" target="_self">DownloadMediaFile Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.MediaFiles.MediaFiles.GetMediaFilesList.htm" target="_self">GetMediaFilesList Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.MediaFiles.MediaFiles.ShowMediaFileSummary.htm" target="_self">ShowMediaFileSummary Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.MediaFiles.MediaFiles.UploadMediaFile.htm" target="_self">UploadMediaFile Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="N-Apidaze.SDK.Messages.htm" target="_self">Apidaze.SDK.Messages Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Messages.IMessage.htm" target="_self">IMessage Interface</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Messages.IMessage.htm" target="_self">IMessage Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.Messages.IMessage.htm" target="_self">IMessage Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Messages.IMessage.SendTextMessage.htm" target="_self">SendTextMessage Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Messages.Message.htm" target="_self">Message Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Messages.Message.htm" target="_self">Message Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Messages.Message.-ctor.htm" target="_self">Message Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.Messages.Message.htm" target="_self">Message Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Messages.Message.SendTextMessage.htm" target="_self">SendTextMessage Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Messages.PhoneNumber.htm" target="_self">PhoneNumber Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Messages.PhoneNumber.htm" target="_self">PhoneNumber Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Messages.PhoneNumber.-ctor.htm" target="_self">PhoneNumber Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.Messages.PhoneNumber.htm" target="_self">PhoneNumber Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Messages.PhoneNumber.ToString.htm" target="_self">ToString Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="N-Apidaze.SDK.Recordings.htm" target="_self">Apidaze.SDK.Recordings Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Recordings.IRecordings.htm" target="_self">IRecordings Interface</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Recordings.IRecordings.htm" target="_self">IRecordings Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.Recordings.IRecordings.htm" target="_self">IRecordings Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Recordings.IRecordings.DeleteRecording.htm" target="_self">DeleteRecording Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Recordings.IRecordings.DownloadRecording.htm" target="_self">DownloadRecording Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Recordings.IRecordings.DownloadRecordingToFile.htm" target="_self">DownloadRecordingToFile Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Recordings.IRecordings.DownloadRecordingToFileAsync.htm" target="_self">DownloadRecordingToFileAsync Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Recordings.IRecordings.GetRecordings.htm" target="_self">GetRecordings Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Recordings.Recordings.htm" target="_self">Recordings Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Recordings.Recordings.htm" target="_self">Recordings Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Recordings.Recordings.-ctor.htm" target="_self">Recordings Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.Recordings.Recordings.htm" target="_self">Recordings Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Recordings.Recordings.DeleteRecording.htm" target="_self">DeleteRecording Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Recordings.Recordings.DownloadRecording.htm" target="_self">DownloadRecording Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Recordings.Recordings.DownloadRecordingToFile.htm" target="_self">DownloadRecordingToFile Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Recordings.Recordings.DownloadRecordingToFileAsync.htm" target="_self">DownloadRecordingToFileAsync Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Recordings.Recordings.GetRecordings.htm" target="_self">GetRecordings Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="N-Apidaze.SDK.ScriptBuilder.htm" target="_self">Apidaze.SDK.ScriptBuilder Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ScriptBuilder.ApidazeScript.htm" target="_self">ApidazeScript Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ScriptBuilder.ApidazeScript.htm" target="_self">ApidazeScript Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.ApidazeScript.-ctor.htm" target="_self">ApidazeScript Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.ScriptBuilder.ApidazeScript.htm" target="_self">ApidazeScript Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.ApidazeScript.AddNode.htm" target="_self">AddNode Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.ApidazeScript.Build.htm" target="_self">Build Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.ScriptBuilder.ApidazeScript.htm" target="_self">ApidazeScript Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.ApidazeScript.Nodes.htm" target="_self">Nodes Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="N-Apidaze.SDK.ScriptBuilder.POCO.htm" target="_self">Apidaze.SDK.ScriptBuilder.POCO Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.Answer.htm" target="_self">Answer Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Answer.htm" target="_self">Answer Methods</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.Bind.htm" target="_self">Bind Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Bind.htm" target="_self">Bind Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Overload-Apidaze.SDK.ScriptBuilder.POCO.Bind.-ctor.htm" target="_self">Bind Constructor </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Bind.-ctor.htm" target="_self">Bind Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Bind.-ctor_1.htm" target="_self">Bind Constructor (String, String)</a>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Bind.htm" target="_self">Bind Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Bind.htm" target="_self">Bind Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Bind.Action.htm" target="_self">Action Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Bind.Value.htm" target="_self">Value Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.Conference.htm" target="_self">Conference Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Conference.htm" target="_self">Conference Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Conference.htm" target="_self">Conference Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Conference.htm" target="_self">Conference Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Conference.Name.htm" target="_self">Name Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.Dial.htm" target="_self">Dial Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Dial.htm" target="_self">Dial Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Dial.htm" target="_self">Dial Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Dial.ShouldSerializeMaxCallDuration.htm" target="_self">ShouldSerializeMaxCallDuration Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Dial.ShouldSerializeStrategy.htm" target="_self">ShouldSerializeStrategy Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Dial.ShouldSerializeTimeout.htm" target="_self">ShouldSerializeTimeout Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Dial.htm" target="_self">Dial Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Action.htm" target="_self">Action Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Dial.AnswerUrl.htm" target="_self">AnswerUrl Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Dial.CallerHangupUrl.htm" target="_self">CallerHangupUrl Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Dial.MaxCallDuration.htm" target="_self">MaxCallDuration Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Number.htm" target="_self">Number Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Sipaccount.htm" target="_self">Sipaccount Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Dial.SipUri.htm" target="_self">SipUri Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Strategy.htm" target="_self">Strategy Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Dial.Timeout.htm" target="_self">Timeout Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.Echo.htm" target="_self">Echo Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Echo.htm" target="_self">Echo Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Echo.htm" target="_self">Echo Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Echo.SetDuration.htm" target="_self">SetDuration Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Echo.htm" target="_self">Echo Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Echo.Delay.htm" target="_self">Delay Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.Hangup.htm" target="_self">Hangup Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Hangup.htm" target="_self">Hangup Methods</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.Intercept.htm" target="_self">Intercept Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Intercept.htm" target="_self">Intercept Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Intercept.htm" target="_self">Intercept Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Intercept.htm" target="_self">Intercept Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Intercept.Uuid.htm" target="_self">Uuid Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.LangEnum.htm" target="_self">LangEnum Enumeration</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.Number.htm" target="_self">Number Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Number.htm" target="_self">Number Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Overload-Apidaze.SDK.ScriptBuilder.POCO.Number.-ctor.htm" target="_self">Number Constructor </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Number.-ctor.htm" target="_self">Number Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Number.-ctor_1.htm" target="_self">Number Constructor (String, Double)</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Number.htm" target="_self">Number Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Number.ShouldSerializeTimeout.htm" target="_self">ShouldSerializeTimeout Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Number.htm" target="_self">Number Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Number.Timeout.htm" target="_self">Timeout Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Number.Value.htm" target="_self">Value Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.Playback.htm" target="_self">Playback Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Playback.htm" target="_self">Playback Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Playback.htm" target="_self">Playback Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Playback.FromFile.htm" target="_self">FromFile Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Playback.ShouldSerializeInputTimeoutMillis.htm" target="_self">ShouldSerializeInputTimeoutMillis Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Playback.htm" target="_self">Playback Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Playback.Binds.htm" target="_self">Binds Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Playback.File.htm" target="_self">File Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Playback.InputTimeoutMillis.htm" target="_self">InputTimeoutMillis Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.Record.htm" target="_self">Record Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Record.htm" target="_self">Record Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Record.htm" target="_self">Record Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Record.ShouldSerializeALeg.htm" target="_self">ShouldSerializeALeg Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Record.ShouldSerializeBLeg.htm" target="_self">ShouldSerializeBLeg Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Record.ShouldSerializeOnAnswered.htm" target="_self">ShouldSerializeOnAnswered Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Record.htm" target="_self">Record Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Record.ALeg.htm" target="_self">ALeg Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Record.BLeg.htm" target="_self">BLeg Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Record.Name.htm" target="_self">Name Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Record.OnAnswered.htm" target="_self">OnAnswered Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.Ringback.htm" target="_self">Ringback Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Ringback.htm" target="_self">Ringback Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Ringback.htm" target="_self">Ringback Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Ringback.FromFile.htm" target="_self">FromFile Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Ringback.htm" target="_self">Ringback Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Ringback.Url.htm" target="_self">Url Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.htm" target="_self">SipAccount Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.htm" target="_self">SipAccount Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Overload-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.-ctor.htm" target="_self">SipAccount Constructor </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.-ctor.htm" target="_self">SipAccount Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.-ctor_1.htm" target="_self">SipAccount Constructor (String, Double)</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.htm" target="_self">SipAccount Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.ShouldSerializeTimeout.htm" target="_self">ShouldSerializeTimeout Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.htm" target="_self">SipAccount Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.Timeout.htm" target="_self">Timeout Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.SipAccount.Value.htm" target="_self">Value Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.SipUri.htm" target="_self">SipUri Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.SipUri.htm" target="_self">SipUri Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Overload-Apidaze.SDK.ScriptBuilder.POCO.SipUri.-ctor.htm" target="_self">SipUri Constructor </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.SipUri.-ctor.htm" target="_self">SipUri Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.SipUri.-ctor_1.htm" target="_self">SipUri Constructor (String, Double)</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.ScriptBuilder.POCO.SipUri.htm" target="_self">SipUri Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.SipUri.ShouldSerializeTimeout.htm" target="_self">ShouldSerializeTimeout Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.ScriptBuilder.POCO.SipUri.htm" target="_self">SipUri Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.SipUri.Timeout.htm" target="_self">Timeout Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.SipUri.Value.htm" target="_self">Value Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.Speak.htm" target="_self">Speak Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Speak.htm" target="_self">Speak Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Speak.-ctor.htm" target="_self">Speak Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Speak.htm" target="_self">Speak Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeDigitTimeoutMillis.htm" target="_self">ShouldSerializeDigitTimeoutMillis Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeInputTimeoutMillis.htm" target="_self">ShouldSerializeInputTimeoutMillis Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeLangEnum.htm" target="_self">ShouldSerializeLangEnum Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Speak.ShouldSerializeVoice.htm" target="_self">ShouldSerializeVoice Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Speak.WithText.htm" target="_self">WithText Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Speak.htm" target="_self">Speak Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Speak.Binds.htm" target="_self">Binds Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Speak.DigitTimeoutMillis.htm" target="_self">DigitTimeoutMillis Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Speak.InputTimeoutMillis.htm" target="_self">InputTimeoutMillis Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Speak.LangEnum.htm" target="_self">LangEnum Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Speak.Text.htm" target="_self">Text Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Speak.Voice.htm" target="_self">Voice Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.StrategyEnum.htm" target="_self">StrategyEnum Enumeration</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.VoiceEnum.htm" target="_self">VoiceEnum Enumeration</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.ScriptBuilder.POCO.Wait.htm" target="_self">Wait Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.ScriptBuilder.POCO.Wait.htm" target="_self">Wait Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.ScriptBuilder.POCO.Wait.htm" target="_self">Wait Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.ScriptBuilder.POCO.Wait.SetDuration.htm" target="_self">SetDuration Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.ScriptBuilder.POCO.Wait.htm" target="_self">Wait Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.ScriptBuilder.POCO.Wait.Value.htm" target="_self">Value Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="N-Apidaze.SDK.SipUsers.htm" target="_self">Apidaze.SDK.SipUsers Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.SipUsers.CallerIdentity.htm" target="_self">CallerIdentity Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.SipUsers.CallerIdentity.htm" target="_self">CallerIdentity Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.SipUsers.CallerIdentity.htm" target="_self">CallerIdentity Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.SipUsers.CallerIdentity.htm" target="_self">CallerIdentity Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.SipUsers.CallerIdentity.InternalCallerIdName.htm" target="_self">InternalCallerIdName Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.SipUsers.CallerIdentity.InternalCallerIdNumber.htm" target="_self">InternalCallerIdNumber Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.SipUsers.CallerIdentity.OutboundCallerIdName.htm" target="_self">OutboundCallerIdName Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.SipUsers.CallerIdentity.OutboundCallerIdNumber.htm" target="_self">OutboundCallerIdNumber Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.SipUsers.ISipUsers.htm" target="_self">ISipUsers Interface</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.SipUsers.ISipUsers.htm" target="_self">ISipUsers Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.SipUsers.ISipUsers.htm" target="_self">ISipUsers Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.SipUsers.ISipUsers.CreateSipUser.htm" target="_self">CreateSipUser Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.SipUsers.ISipUsers.DeleteSipUser.htm" target="_self">DeleteSipUser Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.SipUsers.ISipUsers.GetSingleSipUser.htm" target="_self">GetSingleSipUser Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.SipUsers.ISipUsers.GetSipUsers.htm" target="_self">GetSipUsers Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.SipUsers.ISipUsers.ResetUserPassword.htm" target="_self">ResetUserPassword Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.SipUsers.ISipUsers.ShowSipUserStatus.htm" target="_self">ShowSipUserStatus Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.SipUsers.ISipUsers.UpdateSipUser.htm" target="_self">UpdateSipUser Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.SipUsers.Sip.htm" target="_self">Sip Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.SipUsers.Sip.htm" target="_self">Sip Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.SipUsers.Sip.htm" target="_self">Sip Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.SipUsers.Sip.htm" target="_self">Sip Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.SipUsers.Sip.Password.htm" target="_self">Password Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.SipUsers.Sip.Username.htm" target="_self">Username Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.SipUsers.SipUser.htm" target="_self">SipUser Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.SipUsers.SipUser.htm" target="_self">SipUser Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.SipUsers.SipUser.htm" target="_self">SipUser Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.SipUsers.SipUser.htm" target="_self">SipUser Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.SipUsers.SipUser.CallerId.htm" target="_self">CallerId Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.SipUsers.SipUser.CreatedAt.htm" target="_self">CreatedAt Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.SipUsers.SipUser.Id.htm" target="_self">Id Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.SipUsers.SipUser.Name.htm" target="_self">Name Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.SipUsers.SipUser.Sip.htm" target="_self">Sip Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.SipUsers.SipUser.UpdatedAt.htm" target="_self">UpdatedAt Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.SipUsers.SipUsers.htm" target="_self">SipUsers Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.SipUsers.SipUsers.htm" target="_self">SipUsers Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.SipUsers.SipUsers.-ctor.htm" target="_self">SipUsers Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.SipUsers.SipUsers.htm" target="_self">SipUsers Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.SipUsers.SipUsers.CreateSipUser.htm" target="_self">CreateSipUser Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.SipUsers.SipUsers.DeleteSipUser.htm" target="_self">DeleteSipUser Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.SipUsers.SipUsers.GetSingleSipUser.htm" target="_self">GetSingleSipUser Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.SipUsers.SipUsers.GetSipUsers.htm" target="_self">GetSipUsers Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.SipUsers.SipUsers.ResetUserPassword.htm" target="_self">ResetUserPassword Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.SipUsers.SipUsers.ShowSipUserStatus.htm" target="_self">ShowSipUserStatus Method </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.SipUsers.SipUsers.UpdateSipUser.htm" target="_self">UpdateSipUser Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.SipUsers.SipUserStatus.htm" target="_self">SipUserStatus Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.SipUsers.SipUserStatus.htm" target="_self">SipUserStatus Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="Methods.T-Apidaze.SDK.SipUsers.SipUserStatus.htm" target="_self">SipUserStatus Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Properties.T-Apidaze.SDK.SipUsers.SipUserStatus.htm" target="_self">SipUserStatus Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.SipUsers.SipUserStatus.Status.htm" target="_self">Status Property </a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="P-Apidaze.SDK.SipUsers.SipUserStatus.Uri.htm" target="_self">Uri Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="N-Apidaze.SDK.Validate.htm" target="_self">Apidaze.SDK.Validate Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Validate.CredentialsValidator.htm" target="_self">CredentialsValidator Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Validate.CredentialsValidator.htm" target="_self">CredentialsValidator Members</a>
+</div>
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Validate.CredentialsValidator.-ctor.htm" target="_self">CredentialsValidator Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.Validate.CredentialsValidator.htm" target="_self">CredentialsValidator Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Validate.CredentialsValidator.ValidateCredentials.htm" target="_self">ValidateCredentials Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="T-Apidaze.SDK.Validate.ICredentialsValidator.htm" target="_self">ICredentialsValidator Interface</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="AllMembers.T-Apidaze.SDK.Validate.ICredentialsValidator.htm" target="_self">ICredentialsValidator Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="../Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="Methods.T-Apidaze.SDK.Validate.ICredentialsValidator.htm" target="_self">ICredentialsValidator Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="../Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="M-Apidaze.SDK.Validate.ICredentialsValidator.ValidateCredentials.htm" target="_self">ValidateCredentials Method </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+            </div>
+
+        </div>
+
+        <div id="TOCSizer" class="TOCSizer" onmousedown="OnMouseDown(event)" onselectstart="javascript: return false;"></div>
+        
+        <div id ="TopicContent" name="TopicContent" class="TopicContent" style="float: none; margin-left: 312px;height: -webkit-fill-available;display:block;overflow: auto;">
+          
+          <!-- Content Starts Here -->
+          <div class="contentPlaceHolder" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <div class="content">
+        <div class="topicContainer">
+          <div class="topic">
+            <p class="majorTitle" />
+            <h1 class="title">Applications<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>CreateInstance Method </h1>
+            <div id="mainSection">
+              <div id="mainBody">
+                <div class="summary">
+       Creates the instance.
+   </div>
+                <p />
+    <b>Namespace:</b> 
+   <a href="N-Apidaze.SDK.Applications.htm">Apidaze.SDK.Applications</a><br />
+    <b>Assembly:</b>
+   <span sdata="assembly">Apidaze.SDK</span> (in Apidaze.SDK.dll)<div class="LW_CollapsibleArea_Container"><div class="LW_CollapsibleArea_TitleDiv"><h2 class="LW_CollapsibleArea_Title">Syntax</h2><div class="LW_CollapsibleArea_HrDiv"><hr class="LW_CollapsibleArea_Hr" /></div></div><a id="syntaxSection"><!----></a><div class="CodeSnippetContainer"><div class="CodeSnippetContainerTabs"><div class="CodeSnippetContainerTabLeft"><!----></div><div class="CodeSnippetContainerTabFirst CSharpTab" id="CSharpTabId" style="background:white;border-bottom-color:white"><a href="javascript:setActiveTab('CodeSnippetContainerCode','CSharpCode','CSharpTabId');" title="C#">C#</a></div><div class="CodeSnippetContainerTabRight"><!----></div></div><div class="CodeSnippetContainerCodeCollection"><div class="CodeSnippetToolBar"><div class="CodeSnippetToolBarText" /></div><div class="CodeSnippetContainerCode CSharpCode"><pre xml:space="preserve" class="libCScode"><span class="keyword">public</span> <span class="keyword">static</span> <a href="T-Apidaze.SDK.Applications.Applications.htm">Applications</a> <span class="identifier">CreateInstance</span>(
+	<span class="nolink">IRestClient</span> <span class="parameter">client</span>,
+	<a href="T-Apidaze.SDK.Base.Credentials.htm">Credentials</a> <span class="parameter">credentials</span>
+)</pre></div></div></div><div id="parameters"><h4 class="subHeading">Parameters</h4><dl paramName="client"><dt><span class="parameterItalic">client</span></dt><dd>Type: <span class="nolink">IRestClient</span><br />The client.</dd></dl><dl paramName="credentials"><dt><span class="parameterItalic">credentials</span></dt><dd>Type: <a href="T-Apidaze.SDK.Base.Credentials.htm">Apidaze.SDK.Base<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>Credentials</a><br />The credentials.</dd></dl></div><h4 class="subHeading">Return Value</h4>Applications.</div><div class="LW_CollapsibleArea_Container"><div class="LW_CollapsibleArea_TitleDiv"><h2 class="LW_CollapsibleArea_Title">See Also</h2><div class="LW_CollapsibleArea_HrDiv"><hr class="LW_CollapsibleArea_Hr" /></div></div><a id="seeAlsoSection"><!----></a><div class="seeAlsoStyle"><a href="T-Apidaze.SDK.Applications.Applications.htm">Applications Class</a></div><div class="seeAlsoStyle"><a href="N-Apidaze.SDK.Applications.htm">Apidaze.SDK.Applications Namespace</a></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div id="footer" class="footerContainer">
+          <div class="footerLogoContainer">
+            <div style="margin-top:5px">
+              <span class="customCopyrightFooter" />
+            </div>
+            <div style="margin-top:5px" class="copyrightFooter">Help File generated with GhostDoc</div>
+            <div> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          <!-- /Content Ends Here -->
+        </div>
+
+
+  </body>
+</html>
