@@ -133,16 +133,14 @@ namespace Apidaze.SDK.Base
         /// <param name="id">The identifier.</param>
         /// <param name="requestParams">The request parameters.</param>
         /// <returns>T.</returns>
-        public T Update<T>(string id, Dictionary<string, string> requestParams) where T : new()
+        public T Update<T>(string id, Dictionary<string, object> requestParams) where T : new()
         {
             var restRequest = AuthenticateRequest();
+            restRequest.AddHeader("Content-Type", "application/json");
             restRequest.Resource += "/{id}";
             restRequest.Method = Method.PUT;
             restRequest.AddUrlSegment("id", id);
-
-            foreach (var nameValueParameter in requestParams)
-                restRequest.AddParameter(nameValueParameter.Key, nameValueParameter.Value);
-
+            restRequest.AddJsonBody(requestParams);
             var response = Client.Execute<T>(restRequest);
             EnsureSuccessResponse(response);
 
@@ -184,7 +182,7 @@ namespace Apidaze.SDK.Base
         /// <param name="response">The response.</param>
         internal static void EnsureSuccessResponse(IRestResponse response)
         {
-            if (!new[] {HttpStatusCode.InternalServerError, HttpStatusCode.BadRequest}
+            if (!new[] { HttpStatusCode.InternalServerError, HttpStatusCode.BadRequest }
                 .Contains(response.StatusCode)) return;
             var newException = new InvalidOperationException(response.Content);
             throw newException;

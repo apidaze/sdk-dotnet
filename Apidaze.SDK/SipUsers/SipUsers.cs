@@ -99,15 +99,14 @@ namespace Apidaze.SDK.SipUsers
         /// <param name="externalCallerIdNumber">The external caller identifier number.</param>
         /// <param name="resetPassword">if set to <c>true</c> [reset password].</param>
         /// <returns>SipUser.</returns>
-        public SipUser UpdateSipUser(string id, string name = "", string internalCallerIdNumber = "",
-            string externalCallerIdNumber = "", bool resetPassword = false)
+        public SipUser UpdateSipUser(string id, string name = "", string internalCallerIdNumber = "", string externalCallerIdNumber = "", bool resetPassword = false)
         {
-            var requestBody = new Dictionary<string, string>
+            var requestBody = new Dictionary<string, object>
             {
-                {"name", name},
-                {"internal_caller_id_number", internalCallerIdNumber},
-                {"external_caller_id_number", externalCallerIdNumber},
-                {"reset_password", resetPassword.ToString()}
+                { "name", name},
+                { "internal_caller_id_number", internalCallerIdNumber },
+                { "external_caller_id_number", externalCallerIdNumber },
+                { "reset_password", resetPassword},
             };
             return Update<SipUser>(id, requestBody);
         }

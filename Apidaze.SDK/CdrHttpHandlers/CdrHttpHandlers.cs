@@ -70,7 +70,7 @@ namespace Apidaze.SDK.CdrHttpHandlers
             if (string.IsNullOrEmpty(name)) throw new ArgumentException("name must not be null or empty");
             if (url == null) throw new ArgumentException("url must not be null or empty");
 
-            var requestBody = new Dictionary<string, string> {{"name", name}, {"url", url.ToString()}};
+            var requestBody = new Dictionary<string, object> {{"name", name}, {"url", url.ToString()}};
             return Update<CdrHttpHandler>(id.ToString(), requestBody);
         }
 
@@ -84,7 +84,7 @@ namespace Apidaze.SDK.CdrHttpHandlers
         {
             if (string.IsNullOrEmpty(name)) throw new ArgumentException("name must not be null or empty");
 
-            var requestBody = new Dictionary<string, string> {{"name", name}};
+            var requestBody = new Dictionary<string, object> {{"name", name}};
             return Update<CdrHttpHandler>(id.ToString(), requestBody);
         }
 
@@ -98,7 +98,7 @@ namespace Apidaze.SDK.CdrHttpHandlers
         {
             if (url == null) throw new ArgumentException("url must not be null or empty");
 
-            var requestBody = new Dictionary<string, string> {{"url", url.ToString()}};
+            var requestBody = new Dictionary<string, object> {{"url", url.ToString()}};
             return Update<CdrHttpHandler>(id.ToString(), requestBody);
         }
 

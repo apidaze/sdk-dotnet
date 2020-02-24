@@ -74,7 +74,7 @@ namespace Apidaze.SDK.ExternalScripts
             if (name.Length > MaxNameLength)
                 throw new ArgumentException("name: maximum " + MaxNameLength + " characters long");
 
-            var requestBody = new Dictionary<string, string> {{"name", name}, {"url", url.ToString()}};
+            var requestBody = new Dictionary<string, object> { { "name", name}, {"url", url.ToString() } };
             return Update<ExternalScript>(id.ToString(), requestBody);
         }
 
@@ -90,7 +90,7 @@ namespace Apidaze.SDK.ExternalScripts
         {
             if (url == null) throw new ArgumentException("destination must not be null or empty");
 
-            var requestBody = new Dictionary<string, string> {{"url", url.ToString()}};
+            var requestBody = new Dictionary<string, object> { { "url", url.ToString() } };
 
             return Update<ExternalScript>(id.ToString(), requestBody);
         }

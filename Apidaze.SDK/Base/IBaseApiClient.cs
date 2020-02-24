@@ -46,7 +46,7 @@ namespace Apidaze.SDK.Base
         /// <param name="id">The identifier.</param>
         /// <param name="requestParams">The request parameters.</param>
         /// <returns>T.</returns>
-        T Update<T>(string id, Dictionary<string, string> requestParams) where T : new();
+        T Update<T>(string id, Dictionary<string, object> requestParams) where T : new();
 
         /// <summary>
         ///     Deletes the specified identifier.
